@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { seo } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Itc Services",
-  description: "Página de Itc services, entra y mira nuestros servicios de tecnología y desarrollo de software.",
+  metadataBase: new URL(seo.siteUrl),
+  title: seo.title,
+  description: seo.description,
+  keywords: seo.keywords,
+  authors: seo.authors,
+  creator: seo.creator,
+  publisher: seo.publisher,
+  category: "technology",
+  alternates: {
+    canonical: "/",
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: seo.openGraph,
+  twitter: seo.twitter,
+  robots: seo.robots,
+  icons: {
+    icon: "/next.svg",
+    shortcut: "/next.svg",
+    apple: "/next.svg",
+  },
 };
+
+export const viewport: Viewport = seo.viewport;
 
 export default function RootLayout({
   children,
