@@ -1,7 +1,15 @@
 const siteUrl = "https://example.com"; // TODO: reemplazar por el dominio real de producción
 
+const logo = {
+  src: "/logo-principal.svg",
+  width: 512,
+  height: 512,
+  alt: "Itc Services",
+};
+
 export const seo = {
   siteUrl,
+  logo,
   title: {
     default: "Itc Services",
     template: "%s | Itc Services",
@@ -34,10 +42,10 @@ export const seo = {
       "Página de Itc Services, entra y mira nuestros servicios de tecnología y desarrollo de software.",
     images: [
       {
-        url: "/next.svg",
-        width: 1200,
-        height: 630,
-        alt: "Itc Services",
+        url: logo.src,
+        width: logo.width,
+        height: logo.height,
+        alt: logo.alt,
       },
     ],
   },
@@ -46,7 +54,12 @@ export const seo = {
     title: "Itc Services",
     description:
       "Página de Itc Services, entra y mira nuestros servicios de tecnología y desarrollo de software.",
-    images: ["/next.svg"],
+    images: [logo.src],
+  },
+  icons: {
+    icon: logo.src,
+    shortcut: logo.src,
+    apple: logo.src,
   },
   robots: {
     index: true,

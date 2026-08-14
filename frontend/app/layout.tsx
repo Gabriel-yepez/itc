@@ -33,11 +33,7 @@ export const metadata: Metadata = {
   openGraph: seo.openGraph,
   twitter: seo.twitter,
   robots: seo.robots,
-  icons: {
-    icon: "/next.svg",
-    shortcut: "/next.svg",
-    apple: "/next.svg",
-  },
+  icons: seo.icons,
 };
 
 export const viewport: Viewport = seo.viewport;
