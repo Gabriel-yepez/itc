@@ -1,13 +1,19 @@
+import DevelopmentMethodology from "@/components/DevelopmentMethodology";
+import DevelopmentServices from "@/components/DevelopmentServices";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center bg-white font-body">
+    <div className="flex min-h-screen flex-col bg-white font-body">
       <Navbar />
-      <main className="flex flex-1 w-full max-w-full flex-col items-center justify-between py-32 px-16 bg-white sm:items-start">
-        <Hero/>
+      <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-6 py-12 sm:px-12 lg:px-16">
+        <Hero />
+        <DevelopmentServices />
+        <DevelopmentMethodology />
       </main>
+      <Footer />
     </div>
   );
 }
