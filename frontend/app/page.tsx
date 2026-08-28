@@ -1,5 +1,4 @@
-import DevelopmentMethodology from "@/components/DevelopmentMethodology";
-import DevelopmentServices from "@/components/DevelopmentServices";
+import CoreCompetencies from "@/components/CoreCompetencies";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -10,8 +9,7 @@ export default function Home() {
       <Navbar />
       <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-6 py-12 sm:px-12 lg:px-16">
         <Hero />
-        <DevelopmentServices />
-        <DevelopmentMethodology />
+        <CoreCompetencies />
       </main>
       <Footer />
     </div>
