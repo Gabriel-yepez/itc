@@ -1,28 +1,104 @@
 "use client";
 
 import { useState } from "react";
+import type { CmsInquiryOption } from "@/lib/cms/types";
 
-export default function ContactForm() {
+const defaultInquiryOptions: CmsInquiryOption[] = [
+  { id: 1, label: "Desarrollo de Software a Medida", value: "Desarrollo de Software a Medida", isDefault: true },
+  { id: 2, label: "Auditoría de Seguridad & Zero-Trust", value: "Auditoría de Seguridad & Zero-Trust", isDefault: false },
+  { id: 3, label: "Arquitectura Cloud & DevOps", value: "Arquitectura Cloud & DevOps", isDefault: false },
+  { id: 4, label: "Aplicaciones Móviles & Web", value: "Aplicaciones Móviles & Web", isDefault: false },
+  { id: 5, label: "Consulta General", value: "Consulta General", isDefault: false },
+];
+
+export default function ContactForm({
+  inquiryOptions,
+  submitLabel,
+  successTitle,
+  successMessage,
+}: {
+  inquiryOptions?: CmsInquiryOption[];
+  submitLabel?: string | null;
+  successTitle?: string | null;
+  successMessage?: string | null;
+}) {
+  const options =
+    inquiryOptions && inquiryOptions.length > 0
+      ? inquiryOptions
+      : defaultInquiryOptions;
+
+  const defaultOption =
+    options.find((opt) => opt.isDefault)?.value ?? options[0]?.value ?? "";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "Desarrollo de Software a Medida",
+    subject: defaultOption,
     message: "",
+    website: "", // Honeypot
   });
-  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
+    setErrorMessage(null);
 
-    // Simulate submission
-    setTimeout(() => {
-      setStatus("success");
-    }, 800);
+    const cmsUrl = process.env.NEXT_PUBLIC_CMS_URL ?? "http://localhost:1337";
+
+    try {
+      const res = await fetch(`${cmsUrl}/api/contact-submissions`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          data: {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            source: "/contacto",
+            website: formData.website,
+          },
+        }),
+      });
+
+      if (res.status === 201 || res.status === 200) {
+        setStatus("success");
+        return;
+      }
+
+      const data = await res.json().catch(() => null);
+
+      if (res.status === 400 || res.status === 429) {
+        const msg =
+          data?.error?.message ??
+          (res.status === 429
+            ? "Has superado el límite de envíos permitidos. Por favor, intenta de nuevo más tarde."
+            : "Por favor revisa los datos ingresados.");
+        setErrorMessage(msg);
+        setStatus("idle");
+        return;
+      }
+
+      setErrorMessage(
+        "No se pudo enviar el mensaje debido a un problema técnico. Por favor, intenta más tarde o contáctanos por correo.",
+      );
+      setStatus("idle");
+    } catch {
+      setErrorMessage(
+        "No se pudo conectar con el servidor. Por favor, verifica tu conexión o intenta más tarde.",
+      );
+      setStatus("idle");
+    }
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -46,10 +122,11 @@ export default function ContactForm() {
           </svg>
         </div>
         <h3 className="font-headline text-2xl font-bold text-black mb-2">
-          ¡Mensaje recibido con éxito!
+          {successTitle ?? "¡Mensaje recibido con éxito!"}
         </h3>
         <p className="font-body text-base text-black max-w-md mx-auto mb-6">
-          Gracias por contactar con Itc Services. Nuestro equipo de ingenieros revisará tus requerimientos y te responderá en menos de 24 horas.
+          {successMessage ??
+            "Gracias por contactar con Itc Services. Nuestro equipo de ingenieros revisará tus requerimientos y te responderá en menos de 24 horas."}
         </p>
         <button
           type="button"
@@ -57,12 +134,14 @@ export default function ContactForm() {
             setFormData({
               name: "",
               email: "",
-              subject: "Desarrollo de Software a Medida",
+              subject: defaultOption,
               message: "",
+              website: "",
             });
             setStatus("idle");
+            setErrorMessage(null);
           }}
-          className="rounded-xl border border-neutral bg-white px-6 py-2.5 font-body text-sm font-semibold text-black hover:bg-neutral/50 transition-colors"
+          className="rounded-xl border border-neutral bg-white px-6 py-2.5 font-body text-sm font-semibold text-black hover:bg-neutral/50 transition-colors cursor-pointer"
         >
           Enviar otro mensaje
         </button>
@@ -72,6 +151,32 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {errorMessage && (
+        <div
+          role="alert"
+          className="rounded-xl border border-red-200 bg-red-50 p-4 font-body text-sm text-red-800"
+        >
+          {errorMessage}
+        </div>
+      )}
+
+      {/* Honeypot field (hidden offscreen from human users) */}
+      <div
+        className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden opacity-0 pointer-events-none"
+        aria-hidden="true"
+      >
+        <label htmlFor="website-field">Website (do not fill)</label>
+        <input
+          type="text"
+          id="website-field"
+          name="website"
+          value={formData.website}
+          onChange={handleChange}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
       {/* Name Field */}
       <div className="flex flex-col space-y-2">
         <label
@@ -128,14 +233,20 @@ export default function ContactForm() {
             onChange={handleChange}
             className="w-full appearance-none rounded-xl border border-neutral bg-neutral/20 p-3.5 font-body text-base text-black focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer"
           >
-            <option value="Desarrollo de Software a Medida">Desarrollo de Software a Medida</option>
-            <option value="Auditoría de Seguridad & Zero-Trust">Auditoría de Seguridad & Zero-Trust</option>
-            <option value="Arquitectura Cloud & DevOps">Arquitectura Cloud & DevOps</option>
-            <option value="Aplicaciones Móviles & Web">Aplicaciones Móviles & Web</option>
-            <option value="Consulta General">Consulta General</option>
+            {options.map((opt) => (
+              <option key={opt.id || opt.value} value={opt.value}>
+                {opt.label}
+              </option>
+            ))}
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-black">
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </div>
@@ -168,7 +279,11 @@ export default function ContactForm() {
         disabled={status === "submitting"}
         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 font-body text-base font-semibold text-white shadow-sm transition-all hover:opacity-90 disabled:opacity-50 cursor-pointer"
       >
-        <span>{status === "submitting" ? "Enviando..." : "Enviar Mensaje"}</span>
+        <span>
+          {status === "submitting"
+            ? "Enviando..."
+            : submitLabel ?? "Enviar Mensaje"}
+        </span>
         <svg
           className="h-4 w-4"
           fill="none"

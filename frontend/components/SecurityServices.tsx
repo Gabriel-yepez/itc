@@ -1,13 +1,83 @@
 import Link from "next/link";
+import { Icon } from "@/components/icons";
+import {
+  ACCENT_BADGE,
+  ACCENT_HOVER_BORDER,
+  ACCENT_TEXT,
+  LAYOUT,
+} from "@/lib/cms/presentation";
+import type {
+  Certification,
+  CmsHero,
+  CmsSectionHeading,
+  MethodologyStep,
+  Service,
+} from "@/lib/cms/types";
 
-export default function SecurityServices() {
-  const certifications = [
-    { label: "ISO 27001 COMPLIANT", code: "ISO-27001" },
-    { label: "SOC 2 TYPE II", code: "SOC-2" },
-    { label: "ZERO-TRUST NATIVO", code: "Z-TRUST" },
-    { label: "OWASP TOP 10 HARDENING", code: "OWASP" },
-    { label: "NIST FRAMEWORK", code: "NIST" },
-  ];
+const defaultCertifications: Certification[] = [
+  { id: 1, documentId: "cert-1", createdAt: "", updatedAt: "", publishedAt: "", label: "ISO 27001 COMPLIANT", code: "ISO-27001", icon: null, badge: null, order: 1 },
+  { id: 2, documentId: "cert-2", createdAt: "", updatedAt: "", publishedAt: "", label: "SOC 2 TYPE II", code: "SOC-2", icon: null, badge: null, order: 2 },
+  { id: 3, documentId: "cert-3", createdAt: "", updatedAt: "", publishedAt: "", label: "ZERO-TRUST NATIVO", code: "Z-TRUST", icon: null, badge: null, order: 3 },
+  { id: 4, documentId: "cert-4", createdAt: "", updatedAt: "", publishedAt: "", label: "OWASP TOP 10 HARDENING", code: "OWASP", icon: null, badge: null, order: 4 },
+  { id: 5, documentId: "cert-5", createdAt: "", updatedAt: "", publishedAt: "", label: "NIST FRAMEWORK", code: "NIST", icon: null, badge: null, order: 5 },
+];
+
+export default function SecurityServices({
+  hero,
+  certificationsTitle,
+  certifications,
+  heading,
+  services,
+  lifecycleHeading,
+  methodologySteps,
+}: {
+  hero?: CmsHero | null;
+  certificationsTitle?: string | null;
+  certifications?: Certification[];
+  heading?: CmsSectionHeading | null;
+  services?: Service[];
+  lifecycleHeading?: CmsSectionHeading | null;
+  methodologySteps?: MethodologyStep[];
+}) {
+  const eyebrow = hero?.eyebrow ?? "Ciberseguridad Empresarial";
+  const title =
+    hero?.title ?? "Protección Sin Concesiones para Infraestructuras Críticas.";
+  const description =
+    hero?.description ??
+    "Monitoreo avanzado de amenazas, auditorías de seguridad quirúrgicas y protocolos de protección de datos de grado militar diseñados para entornos de alta exigencia.";
+  const primaryLink = hero?.primaryLink ?? {
+    label: "Solicitar Auditoría",
+    href: "/contacto",
+    variant: "primary" as const,
+  };
+  const secondaryLink = hero?.secondaryLink ?? {
+    label: "Ver Informe Técnico",
+    href: "/seguridad",
+    variant: "secondary" as const,
+  };
+
+  const certTitle =
+    certificationsTitle ?? "Estándares de Cumplimiento & Certificaciones";
+  const certList =
+    certifications && certifications.length > 0
+      ? certifications
+      : defaultCertifications;
+
+  const defenseEyebrow = heading?.eyebrow ?? "Defensa Integral";
+  const defenseTitle = heading?.title ?? "Mecanismos Principales de Defensa";
+  const defenseDescription =
+    heading?.description ??
+    "Arquitectura de capas múltiples diseñada para prevenir, detectar y neutralizar vectores de ataque antes de que impacten la continuidad operativa.";
+
+  const lifecycleEyebrow = lifecycleHeading?.eyebrow ?? "Proceso de Endurecimiento";
+  const lifecycleTitle =
+    lifecycleHeading?.title ?? "Ciclo de Vida de Seguridad Defensiva";
+  const lifecycleDescription =
+    lifecycleHeading?.description ??
+    "Cómo aseguramos que cada capa de tu infraestructura sea impenetrable y resiliente.";
+
+  const serviceList = services ?? [];
+  const stepsList = methodologySteps ?? [];
 
   return (
     <div className="w-full space-y-16">
@@ -30,37 +100,41 @@ export default function SecurityServices() {
                   d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                 />
               </svg>
-              Ciberseguridad Empresarial
+              {eyebrow}
             </div>
 
             <h2 className="font-headline text-4xl font-black tracking-tight text-black sm:text-5xl lg:text-6xl">
-              Protección Sin Concesiones para Infraestructuras Críticas.
+              {title}
             </h2>
 
             <p className="mt-6 max-w-2xl font-body text-base text-black sm:text-lg leading-relaxed">
-              Monitoreo avanzado de amenazas, auditorías de seguridad quirúrgicas y protocolos de protección de datos de grado militar diseñados para entornos de alta exigencia.
+              {description}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/contacto"
-                className="rounded-xl bg-primary px-6 py-3 font-body text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
-              >
-                Solicitar Auditoría
-              </Link>
-              <Link
-                href="/seguridad"
-                className="rounded-xl border border-neutral bg-white px-6 py-3 font-body text-sm font-semibold text-black transition-colors hover:bg-neutral/60"
-              >
-                Ver Informe Técnico
-              </Link>
+              {primaryLink && (
+                <Link
+                  href={primaryLink.href}
+                  className="rounded-xl bg-primary px-6 py-3 font-body text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
+                >
+                  {primaryLink.label}
+                </Link>
+              )}
+              {secondaryLink && (
+                <Link
+                  href={secondaryLink.href}
+                  className="rounded-xl border border-neutral bg-white px-6 py-3 font-body text-sm font-semibold text-black transition-colors hover:bg-neutral/60"
+                >
+                  {secondaryLink.label}
+                </Link>
+              )}
             </div>
           </div>
 
           <div className="lg:col-span-5">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-neutral bg-neutral/50 p-8 flex flex-col justify-between overflow-hidden shadow-sm">
               <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#7c3aed_1px,transparent_1px)] [background-size:20px_20px]" />
-              
+
               {/* Radar / Shield Animation Concept */}
               <div className="relative z-10 flex justify-between items-start">
                 <span className="font-label text-xs font-bold uppercase text-black">
@@ -76,8 +150,18 @@ export default function SecurityServices() {
                 <div className="relative flex items-center justify-center">
                   <div className="h-24 w-24 rounded-full border border-dashed border-primary/40 animate-[spin_25s_linear_infinite]" />
                   <div className="absolute flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-white shadow-md">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    <svg
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -101,16 +185,26 @@ export default function SecurityServices() {
       {/* Certifications Bar */}
       <section className="rounded-2xl border border-neutral bg-neutral/20 p-6 sm:p-8">
         <p className="font-label text-xs text-center font-bold text-black uppercase tracking-wider mb-6">
-          Estándares de Cumplimiento & Certificaciones
+          {certTitle}
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
-          {certifications.map((item) => (
+          {certList.map((item) => (
             <div
-              key={item.code}
+              key={item.id || item.code}
               className="flex items-center gap-2 rounded-xl border border-neutral bg-white px-4 py-2 shadow-xs"
             >
-              <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                className="h-4 w-4 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
               <span className="font-label text-xs font-bold text-black">{item.label}</span>
             </div>
@@ -122,174 +216,194 @@ export default function SecurityServices() {
       <section className="w-full" id="seguridad-mecanismos">
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 rounded-full bg-secondary/10 px-3 py-1 font-label text-xs font-semibold uppercase tracking-wider text-secondary mb-4">
-            Defensa Integral
+            {defenseEyebrow}
           </div>
           <h3 className="font-headline text-3xl font-bold tracking-tight text-black sm:text-4xl">
-            Mecanismos Principales de Defensa
+            {defenseTitle}
           </h3>
-          <p className="mt-3 max-w-2xl font-body text-base text-black">
-            Arquitectura de capas múltiples diseñada para prevenir, detectar y neutralizar vectores de ataque antes de que impacten la continuidad operativa.
-          </p>
+          {defenseDescription && (
+            <p className="mt-3 max-w-2xl font-body text-base text-black">
+              {defenseDescription}
+            </p>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 1: Auditorías de Seguridad (Span 2) */}
-          <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md md:col-span-2 flex flex-col justify-between">
-            <div>
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <span className="rounded-full bg-primary/10 px-3 py-1 font-label text-xs font-semibold text-primary">
-                  ISO 27001 Compliant
-                </span>
-              </div>
-              <h4 className="font-headline text-xl font-bold text-black mb-3">
-                Auditorías Exhaustivas de Seguridad & Pentesting
-              </h4>
-              <p className="font-body text-sm text-black leading-relaxed max-w-2xl">
-                Examen quirúrgico de tu arquitectura, código fuente e infraestructura para identificar vulnerabilidades antes de que sean explotadas. Entregamos informes ejecutivos con planes de mitigación inmediatos.
-              </p>
-            </div>
+          {serviceList.map((service) => {
+            const isTerminalMockup =
+              service.slug === "monitoreo-continuo" ||
+              service.features?.some((f) => f.marker === ">");
+            const hasFeatureDescriptions = service.features?.some(
+              (f) => f.description !== null && f.description !== "",
+            );
 
-            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 border-t border-neutral pt-6">
-              <div className="flex items-start gap-2">
-                <span className="font-label text-xs font-bold text-primary">01</span>
+            return (
+              <div
+                key={service.id || service.slug}
+                id={service.anchor ?? undefined}
+                className={`group rounded-2xl border border-neutral ${
+                  service.slug === "monitoreo-continuo" ? "bg-neutral/30" : "bg-white"
+                } p-8 shadow-sm transition-all duration-300 ${
+                  ACCENT_HOVER_BORDER[service.accent]
+                } hover:shadow-md ${LAYOUT[service.layout]}`}
+              >
                 <div>
-                  <h5 className="font-headline text-sm font-semibold text-black">Pruebas de Penetración</h5>
-                  <p className="font-body text-xs text-black">Simulación de ataques de día cero y vectores avanzados.</p>
+                  <div className="flex items-center justify-between mb-6">
+                    <div
+                      className={`flex h-12 w-12 items-center justify-center rounded-xl ${
+                        ACCENT_BADGE[service.accent]
+                      } transition-transform group-hover:scale-110`}
+                    >
+                      <Icon name={service.icon} className="h-6 w-6" />
+                    </div>
+                    {service.badge && (
+                      <span
+                        className={`rounded-full ${
+                          service.accent === "primary"
+                            ? "bg-primary/10 text-primary"
+                            : "bg-neutral text-black"
+                        } px-3 py-1 font-label text-xs font-semibold`}
+                      >
+                        {service.badge}
+                      </span>
+                    )}
+                  </div>
+                  <h4 className="font-headline text-xl font-bold text-black mb-3">
+                    {service.title}
+                  </h4>
+                  <p
+                    className={`font-body text-sm text-black leading-relaxed ${
+                      service.layout === "wide" ? "max-w-2xl" : "mb-6"
+                    }`}
+                  >
+                    {service.description}
+                  </p>
                 </div>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="font-label text-xs font-bold text-secondary">02</span>
-                <div>
-                  <h5 className="font-headline text-sm font-semibold text-black">Análisis de Código Estático/Dinámico</h5>
-                  <p className="font-body text-xs text-black">Escaneo automatizado de vulnerabilidades en CI/CD.</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Card 2: 24/7 Threat Monitoring (Span 1) */}
-          <div className="group rounded-2xl border border-neutral bg-neutral/30 p-8 shadow-sm transition-all duration-300 hover:border-tertiary/40 hover:shadow-md flex flex-col justify-between">
-            <div>
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary/10 text-tertiary transition-transform group-hover:scale-110">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+                {/* Terminal Mockup (Monitoreo Continuo) */}
+                {isTerminalMockup && (
+                  <div className="rounded-xl border border-neutral bg-white p-4 font-label text-xs space-y-1 shadow-inner">
+                    {service.features && service.features.length > 0 ? (
+                      service.features.map((feature, idx) => (
+                        <div
+                          key={feature.id || idx}
+                          className={`${ACCENT_TEXT[feature.accent]} ${
+                            feature.accent === "primary" ? "font-bold" : ""
+                          }`}
+                        >
+                          {feature.marker} {feature.label}
+                        </div>
+                      ))
+                    ) : (
+                      <>
+                        <div className="text-primary font-bold">&gt; _SOC_RADAR: ACTIVO</div>
+                        <div className="text-black">TRAFFIC_HEALTH: 100%</div>
+                        <div className="text-secondary font-semibold">
+                          ANOMALIES_DETECTED: 0
+                        </div>
+                      </>
+                    )}
+                  </div>
+                )}
+
+                {/* Features with descriptions (Auditorías) */}
+                {!isTerminalMockup &&
+                  service.features &&
+                  service.features.length > 0 &&
+                  hasFeatureDescriptions && (
+                    <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 border-t border-neutral pt-6">
+                      {service.features.map((feature, idx) => (
+                        <div key={feature.id || idx} className="flex items-start gap-2">
+                          {feature.marker && (
+                            <span
+                              className={`font-label text-xs font-bold ${
+                                ACCENT_TEXT[feature.accent]
+                              }`}
+                            >
+                              {feature.marker}
+                            </span>
+                          )}
+                          <div>
+                            <h5 className="font-headline text-sm font-semibold text-black">
+                              {feature.label}
+                            </h5>
+                            {feature.description && (
+                              <p className="font-body text-xs text-black">
+                                {feature.description}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                {/* Badge at bottom (Protección de datos) */}
+                {!isTerminalMockup &&
+                  (!service.features || service.features.length === 0) &&
+                  (!service.tags || service.tags.length === 0) &&
+                  service.badge && (
+                    <div className="mt-6 border-t border-neutral pt-4 font-label text-xs text-black">
+                      {service.badge}
+                    </div>
+                  )}
+
+                {/* Tags (Respuesta a incidentes) */}
+                {service.tags && service.tags.length > 0 && (
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {service.tags.map((tag, idx) => (
+                      <span
+                        key={tag.id || idx}
+                        className="rounded-lg border border-neutral bg-neutral/60 px-3 py-1.5 font-label text-xs font-medium text-black"
+                      >
+                        {tag.label}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
-              <h4 className="font-headline text-xl font-bold text-black mb-3">
-                Monitoreo Continuo 24/7
-              </h4>
-              <p className="font-body text-sm text-black leading-relaxed mb-6">
-                Análisis en tiempo real del tráfico de red mediante modelos de detección de anomalías para neutralizar intrusiones al instante.
-              </p>
-            </div>
-
-            {/* Terminal Mockup */}
-            <div className="rounded-xl border border-neutral bg-white p-4 font-label text-xs space-y-1 shadow-inner">
-              <div className="text-primary font-bold">&gt; _SOC_RADAR: ACTIVO</div>
-              <div className="text-black">TRAFFIC_HEALTH: 100%</div>
-              <div className="text-secondary font-semibold">ANOMALIES_DETECTED: 0</div>
-            </div>
-          </div>
-
-          {/* Card 3: Data Protection & Zero-Trust */}
-          <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-secondary/40 hover:shadow-md flex flex-col justify-between">
-            <div>
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary transition-transform group-hover:scale-110">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <h4 className="font-headline text-xl font-bold text-black mb-3">
-                Protección de Datos & Cifrado
-              </h4>
-              <p className="font-body text-sm text-black leading-relaxed">
-                Cifrado de extremo a extremo en tránsito (TLS 1.3) y en reposo (AES-256). Respaldos inmutables y controles de acceso basados en roles (RBAC).
-              </p>
-            </div>
-            <div className="mt-6 border-t border-neutral pt-4 font-label text-xs text-black">
-              Cifrado AES-256 + HSM
-            </div>
-          </div>
-
-          {/* Card 4: Respuesta Rápida a Incidentes (Span 2) */}
-          <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md md:col-span-2 flex flex-col justify-between">
-            <div>
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              <h4 className="font-headline text-xl font-bold text-black mb-3">
-                Respuesta a Incidentes con SLA Garantizado
-              </h4>
-              <p className="font-body text-sm text-black leading-relaxed max-w-2xl">
-                Equipo de respuesta ante incidentes (CSIRT) de élite disponible con tiempos de respuesta contractualmente garantizados para contener, aislar y erradicar cualquier intento de vulneración.
-              </p>
-            </div>
-
-            <div className="mt-6 flex flex-wrap gap-2">
-              <span className="rounded-lg border border-neutral bg-neutral/60 px-3 py-1.5 font-label text-xs font-medium text-black">
-                Tiempo de Respuesta &lt; 15 min
-              </span>
-              <span className="rounded-lg border border-neutral bg-neutral/60 px-3 py-1.5 font-label text-xs font-medium text-black">
-                Análisis Forense Digital
-              </span>
-              <span className="rounded-lg border border-neutral bg-neutral/60 px-3 py-1.5 font-label text-xs font-medium text-black">
-                Recuperación ante Desastres (DRP)
-              </span>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
 
-      {/* Security Methodology */}
+      {/* Security Methodology / Lifecycle */}
       <section className="rounded-3xl border border-neutral bg-neutral/30 p-8 sm:p-12">
         <div className="mb-10 text-center">
           <span className="font-label text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 inline-block">
-            Proceso de Endurecimiento
+            {lifecycleEyebrow}
           </span>
           <h3 className="font-headline text-2xl font-bold text-black sm:text-3xl">
-            Ciclo de Vida de Seguridad Defensiva
+            {lifecycleTitle}
           </h3>
-          <p className="mx-auto mt-2 max-w-xl font-body text-sm text-black sm:text-base">
-            Cómo aseguramos que cada capa de tu infraestructura sea impenetrable y resiliente.
-          </p>
+          {lifecycleDescription && (
+            <p className="mx-auto mt-2 max-w-xl font-body text-sm text-black sm:text-base">
+              {lifecycleDescription}
+            </p>
+          )}
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="rounded-2xl border border-neutral bg-white p-6 shadow-sm">
-            <div className="font-headline text-2xl font-black text-primary mb-2">01</div>
-            <h4 className="font-headline text-base font-bold text-black mb-2">Mapeo de Superficie</h4>
-            <p className="font-body text-xs text-black leading-relaxed">
-              Identificación y evaluación de todos los activos, APIs y puntos de entrada expuestos.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-neutral bg-white p-6 shadow-sm">
-            <div className="font-headline text-2xl font-black text-tertiary mb-2">02</div>
-            <h4 className="font-headline text-base font-bold text-black mb-2">Simulación de Ataque</h4>
-            <p className="font-body text-xs text-black leading-relaxed">
-              Ejecución de pruebas intrusivas controladas para validar las defensas existentes.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-neutral bg-white p-6 shadow-sm">
-            <div className="font-headline text-2xl font-black text-secondary mb-2">03</div>
-            <h4 className="font-headline text-base font-bold text-black mb-2">Remediación & Hardening</h4>
-            <p className="font-body text-xs text-black leading-relaxed">
-              Aplicación de parches de arquitectura, segmentación de redes y políticas Zero-Trust.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-neutral bg-white p-6 shadow-sm">
-            <div className="font-headline text-2xl font-black text-primary mb-2">04</div>
-            <h4 className="font-headline text-base font-bold text-black mb-2">Monitoreo & Telemetría</h4>
-            <p className="font-body text-xs text-black leading-relaxed">
-              Supervisión continua con alertas automáticas y auditorías periódicas de cumplimiento.
-            </p>
-          </div>
+          {stepsList.map((step) => (
+            <div
+              key={step.id || step.stepNumber}
+              className="rounded-2xl border border-neutral bg-white p-6 shadow-sm"
+            >
+              <div
+                className={`font-headline text-2xl font-black ${
+                  ACCENT_TEXT[step.accent]
+                } mb-2`}
+              >
+                {step.stepNumber}
+              </div>
+              <h4 className="font-headline text-base font-bold text-black mb-2">
+                {step.title}
+              </h4>
+              <p className="font-body text-xs text-black leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
     </div>

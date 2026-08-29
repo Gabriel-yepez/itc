@@ -4,6 +4,12 @@ import { useState, useSyncExternalStore } from "react";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import SecurityServices from "@/components/SecurityServices";
 import SoftwareServices from "@/components/SoftwareServices";
+import type {
+  Certification,
+  MethodologyStep,
+  Service,
+  ServicesPage,
+} from "@/lib/cms/types";
 
 function subscribeToHash(callback: () => void) {
   window.addEventListener("hashchange", callback);
@@ -18,12 +24,31 @@ function getServerSnapshot() {
   return "";
 }
 
-export default function ServicesTabs() {
+export default function ServicesTabs({
+  servicesPage,
+  softwareServices,
+  securityServices,
+  devMethodologySteps,
+  securityMethodologySteps,
+  certifications,
+}: {
+  servicesPage?: ServicesPage | null;
+  softwareServices?: Service[];
+  securityServices?: Service[];
+  devMethodologySteps?: MethodologyStep[];
+  securityMethodologySteps?: MethodologyStep[];
+  certifications?: Certification[];
+}) {
   const hash = useSyncExternalStore(subscribeToHash, getHashSnapshot, getServerSnapshot);
   const [userTab, setUserTab] = useState<number | null>(null);
 
   const hashTab = hash.includes("seguridad") || hash.includes("security") ? 1 : 0;
   const currentTab = userTab ?? hashTab;
+
+  const softwareTabLabel =
+    servicesPage?.softwareTabLabel ?? "Desarrollo & Software";
+  const securityTabLabel =
+    servicesPage?.securityTabLabel ?? "Ciberseguridad & Protección";
 
   return (
     <TabGroup
@@ -58,7 +83,7 @@ export default function ServicesTabs() {
                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
               />
             </svg>
-            <span>Desarrollo & Software</span>
+            <span>{softwareTabLabel}</span>
           </Tab>
 
           {/* Tab 2: Seguridad */}
@@ -85,7 +110,7 @@ export default function ServicesTabs() {
                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
               />
             </svg>
-            <span>Ciberseguridad & Protección</span>
+            <span>{securityTabLabel}</span>
           </Tab>
         </TabList>
       </div>
@@ -93,10 +118,24 @@ export default function ServicesTabs() {
       {/* Tab Panels */}
       <TabPanels>
         <TabPanel className="focus:outline-none transition-opacity duration-300">
-          <SoftwareServices />
+          <SoftwareServices
+            hero={servicesPage?.softwareHero}
+            heading={servicesPage?.softwareHeading}
+            services={softwareServices}
+            methodologyHeading={servicesPage?.methodologyHeading}
+            methodologySteps={devMethodologySteps}
+          />
         </TabPanel>
         <TabPanel className="focus:outline-none transition-opacity duration-300">
-          <SecurityServices />
+          <SecurityServices
+            hero={servicesPage?.securityHero}
+            certificationsTitle={servicesPage?.certificationsTitle}
+            certifications={certifications}
+            heading={servicesPage?.securityHeading}
+            services={securityServices}
+            lifecycleHeading={servicesPage?.securityLifecycleHeading}
+            methodologySteps={securityMethodologySteps}
+          />
         </TabPanel>
       </TabPanels>
     </TabGroup>

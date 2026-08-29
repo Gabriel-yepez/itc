@@ -1,28 +1,32 @@
 import type { Metadata } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { seo } from "@/lib/seo";
+import { buildMetadata } from "@/lib/cms/metadata";
+import { getContactPage } from "@/lib/cms/queries";
 
-export const metadata: Metadata = {
-  title: seo.pages.contacto.title,
-  description: seo.pages.contacto.description,
-  keywords: seo.pages.contacto.keywords,
-  alternates: {
-    canonical: "/contacto",
-  },
-  openGraph: {
-    ...seo.openGraph,
-    ...seo.pages.contacto.openGraph,
-  },
-  twitter: {
-    ...seo.twitter,
-    title: seo.pages.contacto.title,
-    description: seo.pages.contacto.description,
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  "use cache";
+  cacheLife("hourly");
+  cacheTag("cms", "cms:contact-page");
+  const page = await getContactPage();
+  return buildMetadata(page?.seo ?? null, "/contacto");
+}
 
-export default function ContactoPage() {
+export default async function ContactoPage() {
+  const contactPage = await getContactPage();
+
+  const heading = contactPage?.heading;
+  const eyebrow = heading?.eyebrow ?? "Ponte en Contacto";
+  const title = heading?.title ?? "Hablemos de tu Próximo Desafío";
+  const description =
+    heading?.description ??
+    "Nuestros arquitectos de software y especialistas en seguridad están listos para colaborar contigo. Completa el formulario y te responderemos con precisión técnica.";
+
+  const office = contactPage?.office;
+  const channel = contactPage?.channel;
+
   return (
     <div className="flex min-h-screen flex-col bg-white font-body">
       <Navbar />
@@ -47,17 +51,22 @@ export default function ContactoPage() {
                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                   />
                 </svg>
-                Ponte en Contacto
+                {eyebrow}
               </div>
               <h1 className="font-headline text-3xl font-bold tracking-tight text-black sm:text-4xl lg:text-5xl mb-4">
-                Hablemos de tu Próximo Desafío
+                {title}
               </h1>
               <p className="font-body text-base text-black sm:text-lg leading-relaxed">
-                Nuestros arquitectos de software y especialistas en seguridad están listos para colaborar contigo. Completa el formulario y te responderemos con precisión técnica.
+                {description}
               </p>
             </div>
 
-            <ContactForm />
+            <ContactForm
+              inquiryOptions={contactPage?.inquiryOptions}
+              submitLabel={contactPage?.submitLabel}
+              successTitle={contactPage?.successTitle}
+              successMessage={contactPage?.successMessage}
+            />
           </section>
 
           {/* Right Column: Info Cards & Map/Tech Visualization */}
@@ -87,12 +96,14 @@ export default function ContactoPage() {
                   </svg>
                 </div>
                 <h2 className="font-label text-xs font-bold uppercase tracking-wider text-black mb-2">
-                  Sede Central
+                  {office?.label ?? "Sede Central"}
                 </h2>
                 <div className="font-body text-sm text-black space-y-1">
-                  <p>100 Cyber Way, Suite 500</p>
-                  <p>San Francisco, CA 94105</p>
-                  <p className="font-label text-xs text-black">Operaciones Globales & Remoto</p>
+                  <p>{office?.addressLine1 ?? "100 Cyber Way, Suite 500"}</p>
+                  {office?.addressLine2 && <p>{office.addressLine2}</p>}
+                  {office?.note && (
+                    <p className="font-label text-xs text-black">{office.note}</p>
+                  )}
                 </div>
               </div>
 
@@ -114,12 +125,14 @@ export default function ContactoPage() {
                   </svg>
                 </div>
                 <h2 className="font-label text-xs font-bold uppercase tracking-wider text-black mb-2">
-                  Contacto Directo
+                  {channel?.label ?? "Contacto Directo"}
                 </h2>
                 <div className="font-body text-sm text-black space-y-1">
-                  <p className="font-semibold">+1 (800) 555-0199</p>
-                  <p>contacto@itcservices.com</p>
-                  <p className="font-label text-xs text-black">Lun - Vie, 9:00 - 18:00 EST</p>
+                  {channel?.phone && <p className="font-semibold">{channel.phone}</p>}
+                  {channel?.email && <p>{channel.email}</p>}
+                  {channel?.hours && (
+                    <p className="font-label text-xs text-black">{channel.hours}</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -128,7 +141,7 @@ export default function ContactoPage() {
             <div className="relative min-h-[320px] w-full rounded-2xl border border-neutral bg-neutral/20 overflow-hidden flex flex-col justify-between p-6 shadow-sm">
               {/* Isometric Map Background Pattern */}
               <div className="absolute inset-0 opacity-25 bg-[radial-gradient(#7c3aed_1px,transparent_1px)] [background-size:16px_16px]" />
-              
+
               {/* Tech Schematic Elements */}
               <div className="relative z-10 flex justify-between items-start">
                 <div className="flex items-center gap-2">
@@ -150,7 +163,13 @@ export default function ContactoPage() {
                   <div className="h-28 w-28 rounded-full border border-dashed border-primary/40 animate-[spin_30s_linear_infinite]" />
                   <div className="absolute h-18 w-18 rounded-full border border-secondary/40 animate-[spin_20s_linear_infinite_reverse]" />
                   <div className="absolute flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg">
-                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>

@@ -1,8 +1,48 @@
 import Link from "next/link";
 import DevelopmentMethodology from "@/components/DevelopmentMethodology";
 import DevelopmentServices from "@/components/DevelopmentServices";
+import { Icon } from "@/components/icons";
+import type {
+  CmsHero,
+  CmsSectionHeading,
+  MethodologyStep,
+  Service,
+} from "@/lib/cms/types";
 
-export default function SoftwareServices() {
+export default function SoftwareServices({
+  hero,
+  heading,
+  services,
+  methodologyHeading,
+  methodologySteps,
+}: {
+  hero?: CmsHero | null;
+  heading?: CmsSectionHeading | null;
+  services?: Service[];
+  methodologyHeading?: CmsSectionHeading | null;
+  methodologySteps?: MethodologyStep[];
+}) {
+  const eyebrow = hero?.eyebrow ?? "Excelencia en Ingeniería";
+  const title = hero?.title ?? "Ingeniería de Software de Precisión para Escalar.";
+  const description =
+    hero?.description ??
+    "Diseñamos, construimos y desplegamos aplicaciones de alto rendimiento con seguridad integrada en cada capa. Desde robustas arquitecturas cloud hasta experiencias móviles fluidas.";
+  const primaryLink = hero?.primaryLink ?? {
+    label: "Solicitar Cotización",
+    href: "/contacto",
+    variant: "primary" as const,
+  };
+  const secondaryLink = hero?.secondaryLink ?? {
+    label: "Ver Casos de Estudio",
+    href: "/proyectos",
+    variant: "secondary" as const,
+  };
+  const panelTitle = hero?.panelTitle ?? "Infraestructura & Software";
+  const panelDescription =
+    hero?.panelDescription ??
+    "Arquitecturas distribuidas, Zero-Trust nativo y desarrollo de ciclo completo.";
+  const panelIcon = hero?.panelIcon ?? "code";
+
   return (
     <div className="w-full space-y-16">
       {/* Header Hero Section */}
@@ -24,30 +64,34 @@ export default function SoftwareServices() {
                   d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              Excelencia en Ingeniería
+              {eyebrow}
             </div>
 
             <h2 className="font-headline text-4xl font-black tracking-tight text-black sm:text-5xl lg:text-6xl">
-              Ingeniería de Software de Precisión para Escalar.
+              {title}
             </h2>
 
             <p className="mt-6 max-w-2xl font-body text-base text-black sm:text-lg leading-relaxed">
-              Diseñamos, construimos y desplegamos aplicaciones de alto rendimiento con seguridad integrada en cada capa. Desde robustas arquitecturas cloud hasta experiencias móviles fluidas.
+              {description}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/contacto"
-                className="rounded-xl bg-primary px-6 py-3 font-body text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
-              >
-                Solicitar Cotización
-              </Link>
-              <Link
-                href="/proyectos"
-                className="rounded-xl border border-neutral bg-white px-6 py-3 font-body text-sm font-semibold text-black transition-colors hover:bg-neutral/60"
-              >
-                Ver Casos de Estudio
-              </Link>
+              {primaryLink && (
+                <Link
+                  href={primaryLink.href}
+                  className="rounded-xl bg-primary px-6 py-3 font-body text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
+                >
+                  {primaryLink.label}
+                </Link>
+              )}
+              {secondaryLink && (
+                <Link
+                  href={secondaryLink.href}
+                  className="rounded-xl border border-neutral bg-white px-6 py-3 font-body text-sm font-semibold text-black transition-colors hover:bg-neutral/60"
+                >
+                  {secondaryLink.label}
+                </Link>
+              )}
             </div>
           </div>
 
@@ -56,25 +100,13 @@ export default function SoftwareServices() {
               <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#7c3aed_1px,transparent_1px)] [background-size:20px_20px]" />
               <div className="relative z-10 flex flex-col items-center">
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-white shadow-md">
-                  <svg
-                    className="h-8 w-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                    />
-                  </svg>
+                  <Icon name={panelIcon} className="h-8 w-8" />
                 </div>
                 <span className="font-headline text-xl font-bold text-black">
-                  Infraestructura & Software
+                  {panelTitle}
                 </span>
                 <span className="mt-2 font-label text-xs text-black max-w-xs">
-                  Arquitecturas distribuidas, Zero-Trust nativo y desarrollo de ciclo completo.
+                  {panelDescription}
                 </span>
               </div>
             </div>
@@ -83,10 +115,10 @@ export default function SoftwareServices() {
       </section>
 
       {/* Development Services Bento Grid */}
-      <DevelopmentServices />
+      <DevelopmentServices heading={heading} services={services} />
 
       {/* Development Methodology */}
-      <DevelopmentMethodology />
+      <DevelopmentMethodology heading={methodologyHeading} steps={methodologySteps} />
     </div>
   );
 }
