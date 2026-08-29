@@ -627,7 +627,9 @@ export interface ApiCertificationCertification
   };
   attributes: {
     badge: Schema.Attribute.Media<'images'>;
-    code: Schema.Attribute.String & Schema.Attribute.Required;
+    code: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -639,7 +641,7 @@ export interface ApiCertificationCertification
       'api::certification.certification'
     > &
       Schema.Attribute.Private;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<100>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -671,49 +673,15 @@ export interface ApiClientClient extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images'>;
-    name: Schema.Attribute.String & Schema.Attribute.Required;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    name: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<100>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     website: Schema.Attribute.String;
-  };
-}
-
-export interface ApiCompetencyCompetency extends Struct.CollectionTypeSchema {
-  collectionName: 'competencies';
-  info: {
-    description: 'Competencias principales destacadas en tarjetas';
-    displayName: 'Competency';
-    pluralName: 'competencies';
-    singularName: 'competency';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    accent: Schema.Attribute.Enumeration<
-      ['primary', 'secondary', 'tertiary', 'neutral']
-    > &
-      Schema.Attribute.DefaultTo<'primary'>;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
-    icon: Schema.Attribute.String;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::competency.competency'
-    > &
-      Schema.Attribute.Private;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
-    publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
   };
 }
 
@@ -871,10 +839,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   attributes: {
     about: Schema.Attribute.Component<'sections.about', false>;
     clientsHeading: Schema.Attribute.Component<'ui.section-heading', false>;
-    competenciesHeading: Schema.Attribute.Component<
-      'ui.section-heading',
-      false
-    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -954,7 +918,7 @@ export interface ApiMethodologyStepMethodologyStep
       'api::methodology-step.methodology-step'
     > &
       Schema.Attribute.Private;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<100>;
     publishedAt: Schema.Attribute.DateTime;
     stepNumber: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -997,7 +961,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     metric: Schema.Attribute.Component<'ui.metric', false>;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<100>;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
@@ -1042,6 +1006,38 @@ export interface ApiProjectsPageProjectsPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSecurityPageSecurityPage extends Struct.SingleTypeSchema {
+  collectionName: 'security_pages';
+  info: {
+    description: 'Contenido de /seguridad: enfoque Zero-Trust, pilares y CTA de auditor\u00EDa';
+    displayName: 'Security Page';
+    pluralName: 'security-pages';
+    singularName: 'security-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'ui.cta', false>;
+    heading: Schema.Attribute.Component<'ui.section-heading', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::security-page.security-page'
+    > &
+      Schema.Attribute.Private;
+    pillars: Schema.Attribute.Component<'ui.feature', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Struct.CollectionTypeSchema {
   collectionName: 'services';
   info: {
@@ -1076,7 +1072,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       'api::service.service'
     > &
       Schema.Attribute.Private;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<100>;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
@@ -1654,7 +1650,6 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::certification.certification': ApiCertificationCertification;
       'api::client.client': ApiClientClient;
-      'api::competency.competency': ApiCompetencyCompetency;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::global.global': ApiGlobalGlobal;
@@ -1663,6 +1658,7 @@ declare module '@strapi/strapi' {
       'api::methodology-step.methodology-step': ApiMethodologyStepMethodologyStep;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;
+      'api::security-page.security-page': ApiSecurityPageSecurityPage;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;

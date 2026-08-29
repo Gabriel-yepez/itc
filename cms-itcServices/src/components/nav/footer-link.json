@@ -9,7 +9,11 @@
   "attributes": {
     "group": {
       "type": "enumeration",
-      "enum": ["servicios", "empresa", "legal"],
+      "enum": [
+        "servicios",
+        "empresa",
+        "legal"
+      ],
       "required": true
     },
     "label": {
@@ -22,7 +26,8 @@
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 100,
+      "description": "Menor = antes. Las filas nuevas nacen en 100 para quedar al final; ajústalo para reordenar."
     }
   }
 }

@@ -6,23 +6,95 @@
     "tagline": "Precisión · Autoridad · Seguridad",
     "footerAbout": "Soluciones de ingeniería de software, arquitectura cloud y ciberseguridad para empresas que escalan.",
     "navLinks": [
-      { "label": "Servicios", "href": "/servicios", "variant": "ghost" },
-      { "label": "Proyectos", "href": "/proyectos", "variant": "ghost" },
-      { "label": "Contacto", "href": "/contacto", "variant": "ghost" }
+      {
+        "label": "Servicios",
+        "href": "/servicios",
+        "variant": "ghost"
+      },
+      {
+        "label": "Proyectos",
+        "href": "/proyectos",
+        "variant": "ghost"
+      },
+      {
+        "label": "Contacto",
+        "href": "/contacto",
+        "variant": "ghost"
+      }
     ],
     "footerLinks": [
-      { "group": "servicios", "label": "Aplicaciones Web", "href": "/servicios#web", "order": 1 },
-      { "group": "servicios", "label": "Cloud & Backend", "href": "/servicios#cloud", "order": 2 },
-      { "group": "servicios", "label": "Desarrollo Móvil", "href": "/servicios#mobile", "order": 3 },
-      { "group": "servicios", "label": "DevSecOps", "href": "/servicios#devsecops", "order": 4 },
-      { "group": "empresa", "label": "Quiénes somos", "href": "/#quienes-somos", "order": 1 },
-      { "group": "empresa", "label": "Nuestros clientes", "href": "/#clientes", "order": 2 },
-      { "group": "empresa", "label": "Proyectos", "href": "/proyectos", "order": 3 },
-      { "group": "empresa", "label": "Metodología", "href": "/servicios#metodologia", "order": 4 },
-      { "group": "empresa", "label": "Contacto", "href": "/contacto", "order": 5 },
-      { "group": "legal", "label": "Política de Privacidad", "href": "/privacidad", "order": 1 },
-      { "group": "legal", "label": "Términos de Servicio", "href": "/terminos", "order": 2 },
-      { "group": "legal", "label": "Auditoría de Seguridad", "href": "/seguridad", "order": 3 }
+      {
+        "group": "servicios",
+        "label": "Aplicaciones Web",
+        "href": "/servicios#web",
+        "order": 1
+      },
+      {
+        "group": "servicios",
+        "label": "Cloud & Backend",
+        "href": "/servicios#cloud",
+        "order": 2
+      },
+      {
+        "group": "servicios",
+        "label": "Desarrollo Móvil",
+        "href": "/servicios#mobile",
+        "order": 3
+      },
+      {
+        "group": "servicios",
+        "label": "DevSecOps",
+        "href": "/servicios#devsecops",
+        "order": 4
+      },
+      {
+        "group": "empresa",
+        "label": "Quiénes somos",
+        "href": "/#quienes-somos",
+        "order": 1
+      },
+      {
+        "group": "empresa",
+        "label": "Nuestros clientes",
+        "href": "/#clientes",
+        "order": 2
+      },
+      {
+        "group": "empresa",
+        "label": "Proyectos",
+        "href": "/proyectos",
+        "order": 3
+      },
+      {
+        "group": "empresa",
+        "label": "Metodología",
+        "href": "/servicios#metodologia",
+        "order": 4
+      },
+      {
+        "group": "empresa",
+        "label": "Contacto",
+        "href": "/contacto",
+        "order": 5
+      },
+      {
+        "group": "legal",
+        "label": "Política de Privacidad",
+        "href": "/privacidad",
+        "order": 1
+      },
+      {
+        "group": "legal",
+        "label": "Términos de Servicio",
+        "href": "/terminos",
+        "order": 2
+      },
+      {
+        "group": "legal",
+        "label": "Auditoría de Seguridad",
+        "href": "/seguridad",
+        "order": 3
+      }
     ],
     "office": {
       "label": "Sede Central",
@@ -43,13 +115,16 @@
       "canonicalURL": "/"
     }
   },
-
   "home-page": {
     "hero": {
       "title": "Transforma tu negocio a esta nueva era digital",
       "description": "Llevamos más de 10 años creando soluciones de tecnología y acompañando a empresas en su crecimiento.",
       "accent": "primary",
-      "primaryLink": { "label": "Contáctanos", "href": "/contacto", "variant": "primary" }
+      "primaryLink": {
+        "label": "Contáctanos",
+        "href": "/contacto",
+        "variant": "primary"
+      }
     },
     "about": {
       "eyebrow": "Quiénes Somos",
@@ -57,20 +132,22 @@
       "anchor": "quienes-somos",
       "body": "Somos una firma de ingeniería de software especializada en resolver problemas complejos de negocio mediante tecnología de vanguardia. Nuestro equipo de arquitectos, desarrolladores y expertos en seguridad trabaja como una extensión de tu organización.\n\nNos alejamos de las soluciones genéricas. Construimos plataformas escalables, infraestructuras resilientes y aplicaciones de alto rendimiento diseñadas meticulosamente para las necesidades específicas de tu empresa, garantizando la seguridad (Zero-Trust) desde la primera línea de código.",
       "stats": [
-        { "value": "10+", "label": "Años de Experiencia", "accent": "primary" },
-        { "value": "100%", "label": "Compromiso con la Calidad", "accent": "secondary" }
+        {
+          "value": "10+",
+          "label": "Años de Experiencia",
+          "accent": "primary"
+        },
+        {
+          "value": "100%",
+          "label": "Compromiso con la Calidad",
+          "accent": "secondary"
+        }
       ]
     },
     "clientsHeading": {
       "title": "Empresas que confían en nosotros",
       "description": "Nuestras soluciones impulsan la innovación y la eficiencia en diversas industrias, ayudando a nuestros clientes a alcanzar sus objetivos tecnológicos más ambiciosos.",
       "align": "center"
-    },
-    "competenciesHeading": {
-      "title": "Competencias Principales",
-      "description": "Equipos de desarrollo especializados dedicados a resolver desafíos técnicos complejos con soluciones elegantes, seguras y escalables.",
-      "eyebrow": "Ingeniería de Software",
-      "accent": "tertiary"
     },
     "seo": {
       "metaTitle": "Itc Services | Ingeniería de Software & Soluciones Tecnológicas",
@@ -79,7 +156,6 @@
       "canonicalURL": "/"
     }
   },
-
   "services-page": {
     "softwareTabLabel": "Desarrollo & Software",
     "securityTabLabel": "Ciberseguridad & Protección",
@@ -91,8 +167,16 @@
       "panelTitle": "Infraestructura & Software",
       "panelDescription": "Arquitecturas distribuidas, Zero-Trust nativo y desarrollo de ciclo completo.",
       "panelIcon": "code",
-      "primaryLink": { "label": "Solicitar Cotización", "href": "/contacto", "variant": "primary" },
-      "secondaryLink": { "label": "Ver Casos de Estudio", "href": "/proyectos", "variant": "secondary" }
+      "primaryLink": {
+        "label": "Solicitar Cotización",
+        "href": "/contacto",
+        "variant": "primary"
+      },
+      "secondaryLink": {
+        "label": "Ver Casos de Estudio",
+        "href": "/proyectos",
+        "variant": "secondary"
+      }
     },
     "softwareHeading": {
       "eyebrow": "Ingeniería de Software",
@@ -115,8 +199,16 @@
       "panelTitle": "Infraestructura Blindada",
       "panelDescription": "Monitoreo 24/7 en tiempo real",
       "panelIcon": "shield",
-      "primaryLink": { "label": "Solicitar Auditoría", "href": "/contacto", "variant": "primary" },
-      "secondaryLink": { "label": "Ver Informe Técnico", "href": "/seguridad", "variant": "secondary" }
+      "primaryLink": {
+        "label": "Solicitar Auditoría",
+        "href": "/contacto",
+        "variant": "primary"
+      },
+      "secondaryLink": {
+        "label": "Ver Informe Técnico",
+        "href": "/seguridad",
+        "variant": "secondary"
+      }
     },
     "certificationsTitle": "Estándares de Cumplimiento & Certificaciones",
     "securityHeading": {
@@ -137,8 +229,16 @@
       "title": "¿Listo para construir o asegurar infraestructura de clase mundial?",
       "description": "Cuéntanos tus requerimientos y nuestro equipo de arquitectos, desarrolladores y especialistas en ciberseguridad diseñará la solución ideal.",
       "accent": "primary",
-      "primaryLink": { "label": "Contactar Especialista", "href": "/contacto", "variant": "primary" },
-      "secondaryLink": { "label": "Ver Casos de Éxito", "href": "/proyectos", "variant": "secondary" }
+      "primaryLink": {
+        "label": "Contactar Especialista",
+        "href": "/contacto",
+        "variant": "primary"
+      },
+      "secondaryLink": {
+        "label": "Ver Casos de Éxito",
+        "href": "/proyectos",
+        "variant": "secondary"
+      }
     },
     "seo": {
       "metaTitle": "Servicios de Desarrollo e Ingeniería de Software",
@@ -147,7 +247,6 @@
       "canonicalURL": "/servicios"
     }
   },
-
   "projects-page": {
     "heading": {
       "eyebrow": "Portafolio & Casos de Éxito",
@@ -156,18 +255,42 @@
       "accent": "primary"
     },
     "stats": [
-      { "value": "+100", "label": "Proyectos Entregados", "accent": "primary" },
-      { "value": "99.99%", "label": "Uptime Garantizado", "accent": "secondary" },
-      { "value": "Zero-Trust", "label": "Arquitectura Nativa", "accent": "tertiary" },
-      { "value": "10+ Años", "label": "Experiencia Técnica", "accent": "primary" }
+      {
+        "value": "+100",
+        "label": "Proyectos Entregados",
+        "accent": "primary"
+      },
+      {
+        "value": "99.99%",
+        "label": "Uptime Garantizado",
+        "accent": "secondary"
+      },
+      {
+        "value": "Zero-Trust",
+        "label": "Arquitectura Nativa",
+        "accent": "tertiary"
+      },
+      {
+        "value": "10+ Años",
+        "label": "Experiencia Técnica",
+        "accent": "primary"
+      }
     ],
     "cta": {
       "eyebrow": "Comencemos Hoy",
       "title": "¿Tienes un desafío técnico o proyecto que deseas construir?",
       "description": "Diseñamos soluciones personalizadas que combinan precisión de ingeniería, arquitectura moderna y seguridad de primer nivel.",
       "accent": "secondary",
-      "primaryLink": { "label": "Solicitar Propuesta", "href": "/contacto", "variant": "primary" },
-      "secondaryLink": { "label": "Explorar Servicios", "href": "/servicios", "variant": "secondary" }
+      "primaryLink": {
+        "label": "Solicitar Propuesta",
+        "href": "/contacto",
+        "variant": "primary"
+      },
+      "secondaryLink": {
+        "label": "Explorar Servicios",
+        "href": "/servicios",
+        "variant": "secondary"
+      }
     },
     "seo": {
       "metaTitle": "Proyectos y Casos de Éxito",
@@ -176,7 +299,6 @@
       "canonicalURL": "/proyectos"
     }
   },
-
   "contact-page": {
     "heading": {
       "eyebrow": "Ponte en Contacto",
@@ -197,11 +319,31 @@
       "hours": "Lun - Vie, 9:00 - 18:00 EST"
     },
     "inquiryOptions": [
-      { "label": "Desarrollo de Software a Medida", "value": "Desarrollo de Software a Medida", "isDefault": true },
-      { "label": "Auditoría de Seguridad & Zero-Trust", "value": "Auditoría de Seguridad & Zero-Trust", "isDefault": false },
-      { "label": "Arquitectura Cloud & DevOps", "value": "Arquitectura Cloud & DevOps", "isDefault": false },
-      { "label": "Aplicaciones Móviles & Web", "value": "Aplicaciones Móviles & Web", "isDefault": false },
-      { "label": "Consulta General", "value": "Consulta General", "isDefault": false }
+      {
+        "label": "Desarrollo de Software a Medida",
+        "value": "Desarrollo de Software a Medida",
+        "isDefault": true
+      },
+      {
+        "label": "Auditoría de Seguridad & Zero-Trust",
+        "value": "Auditoría de Seguridad & Zero-Trust",
+        "isDefault": false
+      },
+      {
+        "label": "Arquitectura Cloud & DevOps",
+        "value": "Arquitectura Cloud & DevOps",
+        "isDefault": false
+      },
+      {
+        "label": "Aplicaciones Móviles & Web",
+        "value": "Aplicaciones Móviles & Web",
+        "isDefault": false
+      },
+      {
+        "label": "Consulta General",
+        "value": "Consulta General",
+        "isDefault": false
+      }
     ],
     "submitLabel": "Enviar Mensaje",
     "successTitle": "¡Mensaje recibido con éxito!",
@@ -213,40 +355,85 @@
       "canonicalURL": "/contacto"
     }
   },
-
-  "clients": [
-    { "name": "GlobalFin", "industry": "Finanzas", "icon": "🏛️", "order": 1 },
-    { "name": "MediTech Health", "industry": "Salud", "icon": "🏥", "order": 2 },
-    { "name": "LogisCorp", "industry": "Logística", "icon": "🚢", "order": 3 },
-    { "name": "EduFuture", "industry": "Educación", "icon": "🎓", "order": 4 },
-    { "name": "RetailConnect", "industry": "E-Commerce", "icon": "🛍️", "order": 5 },
-    { "name": "SecureNet", "industry": "Ciberseguridad", "icon": "🛡️", "order": 6 }
-  ],
-
-  "competencies": [
-    {
-      "title": "Ingeniería Experta",
-      "description": "Bases de código limpias, modulares y escalables diseñadas para entornos empresariales de alta disponibilidad y rendimiento crítico.",
-      "icon": "code",
+  "security-page": {
+    "heading": {
+      "eyebrow": "Seguridad & Cumplimiento",
+      "title": "Auditoría de Seguridad & Enfoque Zero-Trust",
+      "description": "La seguridad no es un añadido posterior en nuestros proyectos: es el pilar central de nuestra arquitectura desde el diseño inicial hasta el despliegue en producción.",
+      "accent": "secondary"
+    },
+    "pillars": [
+      {
+        "label": "Zero-Trust",
+        "description": "Principio de mínimo privilegio, autenticación continua y segmentación estricta en cada capa de la red.",
+        "accent": "primary"
+      },
+      {
+        "label": "DevSecOps Nativo",
+        "description": "Análisis estático (SAST), análisis dinámico (DAST) y escaneo continuo de dependencias en CI/CD.",
+        "accent": "secondary"
+      },
+      {
+        "label": "Cifrado de Extremo a Extremo",
+        "description": "Protección de datos en tránsito (TLS 1.3) y en reposo (AES-256) con gestión granular de claves.",
+        "accent": "tertiary"
+      }
+    ],
+    "cta": {
+      "title": "¿Requieres una auditoría de seguridad o pentesting?",
+      "description": "Nuestros especialistas en ciberseguridad pueden evaluar tu arquitectura actual y formular un plan de endurecimiento técnico.",
       "accent": "primary",
+      "primaryLink": {
+        "label": "Solicitar Auditoría",
+        "href": "/contacto",
+        "variant": "primary"
+      }
+    },
+    "seo": {
+      "metaTitle": "Auditoría de Seguridad & Enfoque Zero-Trust",
+      "metaDescription": "Cómo Itc Services integra seguridad Zero-Trust, DevSecOps y cifrado de extremo a extremo en cada proyecto.",
+      "keywords": "Auditoría de seguridad, Pentesting, Zero-Trust, DevSecOps, Cifrado de extremo a extremo, Hardening de infraestructura",
+      "canonicalURL": "/seguridad"
+    }
+  },
+  "clients": [
+    {
+      "name": "GlobalFin",
+      "industry": "Finanzas",
+      "icon": "🏛️",
       "order": 1
     },
     {
-      "title": "Protección Avanzada",
-      "description": "Arquitectura Zero-Trust implementada por defecto con cifrado de grado militar, escaneo continuo de vulnerabilidades y mitigación proactiva.",
-      "icon": "shield",
-      "accent": "secondary",
+      "name": "MediTech Health",
+      "industry": "Salud",
+      "icon": "🏥",
       "order": 2
     },
     {
-      "title": "Analítica en Tiempo Real",
-      "description": "Observabilidad profunda del rendimiento del sistema, métricas de infraestructura y salud de seguridad mediante paneles unificados de alta densidad.",
-      "icon": "chart",
-      "accent": "tertiary",
+      "name": "LogisCorp",
+      "industry": "Logística",
+      "icon": "🚢",
       "order": 3
+    },
+    {
+      "name": "EduFuture",
+      "industry": "Educación",
+      "icon": "🎓",
+      "order": 4
+    },
+    {
+      "name": "RetailConnect",
+      "industry": "E-Commerce",
+      "icon": "🛍️",
+      "order": 5
+    },
+    {
+      "name": "SecureNet",
+      "industry": "Ciberseguridad",
+      "icon": "🛡️",
+      "order": 6
     }
   ],
-
   "services": [
     {
       "title": "Aplicaciones Web",
@@ -259,9 +446,21 @@
       "layout": "standard",
       "order": 1,
       "features": [
-        { "label": "React / Next.js / Vue", "marker": "✓", "accent": "primary" },
-        { "label": "Micro-frontends", "marker": "✓", "accent": "primary" },
-        { "label": "WebAssembly & Optimización", "marker": "✓", "accent": "primary" }
+        {
+          "label": "React / Next.js / Vue",
+          "marker": "✓",
+          "accent": "primary"
+        },
+        {
+          "label": "Micro-frontends",
+          "marker": "✓",
+          "accent": "primary"
+        },
+        {
+          "label": "WebAssembly & Optimización",
+          "marker": "✓",
+          "accent": "primary"
+        }
       ]
     },
     {
@@ -301,10 +500,18 @@
       "layout": "wide",
       "order": 3,
       "tags": [
-        { "label": "Swift / iOS" },
-        { "label": "Kotlin / Android" },
-        { "label": "React Native" },
-        { "label": "Flutter" }
+        {
+          "label": "Swift / iOS"
+        },
+        {
+          "label": "Kotlin / Android"
+        },
+        {
+          "label": "React Native"
+        },
+        {
+          "label": "Flutter"
+        }
       ]
     },
     {
@@ -355,9 +562,21 @@
       "layout": "standard",
       "order": 2,
       "features": [
-        { "label": "_SOC_RADAR: ACTIVO", "marker": ">", "accent": "primary" },
-        { "label": "TRAFFIC_HEALTH: 100%", "marker": ">", "accent": "neutral" },
-        { "label": "ANOMALIES_DETECTED: 0", "marker": ">", "accent": "secondary" }
+        {
+          "label": "_SOC_RADAR: ACTIVO",
+          "marker": ">",
+          "accent": "primary"
+        },
+        {
+          "label": "TRAFFIC_HEALTH: 100%",
+          "marker": ">",
+          "accent": "neutral"
+        },
+        {
+          "label": "ANOMALIES_DETECTED: 0",
+          "marker": ">",
+          "accent": "secondary"
+        }
       ]
     },
     {
@@ -383,13 +602,18 @@
       "layout": "wide",
       "order": 4,
       "tags": [
-        { "label": "Tiempo de Respuesta < 15 min" },
-        { "label": "Análisis Forense Digital" },
-        { "label": "Recuperación ante Desastres (DRP)" }
+        {
+          "label": "Tiempo de Respuesta < 15 min"
+        },
+        {
+          "label": "Análisis Forense Digital"
+        },
+        {
+          "label": "Recuperación ante Desastres (DRP)"
+        }
       ]
     }
   ],
-
   "projects": [
     {
       "title": "Apex Nexus",
@@ -401,12 +625,23 @@
       "gradient": "from-primary/20 via-primary/5 to-transparent",
       "featured": true,
       "order": 1,
-      "metric": { "label": "Reducción de Riesgos", "value": "94%" },
+      "metric": {
+        "label": "Reducción de Riesgos",
+        "value": "94%"
+      },
       "tags": [
-        { "label": "Zero-Trust" },
-        { "label": "Kubernetes" },
-        { "label": "Go" },
-        { "label": "Next.js" }
+        {
+          "label": "Zero-Trust"
+        },
+        {
+          "label": "Kubernetes"
+        },
+        {
+          "label": "Go"
+        },
+        {
+          "label": "Next.js"
+        }
       ]
     },
     {
@@ -419,12 +654,23 @@
       "gradient": "from-secondary/20 via-secondary/5 to-transparent",
       "featured": true,
       "order": 2,
-      "metric": { "label": "Nodos Monitoreados", "value": "40+ Nodos" },
+      "metric": {
+        "label": "Nodos Monitoreados",
+        "value": "40+ Nodos"
+      },
       "tags": [
-        { "label": "Machine Learning" },
-        { "label": "Python" },
-        { "label": "AWS Edge" },
-        { "label": "Microservicios" }
+        {
+          "label": "Machine Learning"
+        },
+        {
+          "label": "Python"
+        },
+        {
+          "label": "AWS Edge"
+        },
+        {
+          "label": "Microservicios"
+        }
       ]
     },
     {
@@ -437,12 +683,23 @@
       "gradient": "from-tertiary/20 via-tertiary/5 to-transparent",
       "featured": true,
       "order": 3,
-      "metric": { "label": "Latencia de Consulta", "value": "-40%" },
+      "metric": {
+        "label": "Latencia de Consulta",
+        "value": "-40%"
+      },
       "tags": [
-        { "label": "Criptografía" },
-        { "label": "Rust" },
-        { "label": "PostgreSQL" },
-        { "label": "HIPAA" }
+        {
+          "label": "Criptografía"
+        },
+        {
+          "label": "Rust"
+        },
+        {
+          "label": "PostgreSQL"
+        },
+        {
+          "label": "HIPAA"
+        }
       ]
     },
     {
@@ -455,12 +712,23 @@
       "gradient": "from-primary/20 via-tertiary/5 to-transparent",
       "featured": false,
       "order": 4,
-      "metric": { "label": "Disponibilidad", "value": "99.999%" },
+      "metric": {
+        "label": "Disponibilidad",
+        "value": "99.999%"
+      },
       "tags": [
-        { "label": "Cloudflare" },
-        { "label": "Terraform" },
-        { "label": "GCP" },
-        { "label": "Docker" }
+        {
+          "label": "Cloudflare"
+        },
+        {
+          "label": "Terraform"
+        },
+        {
+          "label": "GCP"
+        },
+        {
+          "label": "Docker"
+        }
       ]
     },
     {
@@ -473,12 +741,23 @@
       "gradient": "from-secondary/20 via-primary/5 to-transparent",
       "featured": false,
       "order": 5,
-      "metric": { "label": "Valoración App Stores", "value": "4.9 ★" },
+      "metric": {
+        "label": "Valoración App Stores",
+        "value": "4.9 ★"
+      },
       "tags": [
-        { "label": "React Native" },
-        { "label": "Swift" },
-        { "label": "Kotlin" },
-        { "label": "Biometría" }
+        {
+          "label": "React Native"
+        },
+        {
+          "label": "Swift"
+        },
+        {
+          "label": "Kotlin"
+        },
+        {
+          "label": "Biometría"
+        }
       ]
     },
     {
@@ -491,16 +770,26 @@
       "gradient": "from-tertiary/20 via-secondary/5 to-transparent",
       "featured": false,
       "order": 6,
-      "metric": { "label": "Eventos Procesados", "value": "+10M / seg" },
+      "metric": {
+        "label": "Eventos Procesados",
+        "value": "+10M / seg"
+      },
       "tags": [
-        { "label": "ClickHouse" },
-        { "label": "GraphQL" },
-        { "label": "Tailwind CSS" },
-        { "label": "TypeScript" }
+        {
+          "label": "ClickHouse"
+        },
+        {
+          "label": "GraphQL"
+        },
+        {
+          "label": "Tailwind CSS"
+        },
+        {
+          "label": "TypeScript"
+        }
       ]
     }
   ],
-
   "methodology-steps": [
     {
       "stepNumber": "01",
@@ -567,15 +856,33 @@
       "order": 4
     }
   ],
-
   "certifications": [
-    { "label": "ISO 27001 COMPLIANT", "code": "ISO-27001", "order": 1 },
-    { "label": "SOC 2 TYPE II", "code": "SOC-2", "order": 2 },
-    { "label": "ZERO-TRUST NATIVO", "code": "Z-TRUST", "order": 3 },
-    { "label": "OWASP TOP 10 HARDENING", "code": "OWASP", "order": 4 },
-    { "label": "NIST FRAMEWORK", "code": "NIST", "order": 5 }
+    {
+      "label": "ISO 27001 COMPLIANT",
+      "code": "ISO-27001",
+      "order": 1
+    },
+    {
+      "label": "SOC 2 TYPE II",
+      "code": "SOC-2",
+      "order": 2
+    },
+    {
+      "label": "ZERO-TRUST NATIVO",
+      "code": "Z-TRUST",
+      "order": 3
+    },
+    {
+      "label": "OWASP TOP 10 HARDENING",
+      "code": "OWASP",
+      "order": 4
+    },
+    {
+      "label": "NIST FRAMEWORK",
+      "code": "NIST",
+      "order": 5
+    }
   ],
-
   "legal-pages": [
     {
       "title": "Política de Privacidad",
@@ -599,18 +906,6 @@
         "metaTitle": "Términos de Servicio",
         "metaDescription": "Condiciones bajo las que Itc Services presta sus servicios de desarrollo, arquitectura cloud y auditoría de seguridad.",
         "canonicalURL": "/terminos"
-      }
-    },
-    {
-      "title": "Auditoría de Seguridad & Enfoque Zero-Trust",
-      "slug": "seguridad",
-      "summary": "La seguridad como pilar central de la arquitectura, desde el diseño hasta producción.",
-      "effectiveDate": "2026-08-01",
-      "content": "La seguridad no es un añadido posterior en nuestros proyectos: es el pilar central de nuestra arquitectura desde el diseño inicial hasta el despliegue en producción.\n\n## Zero-Trust\n\nPrincipio de mínimo privilegio, autenticación continua y segmentación estricta en cada capa de la red.\n\n## DevSecOps Nativo\n\nAnálisis estático (SAST), análisis dinámico (DAST) y escaneo continuo de dependencias en CI/CD.\n\n## Cifrado de Extremo a Extremo\n\nProtección de datos en tránsito (TLS 1.3) y en reposo (AES-256) con gestión granular de claves.\n\n## ¿Requieres una auditoría de seguridad o pentesting?\n\nNuestros especialistas en ciberseguridad pueden evaluar tu arquitectura actual y formular un plan de endurecimiento técnico. [Solicitar Auditoría](/contacto).",
-      "seo": {
-        "metaTitle": "Auditoría de Seguridad & Enfoque Zero-Trust",
-        "metaDescription": "Cómo Itc Services integra seguridad Zero-Trust, DevSecOps y cifrado de extremo a extremo en cada proyecto.",
-        "canonicalURL": "/seguridad"
       }
     }
   ]

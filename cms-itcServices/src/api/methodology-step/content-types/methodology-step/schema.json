@@ -27,18 +27,27 @@
     },
     "track": {
       "type": "enumeration",
-      "enum": ["development", "security"],
+      "enum": [
+        "development",
+        "security"
+      ],
       "required": true,
       "default": "development"
     },
     "accent": {
       "type": "enumeration",
-      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "neutral"
+      ],
       "default": "primary"
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 100,
+      "description": "Menor = antes. Las filas nuevas nacen en 100 para quedar al final; ajústalo para reordenar."
     }
   }
 }

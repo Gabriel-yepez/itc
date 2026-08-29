@@ -17,7 +17,6 @@ const data = require('../data/itc-data.json');
 /** Clave natural con la que se busca un registro existente en cada colección. */
 const COLLECTIONS = [
   { uid: 'api::client.client', key: 'name', items: data.clients },
-  { uid: 'api::competency.competency', key: 'title', items: data.competencies },
   { uid: 'api::service.service', key: 'slug', items: data.services },
   { uid: 'api::project.project', key: 'slug', items: data.projects },
   { uid: 'api::certification.certification', key: 'code', items: data.certifications },
@@ -30,6 +29,7 @@ const SINGLE_TYPES = [
   { uid: 'api::services-page.services-page', entry: data['services-page'] },
   { uid: 'api::projects-page.projects-page', entry: data['projects-page'] },
   { uid: 'api::contact-page.contact-page', entry: data['contact-page'] },
+  { uid: 'api::security-page.security-page', entry: data['security-page'] },
 ];
 
 async function seedCollection(strapi, { uid, key, items }) {

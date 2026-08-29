@@ -12,7 +12,6 @@ export default factories.createCoreController('api::home-page.home-page', () => 
         hero: HERO,
         about: ABOUT,
         clientsHeading: true,
-        competenciesHeading: true,
         seo: SEO,
       },
     });

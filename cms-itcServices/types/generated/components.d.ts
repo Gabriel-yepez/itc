@@ -57,7 +57,7 @@ export interface NavFooterLink extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     href: Schema.Attribute.String & Schema.Attribute.Required;
     label: Schema.Attribute.String & Schema.Attribute.Required;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<100>;
   };
 }
 

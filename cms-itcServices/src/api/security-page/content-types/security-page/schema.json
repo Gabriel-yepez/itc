@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "security_pages",
+  "info": {
+    "singularName": "security-page",
+    "pluralName": "security-pages",
+    "displayName": "Security Page",
+    "description": "Contenido de /seguridad: enfoque Zero-Trust, pilares y CTA de auditoría"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.feature",
+      "description": "Tarjetas de la retícula: Zero-Trust, DevSecOps nativo, cifrado E2E"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.cta"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

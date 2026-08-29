@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cacheLife } from "next/cache";
 import { seo } from "@/lib/seo";
 
-export default function Footer() {
+export default async function Footer() {
+  "use cache";
+  cacheLife("hourly");
   const currentYear = new Date().getFullYear();
 
   return (

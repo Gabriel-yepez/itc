@@ -62,17 +62,22 @@
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 100,
+      "description": "Menor = antes. Las filas nuevas nacen en 100 para quedar al final; ajústalo para reordenar."
     },
     "cover": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "gallery": {
       "type": "media",
       "multiple": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "seo": {
       "type": "component",

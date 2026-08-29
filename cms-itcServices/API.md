@@ -13,12 +13,17 @@ página: cabeceras, CTA, SEO) más **las colecciones** que alimentan sus listas.
 
 | Página del frontend | Single type | Colecciones que consume |
 | --- | --- | --- |
-| `/` | `GET /home-page` | `clients`, `competencies` |
+| `/` | `GET /home-page` | `clients` |
 | `/servicios` | `GET /services-page` | `services`, `methodology-steps`, `certifications` |
 | `/proyectos` | `GET /projects-page` | `projects` |
 | `/contacto` | `GET /contact-page` | — (escribe en `contact-submissions`) |
-| `/privacidad`, `/terminos`, `/seguridad` | — | `legal-pages` (por `slug`) |
+| `/seguridad` | `GET /security-page` | — |
+| `/privacidad`, `/terminos` | — | `legal-pages` (por `slug`) |
 | `Navbar` + `Footer` (layout) | `GET /global` | — |
+
+`/seguridad` es una página de marketing, no un texto legal: por eso tiene su
+propio single type con la retícula de pilares modelada (`pillars`), en vez de
+vivir como markdown plano dentro de `legal-pages`.
 
 ## Endpoints
 
@@ -31,10 +36,10 @@ página: cabeceras, CTA, SEO) más **las colecciones** que alimentan sus listas.
 | `GET` | `/services-page` | Cabeceras de ambas pestañas, encabezados de sección, `cta`, `seo` |
 | `GET` | `/projects-page` | Encabezado, barra de `stats`, `cta`, `seo` |
 | `GET` | `/contact-page` | Encabezado, sede, canal directo, `inquiryOptions`, textos de éxito, `seo` |
+| `GET` | `/security-page` | Encabezado, `pillars` (3 tarjetas), `cta`, `seo` |
 | `GET` | `/services` · `/services/:documentId` | Tarjetas de servicio de ambas pestañas |
 | `GET` | `/projects` · `/projects/:documentId` | Portafolio |
 | `GET` | `/clients` · `/clients/:documentId` | Logos de clientes |
-| `GET` | `/competencies` | Competencias principales |
 | `GET` | `/methodology-steps` | Fases de metodología y del ciclo de seguridad |
 | `GET` | `/certifications` | Barra de cumplimiento |
 | `GET` | `/legal-pages` · `/legal-pages/:documentId` | Páginas legales |
@@ -86,8 +91,7 @@ GET /api/legal-pages?filters[slug][$eq]=privacidad
 
 Los campos `anchor` (en `services`) y `slug` (en `legal-pages`) coinciden con los
 enlaces que ya usa el `Footer`: `/servicios#web`, `/servicios#cloud`,
-`/servicios#mobile`, `/servicios#devsecops`, `/privacidad`, `/terminos`,
-`/seguridad`.
+`/servicios#mobile`, `/servicios#devsecops`, `/privacidad`, `/terminos`.
 
 ## Campos de presentación
 
@@ -98,6 +102,28 @@ sin lógica extra:
 - `layout` (en `services`): `standard` · `wide` (`md:col-span-2`) · `centered`.
 - `icon` / `panelIcon`: clave de icono; el SVG sigue viviendo en el frontend.
 - `gradient` (en `projects`): clases Tailwind del degradado de cabecera.
+
+## Añadir contenido desde el panel
+
+1. **Hay que pulsar "Publish".** Guardar deja la fila en borrador y la API no la
+   devuelve (todo el contenido editorial usa draft & publish).
+2. **Orden.** El campo `order` nace en `100`, así que las filas nuevas quedan al
+   final; las sembradas van de 1 en adelante. Para colocar una en medio, se le
+   pone el número que toque. Con `order` empatado desempata el segundo criterio
+   (`title`, `name`, `label` o `stepNumber` según la colección).
+3. **Claves que no admiten duplicados:** `service.slug`, `project.slug`,
+   `legal-page.slug`, `certification.code` y `client.name`. El panel rechaza el
+   duplicado con *"This attribute must be unique"*. La restricción vive en la
+   capa de validación, no en la base de datos: draft & publish guarda dos filas
+   por documento, así que un índice único en SQL sería imposible.
+4. **Campos que quedan vacíos** si no se rellenan: `anchor`, `icon`, `seo`,
+   `badge` llegan como `null`, y los componentes repetibles (`features`, `tags`)
+   como `[]`. El frontend debe tolerarlo.
+
+⚠️ **El seed pisa las ediciones manuales.** `seed-itc.js` actualiza toda fila que
+coincida con su clave natural, así que volver a ejecutarlo revierte los cambios
+hechos en el panel sobre el contenido sembrado. Las filas creadas de cero no se
+tocan. Úsalo solo para inicializar un entorno.
 
 ## Puesta en marcha
 
@@ -112,8 +138,14 @@ El seed es idempotente: identifica los registros por su clave natural (`slug`,
 `name`, `code`, `track`+`stepNumber`), así que volver a ejecutarlo actualiza en
 lugar de duplicar.
 
-Los permisos del rol `public` se conceden **una sola vez**, en el primer arranque
-con esta base de datos (`src/index.ts`). Si después se revoca un permiso desde el
-panel, los arranques posteriores respetan esa decisión.
+Los permisos del rol `public` se conceden en el primer arranque con esta base de
+datos (`src/index.ts`) y la versión aplicada queda anotada. Mientras la versión no
+cambie no se vuelve a tocar nada: si después se revoca un permiso desde el panel,
+los arranques posteriores respetan esa decisión. **Al añadir un content type
+nuevo hay que incrementar `PUBLIC_PERMISSIONS_VERSION`**, o las bases de datos ya
+inicializadas no recibirán su permiso.
+
+Tras borrar un content type, `dist/` conserva el módulo compilado y el endpoint
+sigue respondiendo. Hay que limpiarlo: `rm -rf dist && pnpm build`.
 
 CORS: `CORS_ORIGINS` en `.env` (por defecto `http://localhost:3000`).

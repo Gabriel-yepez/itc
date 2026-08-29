@@ -27,11 +27,6 @@
       "repeatable": false,
       "component": "ui.section-heading"
     },
-    "competenciesHeading": {
-      "type": "component",
-      "repeatable": false,
-      "component": "ui.section-heading"
-    },
     "seo": {
       "type": "component",
       "repeatable": false,

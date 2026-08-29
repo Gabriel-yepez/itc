@@ -20,7 +20,8 @@
     "code": {
       "type": "string",
       "required": true,
-      "description": "Identificador corto y único (ej. ISO-27001)"
+      "description": "Identificador corto y único (ej. ISO-27001)",
+      "unique": true
     },
     "icon": {
       "type": "string"
@@ -28,11 +29,14 @@
     "badge": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 100,
+      "description": "Menor = antes. Las filas nuevas nacen en 100 para quedar al final; ajústalo para reordenar."
     }
   }
 }

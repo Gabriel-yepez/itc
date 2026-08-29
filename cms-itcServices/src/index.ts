@@ -11,10 +11,10 @@ const PUBLIC_PERMISSIONS: Record<string, string[]> = {
   'api::services-page.services-page': ['find'],
   'api::projects-page.projects-page': ['find'],
   'api::contact-page.contact-page': ['find'],
+  'api::security-page.security-page': ['find'],
   'api::service.service': ['find', 'findOne'],
   'api::project.project': ['find', 'findOne'],
   'api::client.client': ['find', 'findOne'],
-  'api::competency.competency': ['find', 'findOne'],
   'api::methodology-step.methodology-step': ['find', 'findOne'],
   'api::certification.certification': ['find', 'findOne'],
   'api::legal-page.legal-page': ['find', 'findOne'],
@@ -22,14 +22,22 @@ const PUBLIC_PERMISSIONS: Record<string, string[]> = {
 };
 
 /**
- * Concede los permisos públicos una única vez, la primera vez que arranca esta
- * base de datos. Después no se vuelve a tocar: si el equipo revoca un permiso
- * desde el panel, el siguiente arranque respeta esa decisión.
+ * Se incrementa al añadir entradas a PUBLIC_PERMISSIONS, para que las bases de
+ * datos ya inicializadas reciban los permisos nuevos en el siguiente arranque.
+ */
+const PUBLIC_PERMISSIONS_VERSION = 2;
+
+/**
+ * Concede los permisos públicos que falten y anota la versión aplicada. Mientras
+ * la versión no cambie no se vuelve a tocar nada: si el equipo revoca un permiso
+ * desde el panel, los arranques siguientes respetan esa decisión.
  */
 async function grantPublicPermissionsOnce(strapi: Core.Strapi) {
   const store = strapi.store({ environment: '', type: 'plugin', name: 'itc-setup' });
 
-  if (await store.get({ key: 'publicPermissionsGranted' })) {
+  const appliedVersion = (await store.get({ key: 'publicPermissionsVersion' })) as number | null;
+
+  if (appliedVersion !== null && appliedVersion >= PUBLIC_PERMISSIONS_VERSION) {
     return;
   }
 
@@ -58,8 +66,10 @@ async function grantPublicPermissionsOnce(strapi: Core.Strapi) {
     }
   }
 
-  await store.set({ key: 'publicPermissionsGranted', value: true });
-  strapi.log.info('[itc] Permisos públicos de la API configurados.');
+  await store.set({ key: 'publicPermissionsVersion', value: PUBLIC_PERMISSIONS_VERSION });
+  strapi.log.info(
+    `[itc] Permisos públicos de la API configurados (v${PUBLIC_PERMISSIONS_VERSION}).`
+  );
 }
 
 export default {
