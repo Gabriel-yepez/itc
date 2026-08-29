@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_ui_ctas",
+  "info": {
+    "displayName": "Cta",
+    "description": "Bloque de llamada a la acción con hasta dos botones",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    },
+    "primaryLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.link"
+    },
+    "secondaryLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.link"
+    }
+  }
+}

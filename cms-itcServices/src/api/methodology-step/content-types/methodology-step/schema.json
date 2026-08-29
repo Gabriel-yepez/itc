@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "methodology_steps",
+  "info": {
+    "singularName": "methodology-step",
+    "pluralName": "methodology-steps",
+    "displayName": "Methodology Step",
+    "description": "Fases de la metodología de desarrollo y del ciclo de seguridad defensiva"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stepNumber": {
+      "type": "string",
+      "required": true,
+      "description": "Número mostrado en la tarjeta (ej. 01)"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "track": {
+      "type": "enumeration",
+      "enum": ["development", "security"],
+      "required": true,
+      "default": "development"
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

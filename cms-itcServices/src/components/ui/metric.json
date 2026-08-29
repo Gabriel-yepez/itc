@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ui_metrics",
+  "info": {
+    "displayName": "Metric",
+    "description": "Métrica de resultado de un proyecto (ej. Reducción de Riesgos / 94%)",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

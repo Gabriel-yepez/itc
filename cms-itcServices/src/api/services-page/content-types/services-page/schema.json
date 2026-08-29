@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_pages",
+  "info": {
+    "singularName": "services-page",
+    "pluralName": "services-pages",
+    "displayName": "Services Page",
+    "description": "Contenido de /servicios: cabeceras de ambas pestañas y CTA"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "softwareTabLabel": {
+      "type": "string",
+      "default": "Desarrollo & Software"
+    },
+    "securityTabLabel": {
+      "type": "string",
+      "default": "Ciberseguridad & Protección"
+    },
+    "softwareHero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.hero"
+    },
+    "softwareHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "methodologyHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "securityHero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.hero"
+    },
+    "certificationsTitle": {
+      "type": "string",
+      "default": "Estándares de Cumplimiento & Certificaciones"
+    },
+    "securityHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "securityLifecycleHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.cta"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

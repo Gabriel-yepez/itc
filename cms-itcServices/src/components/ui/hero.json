@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_ui_heroes",
+  "info": {
+    "displayName": "Hero",
+    "description": "Cabecera principal de una página o pestaña, con panel lateral",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "primaryLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.link"
+    },
+    "secondaryLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.link"
+    },
+    "panelTitle": {
+      "type": "string",
+      "description": "Título del panel decorativo lateral"
+    },
+    "panelDescription": {
+      "type": "text"
+    },
+    "panelIcon": {
+      "type": "string",
+      "description": "Clave del icono a renderizar en el frontend (ej. code, shield)"
+    }
+  }
+}

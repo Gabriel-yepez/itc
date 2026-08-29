@@ -8,8 +8,8 @@ import { seo } from "@/lib/seo";
 
 const links = [
   { href: "/servicios", label: "Servicios" },
-  { href: "/quienes-somos", label: "Quiénes somos" },
   { href: "/proyectos", label: "Proyectos" },
+  { href: "/contacto", label: "Contacto" },
 ];
 
 export default function Navbar() {
@@ -22,7 +22,11 @@ export default function Navbar() {
     if (pathname === href || pathname.startsWith(`${href}/`)) {
       return true;
     }
+    // Soporte para alias de rutas como /services o /contact
     if (href === "/servicios" && (pathname === "/services" || pathname.startsWith("/services/"))) {
+      return true;
+    }
+    if (href === "/contacto" && (pathname === "/contact" || pathname.startsWith("/contact/"))) {
       return true;
     }
     return false;

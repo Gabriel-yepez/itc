@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certifications",
+  "info": {
+    "singularName": "certification",
+    "pluralName": "certifications",
+    "displayName": "Certification",
+    "description": "Estándares de cumplimiento y certificaciones"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "description": "Texto visible (ej. ISO 27001 COMPLIANT)"
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "description": "Identificador corto y único (ej. ISO-27001)"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

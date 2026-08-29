@@ -3,11 +3,24 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProjectsGrid from "@/components/ProjectsGrid";
+import { seo } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Proyectos & Casos de Estudio",
-  description:
-    "Descubre los proyectos y casos de éxito de Itc Services: ingeniería de software, arquitectura cloud, ciberseguridad y aplicaciones móviles de alto impacto.",
+  title: seo.pages.proyectos.title,
+  description: seo.pages.proyectos.description,
+  keywords: seo.pages.proyectos.keywords,
+  alternates: {
+    canonical: "/proyectos",
+  },
+  openGraph: {
+    ...seo.openGraph,
+    ...seo.pages.proyectos.openGraph,
+  },
+  twitter: {
+    ...seo.twitter,
+    title: seo.pages.proyectos.title,
+    description: seo.pages.proyectos.description,
+  },
 };
 
 export default function ProyectosPage() {

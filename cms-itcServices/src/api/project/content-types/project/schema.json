@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": "Portafolio de proyectos y casos de éxito"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "description": "Categoría mostrada en la píldora de la cabecera (ej. Infraestructura & Zero-Trust)"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "description": "Caso de estudio extendido opcional"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.tag"
+    },
+    "metric": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.metric"
+    },
+    "gradient": {
+      "type": "string",
+      "description": "Clases del degradado de cabecera (ej. from-primary/20 via-primary/5 to-transparent)"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Clave del icono a renderizar en el frontend (ej. shield, analytics, lock)"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

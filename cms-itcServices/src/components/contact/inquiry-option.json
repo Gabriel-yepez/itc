@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_contact_inquiry_options",
+  "info": {
+    "displayName": "Inquiry Option",
+    "description": "Opción del desplegable \"Tipo de Consulta\" del formulario",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true,
+      "description": "Valor enviado en el formulario; debe ser único dentro de la lista"
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_contact_offices",
+  "info": {
+    "displayName": "Office",
+    "description": "Sede física de la empresa",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "Sede Central"
+    },
+    "addressLine1": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine2": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string",
+      "description": "Nota complementaria (ej. Operaciones Globales & Remoto)"
+    }
+  }
+}

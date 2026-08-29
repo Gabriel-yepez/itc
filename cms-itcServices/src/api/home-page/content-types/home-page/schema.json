@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Contenido de la portada (/)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.hero"
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about"
+    },
+    "clientsHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "competenciesHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

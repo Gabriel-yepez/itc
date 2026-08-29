@@ -16,15 +16,57 @@
       "type": "string",
       "required": true
     },
+    "siteUrl": {
+      "type": "string",
+      "description": "Dominio de producción usado para URLs canónicas y Open Graph"
+    },
     "favicon": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": ["images", "files", "videos"]
     },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
     "siteDescription": {
       "type": "text",
       "required": true
+    },
+    "tagline": {
+      "type": "string",
+      "description": "Frase corta del pie de página (ej. Precisión · Autoridad · Seguridad)"
+    },
+    "footerAbout": {
+      "type": "text"
+    },
+    "navLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.link"
+    },
+    "footerLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "nav.footer-link"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.link"
+    },
+    "office": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.office"
+    },
+    "channel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.channel"
     },
     "defaultSeo": {
       "type": "component",

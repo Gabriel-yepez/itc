@@ -1,0 +1,617 @@
+{
+  "global": {
+    "siteName": "Itc Services",
+    "siteUrl": "https://example.com",
+    "siteDescription": "Firma boutique de ingeniería de software y consultoría tecnológica especializada en plataformas escalables, arquitecturas cloud y seguridad Zero-Trust.",
+    "tagline": "Precisión · Autoridad · Seguridad",
+    "footerAbout": "Soluciones de ingeniería de software, arquitectura cloud y ciberseguridad para empresas que escalan.",
+    "navLinks": [
+      { "label": "Servicios", "href": "/servicios", "variant": "ghost" },
+      { "label": "Proyectos", "href": "/proyectos", "variant": "ghost" },
+      { "label": "Contacto", "href": "/contacto", "variant": "ghost" }
+    ],
+    "footerLinks": [
+      { "group": "servicios", "label": "Aplicaciones Web", "href": "/servicios#web", "order": 1 },
+      { "group": "servicios", "label": "Cloud & Backend", "href": "/servicios#cloud", "order": 2 },
+      { "group": "servicios", "label": "Desarrollo Móvil", "href": "/servicios#mobile", "order": 3 },
+      { "group": "servicios", "label": "DevSecOps", "href": "/servicios#devsecops", "order": 4 },
+      { "group": "empresa", "label": "Quiénes somos", "href": "/#quienes-somos", "order": 1 },
+      { "group": "empresa", "label": "Nuestros clientes", "href": "/#clientes", "order": 2 },
+      { "group": "empresa", "label": "Proyectos", "href": "/proyectos", "order": 3 },
+      { "group": "empresa", "label": "Metodología", "href": "/servicios#metodologia", "order": 4 },
+      { "group": "empresa", "label": "Contacto", "href": "/contacto", "order": 5 },
+      { "group": "legal", "label": "Política de Privacidad", "href": "/privacidad", "order": 1 },
+      { "group": "legal", "label": "Términos de Servicio", "href": "/terminos", "order": 2 },
+      { "group": "legal", "label": "Auditoría de Seguridad", "href": "/seguridad", "order": 3 }
+    ],
+    "office": {
+      "label": "Sede Central",
+      "addressLine1": "100 Cyber Way, Suite 500",
+      "addressLine2": "San Francisco, CA 94105",
+      "note": "Operaciones Globales & Remoto"
+    },
+    "channel": {
+      "label": "Atención Directa",
+      "phone": "+1 (800) 555-0199",
+      "email": "contacto@itcservices.com",
+      "hours": "Lun - Vie, 9:00 - 18:00 EST"
+    },
+    "defaultSeo": {
+      "metaTitle": "Itc Services | Ingeniería de Software & Tecnología",
+      "metaDescription": "Firma boutique de ingeniería de software y consultoría tecnológica especializada en plataformas escalables, arquitecturas cloud y seguridad Zero-Trust.",
+      "keywords": "Productos de Software, Consultoría de seguridad de la información, Software a la medida, Desarrollo de software, Servicios de tecnología, Arquitectura Cloud, DevSecOps, Ingeniería de Software",
+      "canonicalURL": "/"
+    }
+  },
+
+  "home-page": {
+    "hero": {
+      "title": "Transforma tu negocio a esta nueva era digital",
+      "description": "Llevamos más de 10 años creando soluciones de tecnología y acompañando a empresas en su crecimiento.",
+      "accent": "primary",
+      "primaryLink": { "label": "Contáctanos", "href": "/contacto", "variant": "primary" }
+    },
+    "about": {
+      "eyebrow": "Quiénes Somos",
+      "title": "Ingeniería de Software con Propósito y Precisión",
+      "anchor": "quienes-somos",
+      "body": "Somos una firma de ingeniería de software especializada en resolver problemas complejos de negocio mediante tecnología de vanguardia. Nuestro equipo de arquitectos, desarrolladores y expertos en seguridad trabaja como una extensión de tu organización.\n\nNos alejamos de las soluciones genéricas. Construimos plataformas escalables, infraestructuras resilientes y aplicaciones de alto rendimiento diseñadas meticulosamente para las necesidades específicas de tu empresa, garantizando la seguridad (Zero-Trust) desde la primera línea de código.",
+      "stats": [
+        { "value": "10+", "label": "Años de Experiencia", "accent": "primary" },
+        { "value": "100%", "label": "Compromiso con la Calidad", "accent": "secondary" }
+      ]
+    },
+    "clientsHeading": {
+      "title": "Empresas que confían en nosotros",
+      "description": "Nuestras soluciones impulsan la innovación y la eficiencia en diversas industrias, ayudando a nuestros clientes a alcanzar sus objetivos tecnológicos más ambiciosos.",
+      "align": "center"
+    },
+    "competenciesHeading": {
+      "title": "Competencias Principales",
+      "description": "Equipos de desarrollo especializados dedicados a resolver desafíos técnicos complejos con soluciones elegantes, seguras y escalables.",
+      "eyebrow": "Ingeniería de Software",
+      "accent": "tertiary"
+    },
+    "seo": {
+      "metaTitle": "Itc Services | Ingeniería de Software & Soluciones Tecnológicas",
+      "metaDescription": "Desarrollamos soluciones de software robustas, escalables y seguras con estándares de clase mundial. Arquitectura cloud, aplicaciones web y móviles.",
+      "keywords": "Desarrollo de software, Ingeniería de software, Arquitectura Cloud, Ciberseguridad, Itc Services",
+      "canonicalURL": "/"
+    }
+  },
+
+  "services-page": {
+    "softwareTabLabel": "Desarrollo & Software",
+    "securityTabLabel": "Ciberseguridad & Protección",
+    "softwareHero": {
+      "eyebrow": "Excelencia en Ingeniería",
+      "title": "Ingeniería de Software de Precisión para Escalar.",
+      "description": "Diseñamos, construimos y desplegamos aplicaciones de alto rendimiento con seguridad integrada en cada capa. Desde robustas arquitecturas cloud hasta experiencias móviles fluidas.",
+      "accent": "primary",
+      "panelTitle": "Infraestructura & Software",
+      "panelDescription": "Arquitecturas distribuidas, Zero-Trust nativo y desarrollo de ciclo completo.",
+      "panelIcon": "code",
+      "primaryLink": { "label": "Solicitar Cotización", "href": "/contacto", "variant": "primary" },
+      "secondaryLink": { "label": "Ver Casos de Estudio", "href": "/proyectos", "variant": "secondary" }
+    },
+    "softwareHeading": {
+      "eyebrow": "Ingeniería de Software",
+      "title": "Competencias Principales",
+      "description": "Equipos de desarrollo especializados dedicados a resolver desafíos técnicos complejos con soluciones elegantes, seguras y escalables.",
+      "accent": "tertiary"
+    },
+    "methodologyHeading": {
+      "eyebrow": "Proceso de Trabajo",
+      "title": "Metodología de Desarrollo",
+      "description": "Un proceso riguroso e iterativo que garantiza la excelencia técnica, seguridad integral y alineación estratégica desde el primer día.",
+      "accent": "secondary",
+      "align": "center"
+    },
+    "securityHero": {
+      "eyebrow": "Ciberseguridad Empresarial",
+      "title": "Protección Sin Concesiones para Infraestructuras Críticas.",
+      "description": "Monitoreo avanzado de amenazas, auditorías de seguridad quirúrgicas y protocolos de protección de datos de grado militar diseñados para entornos de alta exigencia.",
+      "accent": "primary",
+      "panelTitle": "Infraestructura Blindada",
+      "panelDescription": "Monitoreo 24/7 en tiempo real",
+      "panelIcon": "shield",
+      "primaryLink": { "label": "Solicitar Auditoría", "href": "/contacto", "variant": "primary" },
+      "secondaryLink": { "label": "Ver Informe Técnico", "href": "/seguridad", "variant": "secondary" }
+    },
+    "certificationsTitle": "Estándares de Cumplimiento & Certificaciones",
+    "securityHeading": {
+      "eyebrow": "Defensa Integral",
+      "title": "Mecanismos Principales de Defensa",
+      "description": "Arquitectura de capas múltiples diseñada para prevenir, detectar y neutralizar vectores de ataque antes de que impacten la continuidad operativa.",
+      "accent": "secondary"
+    },
+    "securityLifecycleHeading": {
+      "eyebrow": "Proceso de Endurecimiento",
+      "title": "Ciclo de Vida de Seguridad Defensiva",
+      "description": "Cómo aseguramos que cada capa de tu infraestructura sea impenetrable y resiliente.",
+      "accent": "primary",
+      "align": "center"
+    },
+    "cta": {
+      "eyebrow": "Iniciemos Tu Proyecto",
+      "title": "¿Listo para construir o asegurar infraestructura de clase mundial?",
+      "description": "Cuéntanos tus requerimientos y nuestro equipo de arquitectos, desarrolladores y especialistas en ciberseguridad diseñará la solución ideal.",
+      "accent": "primary",
+      "primaryLink": { "label": "Contactar Especialista", "href": "/contacto", "variant": "primary" },
+      "secondaryLink": { "label": "Ver Casos de Éxito", "href": "/proyectos", "variant": "secondary" }
+    },
+    "seo": {
+      "metaTitle": "Servicios de Desarrollo e Ingeniería de Software",
+      "metaDescription": "Descubre nuestros servicios de ingeniería de software a medida, desarrollo web y móvil, arquitectura cloud de alto rendimiento y prácticas DevSecOps con seguridad Zero-Trust.",
+      "keywords": "Servicios de desarrollo de software, Ingeniería de software a medida, Desarrollo web moderno, Desarrollo móvil iOS Android, Arquitectura Cloud y DevOps, DevSecOps, Microservicios escalables, Seguridad Zero-Trust",
+      "canonicalURL": "/servicios"
+    }
+  },
+
+  "projects-page": {
+    "heading": {
+      "eyebrow": "Portafolio & Casos de Éxito",
+      "title": "Proyectos Destacados",
+      "description": "Una selección de nuestros despliegues más complejos en ingeniería de software, arquitectura de sistemas y endurecimiento de infraestructura para entornos corporativos de alta demanda.",
+      "accent": "primary"
+    },
+    "stats": [
+      { "value": "+100", "label": "Proyectos Entregados", "accent": "primary" },
+      { "value": "99.99%", "label": "Uptime Garantizado", "accent": "secondary" },
+      { "value": "Zero-Trust", "label": "Arquitectura Nativa", "accent": "tertiary" },
+      { "value": "10+ Años", "label": "Experiencia Técnica", "accent": "primary" }
+    ],
+    "cta": {
+      "eyebrow": "Comencemos Hoy",
+      "title": "¿Tienes un desafío técnico o proyecto que deseas construir?",
+      "description": "Diseñamos soluciones personalizadas que combinan precisión de ingeniería, arquitectura moderna y seguridad de primer nivel.",
+      "accent": "secondary",
+      "primaryLink": { "label": "Solicitar Propuesta", "href": "/contacto", "variant": "primary" },
+      "secondaryLink": { "label": "Explorar Servicios", "href": "/servicios", "variant": "secondary" }
+    },
+    "seo": {
+      "metaTitle": "Proyectos y Casos de Éxito",
+      "metaDescription": "Explora nuestro portafolio de proyectos y casos de éxito en ingeniería de software, modernización de infraestructura, plataformas fintech y aplicaciones de alta demanda.",
+      "keywords": "Proyectos de software, Portafolio de desarrollo, Casos de éxito de ingeniería de software, Arquitectura de sistemas complejos, Plataformas fintech, Sistemas distribuidos, Itc Services portafolio",
+      "canonicalURL": "/proyectos"
+    }
+  },
+
+  "contact-page": {
+    "heading": {
+      "eyebrow": "Ponte en Contacto",
+      "title": "Hablemos de tu Próximo Desafío",
+      "description": "Nuestros arquitectos de software y especialistas en seguridad están listos para colaborar contigo. Completa el formulario y te responderemos con precisión técnica.",
+      "accent": "primary"
+    },
+    "office": {
+      "label": "Sede Central",
+      "addressLine1": "100 Cyber Way, Suite 500",
+      "addressLine2": "San Francisco, CA 94105",
+      "note": "Operaciones Globales & Remoto"
+    },
+    "channel": {
+      "label": "Contacto Directo",
+      "phone": "+1 (800) 555-0199",
+      "email": "contacto@itcservices.com",
+      "hours": "Lun - Vie, 9:00 - 18:00 EST"
+    },
+    "inquiryOptions": [
+      { "label": "Desarrollo de Software a Medida", "value": "Desarrollo de Software a Medida", "isDefault": true },
+      { "label": "Auditoría de Seguridad & Zero-Trust", "value": "Auditoría de Seguridad & Zero-Trust", "isDefault": false },
+      { "label": "Arquitectura Cloud & DevOps", "value": "Arquitectura Cloud & DevOps", "isDefault": false },
+      { "label": "Aplicaciones Móviles & Web", "value": "Aplicaciones Móviles & Web", "isDefault": false },
+      { "label": "Consulta General", "value": "Consulta General", "isDefault": false }
+    ],
+    "submitLabel": "Enviar Mensaje",
+    "successTitle": "¡Mensaje recibido con éxito!",
+    "successMessage": "Gracias por contactar con Itc Services. Nuestro equipo de ingenieros revisará tus requerimientos y te responderá en menos de 24 horas.",
+    "seo": {
+      "metaTitle": "Contacto y Consultoría Técnica",
+      "metaDescription": "Ponte en contacto con los arquitectos e ingenieros de Itc Services. Solicita una cotización, asesoría técnica o consultoría estratégica para tu próximo proyecto de software.",
+      "keywords": "Contacto Itc Services, Cotización de desarrollo de software, Consultoría en ingeniería de software, Asesoría técnica, Contratar desarrolladores de software, Auditoría técnica y seguridad",
+      "canonicalURL": "/contacto"
+    }
+  },
+
+  "clients": [
+    { "name": "GlobalFin", "industry": "Finanzas", "icon": "🏛️", "order": 1 },
+    { "name": "MediTech Health", "industry": "Salud", "icon": "🏥", "order": 2 },
+    { "name": "LogisCorp", "industry": "Logística", "icon": "🚢", "order": 3 },
+    { "name": "EduFuture", "industry": "Educación", "icon": "🎓", "order": 4 },
+    { "name": "RetailConnect", "industry": "E-Commerce", "icon": "🛍️", "order": 5 },
+    { "name": "SecureNet", "industry": "Ciberseguridad", "icon": "🛡️", "order": 6 }
+  ],
+
+  "competencies": [
+    {
+      "title": "Ingeniería Experta",
+      "description": "Bases de código limpias, modulares y escalables diseñadas para entornos empresariales de alta disponibilidad y rendimiento crítico.",
+      "icon": "code",
+      "accent": "primary",
+      "order": 1
+    },
+    {
+      "title": "Protección Avanzada",
+      "description": "Arquitectura Zero-Trust implementada por defecto con cifrado de grado militar, escaneo continuo de vulnerabilidades y mitigación proactiva.",
+      "icon": "shield",
+      "accent": "secondary",
+      "order": 2
+    },
+    {
+      "title": "Analítica en Tiempo Real",
+      "description": "Observabilidad profunda del rendimiento del sistema, métricas de infraestructura y salud de seguridad mediante paneles unificados de alta densidad.",
+      "icon": "chart",
+      "accent": "tertiary",
+      "order": 3
+    }
+  ],
+
+  "services": [
+    {
+      "title": "Aplicaciones Web",
+      "slug": "aplicaciones-web",
+      "anchor": "web",
+      "track": "software",
+      "description": "Single-page applications de alto rendimiento y paneles empresariales complejos construidos con frameworks modernos y arquitecturas modulares.",
+      "icon": "window",
+      "accent": "primary",
+      "layout": "standard",
+      "order": 1,
+      "features": [
+        { "label": "React / Next.js / Vue", "marker": "✓", "accent": "primary" },
+        { "label": "Micro-frontends", "marker": "✓", "accent": "primary" },
+        { "label": "WebAssembly & Optimización", "marker": "✓", "accent": "primary" }
+      ]
+    },
+    {
+      "title": "Arquitectura Cloud & Backend",
+      "slug": "arquitectura-cloud-backend",
+      "anchor": "cloud",
+      "track": "software",
+      "description": "Sistemas distribuidos resilientes diseñados para alta disponibilidad y estricta gobernanza de datos. Diseñamos soluciones que escalan horizontalmente mientras mantenemos principios de seguridad zero-trust.",
+      "icon": "cloud",
+      "accent": "tertiary",
+      "layout": "wide",
+      "badge": "Escala Empresarial",
+      "order": 2,
+      "features": [
+        {
+          "label": "API Gateways & Microservicios",
+          "description": "Microservicios GraphQL y RESTful desacoplados, rápidos y altamente tipados.",
+          "marker": "01",
+          "accent": "primary"
+        },
+        {
+          "label": "Pipelines de Datos",
+          "description": "Procesamiento en tiempo real, almacenamiento analítico y data warehousing seguro.",
+          "marker": "02",
+          "accent": "secondary"
+        }
+      ]
+    },
+    {
+      "title": "Desarrollo Móvil Multiplataforma",
+      "slug": "desarrollo-movil-multiplataforma",
+      "anchor": "mobile",
+      "track": "software",
+      "description": "Aplicaciones nativas y multiplataforma que entregan experiencias de usuario fluidas en iOS y Android, respaldadas por integraciones biométricas, sincronización offline y rendimiento nativo.",
+      "icon": "mobile",
+      "accent": "secondary",
+      "layout": "wide",
+      "order": 3,
+      "tags": [
+        { "label": "Swift / iOS" },
+        { "label": "Kotlin / Android" },
+        { "label": "React Native" },
+        { "label": "Flutter" }
+      ]
+    },
+    {
+      "title": "DevSecOps",
+      "slug": "devsecops",
+      "anchor": "devsecops",
+      "track": "software",
+      "description": "Pipelines de CI/CD automatizados con escaneo proactivo de seguridad, pruebas de vulnerabilidades y monitoreo continuo.",
+      "icon": "refresh",
+      "accent": "primary",
+      "layout": "centered",
+      "order": 4
+    },
+    {
+      "title": "Auditorías Exhaustivas de Seguridad & Pentesting",
+      "slug": "auditorias-seguridad-pentesting",
+      "anchor": "auditorias",
+      "track": "security",
+      "description": "Examen quirúrgico de tu arquitectura, código fuente e infraestructura para identificar vulnerabilidades antes de que sean explotadas. Entregamos informes ejecutivos con planes de mitigación inmediatos.",
+      "icon": "search",
+      "accent": "primary",
+      "layout": "wide",
+      "badge": "ISO 27001 Compliant",
+      "order": 1,
+      "features": [
+        {
+          "label": "Pruebas de Penetración",
+          "description": "Simulación de ataques de día cero y vectores avanzados.",
+          "marker": "01",
+          "accent": "primary"
+        },
+        {
+          "label": "Análisis de Código Estático/Dinámico",
+          "description": "Escaneo automatizado de vulnerabilidades en CI/CD.",
+          "marker": "02",
+          "accent": "secondary"
+        }
+      ]
+    },
+    {
+      "title": "Monitoreo Continuo 24/7",
+      "slug": "monitoreo-continuo",
+      "anchor": "monitoreo",
+      "track": "security",
+      "description": "Análisis en tiempo real del tráfico de red mediante modelos de detección de anomalías para neutralizar intrusiones al instante.",
+      "icon": "radar",
+      "accent": "tertiary",
+      "layout": "standard",
+      "order": 2,
+      "features": [
+        { "label": "_SOC_RADAR: ACTIVO", "marker": ">", "accent": "primary" },
+        { "label": "TRAFFIC_HEALTH: 100%", "marker": ">", "accent": "neutral" },
+        { "label": "ANOMALIES_DETECTED: 0", "marker": ">", "accent": "secondary" }
+      ]
+    },
+    {
+      "title": "Protección de Datos & Cifrado",
+      "slug": "proteccion-datos-cifrado",
+      "anchor": "cifrado",
+      "track": "security",
+      "description": "Cifrado de extremo a extremo en tránsito (TLS 1.3) y en reposo (AES-256). Respaldos inmutables y controles de acceso basados en roles (RBAC).",
+      "icon": "lock",
+      "accent": "secondary",
+      "layout": "standard",
+      "badge": "Cifrado AES-256 + HSM",
+      "order": 3
+    },
+    {
+      "title": "Respuesta a Incidentes con SLA Garantizado",
+      "slug": "respuesta-incidentes",
+      "anchor": "incidentes",
+      "track": "security",
+      "description": "Equipo de respuesta ante incidentes (CSIRT) de élite disponible con tiempos de respuesta contractualmente garantizados para contener, aislar y erradicar cualquier intento de vulneración.",
+      "icon": "alert",
+      "accent": "primary",
+      "layout": "wide",
+      "order": 4,
+      "tags": [
+        { "label": "Tiempo de Respuesta < 15 min" },
+        { "label": "Análisis Forense Digital" },
+        { "label": "Recuperación ante Desastres (DRP)" }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Apex Nexus",
+      "slug": "apex-nexus",
+      "subtitle": "Modernización de Infraestructura Bancaria",
+      "category": "Infraestructura & Zero-Trust",
+      "description": "Transformación integral de arquitectura financiera monolítica hacia un modelo distribuido Zero-Trust de alto rendimiento. Reducción de la superficie de vulnerabilidad en un 94% en un periodo de despliegue de 6 meses.",
+      "icon": "shield",
+      "gradient": "from-primary/20 via-primary/5 to-transparent",
+      "featured": true,
+      "order": 1,
+      "metric": { "label": "Reducción de Riesgos", "value": "94%" },
+      "tags": [
+        { "label": "Zero-Trust" },
+        { "label": "Kubernetes" },
+        { "label": "Go" },
+        { "label": "Next.js" }
+      ]
+    },
+    {
+      "title": "Sentinel Wall",
+      "slug": "sentinel-wall",
+      "subtitle": "Detección de Amenazas en Tiempo Real",
+      "category": "Inteligencia Artificial & Defensa",
+      "description": "Implementación de modelado predictivo de amenazas con detección de anomalías asistida por IA para infraestructura crítica distribuida a lo largo de 40 nodos globales.",
+      "icon": "analytics",
+      "gradient": "from-secondary/20 via-secondary/5 to-transparent",
+      "featured": true,
+      "order": 2,
+      "metric": { "label": "Nodos Monitoreados", "value": "40+ Nodos" },
+      "tags": [
+        { "label": "Machine Learning" },
+        { "label": "Python" },
+        { "label": "AWS Edge" },
+        { "label": "Microservicios" }
+      ]
+    },
+    {
+      "title": "Vita Vault",
+      "slug": "vita-vault",
+      "subtitle": "Pipeline Criptográfico de Salud",
+      "category": "Criptografía & Sector Salud",
+      "description": "Diseño e implementación de arquitectura de cifrado de extremo a extremo para registros médicos, garantizando estricto cumplimiento normativo HIPAA y reduciendo la latencia de consulta en un 40%.",
+      "icon": "lock",
+      "gradient": "from-tertiary/20 via-tertiary/5 to-transparent",
+      "featured": true,
+      "order": 3,
+      "metric": { "label": "Latencia de Consulta", "value": "-40%" },
+      "tags": [
+        { "label": "Criptografía" },
+        { "label": "Rust" },
+        { "label": "PostgreSQL" },
+        { "label": "HIPAA" }
+      ]
+    },
+    {
+      "title": "Cloud Anchor",
+      "slug": "cloud-anchor",
+      "subtitle": "Resiliencia Multi-Cloud para E-Commerce",
+      "category": "Cloud & Alta Disponibilidad",
+      "description": "Estrategia de migración multi-cloud y mitigación proactiva contra ataques DDoS para plataforma de comercio masivo, asegurando cero caídas durante eventos de tráfico pico.",
+      "icon": "cloud",
+      "gradient": "from-primary/20 via-tertiary/5 to-transparent",
+      "featured": false,
+      "order": 4,
+      "metric": { "label": "Disponibilidad", "value": "99.999%" },
+      "tags": [
+        { "label": "Cloudflare" },
+        { "label": "Terraform" },
+        { "label": "GCP" },
+        { "label": "Docker" }
+      ]
+    },
+    {
+      "title": "OmniPay Mobile",
+      "slug": "omnipay-mobile",
+      "subtitle": "Billetera Digital y Pagos Biométricos",
+      "category": "Desarrollo Móvil",
+      "description": "Aplicación transaccional multiplataforma de pagos y billetera digital con autenticación biométrica multifactor, enclave seguro de llaves y sincronización offline instantánea.",
+      "icon": "mobile",
+      "gradient": "from-secondary/20 via-primary/5 to-transparent",
+      "featured": false,
+      "order": 5,
+      "metric": { "label": "Valoración App Stores", "value": "4.9 ★" },
+      "tags": [
+        { "label": "React Native" },
+        { "label": "Swift" },
+        { "label": "Kotlin" },
+        { "label": "Biometría" }
+      ]
+    },
+    {
+      "title": "DataPulse Analytics",
+      "slug": "datapulse-analytics",
+      "subtitle": "Centro de Mando de Telemetría",
+      "category": "Big Data & Observabilidad",
+      "description": "Plataforma de procesamiento de datos en tiempo real y centro de comando visual capaz de ingerir y analizar millones de eventos por segundo con tableros de máxima densidad.",
+      "icon": "chart",
+      "gradient": "from-tertiary/20 via-secondary/5 to-transparent",
+      "featured": false,
+      "order": 6,
+      "metric": { "label": "Eventos Procesados", "value": "+10M / seg" },
+      "tags": [
+        { "label": "ClickHouse" },
+        { "label": "GraphQL" },
+        { "label": "Tailwind CSS" },
+        { "label": "TypeScript" }
+      ]
+    }
+  ],
+
+  "methodology-steps": [
+    {
+      "stepNumber": "01",
+      "title": "Descubrimiento & Arquitectura",
+      "description": "Levantamiento de requerimientos, viabilidad técnica, modelado de datos y diseño del blueprint de arquitectura.",
+      "track": "development",
+      "accent": "primary",
+      "order": 1
+    },
+    {
+      "stepNumber": "02",
+      "title": "Construcción Iterativa",
+      "description": "Sprints ágiles con integración continua, testing automatizado y entregas funcionales frecuentes.",
+      "track": "development",
+      "accent": "tertiary",
+      "order": 2
+    },
+    {
+      "stepNumber": "03",
+      "title": "Auditoría de Seguridad",
+      "description": "Pruebas de penetración rigurosas, escaneo estático/dinámico de código y evaluación exhaustiva de vulnerabilidades.",
+      "track": "development",
+      "accent": "secondary",
+      "order": 3
+    },
+    {
+      "stepNumber": "04",
+      "title": "Despliegue & Escalabilidad",
+      "description": "Lanzamientos zero-downtime, escalamiento de infraestructura en la nube y soporte y monitoreo proactivo.",
+      "track": "development",
+      "accent": "primary",
+      "order": 4
+    },
+    {
+      "stepNumber": "01",
+      "title": "Mapeo de Superficie",
+      "description": "Identificación y evaluación de todos los activos, APIs y puntos de entrada expuestos.",
+      "track": "security",
+      "accent": "primary",
+      "order": 1
+    },
+    {
+      "stepNumber": "02",
+      "title": "Simulación de Ataque",
+      "description": "Ejecución de pruebas intrusivas controladas para validar las defensas existentes.",
+      "track": "security",
+      "accent": "tertiary",
+      "order": 2
+    },
+    {
+      "stepNumber": "03",
+      "title": "Remediación & Hardening",
+      "description": "Aplicación de parches de arquitectura, segmentación de redes y políticas Zero-Trust.",
+      "track": "security",
+      "accent": "secondary",
+      "order": 3
+    },
+    {
+      "stepNumber": "04",
+      "title": "Monitoreo & Telemetría",
+      "description": "Supervisión continua con alertas automáticas y auditorías periódicas de cumplimiento.",
+      "track": "security",
+      "accent": "primary",
+      "order": 4
+    }
+  ],
+
+  "certifications": [
+    { "label": "ISO 27001 COMPLIANT", "code": "ISO-27001", "order": 1 },
+    { "label": "SOC 2 TYPE II", "code": "SOC-2", "order": 2 },
+    { "label": "ZERO-TRUST NATIVO", "code": "Z-TRUST", "order": 3 },
+    { "label": "OWASP TOP 10 HARDENING", "code": "OWASP", "order": 4 },
+    { "label": "NIST FRAMEWORK", "code": "NIST", "order": 5 }
+  ],
+
+  "legal-pages": [
+    {
+      "title": "Política de Privacidad",
+      "slug": "privacidad",
+      "summary": "Cómo Itc Services recopila, protege y trata la información de clientes y visitantes.",
+      "effectiveDate": "2026-08-01",
+      "content": "## 1. Compromiso con la Seguridad y Privacidad\n\nEn **Itc Services**, la confidencialidad, integridad y disponibilidad de la información de nuestros clientes y usuarios son prioridades fundamentales. Esta política describe cómo gestionamos los datos recopilados a través de nuestras plataformas y servicios de desarrollo de software.\n\n## 2. Recopilación de Información\n\nRecopilamos únicamente los datos necesarios para brindar nuestros servicios de consultoría, desarrollo e ingeniería tecnológica:\n\n- **Datos de contacto:** Nombre, correo electrónico corporativo, empresa y número telefónico proporcionados voluntariamente.\n- **Datos técnicos de proyectos:** Requerimientos de arquitectura, documentación técnica y especificaciones provistas para fines de estimación y desarrollo.\n- **Datos de navegación:** Métricas anónimas de rendimiento y navegación para optimizar la experiencia en nuestro portal.\n\n## 3. Principios de Zero-Trust y Protección de Datos\n\nImplementamos rigurosos controles de acceso bajo modelos de arquitectura Zero-Trust, cifrado de extremo a extremo (TLS 1.3 y AES-256) y revisiones continuas de seguridad para garantizar que la información sensible no sea comprometida.\n\n## 4. Contacto de Privacidad\n\nPara cualquier consulta sobre el tratamiento de tus datos o ejercer tus derechos de acceso y rectificación, puedes comunicarte con nuestro equipo en [contacto@itcservices.com](/contacto).",
+      "seo": {
+        "metaTitle": "Política de Privacidad",
+        "metaDescription": "Cómo Itc Services recopila, protege y trata la información de clientes y visitantes bajo principios Zero-Trust.",
+        "canonicalURL": "/privacidad"
+      }
+    },
+    {
+      "title": "Términos de Servicio",
+      "slug": "terminos",
+      "summary": "Condiciones bajo las que Itc Services presta sus servicios de ingeniería de software.",
+      "effectiveDate": "2026-08-01",
+      "content": "## 1. Aceptación de Términos\n\nAl acceder a nuestro sitio web o contratar los servicios de ingeniería de software provistos por **Itc Services**, usted acepta estar sujeto a estos términos y condiciones, así como a los Acuerdos de Nivel de Servicio (SLA) específicos de cada contrato comercial.\n\n## 2. Alcance de los Servicios\n\nItc Services presta servicios profesionales de desarrollo de aplicaciones web y móviles, ingeniería de datos, arquitectura cloud, consultoría DevSecOps y auditoría de seguridad informática bajo especificaciones acordadas en cada propuesta técnica.\n\n## 3. Propiedad Intelectual\n\nSalvo acuerdo expreso en contrario, todos los entregables desarrollados a la medida pasan a ser propiedad exclusiva del cliente una vez satisfechas las obligaciones contractuales correspondientes.\n\n## 4. Consultas Legales\n\nPara más información sobre nuestros términos contractuales, por favor [contáctanos aquí](/contacto).",
+      "seo": {
+        "metaTitle": "Términos de Servicio",
+        "metaDescription": "Condiciones bajo las que Itc Services presta sus servicios de desarrollo, arquitectura cloud y auditoría de seguridad.",
+        "canonicalURL": "/terminos"
+      }
+    },
+    {
+      "title": "Auditoría de Seguridad & Enfoque Zero-Trust",
+      "slug": "seguridad",
+      "summary": "La seguridad como pilar central de la arquitectura, desde el diseño hasta producción.",
+      "effectiveDate": "2026-08-01",
+      "content": "La seguridad no es un añadido posterior en nuestros proyectos: es el pilar central de nuestra arquitectura desde el diseño inicial hasta el despliegue en producción.\n\n## Zero-Trust\n\nPrincipio de mínimo privilegio, autenticación continua y segmentación estricta en cada capa de la red.\n\n## DevSecOps Nativo\n\nAnálisis estático (SAST), análisis dinámico (DAST) y escaneo continuo de dependencias en CI/CD.\n\n## Cifrado de Extremo a Extremo\n\nProtección de datos en tránsito (TLS 1.3) y en reposo (AES-256) con gestión granular de claves.\n\n## ¿Requieres una auditoría de seguridad o pentesting?\n\nNuestros especialistas en ciberseguridad pueden evaluar tu arquitectura actual y formular un plan de endurecimiento técnico. [Solicitar Auditoría](/contacto).",
+      "seo": {
+        "metaTitle": "Auditoría de Seguridad & Enfoque Zero-Trust",
+        "metaDescription": "Cómo Itc Services integra seguridad Zero-Trust, DevSecOps y cifrado de extremo a extremo en cada proyecto.",
+        "canonicalURL": "/seguridad"
+      }
+    }
+  ]
+}

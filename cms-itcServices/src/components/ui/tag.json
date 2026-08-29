@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ui_tags",
+  "info": {
+    "displayName": "Tag",
+    "description": "Etiqueta corta de tecnología o categoría",
+    "icon": "price-tag"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

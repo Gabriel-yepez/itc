@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": "Servicios de desarrollo de software y ciberseguridad"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "anchor": {
+      "type": "string",
+      "description": "id HTML para enlaces profundos (ej. web, cloud, mobile, devsecops)"
+    },
+    "track": {
+      "type": "enumeration",
+      "enum": ["software", "security"],
+      "required": true,
+      "default": "software",
+      "description": "Pestaña de /servicios en la que aparece la tarjeta"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "description": "Contenido extendido opcional para una página de detalle"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Clave del icono a renderizar en el frontend (ej. code, cloud, mobile, shield)"
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["standard", "wide", "centered"],
+      "default": "standard",
+      "description": "Tamaño de la tarjeta dentro de la retícula bento"
+    },
+    "badge": {
+      "type": "string",
+      "description": "Etiqueta de la esquina superior derecha (ej. Escala Empresarial)"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.feature"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.tag"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_nav_footer_links",
+  "info": {
+    "displayName": "Footer Link",
+    "description": "Enlace del pie de página, agrupado por columna",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "group": {
+      "type": "enumeration",
+      "enum": ["servicios", "empresa", "legal"],
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

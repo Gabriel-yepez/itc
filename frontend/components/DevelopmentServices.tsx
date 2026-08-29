@@ -29,7 +29,7 @@ export default function DevelopmentServices() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {/* Servicio 1: Aplicaciones Web */}
-        <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md">
+        <div id="web" className="group scroll-mt-24 rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md">
           <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
             <svg
               className="h-6 w-6"
@@ -75,7 +75,7 @@ export default function DevelopmentServices() {
         </div>
 
         {/* Servicio 2: Cloud & Backend (Span 2) */}
-        <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-tertiary/40 hover:shadow-md md:col-span-2 flex flex-col justify-between">
+        <div id="cloud" className="group scroll-mt-24 rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-tertiary/40 hover:shadow-md md:col-span-2 flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between mb-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary/10 text-tertiary transition-transform group-hover:scale-110">
@@ -133,7 +133,7 @@ export default function DevelopmentServices() {
         </div>
 
         {/* Servicio 3: Desarrollo Móvil (Span 2) */}
-        <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-secondary/40 hover:shadow-md md:col-span-2 flex flex-col justify-between">
+        <div id="mobile" className="group scroll-mt-24 rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-secondary/40 hover:shadow-md md:col-span-2 flex flex-col justify-between">
           <div>
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary transition-transform group-hover:scale-110">
               <svg
@@ -176,7 +176,7 @@ export default function DevelopmentServices() {
         </div>
 
         {/* Servicio 4: DevSecOps */}
-        <div className="group rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md flex flex-col justify-center items-center text-center">
+        <div id="devsecops" className="group scroll-mt-24 rounded-2xl border border-neutral bg-white p-8 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md flex flex-col justify-center items-center text-center">
           <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
             <svg
               className="h-7 w-7"

@@ -1,7 +1,8 @@
-import CoreCompetencies from "@/components/CoreCompetencies";
+import AboutUs from "@/components/AboutUs";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import OurClients from "@/components/OurClients";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Navbar />
       <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-6 py-12 sm:px-12 lg:px-16">
         <Hero />
-        <CoreCompetencies />
+        <AboutUs />
+        <OurClients />
       </main>
       <Footer />
     </div>

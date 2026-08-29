@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_ui_features",
+  "info": {
+    "displayName": "Feature",
+    "description": "Punto de detalle dentro de una tarjeta de servicio",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "marker": {
+      "type": "string",
+      "description": "Marcador visual: un número (01, 02) o un símbolo (✓)"
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    }
+  }
+}

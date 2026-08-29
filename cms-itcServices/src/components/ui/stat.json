@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_ui_stats",
+  "info": {
+    "displayName": "Stat",
+    "description": "Cifra destacada con su etiqueta (ej. 10+ / Años de Experiencia)",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    }
+  }
+}

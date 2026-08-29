@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ui_links",
+  "info": {
+    "displayName": "Link",
+    "description": "Enlace o botón de acción",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "ghost"],
+      "default": "primary"
+    },
+    "external": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

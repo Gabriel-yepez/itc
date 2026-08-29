@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact Page",
+    "description": "Contenido de /contacto: cabecera, tarjetas de contacto y opciones del formulario"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.section-heading"
+    },
+    "office": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.office"
+    },
+    "channel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.channel"
+    },
+    "inquiryOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.inquiry-option"
+    },
+    "submitLabel": {
+      "type": "string",
+      "default": "Enviar Mensaje"
+    },
+    "successTitle": {
+      "type": "string",
+      "default": "¡Mensaje recibido con éxito!"
+    },
+    "successMessage": {
+      "type": "text"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

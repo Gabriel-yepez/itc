@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_ui_section_headings",
+  "info": {
+    "displayName": "Section Heading",
+    "description": "Encabezado de sección: píldora, título y descripción",
+    "icon": "typhon"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "description": "Texto de la píldora superior (ej. Quiénes Somos)"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "accent": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "tertiary", "neutral"],
+      "default": "primary"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": ["left", "center"],
+      "default": "left"
+    }
+  }
+}

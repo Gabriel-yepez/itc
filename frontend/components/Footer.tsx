@@ -8,8 +8,9 @@ export default function Footer() {
   return (
     <footer className="w-full border-t border-neutral bg-neutral/30 py-16">
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
-          <div className="md:col-span-1 flex flex-col items-start gap-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          {/* Columna Marca */}
+          <div className="flex flex-col items-start gap-4 sm:col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" aria-label="Inicio" className="flex items-center gap-2">
               <Image
                 src={seo.logo.src}
@@ -27,6 +28,7 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Columna Servicios */}
           <div className="flex flex-col gap-3">
             <h4 className="font-headline text-sm font-bold text-black">Servicios</h4>
             <ul className="flex flex-col gap-2 font-body text-xs text-black">
@@ -53,12 +55,18 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Columna Empresa */}
           <div className="flex flex-col gap-3">
             <h4 className="font-headline text-sm font-bold text-black">Empresa</h4>
             <ul className="flex flex-col gap-2 font-body text-xs text-black">
               <li>
-                <Link href="/quienes-somos" className="hover:text-primary transition-colors">
+                <Link href="/#quienes-somos" className="hover:text-primary transition-colors">
                   Quiénes somos
+                </Link>
+              </li>
+              <li>
+                <Link href="/#clientes" className="hover:text-primary transition-colors">
+                  Nuestros clientes
                 </Link>
               </li>
               <li>
@@ -67,7 +75,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#metodologia" className="hover:text-primary transition-colors">
+                <Link href="/servicios#metodologia" className="hover:text-primary transition-colors">
                   Metodología
                 </Link>
               </li>
@@ -79,6 +87,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Columna Legal */}
           <div className="flex flex-col gap-3">
             <h4 className="font-headline text-sm font-bold text-black">Legal</h4>
             <ul className="flex flex-col gap-2 font-body text-xs text-black">
@@ -98,6 +107,29 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* Columna Ubicación & Contacto Directo */}
+          <div className="flex flex-col gap-3">
+            <h4 className="font-headline text-sm font-bold text-black">Ubicación & Contacto</h4>
+            <div className="flex flex-col gap-3 font-body text-xs text-black leading-relaxed">
+              <div>
+                <span className="font-label text-[10px] font-bold uppercase tracking-wider text-primary block mb-0.5">
+                  Sede Central
+                </span>
+                <p>100 Cyber Way, Suite 500</p>
+                <p>San Francisco, CA 94105</p>
+              </div>
+
+              <div className="border-t border-neutral/60 pt-2.5">
+                <span className="font-label text-[10px] font-bold uppercase tracking-wider text-secondary block mb-0.5">
+                  Atención Directa
+                </span>
+                <p className="font-bold">+1 (800) 555-0199</p>
+                <p>contacto@itcservices.com</p>
+                <p className="font-label text-[10px] text-black mt-0.5">Lun - Vie, 9:00 - 18:00 EST</p>
+              </div>
+            </div>
           </div>
         </div>
 

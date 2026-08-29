@@ -16,6 +16,14 @@
       "type": "text",
       "required": true
     },
+    "keywords": {
+      "type": "text",
+      "description": "Palabras clave separadas por comas"
+    },
+    "canonicalURL": {
+      "type": "string",
+      "description": "Ruta canónica relativa (ej. /servicios)"
+    },
     "shareImage": {
       "type": "media",
       "multiple": false,

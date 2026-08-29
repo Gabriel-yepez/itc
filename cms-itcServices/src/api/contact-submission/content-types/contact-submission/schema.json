@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_submissions",
+  "info": {
+    "singularName": "contact-submission",
+    "pluralName": "contact-submissions",
+    "displayName": "Contact Submission",
+    "description": "Mensajes recibidos desde el formulario de /contacto"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "subject": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160
+    },
+    "message": {
+      "type": "text",
+      "required": true,
+      "maxLength": 5000
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "in_review", "answered", "archived"],
+      "default": "new",
+      "required": true
+    },
+    "source": {
+      "type": "string",
+      "description": "Página desde la que se envió el formulario"
+    },
+    "handledAt": {
+      "type": "datetime"
+    },
+    "notes": {
+      "type": "text",
+      "description": "Notas internas del equipo; nunca se expone públicamente"
+    }
+  }
+}

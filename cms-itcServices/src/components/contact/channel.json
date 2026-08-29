@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_contact_channels",
+  "info": {
+    "displayName": "Channel",
+    "description": "Canal de contacto directo (teléfono, email, horario)",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "Contacto Directo"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "hours": {
+      "type": "string",
+      "description": "Horario de atención (ej. Lun - Vie, 9:00 - 18:00 EST)"
+    }
+  }
+}

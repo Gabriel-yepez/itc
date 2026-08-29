@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_abouts",
+  "info": {
+    "displayName": "About",
+    "description": "Sección \"Quiénes Somos\" con texto largo y cifras clave",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": "Quiénes Somos"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.stat"
+    },
+    "anchor": {
+      "type": "string",
+      "default": "quienes-somos",
+      "description": "id HTML usado por los enlaces del pie de página"
+    }
+  }
+}
