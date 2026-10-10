@@ -1,0 +1,3031 @@
+fecha;monto;moneda;canal;tipo;cuenta;tasa_bcv
+01/03/2024;7.883,04;VES;Pago Móvil;Débito;cta-0914;36,10
+01/03/2024;1.447,36;VES;Punto de venta;Débito;cta-0024;36,10
+01/03/2024;614,44;VES;Transferencia;Débito;cta-0100;36,10
+01/03/2024;129.285,89;VES;Transferencia;Débito;cta-0094;36,10
+01/03/2024;124,63;USD;Divisas;Débito;cta-0051;36,10
+01/03/2024;254,66;VES;Pago Móvil;Crédito;cta-0114;36,10
+01/03/2024;69.562,41;VES;Transferencia;Débito;cta-0118;36,10
+01/03/2024;989,09;VES;Transferencia;Débito;cta-0056;36,10
+01/03/2024;469,74;USD;Divisas;Débito;cta-0052;36,10
+01/03/2024;54,05;VES;Pago Móvil;Débito;cta-0069;36,10
+01/03/2024;854,31;USD;Divisas;Débito;cta-0003;36,10
+01/03/2024;5.771,45;VES;Pago Móvil;Débito;cta-0915;36,10
+01/03/2024;69,16;VES;Punto de venta;Débito;cta-0064;36,10
+01/03/2024;856,19;VES;Punto de venta;Crédito;cta-0111;36,10
+01/03/2024;5.441,80;VES;Pago Móvil;Débito;cta-0911;36,10
+01/03/2024;76,67;VES;Punto de venta;Débito;cta-0012;36,10
+01/03/2024;5.018,81;VES;Pago Móvil;Débito;cta-0913;36,10
+01/03/2024;1.617,60;VES;Punto de venta;Débito;cta-0035;36,10
+01/03/2024;1.185,55;VES;Pago Móvil;Crédito;cta-0051;36,10
+01/03/2024;4.082,65;VES;Pago Móvil;Crédito;cta-0107;36,10
+01/03/2024;382,74;VES;Pago Móvil;Débito;cta-0050;36,10
+01/03/2024;328,05;VES;Pago Móvil;Débito;cta-0094;36,10
+01/03/2024;12.473,53;VES;Transferencia;Débito;cta-0016;36,10
+01/03/2024;556.938,11;VES;Transferencia;Débito;cta-0115;36,10
+01/03/2024;26,11;VES;Punto de venta;Débito;cta-0038;36,10
+01/03/2024;506,29;VES;Punto de venta;Débito;cta-0078;36,10
+01/03/2024;1.543,86;VES;Punto de venta;Débito;cta-0013;36,10
+01/03/2024;3.019,12;USD;Divisas;Crédito;cta-0074;36,10
+01/03/2024;113,84;VES;Pago Móvil;Débito;cta-0117;36,10
+01/03/2024;14,25;VES;Pago Móvil;Débito;cta-0039;36,10
+01/03/2024;325,93;VES;Transferencia;Débito;cta-0060;36,10
+01/03/2024;23,90;VES;Pago Móvil;Débito;cta-0010;36,10
+01/03/2024;1.294,57;VES;Punto de venta;Débito;cta-0059;36,10
+01/03/2024;575,12;VES;Pago Móvil;Crédito;cta-0026;36,10
+01/03/2024;21,00;VES;Punto de venta;Crédito;cta-0094;36,10
+01/03/2024;726,72;VES;Transferencia;Débito;cta-0096;36,10
+01/03/2024;4.833,83;VES;Pago Móvil;Débito;cta-0915;36,10
+01/03/2024;39,26;VES;Pago Móvil;Crédito;cta-0063;36,10
+01/03/2024;240.777,56;VES;Transferencia;Débito;cta-0016;36,10
+01/03/2024;42,71;VES;Pago Móvil;Débito;cta-0077;36,10
+01/03/2024;443.058,69;VES;Transferencia;Débito;cta-0093;36,10
+01/03/2024;7.700,35;VES;Pago Móvil;Crédito;cta-0914;36,10
+01/03/2024;1.443,77;VES;Punto de venta;Débito;cta-0019;36,10
+01/03/2024;297,47;VES;Pago Móvil;Débito;cta-0117;36,10
+01/03/2024;24,89;VES;Punto de venta;Débito;cta-0108;36,10
+01/03/2024;232,50;VES;Transferencia;Crédito;cta-0118;36,10
+01/03/2024;4.308,17;VES;Pago Móvil;Crédito;cta-0910;36,10
+01/03/2024;83.202,85;VES;Transferencia;Débito;cta-0066;36,10
+01/03/2024;6,48;USD;Divisas;Débito;cta-0108;36,10
+01/03/2024;94.525,00;VES;Transferencia;Débito;cta-0016;36,10
+01/03/2024;181.650,02;VES;Transferencia;Débito;cta-0020;36,10
+01/03/2024;458,45;VES;Pago Móvil;Débito;cta-0009;36,10
+01/03/2024;1.281,54;VES;Pago Móvil;Débito;cta-0036;36,10
+01/03/2024;1.382,07;USD;Divisas;Crédito;cta-0049;36,10
+01/03/2024;20.000,00;VES;Transferencia;Débito;cta-0812;36,10
+01/03/2024;1.344,22;USD;Divisas;Débito;cta-0069;36,10
+01/03/2024;9.653,70;VES;Pago Móvil;Débito;cta-0910;36,10
+01/03/2024;369,78;VES;Transferencia;Débito;cta-0080;36,10
+01/03/2024;359,52;VES;Pago Móvil;Débito;cta-0016;36,10
+01/03/2024;843.284,11;VES;Transferencia;Débito;cta-0102;36,10
+01/03/2024;9.650,21;VES;Pago Móvil;Crédito;cta-0915;36,10
+01/03/2024;97,19;VES;Pago Móvil;Crédito;cta-0085;36,10
+01/03/2024;5.032,92;VES;Pago Móvil;Débito;cta-0914;36,10
+01/03/2024;8.609,14;VES;Punto de venta;Crédito;cta-0034;36,10
+01/03/2024;9.778,32;VES;Pago Móvil;Débito;cta-0915;36,10
+01/03/2024;40,99;VES;Pago Móvil;Débito;cta-0114;36,10
+01/03/2024;596,67;VES;Punto de venta;Crédito;cta-0017;36,10
+01/03/2024;356,38;VES;Transferencia;Débito;cta-0039;36,10
+01/03/2024;524,10;USD;Divisas;Crédito;cta-0109;36,10
+01/03/2024;4.192,16;VES;Pago Móvil;Débito;cta-0027;36,10
+01/03/2024;6.870,41;VES;Pago Móvil;Débito;cta-0914;36,10
+01/03/2024;325,76;USD;Divisas;Débito;cta-0119;36,10
+01/03/2024;1.600,44;VES;Pago Móvil;Crédito;cta-0022;36,10
+01/03/2024;113,01;VES;Pago Móvil;Crédito;cta-0094;36,10
+01/03/2024;3.981,48;VES;Pago Móvil;Débito;cta-0022;36,10
+01/03/2024;11,59;VES;Punto de venta;Débito;cta-0040;36,10
+01/03/2024;3.283,77;USD;Divisas;Débito;cta-0009;36,10
+01/03/2024;737,64;VES;Pago Móvil;Débito;cta-0074;36,10
+01/03/2024;4.342,76;VES;Transferencia;Débito;cta-0087;36,10
+01/03/2024;439,41;VES;Punto de venta;Débito;cta-0062;36,10
+01/03/2024;331.970,13;VES;Transferencia;Crédito;cta-0777;36,10
+01/03/2024;7,56;USD;Divisas;Crédito;cta-0020;36,10
+01/03/2024;25.000,00;VES;Transferencia;Crédito;cta-0812;36,10
+01/03/2024;738,67;VES;Pago Móvil;Débito;cta-0089;36,10
+01/03/2024;358,33;VES;Pago Móvil;Débito;cta-0078;36,10
+01/03/2024;218.266,44;VES;Transferencia;Débito;cta-0055;36,10
+01/03/2024;393.708,58;VES;Transferencia;Débito;cta-0120;36,10
+01/03/2024;12,49;VES;Punto de venta;Crédito;cta-0024;36,10
+01/03/2024;4.547,04;VES;Pago Móvil;Débito;cta-0914;36,10
+01/03/2024;11,87;VES;Punto de venta;Crédito;cta-0050;36,10
+01/03/2024;975,35;VES;Transferencia;Crédito;cta-0108;36,10
+01/03/2024;885.684,63;VES;Transferencia;Débito;cta-0068;36,10
+01/03/2024;43,19;VES;Pago Móvil;Débito;cta-0078;36,10
+01/03/2024;2.736,23;VES;Pago Móvil;Crédito;cta-0011;36,10
+01/03/2024;19,07;USD;Divisas;Débito;cta-0053;36,10
+01/03/2024;176,04;VES;Punto de venta;Débito;cta-0059;36,10
+01/03/2024;1.075,77;VES;Transferencia;Débito;cta-0060;36,10
+01/03/2024;376,49;VES;Punto de venta;Débito;cta-0087;36,10
+01/03/2024;60,08;USD;Divisas;Crédito;cta-0112;36,10
+01/03/2024;439,73;USD;Divisas;Crédito;cta-0002;36,10
+01/03/2024;16,00;USD;Divisas;Débito;cta-0009;36,10
+01/03/2024;1.878,17;VES;Pago Móvil;Crédito;cta-0110;36,10
+01/03/2024;530,76;VES;Punto de venta;Débito;cta-0081;36,10
+01/03/2024;15,32;VES;Pago Móvil;Débito;cta-0016;36,10
+02/03/2024;6.372,59;VES;Pago Móvil;Débito;cta-0914;36,11
+02/03/2024;39,59;USD;Divisas;Débito;cta-0032;36,11
+02/03/2024;180,58;VES;Pago Móvil;Crédito;cta-0068;36,11
+02/03/2024;16,85;VES;Punto de venta;Crédito;cta-0011;36,11
+02/03/2024;7.242,51;VES;Pago Móvil;Débito;cta-0910;36,11
+02/03/2024;4.865,17;VES;Pago Móvil;Débito;cta-0108;36,11
+02/03/2024;20,14;VES;Pago Móvil;Crédito;cta-0070;36,11
+02/03/2024;9.456,39;VES;Pago Móvil;Crédito;cta-0018;36,11
+02/03/2024;897,73;VES;Pago Móvil;Crédito;cta-0061;36,11
+02/03/2024;20.000,00;VES;Transferencia;Débito;cta-0810;36,11
+02/03/2024;325.975,33;VES;Transferencia;Crédito;cta-0777;36,11
+02/03/2024;350.133,88;VES;Transferencia;Crédito;cta-0777;36,11
+02/03/2024;3.236,32;VES;Pago Móvil;Crédito;cta-0087;36,11
+02/03/2024;147,50;VES;Pago Móvil;Crédito;cta-0080;36,11
+02/03/2024;34,59;VES;Pago Móvil;Crédito;cta-0070;36,11
+02/03/2024;22,80;VES;Pago Móvil;Débito;cta-0063;36,11
+02/03/2024;340.980,29;VES;Transferencia;Débito;cta-0777;36,11
+02/03/2024;4.169,04;VES;Pago Móvil;Débito;cta-0083;36,11
+02/03/2024;6.686,55;VES;Pago Móvil;Débito;cta-0912;36,11
+02/03/2024;1.328,96;VES;Pago Móvil;Débito;cta-0113;36,11
+02/03/2024;1.079,28;VES;Pago Móvil;Crédito;cta-0068;36,11
+02/03/2024;2.728,65;VES;Transferencia;Débito;cta-0109;36,11
+02/03/2024;4.941,70;USD;Divisas;Débito;cta-0078;36,11
+02/03/2024;70,27;VES;Pago Móvil;Débito;cta-0107;36,11
+02/03/2024;6.544,87;VES;Transferencia;Débito;cta-0031;36,11
+02/03/2024;10,61;VES;Pago Móvil;Débito;cta-0119;36,11
+02/03/2024;632,69;VES;Punto de venta;Crédito;cta-0087;36,11
+02/03/2024;9.368,63;VES;Pago Móvil;Crédito;cta-0914;36,11
+02/03/2024;9.709,52;VES;Pago Móvil;Crédito;cta-0910;36,11
+02/03/2024;807.547,83;VES;Transferencia;Crédito;cta-0027;36,11
+02/03/2024;150.000,00;VES;Transferencia;Crédito;cta-0814;36,11
+02/03/2024;43,55;USD;Divisas;Crédito;cta-0011;36,11
+02/03/2024;4.213,70;VES;Pago Móvil;Débito;cta-0913;36,11
+02/03/2024;7.253,15;VES;Pago Móvil;Crédito;cta-0914;36,11
+02/03/2024;7.647,93;VES;Pago Móvil;Crédito;cta-0915;36,11
+02/03/2024;1.254,81;VES;Pago Móvil;Débito;cta-0058;36,11
+02/03/2024;50,42;VES;Pago Móvil;Crédito;cta-0034;36,11
+02/03/2024;13.567,27;VES;Transferencia;Crédito;cta-0020;36,11
+02/03/2024;7.363,76;VES;Pago Móvil;Débito;cta-0915;36,11
+02/03/2024;7.913,39;VES;Pago Móvil;Crédito;cta-0915;36,11
+02/03/2024;130,74;USD;Divisas;Crédito;cta-0070;36,11
+02/03/2024;3.639,50;VES;Pago Móvil;Crédito;cta-0001;36,11
+02/03/2024;6.207,26;VES;Pago Móvil;Débito;cta-0915;36,11
+02/03/2024;289,98;VES;Pago Móvil;Crédito;cta-0020;36,11
+02/03/2024;9.461,07;VES;Pago Móvil;Débito;cta-0911;36,11
+02/03/2024;6.112,50;VES;Pago Móvil;Débito;cta-0915;36,11
+02/03/2024;42.450,28;VES;Transferencia;Débito;cta-0115;36,11
+02/03/2024;2.523,90;VES;Punto de venta;Débito;cta-0092;36,11
+02/03/2024;4.835,16;VES;Pago Móvil;Débito;cta-0914;36,11
+02/03/2024;9.759,21;VES;Pago Móvil;Crédito;cta-0912;36,11
+02/03/2024;9.685,79;VES;Pago Móvil;Débito;cta-0913;36,11
+02/03/2024;8.921,43;VES;Pago Móvil;Crédito;cta-0062;36,11
+02/03/2024;91,82;VES;Pago Móvil;Débito;cta-0006;36,11
+02/03/2024;137,17;VES;Pago Móvil;Débito;cta-0039;36,11
+02/03/2024;22,55;USD;Divisas;Crédito;cta-0045;36,11
+02/03/2024;200.000,00;VES;Transferencia;Crédito;cta-0818;36,11
+02/03/2024;8.041,27;VES;Pago Móvil;Crédito;cta-0912;36,11
+02/03/2024;6.532,80;VES;Transferencia;Débito;cta-0094;36,11
+02/03/2024;4.178,12;VES;Pago Móvil;Crédito;cta-0915;36,11
+02/03/2024;717,67;VES;Transferencia;Débito;cta-0016;36,11
+02/03/2024;4.130,47;VES;Pago Móvil;Crédito;cta-0914;36,11
+02/03/2024;240.485,63;VES;Transferencia;Crédito;cta-0039;36,11
+02/03/2024;206,90;VES;Transferencia;Crédito;cta-0030;36,11
+02/03/2024;7.134,98;VES;Pago Móvil;Débito;cta-0910;36,11
+02/03/2024;61,26;VES;Punto de venta;Débito;cta-0023;36,11
+02/03/2024;10,04;VES;Pago Móvil;Débito;cta-0052;36,11
+02/03/2024;6,76;USD;Divisas;Débito;cta-0018;36,11
+02/03/2024;819.886,25;VES;Transferencia;Débito;cta-0042;36,11
+02/03/2024;549.273,59;VES;Transferencia;Débito;cta-0065;36,11
+02/03/2024;2.039,63;VES;Punto de venta;Crédito;cta-0081;36,11
+02/03/2024;6.246,12;VES;Pago Móvil;Crédito;cta-0913;36,11
+02/03/2024;10,83;VES;Pago Móvil;Crédito;cta-0001;36,11
+02/03/2024;4.749,30;VES;Pago Móvil;Crédito;cta-0910;36,11
+02/03/2024;55,40;VES;Punto de venta;Débito;cta-0098;36,11
+02/03/2024;66,98;VES;Punto de venta;Débito;cta-0108;36,11
+02/03/2024;27,45;USD;Divisas;Crédito;cta-0007;36,11
+02/03/2024;8.753,18;VES;Pago Móvil;Débito;cta-0911;36,11
+02/03/2024;349.592,83;VES;Transferencia;Débito;cta-0777;36,11
+02/03/2024;18.375,62;VES;Transferencia;Débito;cta-0097;36,11
+02/03/2024;10,67;VES;Pago Móvil;Crédito;cta-0014;36,11
+02/03/2024;22,03;VES;Pago Móvil;Débito;cta-0041;36,11
+02/03/2024;9.877,42;VES;Pago Móvil;Débito;cta-0002;36,11
+02/03/2024;2.860,61;VES;Punto de venta;Crédito;cta-0072;36,11
+02/03/2024;261.477,85;VES;Transferencia;Débito;cta-0018;36,11
+02/03/2024;5.366,40;VES;Pago Móvil;Crédito;cta-0915;36,11
+02/03/2024;46,45;VES;Punto de venta;Débito;cta-0097;36,11
+02/03/2024;8.416,08;VES;Pago Móvil;Débito;cta-0913;36,11
+02/03/2024;795,83;VES;Pago Móvil;Débito;cta-0086;36,11
+02/03/2024;1.386,87;USD;Divisas;Débito;cta-0065;36,11
+02/03/2024;185,37;USD;Divisas;Débito;cta-0102;36,11
+02/03/2024;8.607,10;VES;Pago Móvil;Débito;cta-0913;36,11
+03/03/2024;5.251,04;VES;Pago Móvil;Débito;cta-0001;36,12
+03/03/2024;204.333,49;VES;Transferencia;Crédito;cta-0007;36,12
+03/03/2024;314.364,67;VES;Transferencia;Débito;cta-0027;36,12
+03/03/2024;403,69;VES;Pago Móvil;Débito;cta-0043;36,12
+03/03/2024;4.993,20;VES;Transferencia;Crédito;cta-0059;36,12
+03/03/2024;2.056,52;VES;Punto de venta;Débito;cta-0055;36,12
+03/03/2024;393.637,83;VES;Transferencia;Crédito;cta-0094;36,12
+03/03/2024;6.640,64;VES;Pago Móvil;Crédito;cta-0915;36,12
+03/03/2024;3.275,16;VES;Pago Móvil;Débito;cta-0094;36,12
+03/03/2024;5.772,51;VES;Pago Móvil;Débito;cta-0915;36,12
+03/03/2024;14,12;VES;Pago Móvil;Crédito;cta-0084;36,12
+03/03/2024;12,98;VES;Pago Móvil;Débito;cta-0060;36,12
+03/03/2024;166,99;VES;Pago Móvil;Débito;cta-0095;36,12
+03/03/2024;1.340,26;VES;Pago Móvil;Débito;cta-0027;36,12
+03/03/2024;2.222,47;VES;Punto de venta;Débito;cta-0117;36,12
+03/03/2024;8.351,68;VES;Pago Móvil;Débito;cta-0911;36,12
+03/03/2024;17,74;USD;Divisas;Crédito;cta-0012;36,12
+03/03/2024;142,34;VES;Transferencia;Débito;cta-0091;36,12
+03/03/2024;5.706,70;VES;Pago Móvil;Débito;cta-0912;36,12
+03/03/2024;5.746,71;VES;Pago Móvil;Débito;cta-0910;36,12
+03/03/2024;102,83;VES;Punto de venta;Crédito;cta-0057;36,12
+03/03/2024;3.233,70;USD;Divisas;Crédito;cta-0065;36,12
+03/03/2024;934,77;VES;Punto de venta;Débito;cta-0023;36,12
+03/03/2024;4.851,36;VES;Pago Móvil;Débito;cta-0914;36,12
+03/03/2024;210,56;USD;Divisas;Crédito;cta-0078;36,12
+03/03/2024;553,66;VES;Pago Móvil;Débito;cta-0074;36,12
+03/03/2024;105,32;VES;Transferencia;Crédito;cta-0061;36,12
+03/03/2024;9.453,61;VES;Pago Móvil;Débito;cta-0915;36,12
+03/03/2024;166.733,37;VES;Transferencia;Débito;cta-0012;36,12
+03/03/2024;491,41;VES;Transferencia;Crédito;cta-0046;36,12
+03/03/2024;18,17;USD;Divisas;Débito;cta-0098;36,12
+03/03/2024;98,80;VES;Punto de venta;Débito;cta-0085;36,12
+03/03/2024;5.170,95;VES;Pago Móvil;Débito;cta-0914;36,12
+03/03/2024;48,68;VES;Pago Móvil;Débito;cta-0064;36,12
+03/03/2024;13,01;VES;Punto de venta;Débito;cta-0036;36,12
+03/03/2024;667,14;VES;Pago Móvil;Crédito;cta-0002;36,12
+03/03/2024;660,62;VES;Punto de venta;Crédito;cta-0015;36,12
+03/03/2024;167,54;VES;Pago Móvil;Débito;cta-0078;36,12
+03/03/2024;2.646,63;USD;Divisas;Débito;cta-0007;36,12
+03/03/2024;2.712,83;VES;Pago Móvil;Crédito;cta-0117;36,12
+03/03/2024;5.025,25;VES;Pago Móvil;Débito;cta-0913;36,12
+03/03/2024;4.975,56;VES;Pago Móvil;Crédito;cta-0913;36,12
+03/03/2024;116,71;VES;Pago Móvil;Débito;cta-0040;36,12
+03/03/2024;14.040,57;VES;Transferencia;Débito;cta-0064;36,12
+03/03/2024;4.006,02;VES;Pago Móvil;Débito;cta-0910;36,12
+03/03/2024;68.682,46;VES;Transferencia;Débito;cta-0118;36,12
+03/03/2024;924,05;VES;Pago Móvil;Débito;cta-0109;36,12
+03/03/2024;1.037,97;USD;Divisas;Crédito;cta-0100;36,12
+03/03/2024;367,10;VES;Punto de venta;Crédito;cta-0035;36,12
+03/03/2024;15,31;VES;Punto de venta;Débito;cta-0034;36,12
+03/03/2024;8.697,78;VES;Pago Móvil;Débito;cta-0915;36,12
+03/03/2024;674.970,56;VES;Transferencia;Débito;cta-0037;36,12
+03/03/2024;23,15;VES;Pago Móvil;Débito;cta-0117;36,12
+03/03/2024;267,55;VES;Pago Móvil;Débito;cta-0002;36,12
+03/03/2024;5.127,84;VES;Pago Móvil;Débito;cta-0058;36,12
+03/03/2024;4.480,09;VES;Transferencia;Débito;cta-0023;36,12
+03/03/2024;196,99;VES;Punto de venta;Débito;cta-0034;36,12
+03/03/2024;3.881,96;VES;Punto de venta;Débito;cta-0009;36,12
+03/03/2024;1.531,62;VES;Punto de venta;Crédito;cta-0079;36,12
+03/03/2024;150.000,00;VES;Transferencia;Débito;cta-0810;36,12
+03/03/2024;7.007,56;VES;Pago Móvil;Crédito;cta-0911;36,12
+03/03/2024;19,94;USD;Divisas;Crédito;cta-0096;36,12
+03/03/2024;47,79;VES;Punto de venta;Crédito;cta-0061;36,12
+03/03/2024;8.987,82;VES;Pago Móvil;Crédito;cta-0910;36,12
+03/03/2024;14,82;USD;Divisas;Débito;cta-0039;36,12
+03/03/2024;4.193,48;VES;Pago Móvil;Débito;cta-0096;36,12
+03/03/2024;7.266,05;VES;Pago Móvil;Débito;cta-0914;36,12
+03/03/2024;26,25;VES;Pago Móvil;Débito;cta-0009;36,12
+03/03/2024;349.157,56;VES;Transferencia;Débito;cta-0777;36,12
+03/03/2024;3.684,63;USD;Divisas;Crédito;cta-0120;36,12
+03/03/2024;45,31;VES;Punto de venta;Débito;cta-0064;36,12
+03/03/2024;538.172,15;VES;Transferencia;Débito;cta-0117;36,12
+03/03/2024;23.642,23;VES;Transferencia;Débito;cta-0004;36,12
+03/03/2024;14,03;VES;Pago Móvil;Débito;cta-0024;36,12
+03/03/2024;3.936,87;USD;Divisas;Débito;cta-0094;36,12
+03/03/2024;250,43;VES;Pago Móvil;Débito;cta-0101;36,12
+03/03/2024;19,22;VES;Pago Móvil;Crédito;cta-0115;36,12
+03/03/2024;18,17;VES;Punto de venta;Crédito;cta-0060;36,12
+03/03/2024;244,68;VES;Punto de venta;Débito;cta-0019;36,12
+03/03/2024;761,59;VES;Pago Móvil;Débito;cta-0072;36,12
+03/03/2024;7,09;USD;Divisas;Débito;cta-0112;36,12
+03/03/2024;4.356,01;VES;Transferencia;Débito;cta-0089;36,12
+03/03/2024;144.506,10;VES;Transferencia;Débito;cta-0117;36,12
+03/03/2024;9.145,42;VES;Pago Móvil;Débito;cta-0911;36,12
+03/03/2024;81,95;VES;Pago Móvil;Débito;cta-0099;36,12
+03/03/2024;447.447,17;VES;Transferencia;Crédito;cta-0015;36,12
+03/03/2024;39,80;VES;Punto de venta;Débito;cta-0085;36,12
+03/03/2024;29,04;USD;Divisas;Crédito;cta-0012;36,12
+03/03/2024;8.574,83;VES;Punto de venta;Débito;cta-0079;36,12
+03/03/2024;273,47;VES;Pago Móvil;Débito;cta-0085;36,12
+03/03/2024;5.768,35;VES;Pago Móvil;Débito;cta-0012;36,12
+03/03/2024;67,18;VES;Pago Móvil;Débito;cta-0008;36,12
+03/03/2024;289.194,01;VES;Transferencia;Débito;cta-0084;36,12
+03/03/2024;71,58;VES;Punto de venta;Crédito;cta-0025;36,12
+03/03/2024;9.850,95;VES;Pago Móvil;Débito;cta-0910;36,12
+03/03/2024;366,88;VES;Punto de venta;Crédito;cta-0039;36,12
+03/03/2024;7.626,54;VES;Punto de venta;Débito;cta-0093;36,12
+03/03/2024;2.979,87;VES;Pago Móvil;Débito;cta-0048;36,12
+03/03/2024;1.762,61;VES;Pago Móvil;Crédito;cta-0081;36,12
+03/03/2024;1.679,68;VES;Punto de venta;Crédito;cta-0109;36,12
+03/03/2024;358,55;VES;Transferencia;Débito;cta-0083;36,12
+03/03/2024;3.676,53;VES;Transferencia;Crédito;cta-0003;36,12
+03/03/2024;4.342,78;VES;Pago Móvil;Débito;cta-0910;36,12
+03/03/2024;4.719,95;USD;Divisas;Débito;cta-0045;36,12
+03/03/2024;8.952,97;VES;Pago Móvil;Crédito;cta-0910;36,12
+03/03/2024;25.000,00;VES;Transferencia;Crédito;cta-0818;36,12
+03/03/2024;2.585,11;VES;Pago Móvil;Débito;cta-0097;36,12
+03/03/2024;23,75;VES;Pago Móvil;Débito;cta-0087;36,12
+04/03/2024;769,50;VES;Pago Móvil;Crédito;cta-0094;36,14
+04/03/2024;66,74;VES;Pago Móvil;Débito;cta-0052;36,14
+04/03/2024;78,76;VES;Pago Móvil;Débito;cta-0023;36,14
+04/03/2024;9.812,11;VES;Pago Móvil;Débito;cta-0033;36,14
+04/03/2024;9.815,20;VES;Pago Móvil;Crédito;cta-0912;36,14
+04/03/2024;181,70;VES;Pago Móvil;Crédito;cta-0064;36,14
+04/03/2024;150.000,00;VES;Transferencia;Débito;cta-0810;36,14
+04/03/2024;86,52;VES;Punto de venta;Débito;cta-0034;36,14
+04/03/2024;229,81;VES;Transferencia;Débito;cta-0107;36,14
+04/03/2024;927.134,48;VES;Transferencia;Débito;cta-0044;36,14
+04/03/2024;347,52;VES;Punto de venta;Débito;cta-0094;36,14
+04/03/2024;15,34;USD;Divisas;Crédito;cta-0109;36,14
+04/03/2024;2.679,21;VES;Pago Móvil;Crédito;cta-0076;36,14
+04/03/2024;5.064,48;VES;Pago Móvil;Débito;cta-0913;36,14
+04/03/2024;85.064,07;VES;Transferencia;Débito;cta-0067;36,14
+04/03/2024;2.807,35;VES;Pago Móvil;Crédito;cta-0100;36,14
+04/03/2024;49.704,53;VES;Transferencia;Crédito;cta-0095;36,14
+04/03/2024;1.539,90;VES;Transferencia;Débito;cta-0029;36,14
+04/03/2024;1.339,03;VES;Pago Móvil;Crédito;cta-0098;36,14
+04/03/2024;1.173,17;VES;Transferencia;Débito;cta-0074;36,14
+04/03/2024;108,07;VES;Pago Móvil;Débito;cta-0034;36,14
+04/03/2024;5.236,09;VES;Punto de venta;Crédito;cta-0100;36,14
+04/03/2024;7.704,85;VES;Pago Móvil;Débito;cta-0910;36,14
+04/03/2024;185,67;VES;Punto de venta;Débito;cta-0005;36,14
+04/03/2024;10,66;VES;Punto de venta;Débito;cta-0048;36,14
+04/03/2024;8.122,16;VES;Pago Móvil;Débito;cta-0913;36,14
+04/03/2024;8.370,06;VES;Pago Móvil;Débito;cta-0113;36,14
+04/03/2024;9.527,43;VES;Pago Móvil;Débito;cta-0912;36,14
+04/03/2024;59,96;VES;Punto de venta;Débito;cta-0008;36,14
+04/03/2024;24,52;USD;Divisas;Débito;cta-0058;36,14
+04/03/2024;12,81;VES;Pago Móvil;Crédito;cta-0015;36,14
+04/03/2024;695,76;VES;Transferencia;Crédito;cta-0115;36,14
+04/03/2024;200.000,00;VES;Transferencia;Débito;cta-0819;36,14
+04/03/2024;4.154,07;VES;Pago Móvil;Débito;cta-0910;36,14
+04/03/2024;591,18;VES;Punto de venta;Débito;cta-0015;36,14
+04/03/2024;44,57;VES;Pago Móvil;Débito;cta-0064;36,14
+04/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0810;36,14
+04/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0812;36,14
+04/03/2024;987,49;VES;Transferencia;Débito;cta-0079;36,14
+04/03/2024;273.618,26;VES;Transferencia;Débito;cta-0062;36,14
+04/03/2024;1.333,57;VES;Pago Móvil;Débito;cta-0021;36,14
+04/03/2024;1.082,79;USD;Divisas;Crédito;cta-0033;36,14
+04/03/2024;2.821,57;USD;Divisas;Crédito;cta-0102;36,14
+04/03/2024;139,08;VES;Pago Móvil;Débito;cta-0116;36,14
+04/03/2024;36.771,79;VES;Transferencia;Crédito;cta-0026;36,14
+04/03/2024;7.250,83;VES;Pago Móvil;Débito;cta-0910;36,14
+04/03/2024;6.697,67;VES;Pago Móvil;Débito;cta-0091;36,14
+04/03/2024;226,13;VES;Punto de venta;Débito;cta-0032;36,14
+04/03/2024;14.713,22;VES;Transferencia;Débito;cta-0076;36,14
+04/03/2024;197,43;VES;Pago Móvil;Débito;cta-0057;36,14
+04/03/2024;511.325,10;VES;Transferencia;Débito;cta-0038;36,14
+04/03/2024;5.507,34;VES;Pago Móvil;Débito;cta-0912;36,14
+04/03/2024;43,46;VES;Pago Móvil;Débito;cta-0073;36,14
+04/03/2024;957,83;VES;Punto de venta;Débito;cta-0095;36,14
+04/03/2024;6.656,62;VES;Pago Móvil;Débito;cta-0060;36,14
+04/03/2024;621.013,71;VES;Transferencia;Crédito;cta-0006;36,14
+04/03/2024;1.267,48;VES;Transferencia;Crédito;cta-0035;36,14
+04/03/2024;523,25;VES;Transferencia;Crédito;cta-0040;36,14
+04/03/2024;5,09;USD;Divisas;Crédito;cta-0004;36,14
+04/03/2024;2.514,45;USD;Divisas;Débito;cta-0118;36,14
+04/03/2024;3.844,85;VES;Punto de venta;Crédito;cta-0041;36,14
+04/03/2024;191,79;VES;Pago Móvil;Débito;cta-0095;36,14
+04/03/2024;9.885,13;VES;Pago Móvil;Débito;cta-0914;36,14
+04/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0815;36,14
+04/03/2024;226.940,08;VES;Transferencia;Débito;cta-0040;36,14
+04/03/2024;6.125,79;VES;Punto de venta;Débito;cta-0029;36,14
+04/03/2024;758,54;USD;Divisas;Débito;cta-0010;36,14
+04/03/2024;1.952,02;VES;Pago Móvil;Débito;cta-0030;36,14
+04/03/2024;200.000,00;VES;Transferencia;Débito;cta-0818;36,14
+04/03/2024;9.242,97;VES;Pago Móvil;Débito;cta-0912;36,14
+04/03/2024;105,77;USD;Divisas;Crédito;cta-0093;36,14
+04/03/2024;90.617,18;VES;Transferencia;Débito;cta-0017;36,14
+04/03/2024;245,15;VES;Punto de venta;Crédito;cta-0022;36,14
+04/03/2024;1.625,88;VES;Punto de venta;Crédito;cta-0002;36,14
+04/03/2024;23,99;VES;Punto de venta;Débito;cta-0086;36,14
+04/03/2024;53,75;VES;Pago Móvil;Débito;cta-0005;36,14
+04/03/2024;296,24;USD;Divisas;Débito;cta-0002;36,14
+04/03/2024;326.010,70;VES;Transferencia;Crédito;cta-0777;36,14
+04/03/2024;1.773,00;VES;Punto de venta;Débito;cta-0094;36,14
+04/03/2024;557,97;VES;Transferencia;Débito;cta-0084;36,14
+04/03/2024;74,58;USD;Divisas;Débito;cta-0099;36,14
+04/03/2024;281.056,97;VES;Transferencia;Débito;cta-0020;36,14
+04/03/2024;20,34;VES;Pago Móvil;Crédito;cta-0043;36,14
+04/03/2024;10,22;VES;Pago Móvil;Débito;cta-0022;36,14
+04/03/2024;363,85;VES;Transferencia;Débito;cta-0116;36,14
+04/03/2024;8.942,86;VES;Pago Móvil;Débito;cta-0911;36,14
+04/03/2024;115,85;VES;Transferencia;Débito;cta-0028;36,14
+04/03/2024;22,75;VES;Pago Móvil;Débito;cta-0105;36,14
+04/03/2024;4.515,98;VES;Pago Móvil;Débito;cta-0110;36,14
+04/03/2024;530,37;VES;Pago Móvil;Débito;cta-0005;36,14
+04/03/2024;6.721,31;VES;Pago Móvil;Débito;cta-0914;36,14
+04/03/2024;736,68;VES;Transferencia;Débito;cta-0073;36,14
+04/03/2024;5.177,10;VES;Pago Móvil;Débito;cta-0910;36,14
+04/03/2024;4.892,83;VES;Pago Móvil;Débito;cta-0912;36,14
+04/03/2024;5.916,64;VES;Pago Móvil;Débito;cta-0915;36,14
+04/03/2024;6.931,66;VES;Pago Móvil;Débito;cta-0915;36,14
+04/03/2024;349.799,79;VES;Transferencia;Crédito;cta-0777;36,14
+04/03/2024;97,25;VES;Punto de venta;Débito;cta-0023;36,14
+04/03/2024;3.451,85;VES;Pago Móvil;Débito;cta-0076;36,14
+04/03/2024;436.740,96;VES;Transferencia;Débito;cta-0076;36,14
+04/03/2024;112,76;VES;Transferencia;Débito;cta-0051;36,14
+04/03/2024;5,15;USD;Divisas;Crédito;cta-0117;36,14
+04/03/2024;7.360,12;VES;Pago Móvil;Débito;cta-0915;36,14
+04/03/2024;2.997,87;VES;Transferencia;Débito;cta-0085;36,14
+04/03/2024;1.409,73;VES;Punto de venta;Débito;cta-0026;36,14
+04/03/2024;5.872,54;VES;Pago Móvil;Débito;cta-0912;36,14
+04/03/2024;17,65;VES;Punto de venta;Débito;cta-0004;36,14
+04/03/2024;927,19;USD;Divisas;Débito;cta-0047;36,14
+04/03/2024;6.903,07;VES;Transferencia;Crédito;cta-0073;36,14
+04/03/2024;7.242,81;VES;Pago Móvil;Débito;cta-0914;36,14
+05/03/2024;806,90;VES;Transferencia;Débito;cta-0104;36,15
+05/03/2024;74,28;VES;Pago Móvil;Crédito;cta-0071;36,15
+05/03/2024;4.316,36;VES;Punto de venta;Crédito;cta-0062;36,15
+05/03/2024;30,32;VES;Pago Móvil;Débito;cta-0073;36,15
+05/03/2024;2.456,23;VES;Pago Móvil;Débito;cta-0006;36,15
+05/03/2024;164,11;VES;Transferencia;Crédito;cta-0088;36,15
+05/03/2024;26,73;VES;Pago Móvil;Débito;cta-0081;36,15
+05/03/2024;103.830,50;VES;Transferencia;Débito;cta-0072;36,15
+05/03/2024;284.903,87;VES;Transferencia;Débito;cta-0021;36,15
+05/03/2024;1.869,81;VES;Pago Móvil;Débito;cta-0062;36,15
+05/03/2024;118,55;VES;Punto de venta;Débito;cta-0086;36,15
+05/03/2024;8.784,04;VES;Pago Móvil;Crédito;cta-0913;36,15
+05/03/2024;1.660,41;USD;Divisas;Crédito;cta-0008;36,15
+05/03/2024;1.297,79;VES;Punto de venta;Crédito;cta-0059;36,15
+05/03/2024;138,69;VES;Pago Móvil;Débito;cta-0092;36,15
+05/03/2024;13,66;VES;Punto de venta;Débito;cta-0047;36,15
+05/03/2024;169,18;VES;Punto de venta;Débito;cta-0022;36,15
+05/03/2024;5.338,61;VES;Pago Móvil;Crédito;cta-0030;36,15
+05/03/2024;2.806,92;USD;Divisas;Débito;cta-0114;36,15
+05/03/2024;494,17;VES;Pago Móvil;Débito;cta-0069;36,15
+05/03/2024;70,33;VES;Pago Móvil;Crédito;cta-0104;36,15
+05/03/2024;78,45;USD;Divisas;Débito;cta-0006;36,15
+05/03/2024;5.557,59;VES;Pago Móvil;Crédito;cta-0078;36,15
+05/03/2024;26.251,72;VES;Transferencia;Débito;cta-0019;36,15
+05/03/2024;4.715,46;VES;Pago Móvil;Débito;cta-0913;36,15
+05/03/2024;11,29;USD;Divisas;Débito;cta-0078;36,15
+05/03/2024;887.824,42;VES;Transferencia;Crédito;cta-0054;36,15
+05/03/2024;28,09;USD;Divisas;Débito;cta-0101;36,15
+05/03/2024;67,13;VES;Pago Móvil;Crédito;cta-0005;36,15
+05/03/2024;190,41;VES;Pago Móvil;Crédito;cta-0049;36,15
+05/03/2024;34.386,31;VES;Transferencia;Crédito;cta-0098;36,15
+05/03/2024;10,87;VES;Pago Móvil;Débito;cta-0058;36,15
+05/03/2024;5.546,40;VES;Pago Móvil;Débito;cta-0054;36,15
+05/03/2024;648,80;VES;Pago Móvil;Débito;cta-0055;36,15
+05/03/2024;3.383,82;USD;Divisas;Débito;cta-0080;36,15
+05/03/2024;1.505,17;USD;Divisas;Crédito;cta-0022;36,15
+05/03/2024;8.112,90;VES;Transferencia;Débito;cta-0089;36,15
+05/03/2024;23,50;VES;Pago Móvil;Débito;cta-0024;36,15
+05/03/2024;25.000,00;VES;Transferencia;Débito;cta-0815;36,15
+05/03/2024;133,50;VES;Pago Móvil;Crédito;cta-0081;36,15
+05/03/2024;21,48;USD;Divisas;Débito;cta-0058;36,15
+05/03/2024;9.645,05;VES;Pago Móvil;Débito;cta-0911;36,15
+05/03/2024;214.149,34;VES;Transferencia;Débito;cta-0116;36,15
+05/03/2024;498.796,18;VES;Transferencia;Débito;cta-0035;36,15
+05/03/2024;195,74;VES;Transferencia;Débito;cta-0018;36,15
+05/03/2024;9.161,48;VES;Pago Móvil;Débito;cta-0914;36,15
+05/03/2024;342.101,55;VES;Transferencia;Débito;cta-0777;36,15
+05/03/2024;4.559,81;USD;Divisas;Crédito;cta-0061;36,15
+05/03/2024;6.213,41;VES;Punto de venta;Débito;cta-0028;36,15
+05/03/2024;717,67;VES;Pago Móvil;Débito;cta-0034;36,15
+05/03/2024;503,36;VES;Punto de venta;Débito;cta-0021;36,15
+05/03/2024;6.584,38;VES;Pago Móvil;Débito;cta-0914;36,15
+05/03/2024;460,76;VES;Pago Móvil;Débito;cta-0018;36,15
+05/03/2024;137,05;VES;Transferencia;Débito;cta-0080;36,15
+05/03/2024;77,43;VES;Punto de venta;Débito;cta-0009;36,15
+05/03/2024;28,83;VES;Punto de venta;Débito;cta-0071;36,15
+05/03/2024;6.326,00;VES;Pago Móvil;Débito;cta-0024;36,15
+05/03/2024;17.493,14;VES;Transferencia;Débito;cta-0016;36,15
+05/03/2024;8.023,48;VES;Pago Móvil;Crédito;cta-0911;36,15
+05/03/2024;250,88;VES;Punto de venta;Débito;cta-0068;36,15
+05/03/2024;22,61;VES;Pago Móvil;Débito;cta-0018;36,15
+05/03/2024;28,66;VES;Pago Móvil;Débito;cta-0030;36,15
+05/03/2024;349,26;VES;Pago Móvil;Débito;cta-0068;36,15
+05/03/2024;1.023,86;VES;Punto de venta;Débito;cta-0048;36,15
+05/03/2024;965,22;VES;Punto de venta;Débito;cta-0053;36,15
+05/03/2024;10,63;VES;Punto de venta;Débito;cta-0038;36,15
+05/03/2024;5.862,33;VES;Pago Móvil;Débito;cta-0106;36,15
+05/03/2024;1.251,80;VES;Transferencia;Débito;cta-0020;36,15
+05/03/2024;4.514,22;VES;Punto de venta;Débito;cta-0091;36,15
+05/03/2024;862,29;VES;Transferencia;Débito;cta-0010;36,15
+05/03/2024;76.672,36;VES;Transferencia;Débito;cta-0086;36,15
+05/03/2024;4.098,37;VES;Transferencia;Crédito;cta-0040;36,15
+05/03/2024;161,56;VES;Pago Móvil;Débito;cta-0119;36,15
+05/03/2024;25,35;VES;Pago Móvil;Crédito;cta-0014;36,15
+05/03/2024;22.360,54;VES;Transferencia;Crédito;cta-0023;36,15
+05/03/2024;8.573,66;VES;Pago Móvil;Débito;cta-0915;36,15
+05/03/2024;48.410,37;VES;Transferencia;Débito;cta-0057;36,15
+05/03/2024;1.259,36;VES;Pago Móvil;Débito;cta-0028;36,15
+05/03/2024;8.135,90;VES;Pago Móvil;Débito;cta-0910;36,15
+05/03/2024;150.000,00;VES;Transferencia;Débito;cta-0814;36,15
+05/03/2024;6.266,09;VES;Punto de venta;Débito;cta-0043;36,15
+05/03/2024;9.491,16;VES;Pago Móvil;Débito;cta-0083;36,15
+05/03/2024;12,58;USD;Divisas;Crédito;cta-0107;36,15
+05/03/2024;200.000,00;VES;Transferencia;Débito;cta-0816;36,15
+05/03/2024;54.641,99;VES;Transferencia;Crédito;cta-0113;36,15
+05/03/2024;97,15;VES;Pago Móvil;Débito;cta-0039;36,15
+05/03/2024;239,37;VES;Pago Móvil;Crédito;cta-0064;36,15
+05/03/2024;194,46;VES;Transferencia;Débito;cta-0111;36,15
+05/03/2024;200.000,00;VES;Transferencia;Débito;cta-0813;36,15
+05/03/2024;615,08;VES;Punto de venta;Crédito;cta-0011;36,15
+05/03/2024;2.858,26;VES;Pago Móvil;Crédito;cta-0037;36,15
+05/03/2024;999,48;VES;Pago Móvil;Crédito;cta-0036;36,15
+05/03/2024;93,66;VES;Punto de venta;Débito;cta-0046;36,15
+05/03/2024;813,61;VES;Pago Móvil;Débito;cta-0019;36,15
+05/03/2024;22,17;VES;Punto de venta;Crédito;cta-0015;36,15
+05/03/2024;150.000,00;VES;Transferencia;Débito;cta-0818;36,15
+05/03/2024;5.620,95;VES;Transferencia;Crédito;cta-0104;36,15
+05/03/2024;72,94;VES;Punto de venta;Débito;cta-0083;36,15
+05/03/2024;91,72;VES;Pago Móvil;Crédito;cta-0003;36,15
+06/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0812;36,16
+06/03/2024;1.370,33;VES;Pago Móvil;Crédito;cta-0101;36,16
+06/03/2024;135,56;VES;Transferencia;Débito;cta-0112;36,16
+06/03/2024;2.372,59;VES;Punto de venta;Crédito;cta-0087;36,16
+06/03/2024;52,55;VES;Pago Móvil;Crédito;cta-0063;36,16
+06/03/2024;212,29;USD;Divisas;Crédito;cta-0040;36,16
+06/03/2024;6.691,22;VES;Pago Móvil;Débito;cta-0063;36,16
+06/03/2024;731.250,63;VES;Transferencia;Crédito;cta-0085;36,16
+06/03/2024;271,96;VES;Punto de venta;Crédito;cta-0031;36,16
+06/03/2024;5.499,78;VES;Pago Móvil;Débito;cta-0108;36,16
+06/03/2024;7.652,78;VES;Pago Móvil;Débito;cta-0915;36,16
+06/03/2024;122,66;VES;Punto de venta;Débito;cta-0105;36,16
+06/03/2024;14,88;VES;Punto de venta;Débito;cta-0107;36,16
+06/03/2024;7.293,35;VES;Punto de venta;Débito;cta-0040;36,16
+06/03/2024;5.834,11;VES;Punto de venta;Débito;cta-0025;36,16
+06/03/2024;19,59;USD;Divisas;Débito;cta-0039;36,16
+06/03/2024;5.653,65;VES;Punto de venta;Débito;cta-0101;36,16
+06/03/2024;455,60;USD;Divisas;Débito;cta-0031;36,16
+06/03/2024;917,36;VES;Transferencia;Crédito;cta-0049;36,16
+06/03/2024;8.008,29;VES;Pago Móvil;Débito;cta-0028;36,16
+06/03/2024;69,63;VES;Punto de venta;Débito;cta-0117;36,16
+06/03/2024;1.235,18;VES;Transferencia;Crédito;cta-0050;36,16
+06/03/2024;64,91;VES;Punto de venta;Débito;cta-0005;36,16
+06/03/2024;769,32;USD;Divisas;Débito;cta-0092;36,16
+06/03/2024;44,32;VES;Punto de venta;Débito;cta-0080;36,16
+06/03/2024;20,80;USD;Divisas;Crédito;cta-0051;36,16
+06/03/2024;2.332,52;VES;Punto de venta;Débito;cta-0074;36,16
+06/03/2024;142,66;VES;Pago Móvil;Débito;cta-0069;36,16
+06/03/2024;1.977,35;VES;Punto de venta;Crédito;cta-0086;36,16
+06/03/2024;77,29;USD;Divisas;Débito;cta-0015;36,16
+06/03/2024;13,51;VES;Pago Móvil;Débito;cta-0021;36,16
+06/03/2024;5.731,02;VES;Pago Móvil;Crédito;cta-0096;36,16
+06/03/2024;27.083,40;VES;Transferencia;Débito;cta-0069;36,16
+06/03/2024;5.614,23;VES;Pago Móvil;Débito;cta-0913;36,16
+06/03/2024;4.409,49;VES;Pago Móvil;Débito;cta-0915;36,16
+06/03/2024;24,35;VES;Pago Móvil;Débito;cta-0022;36,16
+06/03/2024;4.036,82;VES;Pago Móvil;Débito;cta-0910;36,16
+06/03/2024;52.336,30;VES;Transferencia;Crédito;cta-0103;36,16
+06/03/2024;76.708,22;VES;Transferencia;Débito;cta-0107;36,16
+06/03/2024;2.299,60;VES;Pago Móvil;Débito;cta-0050;36,16
+06/03/2024;1.788,37;USD;Divisas;Crédito;cta-0104;36,16
+06/03/2024;72.932,03;VES;Transferencia;Débito;cta-0115;36,16
+06/03/2024;130,54;VES;Punto de venta;Crédito;cta-0083;36,16
+06/03/2024;30,66;USD;Divisas;Débito;cta-0058;36,16
+06/03/2024;1.960,86;VES;Pago Móvil;Débito;cta-0120;36,16
+06/03/2024;11.397,29;VES;Transferencia;Débito;cta-0107;36,16
+06/03/2024;25.000,00;VES;Transferencia;Débito;cta-0816;36,16
+06/03/2024;197,14;VES;Transferencia;Débito;cta-0058;36,16
+06/03/2024;49,94;VES;Punto de venta;Débito;cta-0001;36,16
+06/03/2024;10,92;VES;Pago Móvil;Débito;cta-0091;36,16
+06/03/2024;1.111,87;VES;Punto de venta;Débito;cta-0030;36,16
+06/03/2024;7.580,22;VES;Pago Móvil;Débito;cta-0915;36,16
+06/03/2024;224.429,39;VES;Transferencia;Crédito;cta-0015;36,16
+06/03/2024;58,79;USD;Divisas;Crédito;cta-0081;36,16
+06/03/2024;22.698,49;VES;Transferencia;Débito;cta-0015;36,16
+06/03/2024;605,72;VES;Transferencia;Débito;cta-0042;36,16
+06/03/2024;8.624,46;VES;Transferencia;Débito;cta-0051;36,16
+06/03/2024;224,89;VES;Punto de venta;Crédito;cta-0036;36,16
+06/03/2024;5.961,97;VES;Transferencia;Débito;cta-0077;36,16
+06/03/2024;9.592,58;VES;Pago Móvil;Crédito;cta-0911;36,16
+06/03/2024;5.000,00;VES;Transferencia;Débito;cta-0817;36,16
+06/03/2024;267.993,51;VES;Transferencia;Crédito;cta-0015;36,16
+06/03/2024;516,82;VES;Pago Móvil;Crédito;cta-0012;36,16
+06/03/2024;128,52;VES;Transferencia;Crédito;cta-0057;36,16
+06/03/2024;3.645,93;VES;Pago Móvil;Crédito;cta-0048;36,16
+06/03/2024;5.597,39;VES;Transferencia;Débito;cta-0052;36,16
+06/03/2024;847.487,96;VES;Transferencia;Crédito;cta-0095;36,16
+06/03/2024;9.048,99;VES;Pago Móvil;Débito;cta-0915;36,16
+06/03/2024;26.620,79;VES;Transferencia;Débito;cta-0114;36,16
+06/03/2024;890,01;VES;Punto de venta;Crédito;cta-0114;36,16
+06/03/2024;334,07;VES;Punto de venta;Crédito;cta-0030;36,16
+06/03/2024;184,40;USD;Divisas;Crédito;cta-0016;36,16
+06/03/2024;16,03;VES;Pago Móvil;Débito;cta-0099;36,16
+06/03/2024;6.907,59;VES;Pago Móvil;Débito;cta-0910;36,16
+06/03/2024;194,63;VES;Transferencia;Débito;cta-0083;36,16
+06/03/2024;182,01;VES;Transferencia;Débito;cta-0104;36,16
+06/03/2024;6,97;USD;Divisas;Crédito;cta-0119;36,16
+06/03/2024;3.826,01;VES;Pago Móvil;Débito;cta-0032;36,16
+06/03/2024;9.348,22;VES;Transferencia;Débito;cta-0118;36,16
+06/03/2024;109.232,98;VES;Transferencia;Débito;cta-0096;36,16
+06/03/2024;13,49;VES;Punto de venta;Crédito;cta-0011;36,16
+06/03/2024;5.192,43;VES;Punto de venta;Crédito;cta-0066;36,16
+06/03/2024;6.677,86;VES;Pago Móvil;Débito;cta-0013;36,16
+06/03/2024;61,29;VES;Pago Móvil;Crédito;cta-0108;36,16
+06/03/2024;20.996,95;VES;Transferencia;Crédito;cta-0062;36,16
+06/03/2024;12,16;VES;Punto de venta;Débito;cta-0119;36,16
+06/03/2024;9.231,60;VES;Pago Móvil;Débito;cta-0912;36,16
+06/03/2024;825,15;VES;Transferencia;Crédito;cta-0030;36,16
+06/03/2024;500,96;VES;Pago Móvil;Débito;cta-0048;36,16
+06/03/2024;106.697,14;VES;Transferencia;Débito;cta-0095;36,16
+06/03/2024;299,86;VES;Pago Móvil;Crédito;cta-0102;36,16
+06/03/2024;82,51;USD;Divisas;Crédito;cta-0097;36,16
+06/03/2024;330.902,39;VES;Transferencia;Débito;cta-0777;36,16
+06/03/2024;5.958,88;VES;Punto de venta;Débito;cta-0058;36,16
+06/03/2024;10,59;VES;Pago Móvil;Débito;cta-0092;36,16
+06/03/2024;14.943,51;VES;Transferencia;Crédito;cta-0057;36,16
+06/03/2024;377,26;VES;Pago Móvil;Débito;cta-0015;36,16
+06/03/2024;40.058,95;VES;Transferencia;Crédito;cta-0017;36,16
+06/03/2024;235,86;VES;Pago Móvil;Débito;cta-0104;36,16
+06/03/2024;350.433,75;VES;Transferencia;Crédito;cta-0777;36,16
+06/03/2024;7.673,56;VES;Pago Móvil;Débito;cta-0913;36,16
+06/03/2024;50.849,74;VES;Transferencia;Débito;cta-0117;36,16
+06/03/2024;132,62;USD;Divisas;Crédito;cta-0032;36,16
+06/03/2024;10,24;VES;Punto de venta;Débito;cta-0007;36,16
+06/03/2024;7.776,48;VES;Pago Móvil;Crédito;cta-0913;36,16
+06/03/2024;4.362,46;VES;Pago Móvil;Débito;cta-0044;36,16
+06/03/2024;150.000,00;VES;Transferencia;Débito;cta-0815;36,16
+06/03/2024;93.511,08;VES;Transferencia;Débito;cta-0051;36,16
+06/03/2024;678,25;VES;Pago Móvil;Débito;cta-0113;36,16
+06/03/2024;37,61;VES;Pago Móvil;Crédito;cta-0114;36,16
+06/03/2024;96,40;VES;Pago Móvil;Débito;cta-0072;36,16
+06/03/2024;6.375,92;VES;Pago Móvil;Débito;cta-0915;36,16
+06/03/2024;6.750,70;VES;Pago Móvil;Crédito;cta-0113;36,16
+06/03/2024;1.764,68;VES;Pago Móvil;Débito;cta-0056;36,16
+06/03/2024;30.701,21;VES;Transferencia;Crédito;cta-0005;36,16
+06/03/2024;6.695,46;VES;Pago Móvil;Débito;cta-0914;36,16
+06/03/2024;135.510,05;VES;Transferencia;Crédito;cta-0083;36,16
+06/03/2024;127.679,51;VES;Transferencia;Crédito;cta-0108;36,16
+07/03/2024;445,80;VES;Pago Móvil;Débito;cta-0065;36,17
+07/03/2024;102,66;VES;Pago Móvil;Crédito;cta-0027;36,17
+07/03/2024;158,48;VES;Pago Móvil;Débito;cta-0088;36,17
+07/03/2024;395.351,15;VES;Transferencia;Crédito;cta-0106;36,17
+07/03/2024;891,78;VES;Transferencia;Débito;cta-0057;36,17
+07/03/2024;130,81;VES;Pago Móvil;Débito;cta-0025;36,17
+07/03/2024;1.806,14;VES;Pago Móvil;Débito;cta-0072;36,17
+07/03/2024;150.000,00;VES;Transferencia;Débito;cta-0819;36,17
+07/03/2024;6.120,67;VES;Pago Móvil;Débito;cta-0029;36,17
+07/03/2024;1.759,40;VES;Punto de venta;Débito;cta-0058;36,17
+07/03/2024;12,04;VES;Punto de venta;Débito;cta-0044;36,17
+07/03/2024;329,91;USD;Divisas;Débito;cta-0064;36,17
+07/03/2024;7.502,93;VES;Pago Móvil;Débito;cta-0915;36,17
+07/03/2024;397,68;USD;Divisas;Débito;cta-0035;36,17
+07/03/2024;37,97;VES;Punto de venta;Débito;cta-0024;36,17
+07/03/2024;8.842,15;VES;Pago Móvil;Débito;cta-0910;36,17
+07/03/2024;43,67;VES;Pago Móvil;Débito;cta-0081;36,17
+07/03/2024;8.550,09;VES;Pago Móvil;Débito;cta-0055;36,17
+07/03/2024;4.982,43;VES;Punto de venta;Débito;cta-0019;36,17
+07/03/2024;29.117,90;VES;Transferencia;Débito;cta-0081;36,17
+07/03/2024;1.612,75;VES;Punto de venta;Crédito;cta-0016;36,17
+07/03/2024;184,67;VES;Pago Móvil;Crédito;cta-0088;36,17
+07/03/2024;7.298,75;VES;Pago Móvil;Débito;cta-0914;36,17
+07/03/2024;510.893,65;VES;Transferencia;Débito;cta-0097;36,17
+07/03/2024;22,86;USD;Divisas;Débito;cta-0048;36,17
+07/03/2024;5.871,28;VES;Pago Móvil;Débito;cta-0913;36,17
+07/03/2024;59.818,43;VES;Transferencia;Débito;cta-0114;36,17
+07/03/2024;29,55;VES;Punto de venta;Débito;cta-0001;36,17
+07/03/2024;307,03;VES;Punto de venta;Débito;cta-0057;36,17
+07/03/2024;3.385,68;USD;Divisas;Débito;cta-0119;36,17
+07/03/2024;93,48;VES;Pago Móvil;Débito;cta-0098;36,17
+07/03/2024;9.711,10;VES;Pago Móvil;Débito;cta-0912;36,17
+07/03/2024;23,42;VES;Punto de venta;Débito;cta-0083;36,17
+07/03/2024;626,47;VES;Punto de venta;Débito;cta-0096;36,17
+07/03/2024;158,65;USD;Divisas;Débito;cta-0093;36,17
+07/03/2024;8.012,31;VES;Transferencia;Crédito;cta-0009;36,17
+07/03/2024;938,92;VES;Pago Móvil;Débito;cta-0036;36,17
+07/03/2024;110,73;VES;Punto de venta;Crédito;cta-0008;36,17
+07/03/2024;30,46;VES;Pago Móvil;Débito;cta-0075;36,17
+07/03/2024;837,31;VES;Transferencia;Crédito;cta-0002;36,17
+07/03/2024;7.669,92;VES;Pago Móvil;Débito;cta-0910;36,17
+07/03/2024;374,70;VES;Transferencia;Crédito;cta-0050;36,17
+07/03/2024;706,58;VES;Transferencia;Débito;cta-0084;36,17
+07/03/2024;142,81;VES;Punto de venta;Débito;cta-0055;36,17
+07/03/2024;230.201,23;VES;Transferencia;Crédito;cta-0068;36,17
+07/03/2024;14.332,32;VES;Transferencia;Crédito;cta-0098;36,17
+07/03/2024;18.392,94;VES;Transferencia;Crédito;cta-0119;36,17
+07/03/2024;8.922,54;VES;Pago Móvil;Débito;cta-0059;36,17
+07/03/2024;3.255,33;VES;Pago Móvil;Crédito;cta-0056;36,17
+07/03/2024;150.000,00;VES;Transferencia;Débito;cta-0812;36,17
+07/03/2024;262,11;VES;Transferencia;Crédito;cta-0082;36,17
+07/03/2024;6.953,99;VES;Pago Móvil;Crédito;cta-0914;36,17
+07/03/2024;118.472,15;VES;Transferencia;Crédito;cta-0081;36,17
+07/03/2024;7.004,12;VES;Pago Móvil;Débito;cta-0910;36,17
+07/03/2024;858,76;VES;Punto de venta;Crédito;cta-0090;36,17
+07/03/2024;6.525,86;VES;Pago Móvil;Débito;cta-0915;36,17
+07/03/2024;164,17;VES;Pago Móvil;Débito;cta-0001;36,17
+07/03/2024;6.092,34;VES;Pago Móvil;Débito;cta-0912;36,17
+07/03/2024;326.329,32;VES;Transferencia;Crédito;cta-0777;36,17
+07/03/2024;57.771,92;VES;Transferencia;Débito;cta-0014;36,17
+07/03/2024;2.792,57;VES;Transferencia;Crédito;cta-0117;36,17
+07/03/2024;22,69;VES;Punto de venta;Crédito;cta-0111;36,17
+07/03/2024;13,97;VES;Pago Móvil;Débito;cta-0088;36,17
+07/03/2024;654,68;USD;Divisas;Crédito;cta-0048;36,17
+07/03/2024;3.007,37;VES;Transferencia;Débito;cta-0008;36,17
+07/03/2024;3.057,57;VES;Punto de venta;Débito;cta-0035;36,17
+07/03/2024;515,37;VES;Pago Móvil;Débito;cta-0054;36,17
+07/03/2024;5.724,72;VES;Pago Móvil;Crédito;cta-0910;36,17
+07/03/2024;2.247,25;VES;Pago Móvil;Débito;cta-0097;36,17
+07/03/2024;133,11;VES;Transferencia;Débito;cta-0080;36,17
+07/03/2024;42,24;VES;Pago Móvil;Débito;cta-0066;36,17
+07/03/2024;219,18;VES;Punto de venta;Crédito;cta-0021;36,17
+07/03/2024;48,05;VES;Pago Móvil;Débito;cta-0055;36,17
+07/03/2024;472,98;VES;Punto de venta;Débito;cta-0067;36,17
+07/03/2024;9.499,83;VES;Pago Móvil;Crédito;cta-0910;36,17
+07/03/2024;3.593,40;USD;Divisas;Débito;cta-0033;36,17
+07/03/2024;147,39;USD;Divisas;Crédito;cta-0091;36,17
+07/03/2024;805,02;VES;Pago Móvil;Débito;cta-0017;36,17
+08/03/2024;25,59;USD;Divisas;Crédito;cta-0031;36,18
+08/03/2024;9.264,97;VES;Pago Móvil;Débito;cta-0912;36,18
+08/03/2024;345.083,07;VES;Transferencia;Débito;cta-0777;36,18
+08/03/2024;481.140,16;VES;Transferencia;Crédito;cta-0013;36,18
+08/03/2024;76,04;VES;Punto de venta;Débito;cta-0024;36,18
+08/03/2024;5.253,84;VES;Punto de venta;Débito;cta-0070;36,18
+08/03/2024;57,61;USD;Divisas;Débito;cta-0105;36,18
+08/03/2024;353,40;VES;Transferencia;Crédito;cta-0100;36,18
+08/03/2024;10,16;VES;Pago Móvil;Débito;cta-0015;36,18
+08/03/2024;5.981,28;VES;Transferencia;Débito;cta-0112;36,18
+08/03/2024;7.780,70;VES;Pago Móvil;Débito;cta-0915;36,18
+08/03/2024;5.625,81;VES;Punto de venta;Débito;cta-0015;36,18
+08/03/2024;281,99;VES;Punto de venta;Crédito;cta-0036;36,18
+08/03/2024;797,31;VES;Pago Móvil;Crédito;cta-0069;36,18
+08/03/2024;13,37;VES;Punto de venta;Crédito;cta-0067;36,18
+08/03/2024;874.163,71;VES;Transferencia;Débito;cta-0111;36,18
+08/03/2024;6.182,00;VES;Pago Móvil;Crédito;cta-0913;36,18
+08/03/2024;327.293,48;VES;Transferencia;Débito;cta-0777;36,18
+08/03/2024;357,92;VES;Pago Móvil;Crédito;cta-0078;36,18
+08/03/2024;82,98;VES;Pago Móvil;Crédito;cta-0003;36,18
+08/03/2024;731,38;VES;Punto de venta;Débito;cta-0101;36,18
+08/03/2024;956.316,45;VES;Transferencia;Débito;cta-0107;36,18
+08/03/2024;164.988,04;VES;Transferencia;Crédito;cta-0118;36,18
+08/03/2024;284,49;VES;Punto de venta;Débito;cta-0098;36,18
+08/03/2024;691,93;VES;Pago Móvil;Débito;cta-0029;36,18
+08/03/2024;7.321,39;VES;Pago Móvil;Crédito;cta-0913;36,18
+08/03/2024;470.125,88;VES;Transferencia;Crédito;cta-0019;36,18
+08/03/2024;11.203,75;VES;Transferencia;Crédito;cta-0044;36,18
+08/03/2024;221,70;VES;Pago Móvil;Crédito;cta-0067;36,18
+08/03/2024;633,06;VES;Punto de venta;Débito;cta-0091;36,18
+08/03/2024;9.313,71;VES;Pago Móvil;Débito;cta-0915;36,18
+08/03/2024;2.297,35;USD;Divisas;Débito;cta-0075;36,18
+08/03/2024;20.572,93;VES;Transferencia;Débito;cta-0110;36,18
+08/03/2024;2.734,15;VES;Transferencia;Crédito;cta-0062;36,18
+08/03/2024;335.851,78;VES;Transferencia;Débito;cta-0777;36,18
+08/03/2024;65,20;VES;Pago Móvil;Débito;cta-0065;36,18
+08/03/2024;3.590,88;VES;Pago Móvil;Débito;cta-0023;36,18
+08/03/2024;349.594,38;VES;Transferencia;Crédito;cta-0777;36,18
+08/03/2024;6.487,59;VES;Punto de venta;Débito;cta-0041;36,18
+08/03/2024;4.722,89;VES;Pago Móvil;Débito;cta-0915;36,18
+08/03/2024;2.554,43;VES;Pago Móvil;Débito;cta-0087;36,18
+08/03/2024;2.301,96;VES;Transferencia;Crédito;cta-0067;36,18
+08/03/2024;74,81;VES;Pago Móvil;Débito;cta-0080;36,18
+08/03/2024;119,12;VES;Pago Móvil;Débito;cta-0055;36,18
+08/03/2024;172,30;VES;Punto de venta;Débito;cta-0021;36,18
+08/03/2024;50.882,74;VES;Transferencia;Débito;cta-0101;36,18
+08/03/2024;2.207,73;USD;Divisas;Crédito;cta-0035;36,18
+08/03/2024;663.882,19;VES;Transferencia;Débito;cta-0113;36,18
+08/03/2024;57,00;USD;Divisas;Crédito;cta-0068;36,18
+08/03/2024;20.000,00;VES;Transferencia;Débito;cta-0810;36,18
+08/03/2024;8.288,21;VES;Pago Móvil;Crédito;cta-0072;36,18
+08/03/2024;3.275,99;VES;Pago Móvil;Crédito;cta-0028;36,18
+08/03/2024;33.183,75;VES;Transferencia;Débito;cta-0086;36,18
+08/03/2024;9.194,64;VES;Pago Móvil;Crédito;cta-0914;36,18
+08/03/2024;106,11;VES;Pago Móvil;Débito;cta-0062;36,18
+08/03/2024;22,76;VES;Punto de venta;Crédito;cta-0061;36,18
+08/03/2024;1.577,69;VES;Pago Móvil;Débito;cta-0041;36,18
+08/03/2024;3.645,37;VES;Transferencia;Débito;cta-0009;36,18
+08/03/2024;8.873,10;VES;Pago Móvil;Débito;cta-0914;36,18
+08/03/2024;2.218,81;VES;Pago Móvil;Débito;cta-0082;36,18
+08/03/2024;282.850,23;VES;Transferencia;Débito;cta-0002;36,18
+08/03/2024;325.874,33;VES;Transferencia;Débito;cta-0777;36,18
+08/03/2024;18,35;VES;Pago Móvil;Crédito;cta-0075;36,18
+08/03/2024;1.346,61;VES;Transferencia;Débito;cta-0014;36,18
+08/03/2024;42,48;VES;Pago Móvil;Crédito;cta-0107;36,18
+08/03/2024;74.112,95;VES;Transferencia;Crédito;cta-0093;36,18
+08/03/2024;73,44;VES;Punto de venta;Crédito;cta-0083;36,18
+08/03/2024;354.434,32;VES;Transferencia;Débito;cta-0777;36,18
+08/03/2024;336.621,39;VES;Transferencia;Débito;cta-0777;36,18
+08/03/2024;770.873,74;VES;Transferencia;Crédito;cta-0107;36,18
+08/03/2024;86.008,30;VES;Transferencia;Débito;cta-0076;36,18
+08/03/2024;12,26;VES;Pago Móvil;Crédito;cta-0061;36,18
+08/03/2024;52,69;VES;Pago Móvil;Crédito;cta-0011;36,18
+08/03/2024;200.000,00;VES;Transferencia;Débito;cta-0811;36,18
+08/03/2024;20.000,00;VES;Transferencia;Crédito;cta-0814;36,18
+08/03/2024;6.309,03;VES;Pago Móvil;Débito;cta-0910;36,18
+08/03/2024;4.513,59;VES;Pago Móvil;Débito;cta-0108;36,18
+08/03/2024;3.976,09;VES;Pago Móvil;Débito;cta-0085;36,18
+08/03/2024;107.585,66;VES;Transferencia;Crédito;cta-0034;36,18
+08/03/2024;7.092,43;VES;Pago Móvil;Débito;cta-0914;36,18
+09/03/2024;147,21;VES;Transferencia;Débito;cta-0120;36,20
+09/03/2024;66.684,36;VES;Transferencia;Débito;cta-0007;36,20
+09/03/2024;1.024,37;VES;Punto de venta;Débito;cta-0078;36,20
+09/03/2024;73,04;VES;Pago Móvil;Crédito;cta-0102;36,20
+09/03/2024;72,31;VES;Pago Móvil;Crédito;cta-0027;36,20
+09/03/2024;173,80;VES;Punto de venta;Débito;cta-0022;36,20
+09/03/2024;341.844,28;VES;Transferencia;Crédito;cta-0777;36,20
+09/03/2024;100.000,00;VES;Transferencia;Crédito;cta-0812;36,20
+09/03/2024;201,61;USD;Divisas;Crédito;cta-0015;36,20
+09/03/2024;8.878,60;VES;Pago Móvil;Crédito;cta-0912;36,20
+09/03/2024;160,02;VES;Transferencia;Crédito;cta-0082;36,20
+09/03/2024;148,20;VES;Transferencia;Débito;cta-0114;36,20
+09/03/2024;420,02;VES;Punto de venta;Débito;cta-0047;36,20
+09/03/2024;2.625,25;VES;Transferencia;Débito;cta-0109;36,20
+09/03/2024;249,92;VES;Pago Móvil;Débito;cta-0031;36,20
+09/03/2024;9.551,44;VES;Pago Móvil;Débito;cta-0913;36,20
+09/03/2024;301,30;USD;Divisas;Crédito;cta-0109;36,20
+09/03/2024;9.550,84;VES;Pago Móvil;Débito;cta-0912;36,20
+09/03/2024;342.983,97;VES;Transferencia;Débito;cta-0777;36,20
+09/03/2024;229,04;VES;Transferencia;Crédito;cta-0069;36,20
+09/03/2024;13,64;VES;Punto de venta;Débito;cta-0092;36,20
+09/03/2024;289,33;VES;Punto de venta;Débito;cta-0014;36,20
+09/03/2024;338.429,70;VES;Transferencia;Débito;cta-0777;36,20
+09/03/2024;6.789,14;VES;Pago Móvil;Débito;cta-0015;36,20
+09/03/2024;9.180,46;VES;Pago Móvil;Crédito;cta-0912;36,20
+09/03/2024;512,87;VES;Pago Móvil;Débito;cta-0043;36,20
+09/03/2024;580,65;VES;Punto de venta;Crédito;cta-0034;36,20
+09/03/2024;289,35;USD;Divisas;Débito;cta-0072;36,20
+09/03/2024;371,92;VES;Pago Móvil;Débito;cta-0103;36,20
+09/03/2024;352.494,87;VES;Transferencia;Débito;cta-0777;36,20
+09/03/2024;109,97;USD;Divisas;Crédito;cta-0034;36,20
+09/03/2024;3.848,81;VES;Pago Móvil;Débito;cta-0043;36,20
+09/03/2024;22,04;VES;Pago Móvil;Débito;cta-0092;36,20
+09/03/2024;122,65;VES;Pago Móvil;Débito;cta-0006;36,20
+09/03/2024;339,01;VES;Pago Móvil;Crédito;cta-0013;36,20
+09/03/2024;27,14;VES;Pago Móvil;Débito;cta-0075;36,20
+09/03/2024;15,50;VES;Punto de venta;Crédito;cta-0066;36,20
+09/03/2024;470,39;VES;Punto de venta;Débito;cta-0046;36,20
+09/03/2024;6.380,87;VES;Pago Móvil;Débito;cta-0914;36,20
+09/03/2024;2.766,73;VES;Pago Móvil;Crédito;cta-0110;36,20
+09/03/2024;7.666,64;VES;Punto de venta;Crédito;cta-0076;36,20
+09/03/2024;7.863,42;VES;Pago Móvil;Crédito;cta-0911;36,20
+09/03/2024;3.689,14;VES;Pago Móvil;Débito;cta-0061;36,20
+09/03/2024;8.838,86;VES;Pago Móvil;Débito;cta-0911;36,20
+09/03/2024;222.687,52;VES;Transferencia;Débito;cta-0034;36,20
+09/03/2024;6.005,87;VES;Pago Móvil;Crédito;cta-0915;36,20
+09/03/2024;200.000,00;VES;Transferencia;Débito;cta-0818;36,20
+09/03/2024;38,43;VES;Pago Móvil;Débito;cta-0095;36,20
+09/03/2024;491,96;VES;Pago Móvil;Débito;cta-0115;36,20
+09/03/2024;199.586,87;VES;Transferencia;Débito;cta-0016;36,20
+09/03/2024;62,67;VES;Pago Móvil;Débito;cta-0007;36,20
+09/03/2024;6.677,05;VES;Pago Móvil;Débito;cta-0912;36,20
+09/03/2024;113,04;VES;Pago Móvil;Crédito;cta-0072;36,20
+09/03/2024;211,56;VES;Transferencia;Débito;cta-0055;36,20
+09/03/2024;843,84;VES;Pago Móvil;Débito;cta-0083;36,20
+09/03/2024;443.867,90;VES;Transferencia;Débito;cta-0070;36,20
+09/03/2024;471,06;VES;Pago Móvil;Débito;cta-0019;36,20
+09/03/2024;26,66;VES;Pago Móvil;Débito;cta-0073;36,20
+09/03/2024;6.487,64;VES;Pago Móvil;Débito;cta-0912;36,20
+09/03/2024;36.933,63;VES;Transferencia;Débito;cta-0090;36,20
+09/03/2024;1.310,40;VES;Punto de venta;Débito;cta-0065;36,20
+09/03/2024;149,28;VES;Transferencia;Débito;cta-0055;36,20
+09/03/2024;7.643,35;VES;Pago Móvil;Débito;cta-0911;36,20
+09/03/2024;42,96;VES;Pago Móvil;Débito;cta-0089;36,20
+09/03/2024;89,72;USD;Divisas;Crédito;cta-0052;36,20
+09/03/2024;9.302,85;VES;Pago Móvil;Débito;cta-0911;36,20
+09/03/2024;28.666,35;VES;Transferencia;Crédito;cta-0056;36,20
+09/03/2024;75,02;VES;Pago Móvil;Débito;cta-0107;36,20
+09/03/2024;3.289,17;VES;Pago Móvil;Débito;cta-0037;36,20
+09/03/2024;6.511,18;VES;Pago Móvil;Crédito;cta-0911;36,20
+09/03/2024;2.561,98;VES;Pago Móvil;Débito;cta-0056;36,20
+09/03/2024;70,79;VES;Punto de venta;Débito;cta-0119;36,20
+09/03/2024;330.638,79;VES;Transferencia;Débito;cta-0777;36,20
+09/03/2024;161,71;VES;Pago Móvil;Débito;cta-0037;36,20
+09/03/2024;5.020,64;VES;Pago Móvil;Débito;cta-0911;36,20
+09/03/2024;260,61;VES;Transferencia;Débito;cta-0079;36,20
+09/03/2024;150.000,00;VES;Transferencia;Débito;cta-0815;36,20
+09/03/2024;28,76;VES;Pago Móvil;Crédito;cta-0012;36,20
+09/03/2024;9.143,96;VES;Pago Móvil;Débito;cta-0913;36,20
+09/03/2024;437,25;VES;Transferencia;Crédito;cta-0034;36,20
+09/03/2024;52,55;VES;Pago Móvil;Crédito;cta-0110;36,20
+09/03/2024;1.570,53;VES;Pago Móvil;Débito;cta-0035;36,20
+09/03/2024;534,61;VES;Punto de venta;Crédito;cta-0095;36,20
+09/03/2024;7.491,36;VES;Pago Móvil;Crédito;cta-0054;36,20
+09/03/2024;119.329,80;VES;Transferencia;Débito;cta-0036;36,20
+09/03/2024;4.391,16;USD;Divisas;Crédito;cta-0110;36,20
+09/03/2024;27,99;VES;Punto de venta;Débito;cta-0032;36,20
+09/03/2024;348.674,80;VES;Transferencia;Crédito;cta-0777;36,20
+09/03/2024;6.258,80;VES;Pago Móvil;Débito;cta-0912;36,20
+09/03/2024;7.224,24;VES;Punto de venta;Débito;cta-0019;36,20
+09/03/2024;43,13;VES;Pago Móvil;Crédito;cta-0044;36,20
+09/03/2024;39,09;VES;Punto de venta;Crédito;cta-0115;36,20
+09/03/2024;52,25;VES;Punto de venta;Débito;cta-0087;36,20
+09/03/2024;675,16;VES;Punto de venta;Débito;cta-0025;36,20
+09/03/2024;98,79;VES;Punto de venta;Crédito;cta-0061;36,20
+09/03/2024;14,17;VES;Punto de venta;Débito;cta-0026;36,20
+09/03/2024;80,97;VES;Pago Móvil;Débito;cta-0073;36,20
+09/03/2024;406,23;VES;Punto de venta;Débito;cta-0110;36,20
+09/03/2024;107.418,62;VES;Transferencia;Débito;cta-0041;36,20
+09/03/2024;4.374,11;VES;Punto de venta;Débito;cta-0047;36,20
+09/03/2024;150.000,00;VES;Transferencia;Débito;cta-0817;36,20
+09/03/2024;435,15;VES;Pago Móvil;Crédito;cta-0105;36,20
+09/03/2024;7.549,13;VES;Punto de venta;Crédito;cta-0054;36,20
+09/03/2024;2.204,75;VES;Pago Móvil;Débito;cta-0027;36,20
+09/03/2024;6.706,44;VES;Transferencia;Débito;cta-0014;36,20
+09/03/2024;4.999,89;VES;Pago Móvil;Crédito;cta-0913;36,20
+09/03/2024;357,53;USD;Divisas;Débito;cta-0071;36,20
+09/03/2024;184,00;VES;Transferencia;Débito;cta-0117;36,20
+09/03/2024;49,26;VES;Pago Móvil;Crédito;cta-0093;36,20
+09/03/2024;1.085,15;VES;Punto de venta;Débito;cta-0014;36,20
+09/03/2024;12,13;VES;Pago Móvil;Débito;cta-0064;36,20
+09/03/2024;577,95;VES;Transferencia;Crédito;cta-0078;36,20
+09/03/2024;92.440,56;VES;Transferencia;Débito;cta-0044;36,20
+09/03/2024;66,12;VES;Pago Móvil;Crédito;cta-0086;36,20
+09/03/2024;7.030,19;VES;Punto de venta;Débito;cta-0036;36,20
+09/03/2024;65,46;VES;Punto de venta;Crédito;cta-0003;36,20
+09/03/2024;1.886,94;USD;Divisas;Crédito;cta-0069;36,20
+09/03/2024;2.587,08;VES;Pago Móvil;Débito;cta-0010;36,20
+09/03/2024;1.109,70;VES;Pago Móvil;Crédito;cta-0018;36,20
+09/03/2024;150.000,00;VES;Transferencia;Crédito;cta-0811;36,20
+09/03/2024;120,69;VES;Transferencia;Crédito;cta-0086;36,20
+09/03/2024;452.895,92;VES;Transferencia;Crédito;cta-0110;36,20
+09/03/2024;13.835,14;VES;Transferencia;Crédito;cta-0003;36,20
+09/03/2024;2.293,54;USD;Divisas;Crédito;cta-0093;36,20
+09/03/2024;46.579,57;VES;Transferencia;Crédito;cta-0011;36,20
+09/03/2024;95,57;USD;Divisas;Débito;cta-0018;36,20
+09/03/2024;3.200,10;VES;Pago Móvil;Débito;cta-0080;36,20
+10/03/2024;9.505,11;VES;Punto de venta;Débito;cta-0024;36,21
+10/03/2024;30.044,89;VES;Transferencia;Débito;cta-0109;36,21
+10/03/2024;6.265,64;VES;Pago Móvil;Crédito;cta-0912;36,21
+10/03/2024;267.820,91;VES;Transferencia;Crédito;cta-0031;36,21
+10/03/2024;1.637,72;USD;Divisas;Débito;cta-0116;36,21
+10/03/2024;61.258,23;VES;Transferencia;Débito;cta-0120;36,21
+10/03/2024;1.184,93;VES;Pago Móvil;Crédito;cta-0083;36,21
+10/03/2024;662,89;VES;Transferencia;Débito;cta-0008;36,21
+10/03/2024;722,85;VES;Transferencia;Crédito;cta-0063;36,21
+10/03/2024;4.169,48;VES;Pago Móvil;Crédito;cta-0912;36,21
+10/03/2024;648.049,61;VES;Transferencia;Débito;cta-0070;36,21
+10/03/2024;30,19;VES;Pago Móvil;Débito;cta-0048;36,21
+10/03/2024;37,30;VES;Pago Móvil;Débito;cta-0024;36,21
+10/03/2024;6.914,37;VES;Transferencia;Débito;cta-0062;36,21
+10/03/2024;9.062,24;VES;Pago Móvil;Débito;cta-0910;36,21
+10/03/2024;793,23;VES;Punto de venta;Débito;cta-0036;36,21
+10/03/2024;81,28;VES;Pago Móvil;Débito;cta-0056;36,21
+10/03/2024;1.042,65;VES;Pago Móvil;Crédito;cta-0011;36,21
+10/03/2024;243,66;USD;Divisas;Débito;cta-0097;36,21
+10/03/2024;12,50;VES;Pago Móvil;Débito;cta-0098;36,21
+10/03/2024;4.209,12;VES;Pago Móvil;Débito;cta-0020;36,21
+10/03/2024;9.488,02;VES;Pago Móvil;Débito;cta-0912;36,21
+10/03/2024;568,87;VES;Transferencia;Débito;cta-0076;36,21
+10/03/2024;510.058,52;VES;Transferencia;Crédito;cta-0068;36,21
+10/03/2024;6.906,41;VES;Pago Móvil;Crédito;cta-0912;36,21
+10/03/2024;104,70;VES;Pago Móvil;Débito;cta-0010;36,21
+10/03/2024;6,10;USD;Divisas;Débito;cta-0022;36,21
+10/03/2024;6.607,77;VES;Pago Móvil;Débito;cta-0912;36,21
+10/03/2024;875,95;VES;Transferencia;Crédito;cta-0040;36,21
+10/03/2024;2.408,90;VES;Transferencia;Débito;cta-0108;36,21
+10/03/2024;5.000,00;VES;Transferencia;Débito;cta-0816;36,21
+10/03/2024;4.541,77;VES;Pago Móvil;Débito;cta-0914;36,21
+10/03/2024;66,94;VES;Pago Móvil;Débito;cta-0009;36,21
+10/03/2024;672,52;VES;Transferencia;Débito;cta-0048;36,21
+10/03/2024;16.787,08;VES;Transferencia;Débito;cta-0015;36,21
+10/03/2024;10.000,00;VES;Transferencia;Débito;cta-0814;36,21
+10/03/2024;1.516,40;VES;Pago Móvil;Crédito;cta-0100;36,21
+10/03/2024;4.679,89;VES;Pago Móvil;Crédito;cta-0915;36,21
+10/03/2024;390,36;VES;Transferencia;Crédito;cta-0024;36,21
+10/03/2024;9.665,94;VES;Punto de venta;Débito;cta-0101;36,21
+10/03/2024;3.548,89;VES;Punto de venta;Débito;cta-0105;36,21
+10/03/2024;416,53;VES;Punto de venta;Débito;cta-0072;36,21
+10/03/2024;98.730,00;VES;Transferencia;Crédito;cta-0008;36,21
+10/03/2024;5.869,52;VES;Pago Móvil;Crédito;cta-0913;36,21
+10/03/2024;1.288,89;VES;Pago Móvil;Débito;cta-0005;36,21
+10/03/2024;52,83;VES;Pago Móvil;Crédito;cta-0104;36,21
+10/03/2024;80,18;VES;Pago Móvil;Débito;cta-0099;36,21
+10/03/2024;22,15;USD;Divisas;Débito;cta-0021;36,21
+10/03/2024;207.309,81;VES;Transferencia;Débito;cta-0026;36,21
+10/03/2024;7.458,54;VES;Pago Móvil;Crédito;cta-0912;36,21
+10/03/2024;1.291,12;VES;Pago Móvil;Crédito;cta-0086;36,21
+10/03/2024;1.582,30;VES;Pago Móvil;Crédito;cta-0059;36,21
+10/03/2024;71.564,05;VES;Transferencia;Crédito;cta-0114;36,21
+10/03/2024;44,67;USD;Divisas;Débito;cta-0079;36,21
+10/03/2024;6.329,80;VES;Pago Móvil;Crédito;cta-0914;36,21
+10/03/2024;6.339,32;VES;Pago Móvil;Crédito;cta-0914;36,21
+10/03/2024;13,51;USD;Divisas;Débito;cta-0025;36,21
+10/03/2024;8,36;USD;Divisas;Débito;cta-0093;36,21
+10/03/2024;3.900,46;VES;Transferencia;Débito;cta-0070;36,21
+10/03/2024;3.965,51;VES;Pago Móvil;Débito;cta-0001;36,21
+10/03/2024;85,61;VES;Punto de venta;Débito;cta-0112;36,21
+10/03/2024;1.665,11;VES;Pago Móvil;Débito;cta-0025;36,21
+10/03/2024;104,48;USD;Divisas;Débito;cta-0032;36,21
+10/03/2024;41,49;USD;Divisas;Débito;cta-0068;36,21
+10/03/2024;46,25;VES;Pago Móvil;Débito;cta-0066;36,21
+10/03/2024;3.597,27;USD;Divisas;Débito;cta-0072;36,21
+10/03/2024;4.015,98;VES;Pago Móvil;Débito;cta-0083;36,21
+10/03/2024;370,12;VES;Pago Móvil;Crédito;cta-0029;36,21
+10/03/2024;293,88;VES;Punto de venta;Crédito;cta-0116;36,21
+10/03/2024;100.000,00;VES;Transferencia;Débito;cta-0813;36,21
+10/03/2024;50.000,00;VES;Transferencia;Crédito;cta-0813;36,21
+10/03/2024;577,68;VES;Pago Móvil;Crédito;cta-0045;36,21
+10/03/2024;1.992,44;VES;Transferencia;Crédito;cta-0032;36,21
+10/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0810;36,21
+10/03/2024;17,40;VES;Pago Móvil;Débito;cta-0076;36,21
+10/03/2024;684,69;VES;Punto de venta;Crédito;cta-0044;36,21
+10/03/2024;105.915,85;VES;Transferencia;Débito;cta-0026;36,21
+10/03/2024;364,55;VES;Pago Móvil;Débito;cta-0066;36,21
+10/03/2024;5.777,88;VES;Transferencia;Débito;cta-0107;36,21
+10/03/2024;87,38;VES;Pago Móvil;Crédito;cta-0101;36,21
+10/03/2024;4.073,11;VES;Pago Móvil;Débito;cta-0056;36,21
+10/03/2024;5.389,61;VES;Pago Móvil;Débito;cta-0912;36,21
+10/03/2024;58.071,56;VES;Transferencia;Crédito;cta-0115;36,21
+10/03/2024;2.397,36;VES;Transferencia;Débito;cta-0105;36,21
+10/03/2024;240,37;VES;Pago Móvil;Débito;cta-0100;36,21
+10/03/2024;701,85;VES;Pago Móvil;Crédito;cta-0090;36,21
+10/03/2024;14,98;VES;Punto de venta;Débito;cta-0084;36,21
+10/03/2024;638,08;VES;Transferencia;Débito;cta-0060;36,21
+10/03/2024;134,09;VES;Pago Móvil;Crédito;cta-0032;36,21
+11/03/2024;79.138,57;VES;Transferencia;Débito;cta-0028;36,22
+11/03/2024;2.317,98;VES;Pago Móvil;Débito;cta-0119;36,22
+11/03/2024;7.949,96;VES;Pago Móvil;Débito;cta-0913;36,22
+11/03/2024;97,43;VES;Pago Móvil;Débito;cta-0027;36,22
+11/03/2024;1.459,61;VES;Pago Móvil;Crédito;cta-0034;36,22
+11/03/2024;4.862,72;VES;Pago Móvil;Débito;cta-0912;36,22
+11/03/2024;719,71;VES;Pago Móvil;Débito;cta-0118;36,22
+11/03/2024;155,36;VES;Punto de venta;Crédito;cta-0034;36,22
+11/03/2024;64,82;VES;Pago Móvil;Débito;cta-0029;36,22
+11/03/2024;3.332,79;VES;Pago Móvil;Débito;cta-0105;36,22
+11/03/2024;7.663,95;VES;Pago Móvil;Crédito;cta-0910;36,22
+11/03/2024;47,42;VES;Punto de venta;Crédito;cta-0077;36,22
+11/03/2024;183,57;VES;Punto de venta;Débito;cta-0015;36,22
+11/03/2024;848,84;VES;Punto de venta;Crédito;cta-0101;36,22
+11/03/2024;23,01;VES;Pago Móvil;Débito;cta-0097;36,22
+11/03/2024;9.692,82;VES;Pago Móvil;Débito;cta-0912;36,22
+11/03/2024;22,56;VES;Pago Móvil;Débito;cta-0081;36,22
+11/03/2024;2.517,61;VES;Transferencia;Débito;cta-0081;36,22
+11/03/2024;8.331,49;VES;Pago Móvil;Débito;cta-0914;36,22
+11/03/2024;99,45;VES;Punto de venta;Débito;cta-0099;36,22
+11/03/2024;35.160,05;VES;Transferencia;Crédito;cta-0013;36,22
+11/03/2024;44,09;VES;Punto de venta;Débito;cta-0023;36,22
+11/03/2024;33,37;USD;Divisas;Débito;cta-0011;36,22
+11/03/2024;792,25;USD;Divisas;Crédito;cta-0035;36,22
+11/03/2024;60,30;VES;Pago Móvil;Débito;cta-0094;36,22
+11/03/2024;8.577,63;VES;Pago Móvil;Débito;cta-0911;36,22
+11/03/2024;634,79;VES;Pago Móvil;Débito;cta-0083;36,22
+11/03/2024;7.280,44;VES;Pago Móvil;Crédito;cta-0026;36,22
+11/03/2024;20,33;VES;Punto de venta;Crédito;cta-0080;36,22
+11/03/2024;24,60;USD;Divisas;Débito;cta-0050;36,22
+11/03/2024;93,41;VES;Pago Móvil;Débito;cta-0075;36,22
+11/03/2024;76,35;VES;Pago Móvil;Crédito;cta-0010;36,22
+11/03/2024;7.876,23;VES;Pago Móvil;Crédito;cta-0912;36,22
+11/03/2024;4.005,88;VES;Transferencia;Débito;cta-0061;36,22
+11/03/2024;4.667,45;VES;Transferencia;Crédito;cta-0088;36,22
+11/03/2024;15,85;VES;Pago Móvil;Débito;cta-0059;36,22
+11/03/2024;5.328,17;VES;Pago Móvil;Crédito;cta-0912;36,22
+11/03/2024;1.097,35;USD;Divisas;Débito;cta-0073;36,22
+11/03/2024;1.806,00;VES;Pago Móvil;Débito;cta-0094;36,22
+11/03/2024;691.623,28;VES;Transferencia;Débito;cta-0013;36,22
+11/03/2024;97,56;VES;Pago Móvil;Débito;cta-0058;36,22
+11/03/2024;14,70;VES;Pago Móvil;Débito;cta-0055;36,22
+11/03/2024;5.440,51;VES;Punto de venta;Débito;cta-0047;36,22
+11/03/2024;5.294,22;VES;Pago Móvil;Crédito;cta-0912;36,22
+11/03/2024;70,87;VES;Pago Móvil;Débito;cta-0056;36,22
+11/03/2024;270,00;VES;Transferencia;Débito;cta-0043;36,22
+11/03/2024;518,90;VES;Transferencia;Débito;cta-0096;36,22
+11/03/2024;5.993,27;VES;Pago Móvil;Débito;cta-0915;36,22
+11/03/2024;31.671,62;VES;Transferencia;Crédito;cta-0117;36,22
+11/03/2024;11,81;VES;Pago Móvil;Débito;cta-0047;36,22
+11/03/2024;5.436,37;VES;Pago Móvil;Débito;cta-0077;36,22
+11/03/2024;6.528,95;VES;Pago Móvil;Débito;cta-0085;36,22
+11/03/2024;174.351,72;VES;Transferencia;Crédito;cta-0050;36,22
+11/03/2024;200.000,00;VES;Transferencia;Débito;cta-0816;36,22
+11/03/2024;6.684,35;VES;Pago Móvil;Débito;cta-0914;36,22
+11/03/2024;60,90;VES;Pago Móvil;Crédito;cta-0056;36,22
+11/03/2024;1.372,56;VES;Punto de venta;Débito;cta-0110;36,22
+11/03/2024;9.591,88;VES;Pago Móvil;Crédito;cta-0912;36,22
+11/03/2024;3.883,31;VES;Punto de venta;Débito;cta-0063;36,22
+11/03/2024;146,06;USD;Divisas;Débito;cta-0103;36,22
+11/03/2024;3.355,65;USD;Divisas;Débito;cta-0035;36,22
+11/03/2024;83.239,87;VES;Transferencia;Crédito;cta-0080;36,22
+11/03/2024;774,75;VES;Pago Móvil;Débito;cta-0049;36,22
+11/03/2024;382,13;VES;Pago Móvil;Débito;cta-0069;36,22
+11/03/2024;12,95;VES;Pago Móvil;Crédito;cta-0039;36,22
+11/03/2024;914,17;VES;Pago Móvil;Crédito;cta-0069;36,22
+11/03/2024;5.021,02;VES;Punto de venta;Débito;cta-0010;36,22
+11/03/2024;359.816,35;VES;Transferencia;Débito;cta-0777;36,22
+11/03/2024;3.075,63;VES;Punto de venta;Débito;cta-0056;36,22
+11/03/2024;296.973,56;VES;Transferencia;Crédito;cta-0107;36,22
+11/03/2024;9.442,88;VES;Transferencia;Débito;cta-0067;36,22
+11/03/2024;8.744,66;VES;Pago Móvil;Crédito;cta-0911;36,22
+11/03/2024;4.469,41;VES;Pago Móvil;Débito;cta-0106;36,22
+11/03/2024;5.640,28;VES;Pago Móvil;Débito;cta-0913;36,22
+11/03/2024;10,06;VES;Punto de venta;Débito;cta-0091;36,22
+11/03/2024;5.354,91;VES;Pago Móvil;Débito;cta-0913;36,22
+11/03/2024;1.757,05;VES;Transferencia;Crédito;cta-0102;36,22
+11/03/2024;602,40;USD;Divisas;Débito;cta-0034;36,22
+11/03/2024;150.000,00;VES;Transferencia;Débito;cta-0814;36,22
+11/03/2024;37.050,03;VES;Transferencia;Débito;cta-0075;36,22
+11/03/2024;450.997,80;VES;Transferencia;Crédito;cta-0094;36,22
+11/03/2024;242,63;VES;Transferencia;Débito;cta-0106;36,22
+11/03/2024;4.123,49;VES;Pago Móvil;Débito;cta-0038;36,22
+11/03/2024;5,54;USD;Divisas;Débito;cta-0031;36,22
+11/03/2024;4.280,42;VES;Punto de venta;Débito;cta-0070;36,22
+11/03/2024;20.841,43;VES;Transferencia;Débito;cta-0045;36,22
+11/03/2024;523.648,39;VES;Transferencia;Crédito;cta-0055;36,22
+11/03/2024;706,71;VES;Pago Móvil;Débito;cta-0067;36,22
+11/03/2024;317,47;USD;Divisas;Débito;cta-0023;36,22
+11/03/2024;126,06;VES;Pago Móvil;Crédito;cta-0057;36,22
+11/03/2024;69,00;VES;Punto de venta;Crédito;cta-0097;36,22
+11/03/2024;200.000,00;VES;Transferencia;Débito;cta-0810;36,22
+12/03/2024;389,42;VES;Transferencia;Débito;cta-0116;36,23
+12/03/2024;281,57;VES;Pago Móvil;Débito;cta-0066;36,23
+12/03/2024;1.293,01;VES;Punto de venta;Débito;cta-0017;36,23
+12/03/2024;104,19;VES;Pago Móvil;Débito;cta-0029;36,23
+12/03/2024;4.923,00;VES;Transferencia;Débito;cta-0023;36,23
+12/03/2024;35,02;VES;Punto de venta;Débito;cta-0038;36,23
+12/03/2024;100.000,00;VES;Transferencia;Débito;cta-0812;36,23
+12/03/2024;719,92;VES;Punto de venta;Crédito;cta-0004;36,23
+12/03/2024;958.754,67;VES;Transferencia;Débito;cta-0004;36,23
+12/03/2024;121,68;USD;Divisas;Débito;cta-0051;36,23
+12/03/2024;161,64;VES;Punto de venta;Débito;cta-0001;36,23
+12/03/2024;289,64;VES;Punto de venta;Crédito;cta-0024;36,23
+12/03/2024;609,56;VES;Transferencia;Crédito;cta-0100;36,23
+12/03/2024;213,24;USD;Divisas;Débito;cta-0015;36,23
+12/03/2024;362,21;VES;Pago Móvil;Débito;cta-0064;36,23
+12/03/2024;208,44;VES;Pago Móvil;Débito;cta-0042;36,23
+12/03/2024;209,05;VES;Punto de venta;Débito;cta-0051;36,23
+12/03/2024;1.410,19;VES;Transferencia;Débito;cta-0034;36,23
+12/03/2024;1.740,53;VES;Punto de venta;Crédito;cta-0107;36,23
+12/03/2024;24,72;VES;Pago Móvil;Crédito;cta-0024;36,23
+12/03/2024;193,06;USD;Divisas;Crédito;cta-0076;36,23
+12/03/2024;5.494,43;VES;Pago Móvil;Débito;cta-0912;36,23
+12/03/2024;5.128,03;VES;Transferencia;Crédito;cta-0120;36,23
+12/03/2024;611,48;VES;Transferencia;Crédito;cta-0074;36,23
+12/03/2024;499,14;VES;Pago Móvil;Débito;cta-0116;36,23
+12/03/2024;435.232,25;VES;Transferencia;Débito;cta-0048;36,23
+12/03/2024;16,17;VES;Punto de venta;Crédito;cta-0001;36,23
+12/03/2024;431,56;VES;Punto de venta;Débito;cta-0004;36,23
+12/03/2024;74,24;USD;Divisas;Débito;cta-0090;36,23
+12/03/2024;86,37;VES;Pago Móvil;Débito;cta-0078;36,23
+12/03/2024;334.167,19;VES;Transferencia;Débito;cta-0777;36,23
+12/03/2024;62,40;USD;Divisas;Crédito;cta-0014;36,23
+12/03/2024;185,04;VES;Pago Móvil;Débito;cta-0068;36,23
+12/03/2024;9.473,31;VES;Pago Móvil;Crédito;cta-0915;36,23
+12/03/2024;520,33;VES;Pago Móvil;Débito;cta-0025;36,23
+12/03/2024;545,14;VES;Pago Móvil;Débito;cta-0054;36,23
+12/03/2024;1.517,70;VES;Pago Móvil;Crédito;cta-0049;36,23
+12/03/2024;8.000,42;VES;Pago Móvil;Crédito;cta-0911;36,23
+12/03/2024;4.604,77;VES;Pago Móvil;Crédito;cta-0911;36,23
+12/03/2024;346.483,66;VES;Transferencia;Débito;cta-0777;36,23
+12/03/2024;12,73;VES;Pago Móvil;Débito;cta-0003;36,23
+12/03/2024;13.843,83;VES;Transferencia;Débito;cta-0097;36,23
+12/03/2024;857,86;VES;Punto de venta;Crédito;cta-0050;36,23
+12/03/2024;358.461,83;VES;Transferencia;Crédito;cta-0777;36,23
+12/03/2024;7.341,53;VES;Pago Móvil;Débito;cta-0914;36,23
+12/03/2024;8.488,28;VES;Pago Móvil;Débito;cta-0914;36,23
+12/03/2024;252,43;VES;Pago Móvil;Débito;cta-0059;36,23
+12/03/2024;666,32;VES;Pago Móvil;Débito;cta-0029;36,23
+12/03/2024;4.262,25;VES;Transferencia;Débito;cta-0010;36,23
+12/03/2024;48,56;VES;Pago Móvil;Crédito;cta-0071;36,23
+12/03/2024;166,11;USD;Divisas;Crédito;cta-0117;36,23
+12/03/2024;30,66;VES;Pago Móvil;Débito;cta-0099;36,23
+12/03/2024;5.502,75;VES;Pago Móvil;Débito;cta-0913;36,23
+12/03/2024;4.310,10;VES;Pago Móvil;Crédito;cta-0912;36,23
+12/03/2024;4.017,60;USD;Divisas;Crédito;cta-0094;36,23
+12/03/2024;13,08;VES;Punto de venta;Débito;cta-0089;36,23
+12/03/2024;1.581,84;VES;Pago Móvil;Crédito;cta-0053;36,23
+12/03/2024;272,52;VES;Pago Móvil;Débito;cta-0063;36,23
+12/03/2024;610,72;VES;Transferencia;Crédito;cta-0073;36,23
+12/03/2024;322,54;VES;Punto de venta;Crédito;cta-0057;36,23
+12/03/2024;467.863,65;VES;Transferencia;Crédito;cta-0046;36,23
+12/03/2024;175.431,40;VES;Transferencia;Débito;cta-0003;36,23
+12/03/2024;2.896,63;VES;Transferencia;Débito;cta-0087;36,23
+12/03/2024;268,83;VES;Pago Móvil;Crédito;cta-0008;36,23
+12/03/2024;9.211,06;VES;Pago Móvil;Débito;cta-0915;36,23
+12/03/2024;370.308,51;VES;Transferencia;Crédito;cta-0096;36,23
+12/03/2024;4.790,57;VES;Pago Móvil;Débito;cta-0011;36,23
+12/03/2024;32,31;VES;Punto de venta;Débito;cta-0016;36,23
+12/03/2024;15.941,12;VES;Transferencia;Débito;cta-0046;36,23
+12/03/2024;6.891,84;VES;Pago Móvil;Débito;cta-0913;36,23
+12/03/2024;134,21;VES;Pago Móvil;Débito;cta-0077;36,23
+12/03/2024;11,32;USD;Divisas;Débito;cta-0062;36,23
+12/03/2024;6.752,61;VES;Pago Móvil;Crédito;cta-0094;36,23
+12/03/2024;61.982,68;VES;Transferencia;Débito;cta-0059;36,23
+12/03/2024;392,70;VES;Pago Móvil;Débito;cta-0114;36,23
+12/03/2024;8,67;USD;Divisas;Crédito;cta-0030;36,23
+12/03/2024;34,09;VES;Punto de venta;Débito;cta-0073;36,23
+12/03/2024;964.132,90;VES;Transferencia;Débito;cta-0062;36,23
+12/03/2024;328.135,81;VES;Transferencia;Débito;cta-0777;36,23
+12/03/2024;142.834,90;VES;Transferencia;Crédito;cta-0091;36,23
+12/03/2024;671.600,39;VES;Transferencia;Débito;cta-0044;36,23
+12/03/2024;9.051,87;VES;Pago Móvil;Débito;cta-0017;36,23
+12/03/2024;1.908,31;VES;Pago Móvil;Débito;cta-0117;36,23
+12/03/2024;125.627,08;VES;Transferencia;Débito;cta-0083;36,23
+12/03/2024;369,77;VES;Punto de venta;Crédito;cta-0032;36,23
+13/03/2024;802,98;USD;Divisas;Crédito;cta-0107;36,24
+13/03/2024;1.741,31;VES;Punto de venta;Crédito;cta-0023;36,24
+13/03/2024;6.906,51;VES;Pago Móvil;Débito;cta-0915;36,24
+13/03/2024;4.568,88;VES;Pago Móvil;Crédito;cta-0915;36,24
+13/03/2024;645,18;VES;Pago Móvil;Crédito;cta-0022;36,24
+13/03/2024;716.293,69;VES;Transferencia;Débito;cta-0056;36,24
+13/03/2024;10.000,00;VES;Transferencia;Crédito;cta-0815;36,24
+13/03/2024;51,38;VES;Punto de venta;Débito;cta-0116;36,24
+13/03/2024;662.010,07;VES;Transferencia;Crédito;cta-0086;36,24
+13/03/2024;262,12;VES;Punto de venta;Crédito;cta-0096;36,24
+13/03/2024;5.491,19;VES;Pago Móvil;Débito;cta-0914;36,24
+13/03/2024;1.233,96;VES;Punto de venta;Débito;cta-0053;36,24
+13/03/2024;9.071,50;VES;Pago Móvil;Débito;cta-0914;36,24
+13/03/2024;504,57;VES;Pago Móvil;Débito;cta-0077;36,24
+13/03/2024;3.762,93;VES;Punto de venta;Crédito;cta-0060;36,24
+13/03/2024;744,98;USD;Divisas;Débito;cta-0015;36,24
+13/03/2024;211,75;VES;Punto de venta;Crédito;cta-0020;36,24
+13/03/2024;27,09;VES;Pago Móvil;Débito;cta-0041;36,24
+13/03/2024;4.859,63;VES;Pago Móvil;Crédito;cta-0912;36,24
+13/03/2024;141,73;USD;Divisas;Débito;cta-0017;36,24
+13/03/2024;19,86;VES;Pago Móvil;Crédito;cta-0007;36,24
+13/03/2024;102,08;VES;Punto de venta;Débito;cta-0074;36,24
+13/03/2024;46,80;VES;Pago Móvil;Crédito;cta-0064;36,24
+13/03/2024;47,60;USD;Divisas;Crédito;cta-0117;36,24
+13/03/2024;9.376,79;VES;Pago Móvil;Crédito;cta-0915;36,24
+13/03/2024;727.278,80;VES;Transferencia;Débito;cta-0105;36,24
+13/03/2024;3.328,39;VES;Punto de venta;Débito;cta-0011;36,24
+13/03/2024;8.053,57;VES;Pago Móvil;Crédito;cta-0910;36,24
+13/03/2024;782,56;VES;Pago Móvil;Débito;cta-0035;36,24
+13/03/2024;37,39;USD;Divisas;Crédito;cta-0111;36,24
+13/03/2024;971,63;VES;Punto de venta;Débito;cta-0017;36,24
+13/03/2024;340.528,52;VES;Transferencia;Crédito;cta-0777;36,24
+13/03/2024;4.816,22;VES;Pago Móvil;Débito;cta-0915;36,24
+13/03/2024;76.330,43;VES;Transferencia;Débito;cta-0069;36,24
+13/03/2024;38,59;VES;Pago Móvil;Crédito;cta-0033;36,24
+13/03/2024;334,11;VES;Punto de venta;Débito;cta-0013;36,24
+13/03/2024;80.939,23;VES;Transferencia;Débito;cta-0035;36,24
+13/03/2024;178,84;VES;Pago Móvil;Débito;cta-0063;36,24
+13/03/2024;3.215,79;VES;Punto de venta;Débito;cta-0039;36,24
+13/03/2024;3.165,61;VES;Transferencia;Crédito;cta-0011;36,24
+13/03/2024;74,83;USD;Divisas;Débito;cta-0117;36,24
+13/03/2024;15,80;VES;Pago Móvil;Débito;cta-0008;36,24
+13/03/2024;7.470,44;VES;Pago Móvil;Débito;cta-0914;36,24
+13/03/2024;780,73;VES;Transferencia;Débito;cta-0091;36,24
+13/03/2024;5.645,77;VES;Punto de venta;Débito;cta-0103;36,24
+13/03/2024;8.203,26;VES;Pago Móvil;Débito;cta-0915;36,24
+13/03/2024;1.620,97;VES;Pago Móvil;Débito;cta-0025;36,24
+13/03/2024;9.164,73;VES;Pago Móvil;Crédito;cta-0915;36,24
+13/03/2024;356,55;VES;Punto de venta;Crédito;cta-0063;36,24
+13/03/2024;175,32;VES;Transferencia;Débito;cta-0002;36,24
+13/03/2024;5,25;USD;Divisas;Crédito;cta-0001;36,24
+13/03/2024;6.715,47;VES;Pago Móvil;Débito;cta-0912;36,24
+13/03/2024;413,76;USD;Divisas;Débito;cta-0087;36,24
+13/03/2024;297,31;VES;Transferencia;Débito;cta-0102;36,24
+13/03/2024;408,05;VES;Punto de venta;Débito;cta-0111;36,24
+13/03/2024;4.436,83;VES;Transferencia;Débito;cta-0029;36,24
+13/03/2024;778,04;VES;Pago Móvil;Débito;cta-0040;36,24
+13/03/2024;5.810,94;VES;Pago Móvil;Crédito;cta-0914;36,24
+13/03/2024;1.177,85;VES;Pago Móvil;Crédito;cta-0097;36,24
+13/03/2024;171,87;VES;Punto de venta;Débito;cta-0037;36,24
+13/03/2024;23,69;VES;Punto de venta;Crédito;cta-0039;36,24
+13/03/2024;4.853,41;VES;Punto de venta;Crédito;cta-0099;36,24
+13/03/2024;3.065,35;VES;Pago Móvil;Débito;cta-0078;36,24
+13/03/2024;4.045,13;USD;Divisas;Débito;cta-0092;36,24
+13/03/2024;9,72;USD;Divisas;Débito;cta-0023;36,24
+13/03/2024;284,67;VES;Pago Móvil;Débito;cta-0037;36,24
+13/03/2024;4.900,97;VES;Punto de venta;Débito;cta-0072;36,24
+13/03/2024;511,83;VES;Pago Móvil;Débito;cta-0009;36,24
+13/03/2024;19,64;VES;Pago Móvil;Débito;cta-0016;36,24
+13/03/2024;965,36;VES;Pago Móvil;Débito;cta-0072;36,24
+13/03/2024;34,62;VES;Punto de venta;Débito;cta-0050;36,24
+13/03/2024;774,52;VES;Transferencia;Crédito;cta-0113;36,24
+13/03/2024;1.546,74;USD;Divisas;Crédito;cta-0094;36,24
+13/03/2024;100.000,00;VES;Transferencia;Débito;cta-0812;36,24
+13/03/2024;1.586,13;VES;Pago Móvil;Débito;cta-0083;36,24
+13/03/2024;288,22;VES;Pago Móvil;Débito;cta-0078;36,24
+13/03/2024;937,69;VES;Pago Móvil;Crédito;cta-0094;36,24
+13/03/2024;16,95;USD;Divisas;Débito;cta-0064;36,24
+13/03/2024;11,15;VES;Pago Móvil;Crédito;cta-0035;36,24
+13/03/2024;9.698,61;VES;Pago Móvil;Débito;cta-0915;36,24
+13/03/2024;1.398,95;VES;Transferencia;Débito;cta-0084;36,24
+13/03/2024;150.000,00;VES;Transferencia;Débito;cta-0812;36,24
+13/03/2024;19,10;VES;Pago Móvil;Débito;cta-0043;36,24
+13/03/2024;14,02;VES;Punto de venta;Débito;cta-0117;36,24
+13/03/2024;6.193,02;VES;Pago Móvil;Débito;cta-0910;36,24
+13/03/2024;218,26;VES;Punto de venta;Crédito;cta-0084;36,24
+13/03/2024;1.545,54;VES;Pago Móvil;Crédito;cta-0021;36,24
+13/03/2024;6.922,24;VES;Pago Móvil;Crédito;cta-0030;36,24
+13/03/2024;5.696,83;VES;Pago Móvil;Crédito;cta-0915;36,24
+13/03/2024;3.149,48;VES;Transferencia;Débito;cta-0085;36,24
+13/03/2024;10,43;USD;Divisas;Débito;cta-0095;36,24
+13/03/2024;50.000,00;VES;Transferencia;Crédito;cta-0815;36,24
+13/03/2024;29,16;VES;Pago Móvil;Débito;cta-0069;36,24
+13/03/2024;97,86;VES;Pago Móvil;Débito;cta-0109;36,24
+13/03/2024;413,78;VES;Pago Móvil;Débito;cta-0011;36,24
+13/03/2024;2.125,37;VES;Transferencia;Débito;cta-0109;36,24
+13/03/2024;151,70;VES;Transferencia;Débito;cta-0084;36,24
+13/03/2024;391,85;VES;Transferencia;Débito;cta-0111;36,24
+13/03/2024;289,93;VES;Transferencia;Débito;cta-0039;36,24
+13/03/2024;6.843,71;VES;Pago Móvil;Débito;cta-0054;36,24
+13/03/2024;9.148,13;VES;Pago Móvil;Crédito;cta-0912;36,24
+13/03/2024;1.771,42;VES;Pago Móvil;Débito;cta-0027;36,24
+13/03/2024;5.358,53;VES;Transferencia;Débito;cta-0097;36,24
+13/03/2024;150.000,00;VES;Transferencia;Débito;cta-0814;36,24
+13/03/2024;13,16;VES;Pago Móvil;Débito;cta-0066;36,24
+14/03/2024;137,56;VES;Pago Móvil;Crédito;cta-0082;36,26
+14/03/2024;6.397,96;VES;Pago Móvil;Débito;cta-0913;36,26
+14/03/2024;172,97;VES;Transferencia;Débito;cta-0066;36,26
+14/03/2024;7.205,69;VES;Pago Móvil;Débito;cta-0910;36,26
+14/03/2024;725,54;VES;Pago Móvil;Débito;cta-0054;36,26
+14/03/2024;38,01;USD;Divisas;Débito;cta-0020;36,26
+14/03/2024;811,24;USD;Divisas;Débito;cta-0014;36,26
+14/03/2024;6.106,75;VES;Pago Móvil;Débito;cta-0061;36,26
+14/03/2024;190,80;VES;Pago Móvil;Crédito;cta-0103;36,26
+14/03/2024;130,44;USD;Divisas;Crédito;cta-0099;36,26
+14/03/2024;10,63;USD;Divisas;Débito;cta-0072;36,26
+14/03/2024;73.564,78;VES;Transferencia;Débito;cta-0079;36,26
+14/03/2024;331.428,81;VES;Transferencia;Débito;cta-0777;36,26
+14/03/2024;88,30;VES;Pago Móvil;Crédito;cta-0091;36,26
+14/03/2024;6.686,05;VES;Punto de venta;Crédito;cta-0006;36,26
+14/03/2024;179,56;VES;Punto de venta;Crédito;cta-0001;36,26
+14/03/2024;283.729,49;VES;Transferencia;Crédito;cta-0015;36,26
+14/03/2024;27,72;VES;Pago Móvil;Débito;cta-0110;36,26
+14/03/2024;8.930,57;VES;Punto de venta;Débito;cta-0074;36,26
+14/03/2024;3.122,45;VES;Transferencia;Débito;cta-0004;36,26
+14/03/2024;6.101,01;VES;Punto de venta;Débito;cta-0087;36,26
+14/03/2024;2.214,99;VES;Pago Móvil;Crédito;cta-0048;36,26
+14/03/2024;134,45;VES;Transferencia;Crédito;cta-0022;36,26
+14/03/2024;1.153,82;VES;Pago Móvil;Débito;cta-0027;36,26
+14/03/2024;38,57;VES;Pago Móvil;Débito;cta-0019;36,26
+14/03/2024;9.258,92;VES;Transferencia;Débito;cta-0072;36,26
+14/03/2024;320,30;VES;Punto de venta;Débito;cta-0103;36,26
+14/03/2024;16,17;USD;Divisas;Débito;cta-0050;36,26
+14/03/2024;340,25;VES;Pago Móvil;Débito;cta-0109;36,26
+14/03/2024;4.523,92;VES;Transferencia;Débito;cta-0060;36,26
+14/03/2024;9.599,21;VES;Pago Móvil;Crédito;cta-0910;36,26
+14/03/2024;5.218,15;VES;Pago Móvil;Débito;cta-0911;36,26
+14/03/2024;322.143,88;VES;Transferencia;Crédito;cta-0096;36,26
+14/03/2024;344,35;VES;Pago Móvil;Crédito;cta-0020;36,26
+14/03/2024;8.244,00;VES;Pago Móvil;Débito;cta-0059;36,26
+14/03/2024;3.975,75;VES;Pago Móvil;Débito;cta-0002;36,26
+14/03/2024;267,21;VES;Pago Móvil;Débito;cta-0017;36,26
+14/03/2024;200.000,00;VES;Transferencia;Débito;cta-0813;36,26
+14/03/2024;156,16;VES;Transferencia;Débito;cta-0093;36,26
+14/03/2024;689,60;USD;Divisas;Crédito;cta-0042;36,26
+14/03/2024;24,75;USD;Divisas;Crédito;cta-0039;36,26
+14/03/2024;12,44;USD;Divisas;Crédito;cta-0023;36,26
+14/03/2024;100.000,00;VES;Transferencia;Débito;cta-0811;36,26
+14/03/2024;999,14;VES;Pago Móvil;Débito;cta-0054;36,26
+14/03/2024;298,38;VES;Pago Móvil;Débito;cta-0048;36,26
+14/03/2024;10.276,58;VES;Transferencia;Crédito;cta-0076;36,26
+14/03/2024;730,49;VES;Transferencia;Crédito;cta-0033;36,26
+14/03/2024;252,11;VES;Pago Móvil;Crédito;cta-0053;36,26
+14/03/2024;985.641,15;VES;Transferencia;Débito;cta-0017;36,26
+14/03/2024;169,63;VES;Pago Móvil;Débito;cta-0118;36,26
+14/03/2024;265,53;VES;Punto de venta;Crédito;cta-0011;36,26
+14/03/2024;446,73;VES;Punto de venta;Débito;cta-0061;36,26
+14/03/2024;8.774,57;VES;Pago Móvil;Débito;cta-0913;36,26
+14/03/2024;24,77;VES;Pago Móvil;Débito;cta-0114;36,26
+14/03/2024;9.287,37;VES;Pago Móvil;Débito;cta-0910;36,26
+14/03/2024;1.386,07;VES;Pago Móvil;Crédito;cta-0018;36,26
+14/03/2024;7,30;USD;Divisas;Débito;cta-0026;36,26
+14/03/2024;23,96;VES;Punto de venta;Débito;cta-0039;36,26
+14/03/2024;546,72;VES;Pago Móvil;Débito;cta-0096;36,26
+14/03/2024;392,36;VES;Pago Móvil;Crédito;cta-0037;36,26
+14/03/2024;31,60;VES;Punto de venta;Crédito;cta-0017;36,26
+14/03/2024;2.808,38;VES;Punto de venta;Débito;cta-0116;36,26
+14/03/2024;8.435,25;VES;Pago Móvil;Débito;cta-0914;36,26
+14/03/2024;117,51;VES;Pago Móvil;Débito;cta-0063;36,26
+14/03/2024;150.000,00;VES;Transferencia;Crédito;cta-0816;36,26
+14/03/2024;46.124,50;VES;Transferencia;Débito;cta-0036;36,26
+14/03/2024;25,57;VES;Punto de venta;Débito;cta-0009;36,26
+14/03/2024;2.285,61;VES;Pago Móvil;Crédito;cta-0052;36,26
+14/03/2024;4.617,84;VES;Punto de venta;Débito;cta-0098;36,26
+14/03/2024;363,12;VES;Transferencia;Débito;cta-0035;36,26
+14/03/2024;205,33;VES;Transferencia;Crédito;cta-0055;36,26
+14/03/2024;9,09;USD;Divisas;Débito;cta-0005;36,26
+14/03/2024;8.774,16;VES;Pago Móvil;Débito;cta-0912;36,26
+14/03/2024;1.355,49;VES;Pago Móvil;Crédito;cta-0039;36,26
+14/03/2024;99,30;VES;Pago Móvil;Débito;cta-0042;36,26
+14/03/2024;379,77;VES;Punto de venta;Crédito;cta-0068;36,26
+14/03/2024;4.470,84;VES;Pago Móvil;Débito;cta-0914;36,26
+14/03/2024;7.280,98;VES;Pago Móvil;Débito;cta-0079;36,26
+14/03/2024;24,97;VES;Pago Móvil;Crédito;cta-0001;36,26
+14/03/2024;9.207,98;VES;Punto de venta;Débito;cta-0078;36,26
+14/03/2024;13,84;VES;Pago Móvil;Débito;cta-0093;36,26
+14/03/2024;512,05;USD;Divisas;Crédito;cta-0013;36,26
+14/03/2024;6.449,15;VES;Punto de venta;Crédito;cta-0009;36,26
+14/03/2024;735,92;VES;Punto de venta;Débito;cta-0014;36,26
+14/03/2024;4.917,04;VES;Pago Móvil;Débito;cta-0910;36,26
+14/03/2024;17,70;VES;Punto de venta;Débito;cta-0058;36,26
+14/03/2024;20.491,86;VES;Transferencia;Crédito;cta-0013;36,26
+14/03/2024;3.273,37;VES;Punto de venta;Débito;cta-0081;36,26
+14/03/2024;5.123,40;VES;Pago Móvil;Crédito;cta-0913;36,26
+14/03/2024;20,98;USD;Divisas;Crédito;cta-0095;36,26
+14/03/2024;7.805,65;VES;Pago Móvil;Crédito;cta-0913;36,26
+14/03/2024;4.859,44;VES;Pago Móvil;Débito;cta-0077;36,26
+14/03/2024;86,28;USD;Divisas;Débito;cta-0012;36,26
+14/03/2024;267,19;VES;Pago Móvil;Débito;cta-0105;36,26
+14/03/2024;1.545,89;VES;Pago Móvil;Crédito;cta-0068;36,26
+14/03/2024;2.951,61;VES;Pago Móvil;Crédito;cta-0028;36,26
+14/03/2024;6.651,32;VES;Pago Móvil;Crédito;cta-0910;36,26
+14/03/2024;6.222,06;VES;Pago Móvil;Crédito;cta-0914;36,26
+14/03/2024;138.230,31;VES;Transferencia;Crédito;cta-0008;36,26
+14/03/2024;469,24;USD;Divisas;Crédito;cta-0097;36,26
+14/03/2024;106.181,64;VES;Transferencia;Débito;cta-0022;36,26
+14/03/2024;255,24;VES;Transferencia;Crédito;cta-0062;36,26
+15/03/2024;17,51;VES;Pago Móvil;Crédito;cta-0013;36,27
+15/03/2024;353,81;VES;Pago Móvil;Débito;cta-0119;36,27
+15/03/2024;8.115,24;VES;Pago Móvil;Débito;cta-0914;36,27
+15/03/2024;986,01;VES;Punto de venta;Débito;cta-0010;36,27
+15/03/2024;24,24;VES;Pago Móvil;Débito;cta-0016;36,27
+15/03/2024;287,44;VES;Punto de venta;Débito;cta-0102;36,27
+15/03/2024;1.035,04;VES;Punto de venta;Débito;cta-0097;36,27
+15/03/2024;6,51;USD;Divisas;Débito;cta-0119;36,27
+15/03/2024;89,48;VES;Punto de venta;Débito;cta-0071;36,27
+15/03/2024;28,06;VES;Pago Móvil;Débito;cta-0081;36,27
+15/03/2024;17,07;VES;Pago Móvil;Débito;cta-0112;36,27
+15/03/2024;93,74;VES;Pago Móvil;Débito;cta-0033;36,27
+15/03/2024;6.514,74;VES;Punto de venta;Débito;cta-0035;36,27
+15/03/2024;32,56;USD;Divisas;Débito;cta-0011;36,27
+15/03/2024;13.465,93;VES;Transferencia;Débito;cta-0090;36,27
+15/03/2024;1.445,75;VES;Transferencia;Crédito;cta-0085;36,27
+15/03/2024;1.021,20;VES;Transferencia;Débito;cta-0092;36,27
+15/03/2024;137,45;USD;Divisas;Crédito;cta-0017;36,27
+15/03/2024;50.000,00;VES;Transferencia;Débito;cta-0817;36,27
+15/03/2024;25.057,35;VES;Transferencia;Débito;cta-0119;36,27
+15/03/2024;917,74;VES;Pago Móvil;Débito;cta-0062;36,27
+15/03/2024;3.455,65;USD;Divisas;Débito;cta-0049;36,27
+15/03/2024;209,07;VES;Pago Móvil;Crédito;cta-0072;36,27
+15/03/2024;6.104,71;VES;Pago Móvil;Débito;cta-0008;36,27
+15/03/2024;18,06;VES;Pago Móvil;Débito;cta-0085;36,27
+15/03/2024;1.433,25;VES;Pago Móvil;Crédito;cta-0030;36,27
+15/03/2024;10.155,50;VES;Transferencia;Débito;cta-0067;36,27
+15/03/2024;239,69;USD;Divisas;Crédito;cta-0060;36,27
+15/03/2024;8.583,37;VES;Pago Móvil;Crédito;cta-0915;36,27
+15/03/2024;159,87;VES;Pago Móvil;Débito;cta-0089;36,27
+15/03/2024;49,88;VES;Pago Móvil;Crédito;cta-0037;36,27
+15/03/2024;125,45;VES;Transferencia;Crédito;cta-0047;36,27
+15/03/2024;62,42;USD;Divisas;Crédito;cta-0105;36,27
+15/03/2024;642,30;VES;Pago Móvil;Débito;cta-0023;36,27
+15/03/2024;777,68;USD;Divisas;Crédito;cta-0052;36,27
+15/03/2024;8.311,40;VES;Punto de venta;Débito;cta-0013;36,27
+15/03/2024;1.573,98;USD;Divisas;Crédito;cta-0007;36,27
+15/03/2024;6.658,30;VES;Pago Móvil;Débito;cta-0915;36,27
+15/03/2024;219,79;VES;Pago Móvil;Débito;cta-0117;36,27
+15/03/2024;242,07;VES;Pago Móvil;Débito;cta-0078;36,27
+15/03/2024;4.128,53;VES;Punto de venta;Débito;cta-0033;36,27
+15/03/2024;355.140,04;VES;Transferencia;Débito;cta-0777;36,27
+15/03/2024;46,83;USD;Divisas;Débito;cta-0101;36,27
+15/03/2024;316,32;VES;Transferencia;Débito;cta-0015;36,27
+15/03/2024;537,62;VES;Pago Móvil;Débito;cta-0062;36,27
+15/03/2024;18,40;VES;Pago Móvil;Débito;cta-0021;36,27
+15/03/2024;6.156,99;VES;Transferencia;Crédito;cta-0028;36,27
+15/03/2024;1.412,87;VES;Transferencia;Débito;cta-0025;36,27
+15/03/2024;626,58;VES;Pago Móvil;Débito;cta-0038;36,27
+15/03/2024;343.484,66;VES;Transferencia;Débito;cta-0777;36,27
+15/03/2024;6.263,25;VES;Pago Móvil;Débito;cta-0915;36,27
+15/03/2024;5.558,07;VES;Transferencia;Crédito;cta-0071;36,27
+15/03/2024;89.784,25;VES;Transferencia;Crédito;cta-0014;36,27
+15/03/2024;1.528,24;VES;Transferencia;Débito;cta-0070;36,27
+15/03/2024;456,53;VES;Pago Móvil;Crédito;cta-0090;36,27
+15/03/2024;406,79;VES;Punto de venta;Débito;cta-0113;36,27
+15/03/2024;6.284,49;VES;Pago Móvil;Débito;cta-0912;36,27
+15/03/2024;12,87;USD;Divisas;Débito;cta-0024;36,27
+15/03/2024;81.573,18;VES;Transferencia;Débito;cta-0075;36,27
+15/03/2024;296,86;VES;Punto de venta;Débito;cta-0073;36,27
+15/03/2024;358.989,10;VES;Transferencia;Débito;cta-0777;36,27
+15/03/2024;4.185,67;VES;Pago Móvil;Débito;cta-0910;36,27
+15/03/2024;2.091,35;VES;Pago Móvil;Crédito;cta-0022;36,27
+15/03/2024;9.583,38;VES;Pago Móvil;Crédito;cta-0912;36,27
+15/03/2024;25.000,00;VES;Transferencia;Débito;cta-0811;36,27
+15/03/2024;302,20;VES;Pago Móvil;Débito;cta-0066;36,27
+15/03/2024;468,49;VES;Punto de venta;Débito;cta-0101;36,27
+15/03/2024;9.537,60;VES;Pago Móvil;Débito;cta-0912;36,27
+15/03/2024;9.137,07;VES;Pago Móvil;Crédito;cta-0914;36,27
+15/03/2024;782,32;USD;Divisas;Crédito;cta-0107;36,27
+15/03/2024;1.822,22;VES;Pago Móvil;Débito;cta-0005;36,27
+15/03/2024;8.649,57;VES;Transferencia;Débito;cta-0006;36,27
+15/03/2024;407,75;VES;Transferencia;Crédito;cta-0037;36,27
+15/03/2024;4.276,26;USD;Divisas;Débito;cta-0073;36,27
+15/03/2024;1.375,53;VES;Pago Móvil;Crédito;cta-0032;36,27
+15/03/2024;5.688,16;VES;Transferencia;Crédito;cta-0001;36,27
+15/03/2024;1.462,28;VES;Punto de venta;Débito;cta-0048;36,27
+15/03/2024;47,88;VES;Punto de venta;Débito;cta-0021;36,27
+15/03/2024;2.116,14;VES;Pago Móvil;Débito;cta-0034;36,27
+15/03/2024;2.880,48;USD;Divisas;Crédito;cta-0037;36,27
+15/03/2024;236,27;VES;Punto de venta;Débito;cta-0032;36,27
+15/03/2024;176,43;VES;Pago Móvil;Crédito;cta-0018;36,27
+15/03/2024;239.213,10;VES;Transferencia;Débito;cta-0064;36,27
+15/03/2024;112,02;VES;Pago Móvil;Débito;cta-0116;36,27
+15/03/2024;112,43;USD;Divisas;Débito;cta-0097;36,27
+15/03/2024;7.659,05;VES;Pago Móvil;Débito;cta-0915;36,27
+16/03/2024;330,62;VES;Pago Móvil;Crédito;cta-0060;36,28
+16/03/2024;2.259,78;VES;Pago Móvil;Crédito;cta-0037;36,28
+16/03/2024;4.655,31;VES;Transferencia;Crédito;cta-0035;36,28
+16/03/2024;32,16;VES;Pago Móvil;Débito;cta-0072;36,28
+16/03/2024;3.446,08;VES;Punto de venta;Débito;cta-0111;36,28
+16/03/2024;24,38;USD;Divisas;Crédito;cta-0015;36,28
+16/03/2024;841,48;VES;Pago Móvil;Débito;cta-0070;36,28
+16/03/2024;445,20;VES;Transferencia;Débito;cta-0120;36,28
+16/03/2024;69,94;VES;Pago Móvil;Crédito;cta-0102;36,28
+16/03/2024;6.154,07;VES;Pago Móvil;Débito;cta-0910;36,28
+16/03/2024;566,77;VES;Punto de venta;Débito;cta-0050;36,28
+16/03/2024;405,73;VES;Punto de venta;Débito;cta-0119;36,28
+16/03/2024;7.198,75;VES;Pago Móvil;Crédito;cta-0910;36,28
+16/03/2024;7.450,08;VES;Punto de venta;Crédito;cta-0008;36,28
+16/03/2024;578,31;VES;Punto de venta;Débito;cta-0023;36,28
+16/03/2024;7.977,80;VES;Pago Móvil;Crédito;cta-0914;36,28
+16/03/2024;303,12;VES;Transferencia;Débito;cta-0099;36,28
+16/03/2024;1.689,12;VES;Pago Móvil;Crédito;cta-0074;36,28
+16/03/2024;8.118,23;VES;Punto de venta;Débito;cta-0094;36,28
+16/03/2024;13,53;VES;Pago Móvil;Débito;cta-0045;36,28
+16/03/2024;4.729,85;VES;Punto de venta;Crédito;cta-0011;36,28
+16/03/2024;2.542,08;USD;Divisas;Débito;cta-0053;36,28
+16/03/2024;431,32;USD;Divisas;Crédito;cta-0120;36,28
+16/03/2024;5.191,84;VES;Punto de venta;Crédito;cta-0039;36,28
+16/03/2024;1.919,30;VES;Pago Móvil;Crédito;cta-0080;36,28
+16/03/2024;1.438,30;VES;Pago Móvil;Débito;cta-0032;36,28
+16/03/2024;2.066,25;VES;Pago Móvil;Débito;cta-0044;36,28
+16/03/2024;61.842,98;VES;Transferencia;Crédito;cta-0052;36,28
+16/03/2024;31,21;VES;Pago Móvil;Débito;cta-0079;36,28
+16/03/2024;200.000,00;VES;Transferencia;Débito;cta-0815;36,28
+16/03/2024;352.231,73;VES;Transferencia;Débito;cta-0777;36,28
+16/03/2024;4.529,67;VES;Punto de venta;Débito;cta-0004;36,28
+16/03/2024;120,77;VES;Pago Móvil;Crédito;cta-0060;36,28
+16/03/2024;1.771,06;VES;Transferencia;Débito;cta-0055;36,28
+16/03/2024;1.199,35;VES;Punto de venta;Débito;cta-0078;36,28
+16/03/2024;6.448,59;VES;Pago Móvil;Crédito;cta-0914;36,28
+16/03/2024;9.381,54;VES;Pago Móvil;Débito;cta-0910;36,28
+16/03/2024;4.277,84;VES;Transferencia;Débito;cta-0117;36,28
+16/03/2024;371,10;VES;Transferencia;Débito;cta-0102;36,28
+16/03/2024;10,92;VES;Punto de venta;Débito;cta-0015;36,28
+16/03/2024;95,03;VES;Pago Móvil;Débito;cta-0009;36,28
+16/03/2024;19,68;VES;Pago Móvil;Débito;cta-0055;36,28
+16/03/2024;103,66;USD;Divisas;Crédito;cta-0091;36,28
+16/03/2024;270,33;VES;Pago Móvil;Débito;cta-0050;36,28
+16/03/2024;334.280,62;VES;Transferencia;Débito;cta-0777;36,28
+16/03/2024;666,20;VES;Pago Móvil;Débito;cta-0055;36,28
+16/03/2024;8.265,85;VES;Pago Móvil;Débito;cta-0026;36,28
+16/03/2024;248,85;VES;Pago Móvil;Crédito;cta-0067;36,28
+16/03/2024;10,02;VES;Punto de venta;Crédito;cta-0002;36,28
+16/03/2024;687,05;VES;Pago Móvil;Crédito;cta-0053;36,28
+16/03/2024;3.474,87;VES;Transferencia;Crédito;cta-0037;36,28
+16/03/2024;4.997,43;VES;Pago Móvil;Débito;cta-0910;36,28
+16/03/2024;27.689,52;VES;Transferencia;Débito;cta-0073;36,28
+16/03/2024;129,14;VES;Pago Móvil;Débito;cta-0099;36,28
+16/03/2024;423,40;VES;Transferencia;Débito;cta-0003;36,28
+16/03/2024;6.586,80;VES;Punto de venta;Débito;cta-0113;36,28
+16/03/2024;263,61;VES;Pago Móvil;Débito;cta-0093;36,28
+16/03/2024;18,15;VES;Pago Móvil;Débito;cta-0090;36,28
+16/03/2024;17,63;VES;Pago Móvil;Débito;cta-0110;36,28
+16/03/2024;201,16;VES;Transferencia;Débito;cta-0023;36,28
+16/03/2024;1.725,50;VES;Pago Móvil;Crédito;cta-0031;36,28
+16/03/2024;22,16;VES;Pago Móvil;Débito;cta-0032;36,28
+16/03/2024;9.598,11;VES;Pago Móvil;Débito;cta-0911;36,28
+16/03/2024;184,18;VES;Pago Móvil;Débito;cta-0058;36,28
+16/03/2024;25.000,00;VES;Transferencia;Crédito;cta-0813;36,28
+16/03/2024;54,07;VES;Pago Móvil;Débito;cta-0063;36,28
+16/03/2024;9,21;USD;Divisas;Crédito;cta-0119;36,28
+16/03/2024;8.355,67;VES;Pago Móvil;Débito;cta-0914;36,28
+16/03/2024;624,85;VES;Punto de venta;Débito;cta-0051;36,28
+16/03/2024;334,35;VES;Pago Móvil;Débito;cta-0106;36,28
+16/03/2024;119,28;VES;Punto de venta;Débito;cta-0015;36,28
+16/03/2024;67,87;VES;Pago Móvil;Débito;cta-0046;36,28
+16/03/2024;4.947,35;USD;Divisas;Débito;cta-0104;36,28
+16/03/2024;6.463,99;VES;Transferencia;Crédito;cta-0011;36,28
+16/03/2024;7.087,97;VES;Transferencia;Débito;cta-0095;36,28
+16/03/2024;7.493,66;VES;Pago Móvil;Débito;cta-0912;36,28
+16/03/2024;19,26;VES;Punto de venta;Débito;cta-0022;36,28
+16/03/2024;298,44;VES;Punto de venta;Débito;cta-0093;36,28
+16/03/2024;400,45;VES;Pago Móvil;Débito;cta-0062;36,28
+16/03/2024;10.000,00;VES;Transferencia;Crédito;cta-0817;36,28
+16/03/2024;4.227,38;VES;Pago Móvil;Débito;cta-0910;36,28
+16/03/2024;457,99;USD;Divisas;Débito;cta-0039;36,28
+16/03/2024;8.650,87;VES;Pago Móvil;Crédito;cta-0913;36,28
+16/03/2024;1.001,05;VES;Transferencia;Débito;cta-0109;36,28
+16/03/2024;6.948,30;VES;Punto de venta;Débito;cta-0045;36,28
+16/03/2024;5.750,86;VES;Pago Móvil;Débito;cta-0912;36,28
+16/03/2024;927,17;VES;Transferencia;Crédito;cta-0073;36,28
+16/03/2024;7.053,25;VES;Pago Móvil;Débito;cta-0913;36,28
+16/03/2024;5.639,44;VES;Pago Móvil;Crédito;cta-0913;36,28
+16/03/2024;7.058,83;VES;Transferencia;Débito;cta-0050;36,28
+16/03/2024;209,11;VES;Pago Móvil;Crédito;cta-0055;36,28
+16/03/2024;271,46;VES;Transferencia;Débito;cta-0003;36,28
+16/03/2024;331.964,89;VES;Transferencia;Débito;cta-0777;36,28
+16/03/2024;32,87;VES;Punto de venta;Débito;cta-0099;36,28
+16/03/2024;135.845,10;VES;Transferencia;Crédito;cta-0015;36,28
+16/03/2024;7.094,26;VES;Pago Móvil;Crédito;cta-0914;36,28
+16/03/2024;4.327,15;VES;Punto de venta;Débito;cta-0040;36,28
+16/03/2024;6.522,04;VES;Pago Móvil;Débito;cta-0915;36,28
+16/03/2024;4.015,48;VES;Punto de venta;Débito;cta-0120;36,28
+16/03/2024;134.900,07;VES;Transferencia;Débito;cta-0004;36,28
+16/03/2024;84,03;USD;Divisas;Débito;cta-0093;36,28
+16/03/2024;116,70;VES;Transferencia;Débito;cta-0015;36,28
+16/03/2024;3.720,38;VES;Transferencia;Débito;cta-0017;36,28
+16/03/2024;2.588,46;VES;Punto de venta;Débito;cta-0085;36,28
+17/03/2024;115,06;VES;Pago Móvil;Crédito;cta-0085;36,29
+17/03/2024;4.161,95;VES;Pago Móvil;Débito;cta-0914;36,29
+17/03/2024;6.363,34;VES;Pago Móvil;Débito;cta-0914;36,29
+17/03/2024;7.537,95;VES;Pago Móvil;Débito;cta-0913;36,29
+17/03/2024;53,01;VES;Pago Móvil;Débito;cta-0034;36,29
+17/03/2024;145,99;VES;Pago Móvil;Crédito;cta-0101;36,29
+17/03/2024;5.798,97;VES;Pago Móvil;Crédito;cta-0098;36,29
+17/03/2024;77.736,95;VES;Transferencia;Débito;cta-0072;36,29
+17/03/2024;4.741,05;VES;Transferencia;Débito;cta-0018;36,29
+17/03/2024;2.370,92;VES;Punto de venta;Débito;cta-0028;36,29
+17/03/2024;8.667,49;VES;Pago Móvil;Débito;cta-0914;36,29
+17/03/2024;3.883,05;VES;Pago Móvil;Débito;cta-0076;36,29
+17/03/2024;102,55;VES;Transferencia;Crédito;cta-0042;36,29
+17/03/2024;1.509,57;VES;Pago Móvil;Crédito;cta-0092;36,29
+17/03/2024;3.208,53;VES;Transferencia;Débito;cta-0106;36,29
+17/03/2024;110,79;VES;Transferencia;Débito;cta-0107;36,29
+17/03/2024;8.068,11;VES;Pago Móvil;Débito;cta-0910;36,29
+17/03/2024;356.742,89;VES;Transferencia;Débito;cta-0097;36,29
+17/03/2024;237,20;VES;Transferencia;Débito;cta-0089;36,29
+17/03/2024;10,58;VES;Pago Móvil;Débito;cta-0007;36,29
+17/03/2024;7.258,57;VES;Pago Móvil;Crédito;cta-0912;36,29
+17/03/2024;100.000,00;VES;Transferencia;Débito;cta-0812;36,29
+17/03/2024;1.248,66;VES;Punto de venta;Crédito;cta-0053;36,29
+17/03/2024;17,71;VES;Punto de venta;Débito;cta-0053;36,29
+17/03/2024;153,36;VES;Pago Móvil;Débito;cta-0116;36,29
+17/03/2024;3.419,34;VES;Transferencia;Débito;cta-0084;36,29
+17/03/2024;2.106,89;USD;Divisas;Crédito;cta-0022;36,29
+17/03/2024;530,11;VES;Punto de venta;Débito;cta-0029;36,29
+17/03/2024;4.717,69;VES;Pago Móvil;Débito;cta-0913;36,29
+17/03/2024;14,73;USD;Divisas;Crédito;cta-0086;36,29
+17/03/2024;306,59;VES;Transferencia;Crédito;cta-0078;36,29
+17/03/2024;1.683,81;USD;Divisas;Débito;cta-0023;36,29
+17/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0818;36,29
+17/03/2024;1.300,67;VES;Punto de venta;Crédito;cta-0037;36,29
+17/03/2024;7.529,76;VES;Pago Móvil;Débito;cta-0912;36,29
+17/03/2024;235.317,62;VES;Transferencia;Débito;cta-0068;36,29
+17/03/2024;2.770,01;VES;Pago Móvil;Crédito;cta-0091;36,29
+17/03/2024;150.937,79;VES;Transferencia;Crédito;cta-0005;36,29
+17/03/2024;3.514,12;VES;Transferencia;Crédito;cta-0032;36,29
+17/03/2024;769.394,91;VES;Transferencia;Débito;cta-0103;36,29
+17/03/2024;7.474,40;VES;Pago Móvil;Crédito;cta-0912;36,29
+17/03/2024;5.870,49;VES;Pago Móvil;Crédito;cta-0913;36,29
+17/03/2024;158.675,46;VES;Transferencia;Débito;cta-0093;36,29
+17/03/2024;1.476,26;VES;Punto de venta;Débito;cta-0054;36,29
+17/03/2024;9.756,05;VES;Punto de venta;Débito;cta-0107;36,29
+17/03/2024;292,28;USD;Divisas;Débito;cta-0016;36,29
+17/03/2024;209,82;VES;Pago Móvil;Débito;cta-0097;36,29
+17/03/2024;163,61;USD;Divisas;Débito;cta-0010;36,29
+17/03/2024;182.695,09;VES;Transferencia;Débito;cta-0011;36,29
+17/03/2024;1.193,44;VES;Punto de venta;Crédito;cta-0056;36,29
+17/03/2024;11,65;USD;Divisas;Débito;cta-0076;36,29
+17/03/2024;8.675,65;VES;Pago Móvil;Débito;cta-0914;36,29
+17/03/2024;6.546,78;VES;Pago Móvil;Débito;cta-0915;36,29
+17/03/2024;5.078,96;VES;Pago Móvil;Débito;cta-0913;36,29
+17/03/2024;11,30;VES;Punto de venta;Crédito;cta-0011;36,29
+17/03/2024;294,93;USD;Divisas;Crédito;cta-0104;36,29
+17/03/2024;472,58;VES;Transferencia;Débito;cta-0005;36,29
+17/03/2024;651,05;VES;Punto de venta;Débito;cta-0100;36,29
+17/03/2024;7.997,61;VES;Pago Móvil;Crédito;cta-0913;36,29
+17/03/2024;11,69;USD;Divisas;Débito;cta-0105;36,29
+17/03/2024;59,22;VES;Punto de venta;Débito;cta-0111;36,29
+17/03/2024;9.303,62;VES;Pago Móvil;Débito;cta-0914;36,29
+17/03/2024;2.769,44;VES;Punto de venta;Crédito;cta-0084;36,29
+17/03/2024;44,80;VES;Punto de venta;Débito;cta-0088;36,29
+17/03/2024;207,76;VES;Pago Móvil;Débito;cta-0104;36,29
+17/03/2024;95,85;VES;Pago Móvil;Crédito;cta-0051;36,29
+17/03/2024;276,95;VES;Transferencia;Débito;cta-0111;36,29
+17/03/2024;2.410,94;VES;Transferencia;Crédito;cta-0063;36,29
+17/03/2024;35,16;USD;Divisas;Crédito;cta-0031;36,29
+17/03/2024;170.348,19;VES;Transferencia;Crédito;cta-0100;36,29
+17/03/2024;2.474,03;USD;Divisas;Débito;cta-0111;36,29
+17/03/2024;1.201,68;VES;Transferencia;Débito;cta-0048;36,29
+17/03/2024;749,01;VES;Pago Móvil;Crédito;cta-0084;36,29
+17/03/2024;4.999,20;VES;Pago Móvil;Débito;cta-0915;36,29
+17/03/2024;9.043,49;VES;Punto de venta;Débito;cta-0028;36,29
+17/03/2024;4.656,01;VES;Transferencia;Débito;cta-0038;36,29
+17/03/2024;345.315,50;VES;Transferencia;Débito;cta-0777;36,29
+17/03/2024;206.371,13;VES;Transferencia;Débito;cta-0005;36,29
+17/03/2024;7.638,70;VES;Pago Móvil;Crédito;cta-0914;36,29
+17/03/2024;544,16;VES;Transferencia;Crédito;cta-0100;36,29
+17/03/2024;5.293,04;VES;Pago Móvil;Débito;cta-0911;36,29
+17/03/2024;56,38;VES;Pago Móvil;Débito;cta-0063;36,29
+17/03/2024;468.373,27;VES;Transferencia;Crédito;cta-0095;36,29
+17/03/2024;164.737,74;VES;Transferencia;Débito;cta-0071;36,29
+17/03/2024;629,49;VES;Pago Móvil;Débito;cta-0021;36,29
+17/03/2024;155,26;VES;Transferencia;Débito;cta-0119;36,29
+17/03/2024;554,45;VES;Punto de venta;Crédito;cta-0110;36,29
+17/03/2024;587,27;VES;Pago Móvil;Débito;cta-0105;36,29
+17/03/2024;650,64;VES;Pago Móvil;Débito;cta-0016;36,29
+17/03/2024;8.894,10;VES;Pago Móvil;Débito;cta-0910;36,29
+17/03/2024;100.000,00;VES;Transferencia;Débito;cta-0815;36,29
+17/03/2024;287,99;VES;Transferencia;Crédito;cta-0064;36,29
+17/03/2024;29,75;VES;Pago Móvil;Débito;cta-0047;36,29
+18/03/2024;25,89;USD;Divisas;Débito;cta-0115;36,30
+18/03/2024;55,14;VES;Pago Móvil;Débito;cta-0064;36,30
+18/03/2024;11,10;VES;Punto de venta;Crédito;cta-0068;36,30
+18/03/2024;6.916,12;VES;Punto de venta;Crédito;cta-0007;36,30
+18/03/2024;750,43;USD;Divisas;Débito;cta-0027;36,30
+18/03/2024;186,86;VES;Punto de venta;Débito;cta-0035;36,30
+18/03/2024;113,51;VES;Punto de venta;Débito;cta-0113;36,30
+18/03/2024;482,78;VES;Pago Móvil;Débito;cta-0017;36,30
+18/03/2024;356.572,41;VES;Transferencia;Débito;cta-0035;36,30
+18/03/2024;330.787,06;VES;Transferencia;Débito;cta-0777;36,30
+18/03/2024;4.821,20;VES;Transferencia;Débito;cta-0011;36,30
+18/03/2024;348,89;USD;Divisas;Crédito;cta-0037;36,30
+18/03/2024;21.985,77;VES;Transferencia;Débito;cta-0017;36,30
+18/03/2024;74,28;VES;Pago Móvil;Crédito;cta-0078;36,30
+18/03/2024;71,99;VES;Punto de venta;Débito;cta-0100;36,30
+18/03/2024;2.718,66;VES;Pago Móvil;Crédito;cta-0070;36,30
+18/03/2024;7.209,89;VES;Pago Móvil;Débito;cta-0031;36,30
+18/03/2024;1.358,27;VES;Pago Móvil;Débito;cta-0034;36,30
+18/03/2024;1.745,77;VES;Punto de venta;Débito;cta-0019;36,30
+18/03/2024;4.518,00;VES;Pago Móvil;Débito;cta-0915;36,30
+18/03/2024;8.020,58;VES;Pago Móvil;Débito;cta-0912;36,30
+18/03/2024;358.899,59;VES;Transferencia;Débito;cta-0777;36,30
+18/03/2024;6.639,07;VES;Pago Móvil;Débito;cta-0912;36,30
+18/03/2024;175,20;VES;Punto de venta;Crédito;cta-0075;36,30
+18/03/2024;43,64;VES;Punto de venta;Crédito;cta-0014;36,30
+18/03/2024;20,46;VES;Punto de venta;Débito;cta-0026;36,30
+18/03/2024;17,71;VES;Pago Móvil;Débito;cta-0108;36,30
+18/03/2024;18.062,35;VES;Transferencia;Débito;cta-0086;36,30
+18/03/2024;54,18;VES;Punto de venta;Crédito;cta-0044;36,30
+18/03/2024;412.603,21;VES;Transferencia;Débito;cta-0065;36,30
+18/03/2024;7.951,83;VES;Pago Móvil;Débito;cta-0057;36,30
+18/03/2024;179,31;VES;Transferencia;Débito;cta-0102;36,30
+18/03/2024;4.147,63;VES;Punto de venta;Débito;cta-0048;36,30
+18/03/2024;5.208,90;VES;Pago Móvil;Débito;cta-0113;36,30
+18/03/2024;294,91;VES;Punto de venta;Crédito;cta-0065;36,30
+18/03/2024;317.476,50;VES;Transferencia;Crédito;cta-0035;36,30
+18/03/2024;30,42;VES;Pago Móvil;Débito;cta-0033;36,30
+18/03/2024;6.289,97;VES;Pago Móvil;Crédito;cta-0915;36,30
+18/03/2024;8.891,76;VES;Pago Móvil;Crédito;cta-0915;36,30
+18/03/2024;23,29;VES;Punto de venta;Débito;cta-0006;36,30
+18/03/2024;14.943,50;VES;Transferencia;Débito;cta-0091;36,30
+18/03/2024;409.388,98;VES;Transferencia;Débito;cta-0086;36,30
+18/03/2024;636,68;USD;Divisas;Crédito;cta-0095;36,30
+18/03/2024;17.093,11;VES;Transferencia;Débito;cta-0082;36,30
+18/03/2024;62,77;VES;Pago Móvil;Débito;cta-0041;36,30
+18/03/2024;448,94;VES;Pago Móvil;Débito;cta-0083;36,30
+18/03/2024;7.720,66;VES;Pago Móvil;Débito;cta-0008;36,30
+18/03/2024;534,38;VES;Pago Móvil;Crédito;cta-0058;36,30
+18/03/2024;233,17;VES;Pago Móvil;Débito;cta-0102;36,30
+18/03/2024;302,03;VES;Pago Móvil;Crédito;cta-0055;36,30
+18/03/2024;4.733,09;VES;Transferencia;Crédito;cta-0092;36,30
+18/03/2024;8.884,09;VES;Pago Móvil;Crédito;cta-0910;36,30
+18/03/2024;2.224,19;VES;Pago Móvil;Débito;cta-0061;36,30
+18/03/2024;7.512,39;VES;Pago Móvil;Crédito;cta-0913;36,30
+18/03/2024;241.580,73;VES;Transferencia;Débito;cta-0095;36,30
+18/03/2024;195,25;VES;Punto de venta;Débito;cta-0036;36,30
+18/03/2024;23.637,27;VES;Transferencia;Débito;cta-0042;36,30
+18/03/2024;8.825,57;VES;Pago Móvil;Débito;cta-0915;36,30
+18/03/2024;4.780,26;VES;Pago Móvil;Crédito;cta-0910;36,30
+18/03/2024;4.269,47;VES;Pago Móvil;Débito;cta-0910;36,30
+18/03/2024;6.577,92;VES;Transferencia;Débito;cta-0025;36,30
+18/03/2024;5.495,27;VES;Pago Móvil;Crédito;cta-0910;36,30
+18/03/2024;1.777,18;VES;Pago Móvil;Crédito;cta-0079;36,30
+18/03/2024;9.718,16;VES;Pago Móvil;Débito;cta-0913;36,30
+18/03/2024;575,81;USD;Divisas;Débito;cta-0104;36,30
+18/03/2024;6.656,11;VES;Punto de venta;Débito;cta-0073;36,30
+18/03/2024;1.603,35;VES;Pago Móvil;Débito;cta-0052;36,30
+18/03/2024;265,03;VES;Pago Móvil;Crédito;cta-0084;36,30
+18/03/2024;2.542,83;VES;Transferencia;Débito;cta-0037;36,30
+18/03/2024;14,31;VES;Punto de venta;Crédito;cta-0064;36,30
+18/03/2024;150.000,00;VES;Transferencia;Débito;cta-0814;36,30
+18/03/2024;69,25;VES;Pago Móvil;Crédito;cta-0101;36,30
+18/03/2024;93,84;VES;Punto de venta;Débito;cta-0061;36,30
+18/03/2024;150,10;VES;Transferencia;Crédito;cta-0069;36,30
+18/03/2024;8.539,70;VES;Pago Móvil;Débito;cta-0914;36,30
+18/03/2024;209,00;VES;Pago Móvil;Crédito;cta-0084;36,30
+18/03/2024;5.209,36;VES;Pago Móvil;Débito;cta-0913;36,30
+18/03/2024;109.870,52;VES;Transferencia;Débito;cta-0078;36,30
+18/03/2024;3.196,29;USD;Divisas;Crédito;cta-0054;36,30
+18/03/2024;259.329,73;VES;Transferencia;Débito;cta-0073;36,30
+18/03/2024;105,54;VES;Punto de venta;Crédito;cta-0064;36,30
+18/03/2024;353,76;VES;Transferencia;Débito;cta-0050;36,30
+18/03/2024;139,80;VES;Punto de venta;Débito;cta-0077;36,30
+18/03/2024;34,67;VES;Punto de venta;Débito;cta-0115;36,30
+18/03/2024;2.552,26;VES;Pago Móvil;Crédito;cta-0113;36,30
+18/03/2024;1.243,35;VES;Pago Móvil;Débito;cta-0118;36,30
+18/03/2024;77,36;VES;Pago Móvil;Débito;cta-0039;36,30
+18/03/2024;9,86;USD;Divisas;Débito;cta-0020;36,30
+18/03/2024;7.079,55;VES;Pago Móvil;Débito;cta-0910;36,30
+18/03/2024;355.678,87;VES;Transferencia;Crédito;cta-0777;36,30
+18/03/2024;52,46;VES;Pago Móvil;Débito;cta-0009;36,30
+18/03/2024;420,02;VES;Pago Móvil;Débito;cta-0080;36,30
+18/03/2024;353.415,73;VES;Transferencia;Débito;cta-0777;36,30
+18/03/2024;9.466,80;VES;Pago Móvil;Débito;cta-0913;36,30
+18/03/2024;524,59;VES;Pago Móvil;Débito;cta-0091;36,30
+19/03/2024;82.924,56;VES;Transferencia;Crédito;cta-0067;36,32
+19/03/2024;5.696,62;VES;Pago Móvil;Débito;cta-0911;36,32
+19/03/2024;141,86;USD;Divisas;Crédito;cta-0036;36,32
+19/03/2024;7.459,11;VES;Punto de venta;Débito;cta-0062;36,32
+19/03/2024;12.048,39;VES;Transferencia;Débito;cta-0056;36,32
+19/03/2024;243,83;VES;Transferencia;Débito;cta-0004;36,32
+19/03/2024;5.759,84;VES;Pago Móvil;Débito;cta-0911;36,32
+19/03/2024;128.778,70;VES;Transferencia;Débito;cta-0083;36,32
+19/03/2024;8.075,75;VES;Pago Móvil;Crédito;cta-0095;36,32
+19/03/2024;142,10;VES;Transferencia;Débito;cta-0052;36,32
+19/03/2024;128,76;VES;Transferencia;Crédito;cta-0085;36,32
+19/03/2024;12,56;VES;Pago Móvil;Crédito;cta-0054;36,32
+19/03/2024;1.445,37;USD;Divisas;Débito;cta-0098;36,32
+19/03/2024;729,07;VES;Transferencia;Débito;cta-0109;36,32
+19/03/2024;311,22;VES;Transferencia;Crédito;cta-0051;36,32
+19/03/2024;419,22;VES;Pago Móvil;Débito;cta-0024;36,32
+19/03/2024;919.628,06;VES;Transferencia;Débito;cta-0107;36,32
+19/03/2024;1.603,63;VES;Transferencia;Crédito;cta-0034;36,32
+19/03/2024;6,15;USD;Divisas;Débito;cta-0049;36,32
+19/03/2024;17,55;VES;Punto de venta;Débito;cta-0056;36,32
+19/03/2024;5.000,00;VES;Transferencia;Débito;cta-0818;36,32
+19/03/2024;393,24;USD;Divisas;Crédito;cta-0020;36,32
+19/03/2024;4.507,91;VES;Pago Móvil;Débito;cta-0089;36,32
+19/03/2024;945,02;VES;Punto de venta;Débito;cta-0025;36,32
+19/03/2024;3.638,30;VES;Pago Móvil;Débito;cta-0079;36,32
+19/03/2024;6.493,32;VES;Pago Móvil;Crédito;cta-0915;36,32
+19/03/2024;26,16;VES;Punto de venta;Crédito;cta-0102;36,32
+19/03/2024;1.438,34;VES;Transferencia;Débito;cta-0056;36,32
+19/03/2024;6.212,40;VES;Punto de venta;Crédito;cta-0119;36,32
+19/03/2024;6.531,91;VES;Pago Móvil;Débito;cta-0911;36,32
+19/03/2024;16,81;VES;Punto de venta;Débito;cta-0021;36,32
+19/03/2024;52,78;VES;Punto de venta;Débito;cta-0002;36,32
+19/03/2024;64,31;VES;Pago Móvil;Débito;cta-0041;36,32
+19/03/2024;74,54;VES;Pago Móvil;Débito;cta-0024;36,32
+19/03/2024;5.368,29;VES;Pago Móvil;Crédito;cta-0914;36,32
+19/03/2024;11,84;VES;Pago Móvil;Crédito;cta-0115;36,32
+19/03/2024;12,61;USD;Divisas;Débito;cta-0030;36,32
+19/03/2024;76,28;VES;Pago Móvil;Débito;cta-0042;36,32
+19/03/2024;4.366,97;VES;Pago Móvil;Débito;cta-0910;36,32
+19/03/2024;352.789,85;VES;Transferencia;Crédito;cta-0777;36,32
+19/03/2024;51,70;VES;Pago Móvil;Débito;cta-0025;36,32
+19/03/2024;557,71;VES;Transferencia;Crédito;cta-0015;36,32
+19/03/2024;130.087,31;VES;Transferencia;Débito;cta-0110;36,32
+19/03/2024;74,80;VES;Pago Móvil;Crédito;cta-0059;36,32
+19/03/2024;776,86;VES;Transferencia;Débito;cta-0088;36,32
+19/03/2024;4.567,22;VES;Pago Móvil;Débito;cta-0913;36,32
+19/03/2024;191,64;VES;Pago Móvil;Crédito;cta-0011;36,32
+19/03/2024;50.000,00;VES;Transferencia;Débito;cta-0819;36,32
+19/03/2024;1.464,83;USD;Divisas;Débito;cta-0101;36,32
+19/03/2024;504,56;VES;Punto de venta;Débito;cta-0110;36,32
+19/03/2024;197,15;VES;Pago Móvil;Crédito;cta-0115;36,32
+19/03/2024;386,93;VES;Pago Móvil;Débito;cta-0054;36,32
+19/03/2024;23,98;VES;Pago Móvil;Crédito;cta-0013;36,32
+19/03/2024;9.544,79;VES;Pago Móvil;Débito;cta-0913;36,32
+19/03/2024;6.767,86;VES;Transferencia;Débito;cta-0039;36,32
+19/03/2024;121.628,41;VES;Transferencia;Débito;cta-0080;36,32
+19/03/2024;9.345,71;VES;Pago Móvil;Débito;cta-0914;36,32
+19/03/2024;120,03;VES;Pago Móvil;Débito;cta-0047;36,32
+19/03/2024;6.042,72;VES;Transferencia;Crédito;cta-0033;36,32
+19/03/2024;5.350,09;VES;Pago Móvil;Débito;cta-0042;36,32
+19/03/2024;53,35;VES;Punto de venta;Débito;cta-0104;36,32
+19/03/2024;253,49;VES;Pago Móvil;Crédito;cta-0051;36,32
+19/03/2024;110,67;VES;Punto de venta;Débito;cta-0027;36,32
+19/03/2024;42,78;VES;Pago Móvil;Débito;cta-0116;36,32
+19/03/2024;35,22;USD;Divisas;Crédito;cta-0054;36,32
+19/03/2024;199,11;VES;Pago Móvil;Débito;cta-0100;36,32
+19/03/2024;192,46;VES;Pago Móvil;Débito;cta-0024;36,32
+19/03/2024;4.127,14;VES;Pago Móvil;Débito;cta-0913;36,32
+19/03/2024;214,06;VES;Pago Móvil;Débito;cta-0054;36,32
+19/03/2024;56,75;VES;Punto de venta;Débito;cta-0078;36,32
+19/03/2024;397,67;VES;Pago Móvil;Débito;cta-0081;36,32
+19/03/2024;37.751,88;VES;Transferencia;Crédito;cta-0088;36,32
+19/03/2024;678.710,38;VES;Transferencia;Débito;cta-0074;36,32
+19/03/2024;352.006,12;VES;Transferencia;Crédito;cta-0004;36,32
+19/03/2024;89,22;VES;Punto de venta;Crédito;cta-0082;36,32
+19/03/2024;10,82;VES;Pago Móvil;Crédito;cta-0026;36,32
+19/03/2024;2.851,25;USD;Divisas;Débito;cta-0116;36,32
+19/03/2024;28,93;VES;Pago Móvil;Débito;cta-0118;36,32
+19/03/2024;214,58;VES;Transferencia;Crédito;cta-0091;36,32
+19/03/2024;70,55;USD;Divisas;Débito;cta-0072;36,32
+19/03/2024;20.000,00;VES;Transferencia;Crédito;cta-0816;36,32
+19/03/2024;20.000,00;VES;Transferencia;Débito;cta-0817;36,32
+19/03/2024;988.372,85;VES;Transferencia;Débito;cta-0096;36,32
+19/03/2024;240,91;VES;Pago Móvil;Débito;cta-0036;36,32
+19/03/2024;20.000,00;VES;Transferencia;Débito;cta-0815;36,32
+19/03/2024;36,77;VES;Punto de venta;Crédito;cta-0013;36,32
+19/03/2024;34.642,62;VES;Transferencia;Débito;cta-0061;36,32
+19/03/2024;2.797,91;USD;Divisas;Débito;cta-0023;36,32
+19/03/2024;5.338,34;VES;Pago Móvil;Débito;cta-0002;36,32
+19/03/2024;27,07;VES;Pago Móvil;Débito;cta-0007;36,32
+19/03/2024;42,74;VES;Punto de venta;Débito;cta-0115;36,32
+19/03/2024;3.223,26;VES;Punto de venta;Débito;cta-0087;36,32
+19/03/2024;1.918,58;VES;Pago Móvil;Débito;cta-0076;36,32
+19/03/2024;243,02;VES;Transferencia;Crédito;cta-0085;36,32
+19/03/2024;1.428,55;VES;Pago Móvil;Débito;cta-0064;36,32
+19/03/2024;7.400,66;VES;Pago Móvil;Débito;cta-0910;36,32
+19/03/2024;40,91;VES;Punto de venta;Débito;cta-0067;36,32
+19/03/2024;5.715,57;VES;Transferencia;Débito;cta-0013;36,32
+19/03/2024;34,24;USD;Divisas;Crédito;cta-0042;36,32
+19/03/2024;302,46;VES;Pago Móvil;Crédito;cta-0034;36,32
+19/03/2024;23,62;VES;Pago Móvil;Débito;cta-0065;36,32
+19/03/2024;2.586,78;VES;Pago Móvil;Débito;cta-0042;36,32
+19/03/2024;7.470,98;VES;Pago Móvil;Débito;cta-0911;36,32
+19/03/2024;8,38;USD;Divisas;Crédito;cta-0083;36,32
+19/03/2024;298,09;VES;Punto de venta;Débito;cta-0013;36,32
+19/03/2024;15.493,36;VES;Transferencia;Débito;cta-0120;36,32
+19/03/2024;856,40;VES;Transferencia;Crédito;cta-0114;36,32
+19/03/2024;308.191,61;VES;Transferencia;Débito;cta-0016;36,32
+19/03/2024;11,38;VES;Pago Móvil;Débito;cta-0002;36,32
+20/03/2024;200.000,00;VES;Transferencia;Débito;cta-0810;36,33
+20/03/2024;30.986,40;VES;Transferencia;Crédito;cta-0052;36,33
+20/03/2024;103,77;VES;Pago Móvil;Débito;cta-0005;36,33
+20/03/2024;52,43;VES;Pago Móvil;Débito;cta-0050;36,33
+20/03/2024;9.571,71;VES;Pago Móvil;Débito;cta-0912;36,33
+20/03/2024;90,83;VES;Punto de venta;Débito;cta-0095;36,33
+20/03/2024;4.960,81;VES;Transferencia;Débito;cta-0034;36,33
+20/03/2024;934,72;VES;Punto de venta;Crédito;cta-0027;36,33
+20/03/2024;271,43;USD;Divisas;Débito;cta-0113;36,33
+20/03/2024;72.804,31;VES;Transferencia;Crédito;cta-0073;36,33
+20/03/2024;2.982,31;VES;Transferencia;Débito;cta-0029;36,33
+20/03/2024;76,26;VES;Pago Móvil;Crédito;cta-0007;36,33
+20/03/2024;17,75;VES;Pago Móvil;Débito;cta-0071;36,33
+20/03/2024;6.816,24;VES;Pago Móvil;Débito;cta-0910;36,33
+20/03/2024;39,21;VES;Punto de venta;Crédito;cta-0019;36,33
+20/03/2024;209,02;VES;Pago Móvil;Débito;cta-0081;36,33
+20/03/2024;7,60;USD;Divisas;Débito;cta-0010;36,33
+20/03/2024;392.175,45;VES;Transferencia;Débito;cta-0098;36,33
+20/03/2024;4.815,55;VES;Pago Móvil;Débito;cta-0911;36,33
+20/03/2024;198,37;VES;Transferencia;Crédito;cta-0047;36,33
+20/03/2024;285,24;VES;Transferencia;Crédito;cta-0076;36,33
+20/03/2024;1.011,44;VES;Transferencia;Débito;cta-0091;36,33
+20/03/2024;21,50;VES;Pago Móvil;Débito;cta-0026;36,33
+20/03/2024;451,36;USD;Divisas;Crédito;cta-0066;36,33
+20/03/2024;8.220,14;VES;Pago Móvil;Débito;cta-0913;36,33
+20/03/2024;5.026,74;VES;Punto de venta;Crédito;cta-0033;36,33
+20/03/2024;70,94;USD;Divisas;Débito;cta-0089;36,33
+20/03/2024;6.636,42;VES;Pago Móvil;Débito;cta-0914;36,33
+20/03/2024;477,65;VES;Pago Móvil;Débito;cta-0080;36,33
+20/03/2024;471,64;VES;Punto de venta;Débito;cta-0120;36,33
+20/03/2024;210.386,46;VES;Transferencia;Débito;cta-0007;36,33
+20/03/2024;140,39;VES;Pago Móvil;Débito;cta-0001;36,33
+20/03/2024;19,81;VES;Punto de venta;Débito;cta-0003;36,33
+20/03/2024;189.624,23;VES;Transferencia;Débito;cta-0050;36,33
+20/03/2024;9.162,62;VES;Pago Móvil;Crédito;cta-0912;36,33
+20/03/2024;134,76;VES;Pago Móvil;Crédito;cta-0078;36,33
+20/03/2024;784,96;VES;Pago Móvil;Débito;cta-0073;36,33
+20/03/2024;1.946,45;VES;Punto de venta;Crédito;cta-0006;36,33
+20/03/2024;4.606,05;VES;Pago Móvil;Débito;cta-0914;36,33
+20/03/2024;612,56;USD;Divisas;Débito;cta-0002;36,33
+20/03/2024;755,86;VES;Punto de venta;Crédito;cta-0051;36,33
+20/03/2024;118,75;VES;Pago Móvil;Débito;cta-0056;36,33
+20/03/2024;345.791,29;VES;Transferencia;Débito;cta-0777;36,33
+20/03/2024;28.646,04;VES;Transferencia;Crédito;cta-0029;36,33
+20/03/2024;77,89;VES;Pago Móvil;Débito;cta-0107;36,33
+20/03/2024;1.372,60;VES;Pago Móvil;Débito;cta-0110;36,33
+20/03/2024;540,91;VES;Transferencia;Crédito;cta-0092;36,33
+20/03/2024;36,02;VES;Punto de venta;Débito;cta-0024;36,33
+20/03/2024;4.674,64;VES;Pago Móvil;Débito;cta-0913;36,33
+20/03/2024;188,74;VES;Pago Móvil;Débito;cta-0113;36,33
+20/03/2024;916.461,76;VES;Transferencia;Débito;cta-0046;36,33
+20/03/2024;5.517,27;VES;Pago Móvil;Débito;cta-0088;36,33
+20/03/2024;551,69;USD;Divisas;Débito;cta-0005;36,33
+20/03/2024;7.570,21;VES;Pago Móvil;Crédito;cta-0914;36,33
+20/03/2024;7.094,91;VES;Pago Móvil;Crédito;cta-0086;36,33
+20/03/2024;200.000,00;VES;Transferencia;Débito;cta-0818;36,33
+20/03/2024;5,98;USD;Divisas;Débito;cta-0041;36,33
+20/03/2024;166.287,64;VES;Transferencia;Crédito;cta-0034;36,33
+20/03/2024;21.868,94;VES;Transferencia;Crédito;cta-0064;36,33
+20/03/2024;37,16;VES;Pago Móvil;Débito;cta-0054;36,33
+20/03/2024;344.431,89;VES;Transferencia;Débito;cta-0039;36,33
+20/03/2024;11,59;VES;Punto de venta;Débito;cta-0087;36,33
+20/03/2024;7.371,96;VES;Pago Móvil;Crédito;cta-0914;36,33
+20/03/2024;246,02;VES;Pago Móvil;Débito;cta-0053;36,33
+20/03/2024;8.397,23;VES;Pago Móvil;Débito;cta-0910;36,33
+20/03/2024;42,12;VES;Pago Móvil;Débito;cta-0112;36,33
+20/03/2024;351,46;VES;Punto de venta;Débito;cta-0034;36,33
+20/03/2024;277,60;VES;Punto de venta;Débito;cta-0036;36,33
+20/03/2024;637,00;VES;Transferencia;Débito;cta-0036;36,33
+20/03/2024;438.189,63;VES;Transferencia;Débito;cta-0076;36,33
+20/03/2024;19,81;USD;Divisas;Débito;cta-0067;36,33
+20/03/2024;376,47;VES;Transferencia;Débito;cta-0072;36,33
+20/03/2024;2.140,25;VES;Pago Móvil;Débito;cta-0034;36,33
+20/03/2024;12,56;VES;Pago Móvil;Débito;cta-0099;36,33
+20/03/2024;751,00;USD;Divisas;Débito;cta-0043;36,33
+20/03/2024;9.316,77;VES;Pago Móvil;Débito;cta-0912;36,33
+20/03/2024;12.572,41;VES;Transferencia;Crédito;cta-0091;36,33
+20/03/2024;5.598,52;VES;Pago Móvil;Crédito;cta-0063;36,33
+20/03/2024;19,27;USD;Divisas;Crédito;cta-0108;36,33
+20/03/2024;4.858,28;VES;Pago Móvil;Crédito;cta-0911;36,33
+20/03/2024;45,46;VES;Pago Móvil;Débito;cta-0069;36,33
+20/03/2024;6.129,79;VES;Pago Móvil;Débito;cta-0024;36,33
+20/03/2024;2.350,80;VES;Pago Móvil;Débito;cta-0014;36,33
+20/03/2024;410,32;VES;Punto de venta;Crédito;cta-0054;36,33
+20/03/2024;5.307,21;VES;Punto de venta;Débito;cta-0105;36,33
+20/03/2024;6.630,22;VES;Pago Móvil;Crédito;cta-0911;36,33
+20/03/2024;1.523,90;VES;Pago Móvil;Crédito;cta-0027;36,33
+20/03/2024;100.000,00;VES;Transferencia;Débito;cta-0818;36,33
+20/03/2024;9.817,83;VES;Pago Móvil;Débito;cta-0911;36,33
+20/03/2024;410,61;VES;Transferencia;Débito;cta-0047;36,33
+20/03/2024;10,38;USD;Divisas;Débito;cta-0065;36,33
+21/03/2024;19,85;VES;Pago Móvil;Débito;cta-0085;36,34
+21/03/2024;5,17;USD;Divisas;Crédito;cta-0098;36,34
+21/03/2024;11,19;USD;Divisas;Crédito;cta-0112;36,34
+21/03/2024;22,33;VES;Pago Móvil;Débito;cta-0100;36,34
+21/03/2024;3.450,59;VES;Transferencia;Débito;cta-0081;36,34
+21/03/2024;5.061,13;VES;Pago Móvil;Crédito;cta-0910;36,34
+21/03/2024;22,97;USD;Divisas;Crédito;cta-0018;36,34
+21/03/2024;414,55;VES;Transferencia;Crédito;cta-0080;36,34
+21/03/2024;53,85;USD;Divisas;Crédito;cta-0116;36,34
+21/03/2024;174,97;VES;Punto de venta;Crédito;cta-0010;36,34
+21/03/2024;6.113,74;VES;Pago Móvil;Débito;cta-0912;36,34
+21/03/2024;5.635,80;VES;Pago Móvil;Débito;cta-0910;36,34
+21/03/2024;6.295,03;VES;Pago Móvil;Crédito;cta-0911;36,34
+21/03/2024;991.566,09;VES;Transferencia;Débito;cta-0069;36,34
+21/03/2024;588.983,06;VES;Transferencia;Crédito;cta-0076;36,34
+21/03/2024;2.499,10;VES;Transferencia;Débito;cta-0110;36,34
+21/03/2024;26.843,52;VES;Transferencia;Crédito;cta-0012;36,34
+21/03/2024;2.874,90;USD;Divisas;Crédito;cta-0059;36,34
+21/03/2024;352.117,65;VES;Transferencia;Débito;cta-0777;36,34
+21/03/2024;1.578,19;VES;Punto de venta;Débito;cta-0117;36,34
+21/03/2024;119.621,88;VES;Transferencia;Crédito;cta-0082;36,34
+21/03/2024;6.196,26;VES;Pago Móvil;Débito;cta-0076;36,34
+21/03/2024;50.000,00;VES;Transferencia;Débito;cta-0815;36,34
+21/03/2024;348,03;VES;Punto de venta;Débito;cta-0013;36,34
+21/03/2024;5.809,62;VES;Pago Móvil;Crédito;cta-0915;36,34
+21/03/2024;959,36;VES;Punto de venta;Débito;cta-0086;36,34
+21/03/2024;3.088,54;VES;Transferencia;Débito;cta-0023;36,34
+21/03/2024;7.228,15;VES;Pago Móvil;Débito;cta-0911;36,34
+21/03/2024;5.017,26;VES;Pago Móvil;Crédito;cta-0103;36,34
+21/03/2024;27.442,55;VES;Transferencia;Débito;cta-0070;36,34
+21/03/2024;478,63;VES;Punto de venta;Débito;cta-0044;36,34
+21/03/2024;15,02;VES;Pago Móvil;Crédito;cta-0005;36,34
+21/03/2024;6.883,47;VES;Pago Móvil;Crédito;cta-0912;36,34
+21/03/2024;132.825,54;VES;Transferencia;Crédito;cta-0055;36,34
+21/03/2024;360.169,95;VES;Transferencia;Débito;cta-0777;36,34
+21/03/2024;5.012,22;VES;Pago Móvil;Débito;cta-0914;36,34
+21/03/2024;1.266,72;VES;Punto de venta;Débito;cta-0007;36,34
+21/03/2024;14,56;VES;Pago Móvil;Crédito;cta-0052;36,34
+21/03/2024;30,91;VES;Pago Móvil;Crédito;cta-0004;36,34
+21/03/2024;9.221,82;VES;Pago Móvil;Débito;cta-0046;36,34
+21/03/2024;4.611,28;VES;Pago Móvil;Crédito;cta-0911;36,34
+21/03/2024;577,81;VES;Transferencia;Crédito;cta-0046;36,34
+21/03/2024;582,31;VES;Pago Móvil;Débito;cta-0030;36,34
+21/03/2024;343.860,85;VES;Transferencia;Débito;cta-0777;36,34
+21/03/2024;871,78;VES;Pago Móvil;Débito;cta-0044;36,34
+21/03/2024;1.244,07;VES;Transferencia;Débito;cta-0102;36,34
+21/03/2024;8.756,61;VES;Pago Móvil;Crédito;cta-0914;36,34
+21/03/2024;4.130,38;VES;Pago Móvil;Débito;cta-0915;36,34
+21/03/2024;4.623,42;VES;Transferencia;Débito;cta-0074;36,34
+21/03/2024;265,15;VES;Pago Móvil;Débito;cta-0049;36,34
+21/03/2024;7.747,54;VES;Pago Móvil;Débito;cta-0914;36,34
+21/03/2024;91,12;VES;Pago Móvil;Débito;cta-0047;36,34
+21/03/2024;489,65;VES;Transferencia;Crédito;cta-0021;36,34
+21/03/2024;432,77;VES;Pago Móvil;Crédito;cta-0073;36,34
+21/03/2024;54,03;VES;Pago Móvil;Débito;cta-0108;36,34
+21/03/2024;7.391,81;VES;Pago Móvil;Débito;cta-0911;36,34
+21/03/2024;6.986,76;VES;Pago Móvil;Crédito;cta-0078;36,34
+21/03/2024;2.214,99;VES;Pago Móvil;Débito;cta-0061;36,34
+21/03/2024;17,51;VES;Pago Móvil;Crédito;cta-0098;36,34
+21/03/2024;313,80;VES;Transferencia;Débito;cta-0064;36,34
+21/03/2024;4.017,30;VES;Punto de venta;Débito;cta-0009;36,34
+21/03/2024;506,32;VES;Punto de venta;Crédito;cta-0015;36,34
+21/03/2024;6.464,81;VES;Pago Móvil;Débito;cta-0912;36,34
+21/03/2024;9.261,59;VES;Pago Móvil;Débito;cta-0036;36,34
+21/03/2024;342.309,74;VES;Transferencia;Crédito;cta-0777;36,34
+21/03/2024;4.668,76;VES;Pago Móvil;Crédito;cta-0915;36,34
+21/03/2024;5.886,51;VES;Pago Móvil;Débito;cta-0912;36,34
+21/03/2024;3.790,59;VES;Punto de venta;Crédito;cta-0004;36,34
+21/03/2024;173,83;VES;Transferencia;Crédito;cta-0013;36,34
+21/03/2024;8.161,99;VES;Pago Móvil;Débito;cta-0913;36,34
+21/03/2024;8.014,28;VES;Pago Móvil;Débito;cta-0076;36,34
+21/03/2024;271,45;VES;Transferencia;Crédito;cta-0080;36,34
+21/03/2024;300,43;VES;Pago Móvil;Crédito;cta-0084;36,34
+21/03/2024;444.915,05;VES;Transferencia;Débito;cta-0045;36,34
+21/03/2024;7.972,66;VES;Pago Móvil;Débito;cta-0911;36,34
+21/03/2024;363,60;VES;Transferencia;Débito;cta-0005;36,34
+21/03/2024;38,75;VES;Punto de venta;Débito;cta-0066;36,34
+21/03/2024;20,57;VES;Pago Móvil;Débito;cta-0119;36,34
+21/03/2024;546,30;VES;Transferencia;Débito;cta-0029;36,34
+21/03/2024;41,84;VES;Pago Móvil;Débito;cta-0053;36,34
+21/03/2024;208,20;VES;Pago Móvil;Débito;cta-0080;36,34
+21/03/2024;165,50;VES;Transferencia;Débito;cta-0102;36,34
+21/03/2024;11,86;VES;Pago Móvil;Débito;cta-0059;36,34
+21/03/2024;5.113,28;VES;Transferencia;Crédito;cta-0005;36,34
+21/03/2024;5.299,56;VES;Pago Móvil;Crédito;cta-0117;36,34
+21/03/2024;435,25;VES;Pago Móvil;Crédito;cta-0044;36,34
+21/03/2024;624,74;USD;Divisas;Débito;cta-0012;36,34
+21/03/2024;4.856,21;VES;Pago Móvil;Débito;cta-0108;36,34
+21/03/2024;81.452,83;VES;Transferencia;Crédito;cta-0090;36,34
+21/03/2024;23,15;VES;Punto de venta;Débito;cta-0038;36,34
+21/03/2024;31,17;VES;Pago Móvil;Débito;cta-0088;36,34
+21/03/2024;10,91;VES;Pago Móvil;Crédito;cta-0073;36,34
+21/03/2024;4.661,84;VES;Punto de venta;Débito;cta-0052;36,34
+21/03/2024;87,28;VES;Punto de venta;Débito;cta-0087;36,34
+21/03/2024;2.274,54;USD;Divisas;Crédito;cta-0085;36,34
+21/03/2024;4.356,82;VES;Pago Móvil;Crédito;cta-0912;36,34
+21/03/2024;681,20;VES;Pago Móvil;Débito;cta-0091;36,34
+22/03/2024;663,59;VES;Pago Móvil;Débito;cta-0005;36,35
+22/03/2024;9.210,43;VES;Pago Móvil;Débito;cta-0915;36,35
+22/03/2024;2.004,16;VES;Transferencia;Crédito;cta-0064;36,35
+22/03/2024;7.317,45;VES;Transferencia;Crédito;cta-0016;36,35
+22/03/2024;10,08;USD;Divisas;Débito;cta-0015;36,35
+22/03/2024;57,26;VES;Punto de venta;Crédito;cta-0061;36,35
+22/03/2024;700.402,46;VES;Transferencia;Crédito;cta-0055;36,35
+22/03/2024;344.596,94;VES;Transferencia;Crédito;cta-0777;36,35
+22/03/2024;86,90;VES;Punto de venta;Débito;cta-0066;36,35
+22/03/2024;3.921,38;VES;Transferencia;Crédito;cta-0062;36,35
+22/03/2024;106,83;VES;Punto de venta;Crédito;cta-0004;36,35
+22/03/2024;492,66;VES;Punto de venta;Crédito;cta-0057;36,35
+22/03/2024;180,13;VES;Punto de venta;Débito;cta-0120;36,35
+22/03/2024;7.810,79;VES;Pago Móvil;Crédito;cta-0911;36,35
+22/03/2024;1.017,22;VES;Transferencia;Crédito;cta-0012;36,35
+22/03/2024;1.804,19;VES;Punto de venta;Débito;cta-0091;36,35
+22/03/2024;2.143,47;VES;Pago Móvil;Débito;cta-0049;36,35
+22/03/2024;324.372,07;VES;Transferencia;Crédito;cta-0089;36,35
+22/03/2024;608.125,49;VES;Transferencia;Crédito;cta-0001;36,35
+22/03/2024;9.785,38;VES;Pago Móvil;Débito;cta-0914;36,35
+22/03/2024;102,20;VES;Punto de venta;Débito;cta-0086;36,35
+22/03/2024;68,02;VES;Pago Móvil;Débito;cta-0035;36,35
+22/03/2024;73,27;USD;Divisas;Crédito;cta-0060;36,35
+22/03/2024;74,90;VES;Pago Móvil;Crédito;cta-0053;36,35
+22/03/2024;1.396,89;VES;Punto de venta;Débito;cta-0067;36,35
+22/03/2024;291,98;VES;Pago Móvil;Crédito;cta-0093;36,35
+22/03/2024;13,22;VES;Pago Móvil;Débito;cta-0019;36,35
+22/03/2024;623,50;VES;Pago Móvil;Débito;cta-0063;36,35
+22/03/2024;3.643,31;VES;Punto de venta;Débito;cta-0066;36,35
+22/03/2024;150.000,00;VES;Transferencia;Débito;cta-0811;36,35
+22/03/2024;372,96;USD;Divisas;Débito;cta-0109;36,35
+22/03/2024;383,55;USD;Divisas;Débito;cta-0086;36,35
+22/03/2024;7.011,33;VES;Pago Móvil;Crédito;cta-0910;36,35
+22/03/2024;1.606,07;VES;Punto de venta;Débito;cta-0064;36,35
+22/03/2024;9.908,13;VES;Punto de venta;Débito;cta-0017;36,35
+22/03/2024;7.468,68;VES;Pago Móvil;Crédito;cta-0043;36,35
+22/03/2024;1.282,46;VES;Punto de venta;Débito;cta-0097;36,35
+22/03/2024;14,57;VES;Pago Móvil;Crédito;cta-0003;36,35
+22/03/2024;9.456,92;VES;Pago Móvil;Débito;cta-0912;36,35
+22/03/2024;613,38;VES;Punto de venta;Débito;cta-0008;36,35
+22/03/2024;126,89;VES;Pago Móvil;Débito;cta-0033;36,35
+22/03/2024;4.646,82;VES;Pago Móvil;Crédito;cta-0058;36,35
+22/03/2024;8.540,75;VES;Pago Móvil;Crédito;cta-0914;36,35
+22/03/2024;56,71;VES;Punto de venta;Débito;cta-0045;36,35
+22/03/2024;1.300,73;VES;Transferencia;Débito;cta-0059;36,35
+22/03/2024;3.850,58;VES;Pago Móvil;Débito;cta-0078;36,35
+22/03/2024;395,82;VES;Transferencia;Débito;cta-0066;36,35
+22/03/2024;911,32;VES;Pago Móvil;Débito;cta-0076;36,35
+22/03/2024;644,49;USD;Divisas;Crédito;cta-0035;36,35
+22/03/2024;19.600,26;VES;Transferencia;Débito;cta-0111;36,35
+22/03/2024;9.375,94;VES;Pago Móvil;Débito;cta-0910;36,35
+22/03/2024;99,90;VES;Punto de venta;Débito;cta-0004;36,35
+22/03/2024;577,89;VES;Transferencia;Crédito;cta-0021;36,35
+22/03/2024;12,49;VES;Punto de venta;Crédito;cta-0045;36,35
+22/03/2024;60,99;VES;Pago Móvil;Débito;cta-0035;36,35
+22/03/2024;3.363,97;VES;Pago Móvil;Crédito;cta-0096;36,35
+22/03/2024;459,10;VES;Pago Móvil;Crédito;cta-0057;36,35
+22/03/2024;4.365,01;VES;Pago Móvil;Débito;cta-0911;36,35
+22/03/2024;1.797,56;VES;Punto de venta;Crédito;cta-0028;36,35
+22/03/2024;6.592,14;VES;Transferencia;Débito;cta-0029;36,35
+22/03/2024;114,63;VES;Transferencia;Débito;cta-0021;36,35
+22/03/2024;93,18;USD;Divisas;Débito;cta-0013;36,35
+22/03/2024;1.848,28;VES;Transferencia;Débito;cta-0084;36,35
+22/03/2024;84.157,04;VES;Transferencia;Débito;cta-0033;36,35
+22/03/2024;4.855,72;VES;Pago Móvil;Débito;cta-0910;36,35
+22/03/2024;104,09;VES;Pago Móvil;Débito;cta-0080;36,35
+22/03/2024;53.981,29;VES;Transferencia;Débito;cta-0118;36,35
+22/03/2024;13,21;VES;Pago Móvil;Débito;cta-0088;36,35
+22/03/2024;302.152,88;VES;Transferencia;Débito;cta-0090;36,35
+22/03/2024;102,38;VES;Pago Móvil;Débito;cta-0026;36,35
+22/03/2024;35.615,58;VES;Transferencia;Crédito;cta-0046;36,35
+22/03/2024;352.883,88;VES;Transferencia;Débito;cta-0777;36,35
+22/03/2024;6.807,16;VES;Pago Móvil;Débito;cta-0067;36,35
+22/03/2024;31,20;VES;Pago Móvil;Crédito;cta-0048;36,35
+22/03/2024;152,76;USD;Divisas;Crédito;cta-0037;36,35
+22/03/2024;8.379,74;VES;Transferencia;Débito;cta-0073;36,35
+22/03/2024;1.565,05;VES;Pago Móvil;Crédito;cta-0098;36,35
+22/03/2024;62.839,90;VES;Transferencia;Crédito;cta-0087;36,35
+22/03/2024;9.896,87;VES;Pago Móvil;Crédito;cta-0913;36,35
+22/03/2024;15,93;VES;Pago Móvil;Débito;cta-0112;36,35
+22/03/2024;9.996,02;VES;Pago Móvil;Crédito;cta-0037;36,35
+22/03/2024;3.075,07;VES;Punto de venta;Débito;cta-0038;36,35
+22/03/2024;30,46;VES;Pago Móvil;Débito;cta-0036;36,35
+22/03/2024;10.000,00;VES;Transferencia;Débito;cta-0810;36,35
+22/03/2024;6.510,39;VES;Pago Móvil;Crédito;cta-0913;36,35
+22/03/2024;7,12;USD;Divisas;Débito;cta-0114;36,35
+22/03/2024;7.535,37;VES;Punto de venta;Crédito;cta-0011;36,35
+22/03/2024;172,09;VES;Pago Móvil;Débito;cta-0034;36,35
+22/03/2024;39,43;VES;Pago Móvil;Débito;cta-0070;36,35
+22/03/2024;5.596,12;VES;Pago Móvil;Débito;cta-0915;36,35
+22/03/2024;70,80;VES;Punto de venta;Crédito;cta-0077;36,35
+22/03/2024;783,13;VES;Pago Móvil;Crédito;cta-0091;36,35
+22/03/2024;6.223,09;VES;Pago Móvil;Crédito;cta-0026;36,35
+22/03/2024;21,64;VES;Pago Móvil;Débito;cta-0100;36,35
+22/03/2024;4.014,31;VES;Pago Móvil;Débito;cta-0914;36,35
+22/03/2024;33,80;VES;Punto de venta;Crédito;cta-0105;36,35
+22/03/2024;7.394,69;VES;Transferencia;Crédito;cta-0008;36,35
+22/03/2024;1.226,55;VES;Pago Móvil;Débito;cta-0091;36,35
+22/03/2024;21,56;USD;Divisas;Crédito;cta-0078;36,35
+23/03/2024;55,03;VES;Punto de venta;Crédito;cta-0098;36,36
+23/03/2024;106.270,76;VES;Transferencia;Crédito;cta-0107;36,36
+23/03/2024;2.390,49;VES;Pago Móvil;Débito;cta-0108;36,36
+23/03/2024;43.429,86;VES;Transferencia;Débito;cta-0074;36,36
+23/03/2024;175,87;VES;Punto de venta;Crédito;cta-0082;36,36
+23/03/2024;10.194,67;VES;Transferencia;Crédito;cta-0115;36,36
+23/03/2024;57,46;VES;Pago Móvil;Crédito;cta-0056;36,36
+23/03/2024;1.268,29;VES;Punto de venta;Débito;cta-0071;36,36
+23/03/2024;631.288,33;VES;Transferencia;Crédito;cta-0035;36,36
+23/03/2024;7.790,65;VES;Pago Móvil;Débito;cta-0913;36,36
+23/03/2024;61,27;VES;Pago Móvil;Débito;cta-0085;36,36
+23/03/2024;5.481,83;VES;Transferencia;Crédito;cta-0105;36,36
+23/03/2024;8.572,68;VES;Pago Móvil;Débito;cta-0912;36,36
+23/03/2024;1.250,18;VES;Punto de venta;Débito;cta-0022;36,36
+23/03/2024;234,78;VES;Pago Móvil;Crédito;cta-0087;36,36
+23/03/2024;146,18;VES;Pago Móvil;Débito;cta-0049;36,36
+23/03/2024;353.631,27;VES;Transferencia;Crédito;cta-0777;36,36
+23/03/2024;22,95;VES;Pago Móvil;Crédito;cta-0101;36,36
+23/03/2024;1.092,83;VES;Punto de venta;Crédito;cta-0064;36,36
+23/03/2024;94,68;VES;Pago Móvil;Débito;cta-0100;36,36
+23/03/2024;2.980,18;VES;Punto de venta;Débito;cta-0026;36,36
+23/03/2024;49,15;USD;Divisas;Crédito;cta-0007;36,36
+23/03/2024;4.067,81;VES;Pago Móvil;Débito;cta-0915;36,36
+23/03/2024;157.966,42;VES;Transferencia;Débito;cta-0018;36,36
+23/03/2024;442,14;USD;Divisas;Débito;cta-0077;36,36
+23/03/2024;16,52;VES;Punto de venta;Débito;cta-0007;36,36
+23/03/2024;16.385,16;VES;Transferencia;Crédito;cta-0053;36,36
+23/03/2024;10.000,00;VES;Transferencia;Crédito;cta-0813;36,36
+23/03/2024;1.452,33;VES;Transferencia;Débito;cta-0113;36,36
+23/03/2024;348,14;VES;Pago Móvil;Débito;cta-0010;36,36
+23/03/2024;2.246,46;USD;Divisas;Débito;cta-0022;36,36
+23/03/2024;406,89;VES;Punto de venta;Débito;cta-0069;36,36
+23/03/2024;72,09;VES;Pago Móvil;Débito;cta-0118;36,36
+23/03/2024;7.546,54;VES;Pago Móvil;Débito;cta-0915;36,36
+23/03/2024;1.334,35;VES;Punto de venta;Crédito;cta-0097;36,36
+23/03/2024;9.299,21;VES;Pago Móvil;Crédito;cta-0911;36,36
+23/03/2024;205.027,89;VES;Transferencia;Débito;cta-0017;36,36
+23/03/2024;330.774,33;VES;Transferencia;Débito;cta-0777;36,36
+23/03/2024;10,69;VES;Pago Móvil;Débito;cta-0028;36,36
+23/03/2024;40,19;VES;Punto de venta;Crédito;cta-0094;36,36
+23/03/2024;1.703,12;VES;Punto de venta;Crédito;cta-0075;36,36
+23/03/2024;113,93;VES;Pago Móvil;Débito;cta-0020;36,36
+23/03/2024;3.824,15;USD;Divisas;Crédito;cta-0117;36,36
+23/03/2024;693,63;VES;Transferencia;Débito;cta-0035;36,36
+23/03/2024;14,52;VES;Pago Móvil;Crédito;cta-0021;36,36
+23/03/2024;732,57;VES;Pago Móvil;Crédito;cta-0100;36,36
+23/03/2024;8.430,11;VES;Pago Móvil;Débito;cta-0911;36,36
+23/03/2024;222.945,95;VES;Transferencia;Crédito;cta-0058;36,36
+23/03/2024;9.436,30;VES;Pago Móvil;Crédito;cta-0913;36,36
+23/03/2024;2.613,50;VES;Transferencia;Débito;cta-0014;36,36
+23/03/2024;170,37;VES;Pago Móvil;Débito;cta-0017;36,36
+23/03/2024;6.379,39;VES;Pago Móvil;Débito;cta-0913;36,36
+23/03/2024;83,97;VES;Pago Móvil;Crédito;cta-0028;36,36
+23/03/2024;286,06;VES;Transferencia;Débito;cta-0117;36,36
+23/03/2024;814,88;USD;Divisas;Crédito;cta-0003;36,36
+23/03/2024;18,68;VES;Punto de venta;Débito;cta-0109;36,36
+23/03/2024;9.779,64;VES;Pago Móvil;Débito;cta-0913;36,36
+23/03/2024;10.270,99;VES;Transferencia;Crédito;cta-0066;36,36
+23/03/2024;40.358,76;VES;Transferencia;Débito;cta-0012;36,36
+23/03/2024;11,26;VES;Punto de venta;Débito;cta-0023;36,36
+23/03/2024;6.853,42;VES;Pago Móvil;Débito;cta-0065;36,36
+23/03/2024;16,02;VES;Pago Móvil;Débito;cta-0023;36,36
+23/03/2024;48.722,77;VES;Transferencia;Débito;cta-0067;36,36
+23/03/2024;765,75;VES;Pago Móvil;Débito;cta-0050;36,36
+23/03/2024;6.640,00;VES;Pago Móvil;Débito;cta-0911;36,36
+23/03/2024;425,53;VES;Punto de venta;Débito;cta-0039;36,36
+23/03/2024;13,11;VES;Pago Móvil;Débito;cta-0074;36,36
+23/03/2024;108.025,63;VES;Transferencia;Débito;cta-0041;36,36
+23/03/2024;2.726,62;VES;Punto de venta;Débito;cta-0059;36,36
+23/03/2024;6.954,01;VES;Pago Móvil;Débito;cta-0910;36,36
+23/03/2024;1.578,93;VES;Pago Móvil;Débito;cta-0073;36,36
+23/03/2024;39,10;VES;Pago Móvil;Débito;cta-0082;36,36
+23/03/2024;1.572,21;USD;Divisas;Crédito;cta-0067;36,36
+23/03/2024;2.757,69;USD;Divisas;Crédito;cta-0074;36,36
+23/03/2024;8.855,37;VES;Pago Móvil;Crédito;cta-0081;36,36
+23/03/2024;8,68;USD;Divisas;Débito;cta-0039;36,36
+23/03/2024;97,64;VES;Punto de venta;Débito;cta-0025;36,36
+23/03/2024;2.268,56;VES;Transferencia;Débito;cta-0073;36,36
+23/03/2024;83.189,92;VES;Transferencia;Débito;cta-0109;36,36
+23/03/2024;3.564,56;VES;Punto de venta;Crédito;cta-0046;36,36
+23/03/2024;4.330,14;VES;Pago Móvil;Débito;cta-0913;36,36
+23/03/2024;38.463,79;VES;Transferencia;Débito;cta-0111;36,36
+23/03/2024;3.274,05;VES;Punto de venta;Débito;cta-0068;36,36
+23/03/2024;39,51;USD;Divisas;Crédito;cta-0010;36,36
+23/03/2024;27,58;USD;Divisas;Débito;cta-0104;36,36
+23/03/2024;353.526,39;VES;Transferencia;Débito;cta-0777;36,36
+23/03/2024;2.725,43;VES;Transferencia;Débito;cta-0081;36,36
+23/03/2024;743,64;VES;Pago Móvil;Crédito;cta-0064;36,36
+23/03/2024;762,90;VES;Pago Móvil;Débito;cta-0116;36,36
+23/03/2024;6.005,87;VES;Pago Móvil;Crédito;cta-0915;36,36
+23/03/2024;43.446,31;VES;Transferencia;Débito;cta-0092;36,36
+23/03/2024;6.791,71;VES;Pago Móvil;Débito;cta-0910;36,36
+23/03/2024;18,45;VES;Punto de venta;Crédito;cta-0082;36,36
+23/03/2024;50,98;USD;Divisas;Débito;cta-0074;36,36
+23/03/2024;634.453,37;VES;Transferencia;Débito;cta-0025;36,36
+23/03/2024;20.528,53;VES;Transferencia;Débito;cta-0052;36,36
+23/03/2024;204.569,17;VES;Transferencia;Crédito;cta-0059;36,36
+23/03/2024;223.755,77;VES;Transferencia;Crédito;cta-0038;36,36
+23/03/2024;169,54;VES;Pago Móvil;Crédito;cta-0027;36,36
+23/03/2024;34,72;VES;Punto de venta;Débito;cta-0043;36,36
+24/03/2024;492,35;VES;Pago Móvil;Débito;cta-0077;36,38
+24/03/2024;374.551,59;VES;Transferencia;Crédito;cta-0005;36,38
+24/03/2024;101,57;VES;Punto de venta;Débito;cta-0033;36,38
+24/03/2024;597,99;VES;Pago Móvil;Débito;cta-0064;36,38
+24/03/2024;4.135,40;VES;Transferencia;Débito;cta-0009;36,38
+24/03/2024;501,48;USD;Divisas;Débito;cta-0002;36,38
+24/03/2024;15,66;VES;Pago Móvil;Débito;cta-0004;36,38
+24/03/2024;420,85;VES;Transferencia;Débito;cta-0109;36,38
+24/03/2024;4.842,32;VES;Punto de venta;Crédito;cta-0103;36,38
+24/03/2024;7,62;USD;Divisas;Crédito;cta-0077;36,38
+24/03/2024;7.094,06;VES;Pago Móvil;Crédito;cta-0915;36,38
+24/03/2024;4.666,55;VES;Punto de venta;Crédito;cta-0062;36,38
+24/03/2024;449,79;VES;Transferencia;Débito;cta-0069;36,38
+24/03/2024;2.901,27;VES;Pago Móvil;Crédito;cta-0091;36,38
+24/03/2024;10,33;USD;Divisas;Crédito;cta-0035;36,38
+24/03/2024;306,52;VES;Pago Móvil;Débito;cta-0005;36,38
+24/03/2024;36,08;USD;Divisas;Débito;cta-0027;36,38
+24/03/2024;4.703,78;USD;Divisas;Crédito;cta-0049;36,38
+24/03/2024;70,17;VES;Punto de venta;Crédito;cta-0025;36,38
+24/03/2024;4.188,69;VES;Pago Móvil;Crédito;cta-0912;36,38
+24/03/2024;552,35;VES;Pago Móvil;Débito;cta-0035;36,38
+24/03/2024;332.015,45;VES;Transferencia;Crédito;cta-0777;36,38
+24/03/2024;227,73;VES;Transferencia;Débito;cta-0035;36,38
+24/03/2024;22,76;VES;Pago Móvil;Débito;cta-0119;36,38
+24/03/2024;8.384,49;VES;Pago Móvil;Débito;cta-0911;36,38
+24/03/2024;21.306,83;VES;Transferencia;Débito;cta-0119;36,38
+24/03/2024;5,34;USD;Divisas;Débito;cta-0102;36,38
+24/03/2024;73,69;VES;Punto de venta;Débito;cta-0036;36,38
+24/03/2024;634,36;VES;Punto de venta;Débito;cta-0086;36,38
+24/03/2024;9.140,57;VES;Pago Móvil;Débito;cta-0915;36,38
+24/03/2024;481.046,74;VES;Transferencia;Débito;cta-0067;36,38
+24/03/2024;61.936,94;VES;Transferencia;Crédito;cta-0066;36,38
+24/03/2024;20.000,00;VES;Transferencia;Débito;cta-0814;36,38
+24/03/2024;295,88;VES;Pago Móvil;Crédito;cta-0090;36,38
+24/03/2024;330,33;VES;Punto de venta;Débito;cta-0118;36,38
+24/03/2024;5.959,70;VES;Pago Móvil;Crédito;cta-0074;36,38
+24/03/2024;320,87;VES;Punto de venta;Débito;cta-0041;36,38
+24/03/2024;365,34;VES;Punto de venta;Débito;cta-0029;36,38
+24/03/2024;1.060,22;VES;Pago Móvil;Débito;cta-0052;36,38
+24/03/2024;4.882,08;VES;Pago Móvil;Débito;cta-0041;36,38
+24/03/2024;8.612,97;VES;Punto de venta;Débito;cta-0052;36,38
+24/03/2024;631,86;USD;Divisas;Crédito;cta-0046;36,38
+24/03/2024;6.945,40;VES;Punto de venta;Débito;cta-0035;36,38
+24/03/2024;172,52;VES;Pago Móvil;Débito;cta-0015;36,38
+24/03/2024;343.742,98;VES;Transferencia;Crédito;cta-0777;36,38
+24/03/2024;4.446,25;VES;Pago Móvil;Débito;cta-0911;36,38
+24/03/2024;1.485,43;VES;Punto de venta;Débito;cta-0028;36,38
+24/03/2024;388,54;VES;Pago Móvil;Crédito;cta-0066;36,38
+24/03/2024;46,82;VES;Pago Móvil;Crédito;cta-0066;36,38
+24/03/2024;1.165,29;USD;Divisas;Débito;cta-0072;36,38
+24/03/2024;1.872,27;USD;Divisas;Débito;cta-0069;36,38
+24/03/2024;16,30;USD;Divisas;Crédito;cta-0074;36,38
+24/03/2024;10.000,00;VES;Transferencia;Débito;cta-0817;36,38
+24/03/2024;21,21;VES;Punto de venta;Débito;cta-0010;36,38
+24/03/2024;981,71;VES;Pago Móvil;Débito;cta-0067;36,38
+24/03/2024;115.408,29;VES;Transferencia;Débito;cta-0072;36,38
+24/03/2024;21.562,37;VES;Transferencia;Débito;cta-0050;36,38
+24/03/2024;1.156,64;USD;Divisas;Débito;cta-0024;36,38
+24/03/2024;5.351,44;VES;Pago Móvil;Débito;cta-0912;36,38
+24/03/2024;11,99;VES;Pago Móvil;Crédito;cta-0011;36,38
+24/03/2024;118,75;VES;Pago Móvil;Crédito;cta-0017;36,38
+24/03/2024;1.076,02;VES;Pago Móvil;Débito;cta-0048;36,38
+24/03/2024;2.729,99;VES;Transferencia;Débito;cta-0074;36,38
+24/03/2024;19.075,28;VES;Transferencia;Débito;cta-0082;36,38
+24/03/2024;4.575,28;VES;Pago Móvil;Crédito;cta-0910;36,38
+24/03/2024;172.629,35;VES;Transferencia;Débito;cta-0004;36,38
+24/03/2024;6.828,47;VES;Pago Móvil;Débito;cta-0914;36,38
+24/03/2024;1.844,67;VES;Pago Móvil;Débito;cta-0116;36,38
+24/03/2024;292,33;VES;Transferencia;Débito;cta-0065;36,38
+24/03/2024;7.439,07;VES;Pago Móvil;Débito;cta-0914;36,38
+24/03/2024;150.000,00;VES;Transferencia;Débito;cta-0817;36,38
+24/03/2024;5.453,97;VES;Pago Móvil;Débito;cta-0019;36,38
+24/03/2024;35.075,02;VES;Transferencia;Débito;cta-0018;36,38
+24/03/2024;100.182,78;VES;Transferencia;Crédito;cta-0018;36,38
+24/03/2024;2.324,98;VES;Punto de venta;Débito;cta-0045;36,38
+24/03/2024;152,33;VES;Punto de venta;Débito;cta-0008;36,38
+24/03/2024;25,67;VES;Pago Móvil;Débito;cta-0066;36,38
+24/03/2024;27,73;VES;Pago Móvil;Débito;cta-0084;36,38
+24/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0811;36,38
+24/03/2024;8.867,36;VES;Pago Móvil;Débito;cta-0103;36,38
+24/03/2024;3.250,19;USD;Divisas;Débito;cta-0029;36,38
+24/03/2024;2.174,15;VES;Transferencia;Crédito;cta-0105;36,38
+24/03/2024;31,47;VES;Punto de venta;Débito;cta-0103;36,38
+24/03/2024;769,78;USD;Divisas;Débito;cta-0012;36,38
+24/03/2024;353.928,58;VES;Transferencia;Crédito;cta-0777;36,38
+24/03/2024;998.274,01;VES;Transferencia;Crédito;cta-0084;36,38
+24/03/2024;144,47;VES;Pago Móvil;Débito;cta-0059;36,38
+24/03/2024;5.000,00;VES;Transferencia;Crédito;cta-0819;36,38
+24/03/2024;4.722,31;VES;Pago Móvil;Débito;cta-0912;36,38
+24/03/2024;6.481,11;VES;Punto de venta;Crédito;cta-0007;36,38
+24/03/2024;4.909,54;VES;Pago Móvil;Crédito;cta-0085;36,38
+24/03/2024;452,28;VES;Transferencia;Débito;cta-0090;36,38
+24/03/2024;198,91;USD;Divisas;Crédito;cta-0083;36,38
+24/03/2024;11,72;VES;Punto de venta;Crédito;cta-0120;36,38
+24/03/2024;31,68;VES;Pago Móvil;Débito;cta-0012;36,38
+24/03/2024;9.803,58;VES;Pago Móvil;Débito;cta-0915;36,38
+24/03/2024;289,85;VES;Punto de venta;Débito;cta-0062;36,38
+24/03/2024;393,27;VES;Transferencia;Crédito;cta-0115;36,38
+24/03/2024;7.458,83;VES;Pago Móvil;Débito;cta-0915;36,38
+24/03/2024;31,53;VES;Punto de venta;Débito;cta-0029;36,38
+24/03/2024;94,17;VES;Punto de venta;Débito;cta-0065;36,38
+24/03/2024;50.000,00;VES;Transferencia;Débito;cta-0811;36,38
+25/03/2024;4.538,87;VES;Pago Móvil;Débito;cta-0073;36,39
+25/03/2024;20,06;VES;Pago Móvil;Crédito;cta-0024;36,39
+25/03/2024;2.011,34;VES;Transferencia;Débito;cta-0116;36,39
+25/03/2024;776,13;VES;Pago Móvil;Débito;cta-0073;36,39
+25/03/2024;206,63;VES;Punto de venta;Débito;cta-0004;36,39
+25/03/2024;802,73;VES;Pago Móvil;Crédito;cta-0066;36,39
+25/03/2024;50,31;VES;Pago Móvil;Débito;cta-0018;36,39
+25/03/2024;60,98;VES;Punto de venta;Débito;cta-0041;36,39
+25/03/2024;9,42;USD;Divisas;Crédito;cta-0037;36,39
+25/03/2024;539,58;VES;Pago Móvil;Débito;cta-0009;36,39
+25/03/2024;790,34;VES;Pago Móvil;Crédito;cta-0057;36,39
+25/03/2024;940,46;VES;Transferencia;Débito;cta-0105;36,39
+25/03/2024;493,50;VES;Punto de venta;Débito;cta-0112;36,39
+25/03/2024;4.270,54;VES;Pago Móvil;Crédito;cta-0910;36,39
+25/03/2024;1.553,19;VES;Punto de venta;Débito;cta-0112;36,39
+25/03/2024;10,94;VES;Punto de venta;Crédito;cta-0090;36,39
+25/03/2024;1.954,65;VES;Pago Móvil;Crédito;cta-0015;36,39
+25/03/2024;200,08;VES;Pago Móvil;Crédito;cta-0031;36,39
+25/03/2024;186,81;VES;Pago Móvil;Débito;cta-0091;36,39
+25/03/2024;369.520,52;VES;Transferencia;Débito;cta-0107;36,39
+25/03/2024;420,07;VES;Pago Móvil;Crédito;cta-0087;36,39
+25/03/2024;14,33;VES;Pago Móvil;Débito;cta-0114;36,39
+25/03/2024;956,00;VES;Punto de venta;Crédito;cta-0001;36,39
+25/03/2024;382.699,32;VES;Transferencia;Débito;cta-0069;36,39
+25/03/2024;883,58;USD;Divisas;Débito;cta-0046;36,39
+25/03/2024;12.933,47;VES;Transferencia;Débito;cta-0029;36,39
+25/03/2024;332.049,52;VES;Transferencia;Débito;cta-0027;36,39
+25/03/2024;5.809,41;VES;Pago Móvil;Crédito;cta-0063;36,39
+25/03/2024;49,08;USD;Divisas;Débito;cta-0110;36,39
+25/03/2024;50.533,42;VES;Transferencia;Débito;cta-0030;36,39
+25/03/2024;680,34;USD;Divisas;Débito;cta-0026;36,39
+25/03/2024;37.521,32;VES;Transferencia;Débito;cta-0110;36,39
+25/03/2024;5.000,00;VES;Transferencia;Débito;cta-0817;36,39
+25/03/2024;6.547,40;VES;Pago Móvil;Débito;cta-0915;36,39
+25/03/2024;57,00;USD;Divisas;Débito;cta-0058;36,39
+25/03/2024;130,09;VES;Pago Móvil;Débito;cta-0118;36,39
+25/03/2024;5.327,84;VES;Pago Móvil;Débito;cta-0091;36,39
+25/03/2024;8.329,75;VES;Pago Móvil;Débito;cta-0018;36,39
+25/03/2024;551,02;VES;Punto de venta;Débito;cta-0067;36,39
+25/03/2024;2.020,33;VES;Pago Móvil;Crédito;cta-0120;36,39
+25/03/2024;105.920,75;VES;Transferencia;Crédito;cta-0059;36,39
+25/03/2024;9.898,78;VES;Pago Móvil;Débito;cta-0915;36,39
+25/03/2024;282,78;USD;Divisas;Débito;cta-0047;36,39
+25/03/2024;63,05;VES;Pago Móvil;Crédito;cta-0037;36,39
+25/03/2024;4.420,61;VES;Pago Móvil;Débito;cta-0913;36,39
+25/03/2024;1.008,84;USD;Divisas;Débito;cta-0049;36,39
+25/03/2024;3.398,19;VES;Transferencia;Débito;cta-0017;36,39
+25/03/2024;4.952,99;VES;Pago Móvil;Débito;cta-0910;36,39
+25/03/2024;31,69;VES;Pago Móvil;Crédito;cta-0067;36,39
+25/03/2024;1.497,97;VES;Pago Móvil;Crédito;cta-0115;36,39
+25/03/2024;137,43;VES;Transferencia;Débito;cta-0118;36,39
+25/03/2024;7.003,98;VES;Pago Móvil;Débito;cta-0912;36,39
+25/03/2024;99,70;VES;Punto de venta;Débito;cta-0034;36,39
+25/03/2024;13.024,29;VES;Transferencia;Crédito;cta-0095;36,39
+25/03/2024;5.563,66;VES;Transferencia;Débito;cta-0113;36,39
+25/03/2024;625,34;VES;Pago Móvil;Débito;cta-0086;36,39
+25/03/2024;225,11;VES;Pago Móvil;Débito;cta-0024;36,39
+25/03/2024;62,19;VES;Pago Móvil;Crédito;cta-0101;36,39
+25/03/2024;1.888,11;VES;Punto de venta;Débito;cta-0066;36,39
+25/03/2024;2.453,58;VES;Pago Móvil;Débito;cta-0014;36,39
+25/03/2024;5.738,06;VES;Pago Móvil;Débito;cta-0913;36,39
+25/03/2024;649,13;VES;Punto de venta;Débito;cta-0113;36,39
+25/03/2024;197,66;VES;Pago Móvil;Débito;cta-0062;36,39
+25/03/2024;36,99;VES;Pago Móvil;Débito;cta-0091;36,39
+25/03/2024;337.956,60;VES;Transferencia;Débito;cta-0777;36,39
+25/03/2024;5.509,39;VES;Pago Móvil;Crédito;cta-0103;36,39
+25/03/2024;1.469,60;VES;Pago Móvil;Débito;cta-0060;36,39
+25/03/2024;135,91;VES;Pago Móvil;Débito;cta-0056;36,39
+25/03/2024;14,72;VES;Pago Móvil;Débito;cta-0067;36,39
+25/03/2024;865,77;VES;Pago Móvil;Débito;cta-0065;36,39
+25/03/2024;10,08;VES;Pago Móvil;Débito;cta-0101;36,39
+25/03/2024;37,51;USD;Divisas;Crédito;cta-0071;36,39
+25/03/2024;42,94;VES;Pago Móvil;Débito;cta-0113;36,39
+25/03/2024;476,14;VES;Pago Móvil;Débito;cta-0058;36,39
+25/03/2024;882,02;VES;Pago Móvil;Crédito;cta-0064;36,39
+25/03/2024;89,08;VES;Pago Móvil;Débito;cta-0084;36,39
+25/03/2024;337.618,18;VES;Transferencia;Crédito;cta-0777;36,39
+25/03/2024;69,86;VES;Punto de venta;Débito;cta-0052;36,39
+25/03/2024;15,18;VES;Punto de venta;Débito;cta-0088;36,39
+25/03/2024;60.456,57;VES;Transferencia;Débito;cta-0111;36,39
+25/03/2024;6.180,18;VES;Pago Móvil;Crédito;cta-0914;36,39
+26/03/2024;4.701,83;VES;Pago Móvil;Débito;cta-0064;36,40
+26/03/2024;5.922,85;VES;Pago Móvil;Débito;cta-0912;36,40
+26/03/2024;7.745,45;VES;Pago Móvil;Débito;cta-0915;36,40
+26/03/2024;205,13;VES;Transferencia;Crédito;cta-0060;36,40
+26/03/2024;2.596,57;VES;Transferencia;Crédito;cta-0052;36,40
+26/03/2024;4.432,27;VES;Pago Móvil;Débito;cta-0912;36,40
+26/03/2024;4.062,61;VES;Pago Móvil;Crédito;cta-0910;36,40
+26/03/2024;8.281,94;VES;Pago Móvil;Débito;cta-0047;36,40
+26/03/2024;5.915,12;VES;Pago Móvil;Crédito;cta-0051;36,40
+26/03/2024;218,93;USD;Divisas;Débito;cta-0071;36,40
+26/03/2024;9.637,30;VES;Pago Móvil;Crédito;cta-0914;36,40
+26/03/2024;319,17;VES;Pago Móvil;Crédito;cta-0078;36,40
+26/03/2024;120,59;USD;Divisas;Débito;cta-0009;36,40
+26/03/2024;4.764,02;VES;Pago Móvil;Débito;cta-0913;36,40
+26/03/2024;10,31;VES;Pago Móvil;Débito;cta-0002;36,40
+26/03/2024;8.477,40;VES;Pago Móvil;Crédito;cta-0910;36,40
+26/03/2024;149,30;USD;Divisas;Débito;cta-0035;36,40
+26/03/2024;267,24;VES;Punto de venta;Débito;cta-0075;36,40
+26/03/2024;16,10;VES;Punto de venta;Débito;cta-0109;36,40
+26/03/2024;579,61;VES;Punto de venta;Débito;cta-0026;36,40
+26/03/2024;25,61;VES;Pago Móvil;Débito;cta-0048;36,40
+26/03/2024;60,48;VES;Pago Móvil;Débito;cta-0105;36,40
+26/03/2024;47,61;VES;Pago Móvil;Débito;cta-0026;36,40
+26/03/2024;845,84;VES;Pago Móvil;Débito;cta-0039;36,40
+26/03/2024;21,47;VES;Pago Móvil;Crédito;cta-0084;36,40
+26/03/2024;19,91;VES;Punto de venta;Crédito;cta-0066;36,40
+26/03/2024;739,70;VES;Pago Móvil;Crédito;cta-0022;36,40
+26/03/2024;4.830,33;VES;Punto de venta;Débito;cta-0111;36,40
+26/03/2024;6.964,56;VES;Pago Móvil;Débito;cta-0039;36,40
+26/03/2024;4.832,58;VES;Pago Móvil;Débito;cta-0914;36,40
+26/03/2024;8.921,88;VES;Pago Móvil;Débito;cta-0910;36,40
+26/03/2024;291,79;VES;Pago Móvil;Crédito;cta-0067;36,40
+26/03/2024;3.078,82;VES;Pago Móvil;Débito;cta-0067;36,40
+26/03/2024;5.346,56;VES;Punto de venta;Crédito;cta-0023;36,40
+26/03/2024;4.996,65;VES;Pago Móvil;Débito;cta-0911;36,40
+26/03/2024;50.000,00;VES;Transferencia;Débito;cta-0814;36,40
+26/03/2024;277,23;VES;Punto de venta;Débito;cta-0038;36,40
+26/03/2024;126,69;USD;Divisas;Débito;cta-0065;36,40
+26/03/2024;692.566,70;VES;Transferencia;Crédito;cta-0082;36,40
+26/03/2024;9.821,61;VES;Transferencia;Crédito;cta-0067;36,40
+26/03/2024;206,81;VES;Pago Móvil;Débito;cta-0015;36,40
+26/03/2024;232.380,96;VES;Transferencia;Débito;cta-0097;36,40
+26/03/2024;93,06;VES;Pago Móvil;Débito;cta-0058;36,40
+26/03/2024;60,71;VES;Punto de venta;Débito;cta-0113;36,40
+26/03/2024;11,28;USD;Divisas;Débito;cta-0029;36,40
+26/03/2024;15.555,20;VES;Transferencia;Crédito;cta-0057;36,40
+26/03/2024;29.833,09;VES;Transferencia;Crédito;cta-0049;36,40
+26/03/2024;1.656,06;USD;Divisas;Débito;cta-0030;36,40
+26/03/2024;244,57;USD;Divisas;Débito;cta-0100;36,40
+26/03/2024;8,78;USD;Divisas;Débito;cta-0116;36,40
+26/03/2024;666,36;VES;Punto de venta;Débito;cta-0091;36,40
+26/03/2024;2.540,43;VES;Pago Móvil;Débito;cta-0087;36,40
+26/03/2024;82,33;USD;Divisas;Débito;cta-0014;36,40
+26/03/2024;8.833,80;VES;Pago Móvil;Débito;cta-0078;36,40
+26/03/2024;2.135,08;VES;Pago Móvil;Débito;cta-0012;36,40
+26/03/2024;14,34;VES;Pago Móvil;Débito;cta-0027;36,40
+26/03/2024;1.785,67;VES;Transferencia;Débito;cta-0001;36,40
+26/03/2024;78.677,72;VES;Transferencia;Débito;cta-0045;36,40
+26/03/2024;6.063,26;VES;Transferencia;Débito;cta-0102;36,40
+26/03/2024;3.232,94;VES;Punto de venta;Crédito;cta-0111;36,40
+26/03/2024;222,04;VES;Punto de venta;Débito;cta-0060;36,40
+26/03/2024;23.560,53;VES;Transferencia;Débito;cta-0108;36,40
+26/03/2024;152,78;VES;Pago Móvil;Débito;cta-0004;36,40
+26/03/2024;3.789,98;VES;Pago Móvil;Débito;cta-0010;36,40
+26/03/2024;323,77;VES;Transferencia;Crédito;cta-0067;36,40
+26/03/2024;506,28;VES;Transferencia;Crédito;cta-0096;36,40
+26/03/2024;368,61;VES;Transferencia;Débito;cta-0057;36,40
+26/03/2024;7,21;USD;Divisas;Débito;cta-0038;36,40
+26/03/2024;5.242,02;VES;Pago Móvil;Débito;cta-0086;36,40
+26/03/2024;139,90;VES;Pago Móvil;Débito;cta-0102;36,40
+26/03/2024;8.073,47;VES;Pago Móvil;Crédito;cta-0911;36,40
+26/03/2024;9.285,92;VES;Pago Móvil;Débito;cta-0915;36,40
+26/03/2024;5,92;USD;Divisas;Crédito;cta-0075;36,40
+26/03/2024;14.790,57;VES;Transferencia;Crédito;cta-0108;36,40
+26/03/2024;385,23;USD;Divisas;Crédito;cta-0114;36,40
+26/03/2024;894.531,55;VES;Transferencia;Débito;cta-0038;36,40
+26/03/2024;4.223,20;VES;Punto de venta;Débito;cta-0018;36,40
+26/03/2024;5.962,20;VES;Pago Móvil;Débito;cta-0911;36,40
+26/03/2024;2.052,90;VES;Punto de venta;Débito;cta-0112;36,40
+26/03/2024;240,91;VES;Pago Móvil;Débito;cta-0016;36,40
+26/03/2024;7.504,00;VES;Transferencia;Débito;cta-0085;36,40
+26/03/2024;343.218,68;VES;Transferencia;Débito;cta-0777;36,40
+26/03/2024;150.000,00;VES;Transferencia;Débito;cta-0815;36,40
+26/03/2024;20,00;VES;Punto de venta;Débito;cta-0089;36,40
+26/03/2024;200.713,05;VES;Transferencia;Débito;cta-0007;36,40
+26/03/2024;489,89;VES;Punto de venta;Crédito;cta-0029;36,40
+26/03/2024;992,58;VES;Transferencia;Débito;cta-0110;36,40
+26/03/2024;6.620,85;VES;Pago Móvil;Débito;cta-0082;36,40
+26/03/2024;100,95;VES;Punto de venta;Débito;cta-0035;36,40
+26/03/2024;7.735,18;VES;Pago Móvil;Débito;cta-0915;36,40
+27/03/2024;1.656,62;VES;Punto de venta;Débito;cta-0055;36,41
+27/03/2024;4.294,31;VES;Pago Móvil;Débito;cta-0910;36,41
+27/03/2024;5.783,25;VES;Pago Móvil;Débito;cta-0912;36,41
+27/03/2024;637.288,82;VES;Transferencia;Crédito;cta-0103;36,41
+27/03/2024;7.108,09;VES;Pago Móvil;Débito;cta-0912;36,41
+27/03/2024;4.254,19;VES;Pago Móvil;Crédito;cta-0913;36,41
+27/03/2024;12,74;VES;Pago Móvil;Débito;cta-0070;36,41
+27/03/2024;224,97;VES;Pago Móvil;Débito;cta-0030;36,41
+27/03/2024;15,63;VES;Punto de venta;Débito;cta-0073;36,41
+27/03/2024;830,77;VES;Pago Móvil;Débito;cta-0030;36,41
+27/03/2024;36,73;VES;Pago Móvil;Débito;cta-0053;36,41
+27/03/2024;5.362,81;VES;Pago Móvil;Débito;cta-0910;36,41
+27/03/2024;5.533,88;VES;Punto de venta;Débito;cta-0093;36,41
+27/03/2024;100,03;VES;Transferencia;Crédito;cta-0095;36,41
+27/03/2024;1.834,17;VES;Pago Móvil;Crédito;cta-0062;36,41
+27/03/2024;6.370,82;VES;Punto de venta;Crédito;cta-0070;36,41
+27/03/2024;45,05;VES;Pago Móvil;Débito;cta-0056;36,41
+27/03/2024;1.289,05;VES;Pago Móvil;Débito;cta-0066;36,41
+27/03/2024;271,08;VES;Transferencia;Débito;cta-0006;36,41
+27/03/2024;62,74;VES;Punto de venta;Débito;cta-0011;36,41
+27/03/2024;79,19;VES;Pago Móvil;Crédito;cta-0042;36,41
+27/03/2024;23,17;VES;Pago Móvil;Crédito;cta-0001;36,41
+27/03/2024;100.000,00;VES;Transferencia;Débito;cta-0819;36,41
+27/03/2024;4.033,88;VES;Pago Móvil;Débito;cta-0107;36,41
+27/03/2024;143,11;VES;Pago Móvil;Débito;cta-0021;36,41
+27/03/2024;68,99;USD;Divisas;Crédito;cta-0006;36,41
+27/03/2024;102,81;VES;Pago Móvil;Crédito;cta-0116;36,41
+27/03/2024;340.058,45;VES;Transferencia;Débito;cta-0777;36,41
+27/03/2024;8,79;USD;Divisas;Débito;cta-0068;36,41
+27/03/2024;18,77;VES;Pago Móvil;Débito;cta-0064;36,41
+27/03/2024;107,16;VES;Pago Móvil;Débito;cta-0032;36,41
+27/03/2024;71,83;VES;Pago Móvil;Débito;cta-0060;36,41
+27/03/2024;8,41;USD;Divisas;Débito;cta-0101;36,41
+27/03/2024;34,42;VES;Pago Móvil;Débito;cta-0090;36,41
+27/03/2024;74,24;VES;Pago Móvil;Débito;cta-0018;36,41
+27/03/2024;114,03;USD;Divisas;Débito;cta-0057;36,41
+27/03/2024;54,20;VES;Pago Móvil;Crédito;cta-0030;36,41
+27/03/2024;5.398,29;VES;Pago Móvil;Crédito;cta-0912;36,41
+27/03/2024;78,60;VES;Pago Móvil;Crédito;cta-0027;36,41
+27/03/2024;486.103,62;VES;Transferencia;Débito;cta-0023;36,41
+27/03/2024;9.583,44;VES;Pago Móvil;Débito;cta-0913;36,41
+27/03/2024;16,27;USD;Divisas;Débito;cta-0040;36,41
+27/03/2024;43,10;VES;Pago Móvil;Débito;cta-0063;36,41
+27/03/2024;514,16;VES;Pago Móvil;Débito;cta-0007;36,41
+27/03/2024;4.277,26;VES;Pago Móvil;Débito;cta-0010;36,41
+27/03/2024;186.682,93;VES;Transferencia;Crédito;cta-0035;36,41
+27/03/2024;108,64;VES;Transferencia;Débito;cta-0107;36,41
+27/03/2024;8.091,78;VES;Punto de venta;Crédito;cta-0010;36,41
+27/03/2024;8.719,98;VES;Transferencia;Débito;cta-0106;36,41
+27/03/2024;1.706,41;VES;Pago Móvil;Débito;cta-0074;36,41
+27/03/2024;8.431,24;VES;Pago Móvil;Crédito;cta-0913;36,41
+27/03/2024;1.481,43;VES;Punto de venta;Débito;cta-0024;36,41
+27/03/2024;6.602,41;VES;Pago Móvil;Crédito;cta-0023;36,41
+27/03/2024;3.957,27;USD;Divisas;Débito;cta-0079;36,41
+27/03/2024;1.139,89;USD;Divisas;Crédito;cta-0025;36,41
+27/03/2024;2.950,37;VES;Transferencia;Débito;cta-0089;36,41
+27/03/2024;104,63;VES;Punto de venta;Débito;cta-0035;36,41
+27/03/2024;5.598,54;VES;Pago Móvil;Débito;cta-0911;36,41
+27/03/2024;6.522,79;VES;Pago Móvil;Crédito;cta-0912;36,41
+27/03/2024;2.611,01;VES;Transferencia;Débito;cta-0106;36,41
+27/03/2024;456,70;VES;Transferencia;Débito;cta-0044;36,41
+27/03/2024;215.077,26;VES;Transferencia;Débito;cta-0073;36,41
+27/03/2024;3.481,08;VES;Punto de venta;Débito;cta-0071;36,41
+27/03/2024;555,74;VES;Pago Móvil;Débito;cta-0087;36,41
+27/03/2024;6.494,27;VES;Pago Móvil;Débito;cta-0068;36,41
+27/03/2024;5,11;USD;Divisas;Débito;cta-0097;36,41
+27/03/2024;157,13;VES;Pago Móvil;Débito;cta-0015;36,41
+27/03/2024;25.000,00;VES;Transferencia;Débito;cta-0811;36,41
+27/03/2024;17.134,62;VES;Transferencia;Crédito;cta-0096;36,41
+27/03/2024;4.556,36;VES;Pago Móvil;Débito;cta-0912;36,41
+27/03/2024;104,79;VES;Punto de venta;Débito;cta-0038;36,41
+27/03/2024;8.682,25;VES;Pago Móvil;Débito;cta-0914;36,41
+27/03/2024;1.380,16;VES;Pago Móvil;Crédito;cta-0065;36,41
+27/03/2024;832,39;VES;Pago Móvil;Débito;cta-0017;36,41
+27/03/2024;2.058,88;VES;Punto de venta;Débito;cta-0104;36,41
+27/03/2024;58,96;USD;Divisas;Débito;cta-0014;36,41
+27/03/2024;4.973,19;VES;Pago Móvil;Crédito;cta-0064;36,41
+27/03/2024;7.861,66;VES;Pago Móvil;Débito;cta-0915;36,41
+27/03/2024;6.206,49;VES;Pago Móvil;Débito;cta-0912;36,41
+27/03/2024;7.820,51;VES;Pago Móvil;Débito;cta-0083;36,41
+27/03/2024;8.894,31;VES;Pago Móvil;Crédito;cta-0910;36,41
+27/03/2024;4.711,74;VES;Pago Móvil;Crédito;cta-0914;36,41
+27/03/2024;4.725,70;USD;Divisas;Crédito;cta-0015;36,41
+27/03/2024;13,50;VES;Pago Móvil;Débito;cta-0056;36,41
+27/03/2024;5.358,87;VES;Pago Móvil;Débito;cta-0912;36,41
+27/03/2024;5.675,65;VES;Pago Móvil;Débito;cta-0082;36,41
+27/03/2024;2.992,22;VES;Pago Móvil;Débito;cta-0064;36,41
+27/03/2024;150.000,00;VES;Transferencia;Débito;cta-0819;36,41
+27/03/2024;1.643,98;VES;Pago Móvil;Débito;cta-0062;36,41
+28/03/2024;352,86;VES;Transferencia;Débito;cta-0001;36,42
+28/03/2024;7.849,63;VES;Punto de venta;Débito;cta-0006;36,42
+28/03/2024;5.099,72;VES;Pago Móvil;Crédito;cta-0915;36,42
+28/03/2024;1.642,19;VES;Pago Móvil;Débito;cta-0032;36,42
+28/03/2024;7.017,68;VES;Transferencia;Débito;cta-0061;36,42
+28/03/2024;1.681,54;USD;Divisas;Débito;cta-0023;36,42
+28/03/2024;1.118,16;USD;Divisas;Débito;cta-0039;36,42
+28/03/2024;1.062,14;USD;Divisas;Débito;cta-0092;36,42
+28/03/2024;522,90;VES;Pago Móvil;Débito;cta-0098;36,42
+28/03/2024;4.879,65;USD;Divisas;Crédito;cta-0016;36,42
+28/03/2024;182,92;VES;Transferencia;Débito;cta-0083;36,42
+28/03/2024;763,10;USD;Divisas;Débito;cta-0053;36,42
+28/03/2024;660,48;VES;Pago Móvil;Débito;cta-0078;36,42
+28/03/2024;2.468,77;VES;Punto de venta;Crédito;cta-0038;36,42
+28/03/2024;28,17;VES;Pago Móvil;Débito;cta-0110;36,42
+28/03/2024;454,36;VES;Pago Móvil;Débito;cta-0004;36,42
+28/03/2024;9.575,52;VES;Pago Móvil;Débito;cta-0910;36,42
+28/03/2024;102,46;VES;Pago Móvil;Débito;cta-0080;36,42
+28/03/2024;570,77;VES;Pago Móvil;Crédito;cta-0002;36,42
+28/03/2024;337.511,66;VES;Transferencia;Débito;cta-0777;36,42
+28/03/2024;612,72;VES;Punto de venta;Débito;cta-0024;36,42
+28/03/2024;313,20;VES;Pago Móvil;Débito;cta-0044;36,42
+28/03/2024;323,39;VES;Pago Móvil;Débito;cta-0104;36,42
+28/03/2024;12,32;VES;Punto de venta;Débito;cta-0114;36,42
+28/03/2024;70.235,26;VES;Transferencia;Crédito;cta-0069;36,42
+28/03/2024;6,59;USD;Divisas;Débito;cta-0022;36,42
+28/03/2024;71.795,34;VES;Transferencia;Débito;cta-0107;36,42
+28/03/2024;64,79;VES;Pago Móvil;Débito;cta-0033;36,42
+28/03/2024;32,84;VES;Pago Móvil;Débito;cta-0096;36,42
+28/03/2024;805,01;VES;Punto de venta;Débito;cta-0119;36,42
+28/03/2024;153,46;VES;Pago Móvil;Débito;cta-0044;36,42
+28/03/2024;9.602,67;VES;Punto de venta;Débito;cta-0078;36,42
+28/03/2024;225,42;VES;Pago Móvil;Crédito;cta-0004;36,42
+28/03/2024;661,90;VES;Transferencia;Crédito;cta-0024;36,42
+28/03/2024;17,08;VES;Punto de venta;Débito;cta-0070;36,42
+28/03/2024;44,23;VES;Punto de venta;Débito;cta-0053;36,42
+28/03/2024;6.536,19;VES;Pago Móvil;Débito;cta-0910;36,42
+28/03/2024;430,06;VES;Punto de venta;Débito;cta-0076;36,42
+28/03/2024;923,19;VES;Punto de venta;Débito;cta-0071;36,42
+28/03/2024;6.785,18;VES;Pago Móvil;Crédito;cta-0911;36,42
+28/03/2024;122,83;USD;Divisas;Débito;cta-0049;36,42
+28/03/2024;1.273,22;VES;Transferencia;Débito;cta-0105;36,42
+28/03/2024;50,17;VES;Punto de venta;Débito;cta-0105;36,42
+28/03/2024;812,56;VES;Pago Móvil;Débito;cta-0076;36,42
+28/03/2024;58,16;VES;Punto de venta;Crédito;cta-0016;36,42
+28/03/2024;13,51;VES;Pago Móvil;Débito;cta-0033;36,42
+28/03/2024;14,02;VES;Punto de venta;Débito;cta-0041;36,42
+28/03/2024;875,82;VES;Punto de venta;Débito;cta-0034;36,42
+28/03/2024;6.892,43;VES;Pago Móvil;Crédito;cta-0910;36,42
+28/03/2024;150.000,00;VES;Transferencia;Crédito;cta-0818;36,42
+28/03/2024;32,11;VES;Punto de venta;Débito;cta-0072;36,42
+28/03/2024;73,74;VES;Punto de venta;Crédito;cta-0064;36,42
+28/03/2024;14,25;VES;Pago Móvil;Débito;cta-0070;36,42
+28/03/2024;13,23;VES;Punto de venta;Crédito;cta-0052;36,42
+28/03/2024;7.273,22;VES;Pago Móvil;Débito;cta-0021;36,42
+28/03/2024;9.255,62;VES;Pago Móvil;Débito;cta-0095;36,42
+28/03/2024;290,39;VES;Punto de venta;Crédito;cta-0057;36,42
+28/03/2024;9.216,36;VES;Pago Móvil;Crédito;cta-0915;36,42
+28/03/2024;6.770,31;VES;Pago Móvil;Débito;cta-0041;36,42
+28/03/2024;192,98;VES;Punto de venta;Débito;cta-0042;36,42
+28/03/2024;266,23;VES;Transferencia;Crédito;cta-0044;36,42
+28/03/2024;540.780,29;VES;Transferencia;Crédito;cta-0012;36,42
+28/03/2024;6.115,91;VES;Pago Móvil;Débito;cta-0915;36,42
+28/03/2024;1.427,45;VES;Transferencia;Débito;cta-0038;36,42
+28/03/2024;28,53;VES;Pago Móvil;Débito;cta-0050;36,42
+28/03/2024;150.000,00;VES;Transferencia;Débito;cta-0813;36,42
+28/03/2024;12,03;VES;Punto de venta;Débito;cta-0079;36,42
+28/03/2024;724,61;VES;Transferencia;Crédito;cta-0035;36,42
+28/03/2024;553.253,90;VES;Transferencia;Débito;cta-0097;36,42
+28/03/2024;852,17;VES;Pago Móvil;Débito;cta-0055;36,42
+28/03/2024;1.101,51;VES;Pago Móvil;Débito;cta-0094;36,42
+28/03/2024;1.280,61;VES;Punto de venta;Crédito;cta-0048;36,42
+28/03/2024;8.021,37;VES;Punto de venta;Débito;cta-0031;36,42
+28/03/2024;9.749,31;VES;Pago Móvil;Débito;cta-0913;36,42
+28/03/2024;113,71;USD;Divisas;Crédito;cta-0051;36,42
+28/03/2024;7.032,17;VES;Pago Móvil;Crédito;cta-0911;36,42
+28/03/2024;413,24;USD;Divisas;Crédito;cta-0086;36,42
+28/03/2024;586,39;VES;Transferencia;Débito;cta-0064;36,42
+28/03/2024;6.066,22;VES;Pago Móvil;Débito;cta-0910;36,42
+28/03/2024;9.515,63;VES;Pago Móvil;Crédito;cta-0913;36,42
+28/03/2024;55,80;USD;Divisas;Crédito;cta-0053;36,42
+28/03/2024;598.159,29;VES;Transferencia;Débito;cta-0039;36,42
+28/03/2024;8.165,82;VES;Pago Móvil;Crédito;cta-0914;36,42
+28/03/2024;25,69;VES;Pago Móvil;Débito;cta-0079;36,42
+28/03/2024;11.203,82;VES;Transferencia;Débito;cta-0031;36,42
+28/03/2024;111,53;VES;Pago Móvil;Débito;cta-0016;36,42
+28/03/2024;527,58;USD;Divisas;Débito;cta-0096;36,42
+28/03/2024;7.807,22;VES;Transferencia;Débito;cta-0055;36,42
+28/03/2024;114,27;VES;Transferencia;Crédito;cta-0114;36,42
+28/03/2024;979,47;VES;Pago Móvil;Crédito;cta-0062;36,42
+29/03/2024;4.651,07;VES;Pago Móvil;Crédito;cta-0913;36,44
+29/03/2024;804,97;VES;Transferencia;Débito;cta-0002;36,44
+29/03/2024;37,93;VES;Punto de venta;Débito;cta-0014;36,44
+29/03/2024;31,50;VES;Pago Móvil;Débito;cta-0006;36,44
+29/03/2024;223,31;USD;Divisas;Débito;cta-0019;36,44
+29/03/2024;148.753,81;VES;Transferencia;Crédito;cta-0076;36,44
+29/03/2024;3.076,76;VES;Punto de venta;Crédito;cta-0028;36,44
+29/03/2024;338,21;VES;Punto de venta;Débito;cta-0114;36,44
+29/03/2024;36.594,29;VES;Transferencia;Crédito;cta-0006;36,44
+29/03/2024;170.556,62;VES;Transferencia;Débito;cta-0040;36,44
+29/03/2024;2.779,94;VES;Transferencia;Crédito;cta-0024;36,44
+29/03/2024;15.765,55;VES;Transferencia;Débito;cta-0041;36,44
+29/03/2024;230,18;VES;Pago Móvil;Crédito;cta-0025;36,44
+29/03/2024;6.874,48;VES;Pago Móvil;Débito;cta-0104;36,44
+29/03/2024;205,22;VES;Pago Móvil;Crédito;cta-0063;36,44
+29/03/2024;7.753,25;VES;Transferencia;Crédito;cta-0017;36,44
+29/03/2024;3.088,54;VES;Punto de venta;Débito;cta-0076;36,44
+29/03/2024;1.026,82;USD;Divisas;Débito;cta-0103;36,44
+29/03/2024;215,33;VES;Pago Móvil;Débito;cta-0057;36,44
+29/03/2024;1.318,07;VES;Punto de venta;Débito;cta-0032;36,44
+29/03/2024;5.303,79;VES;Pago Móvil;Crédito;cta-0044;36,44
+29/03/2024;5.351,66;VES;Punto de venta;Débito;cta-0119;36,44
+29/03/2024;5.412,33;VES;Pago Móvil;Débito;cta-0911;36,44
+29/03/2024;40,11;VES;Pago Móvil;Débito;cta-0039;36,44
+29/03/2024;14,95;USD;Divisas;Crédito;cta-0096;36,44
+29/03/2024;6.570,97;VES;Pago Móvil;Crédito;cta-0089;36,44
+29/03/2024;115,78;VES;Pago Móvil;Débito;cta-0061;36,44
+29/03/2024;161,53;VES;Punto de venta;Crédito;cta-0024;36,44
+29/03/2024;595,77;VES;Punto de venta;Débito;cta-0022;36,44
+29/03/2024;17,52;VES;Pago Móvil;Débito;cta-0014;36,44
+29/03/2024;354.511,76;VES;Transferencia;Débito;cta-0777;36,44
+29/03/2024;377,61;USD;Divisas;Crédito;cta-0089;36,44
+29/03/2024;2.418,82;VES;Pago Móvil;Crédito;cta-0053;36,44
+29/03/2024;161,90;VES;Punto de venta;Crédito;cta-0079;36,44
+29/03/2024;106,49;VES;Transferencia;Crédito;cta-0076;36,44
+29/03/2024;7.808,72;VES;Pago Móvil;Crédito;cta-0910;36,44
+29/03/2024;11,06;VES;Pago Móvil;Débito;cta-0035;36,44
+29/03/2024;339.029,26;VES;Transferencia;Crédito;cta-0777;36,44
+29/03/2024;4.930,24;VES;Pago Móvil;Débito;cta-0910;36,44
+29/03/2024;324,27;VES;Pago Móvil;Débito;cta-0105;36,44
+29/03/2024;2.735,19;VES;Punto de venta;Crédito;cta-0021;36,44
+29/03/2024;481,91;VES;Punto de venta;Débito;cta-0119;36,44
+29/03/2024;804.636,37;VES;Transferencia;Débito;cta-0051;36,44
+29/03/2024;5.822,27;VES;Pago Móvil;Débito;cta-0094;36,44
+29/03/2024;71,16;VES;Pago Móvil;Débito;cta-0095;36,44
+29/03/2024;7.430,83;VES;Punto de venta;Crédito;cta-0033;36,44
+29/03/2024;735,38;VES;Punto de venta;Débito;cta-0059;36,44
+29/03/2024;16,72;VES;Pago Móvil;Débito;cta-0053;36,44
+29/03/2024;1.158,67;VES;Transferencia;Crédito;cta-0050;36,44
+29/03/2024;7.532,17;VES;Pago Móvil;Débito;cta-0915;36,44
+29/03/2024;4.936,02;VES;Pago Móvil;Débito;cta-0910;36,44
+29/03/2024;1.319,96;VES;Punto de venta;Crédito;cta-0024;36,44
+29/03/2024;1.649,95;VES;Transferencia;Crédito;cta-0065;36,44
+29/03/2024;743,60;VES;Transferencia;Crédito;cta-0098;36,44
+29/03/2024;3.274,71;VES;Pago Móvil;Crédito;cta-0099;36,44
+29/03/2024;36,85;USD;Divisas;Débito;cta-0015;36,44
+29/03/2024;69,48;VES;Punto de venta;Crédito;cta-0111;36,44
+29/03/2024;214,02;VES;Pago Móvil;Crédito;cta-0092;36,44
+29/03/2024;8.022,86;VES;Punto de venta;Débito;cta-0112;36,44
+29/03/2024;507,78;USD;Divisas;Débito;cta-0078;36,44
+29/03/2024;37,99;VES;Pago Móvil;Débito;cta-0060;36,44
+29/03/2024;345,19;USD;Divisas;Crédito;cta-0093;36,44
+29/03/2024;350.375,51;VES;Transferencia;Débito;cta-0777;36,44
+29/03/2024;51,04;VES;Pago Móvil;Crédito;cta-0002;36,44
+29/03/2024;90.306,39;VES;Transferencia;Débito;cta-0063;36,44
+29/03/2024;156,65;VES;Transferencia;Débito;cta-0018;36,44
+29/03/2024;167,34;VES;Punto de venta;Débito;cta-0095;36,44
+29/03/2024;1.842,10;VES;Pago Móvil;Crédito;cta-0093;36,44
+29/03/2024;2.487,60;USD;Divisas;Crédito;cta-0092;36,44
+29/03/2024;59,47;VES;Pago Móvil;Débito;cta-0040;36,44
+29/03/2024;67,71;VES;Pago Móvil;Crédito;cta-0081;36,44
+29/03/2024;6.277,08;VES;Pago Móvil;Crédito;cta-0911;36,44
+29/03/2024;1.859,60;VES;Punto de venta;Débito;cta-0119;36,44
+29/03/2024;41.381,49;VES;Transferencia;Débito;cta-0036;36,44
+29/03/2024;29,84;VES;Punto de venta;Débito;cta-0027;36,44
+29/03/2024;509,26;VES;Transferencia;Débito;cta-0089;36,44
+29/03/2024;2.043,32;VES;Pago Móvil;Débito;cta-0022;36,44
+29/03/2024;570,17;VES;Pago Móvil;Débito;cta-0118;36,44
+29/03/2024;90,44;VES;Punto de venta;Débito;cta-0062;36,44
+29/03/2024;4.250,66;VES;Pago Móvil;Débito;cta-0912;36,44
+29/03/2024;233,44;VES;Punto de venta;Débito;cta-0090;36,44
+29/03/2024;100.000,00;VES;Transferencia;Crédito;cta-0810;36,44
+29/03/2024;22,41;VES;Pago Móvil;Crédito;cta-0094;36,44
+29/03/2024;4.221,81;VES;Punto de venta;Crédito;cta-0014;36,44
+29/03/2024;472,35;VES;Punto de venta;Débito;cta-0059;36,44
+29/03/2024;7.254,56;VES;Pago Móvil;Débito;cta-0911;36,44
+29/03/2024;14.173,47;VES;Transferencia;Crédito;cta-0076;36,44
+29/03/2024;1.457,09;VES;Pago Móvil;Débito;cta-0051;36,44
+29/03/2024;64,46;VES;Pago Móvil;Crédito;cta-0029;36,44
+29/03/2024;138,64;VES;Punto de venta;Crédito;cta-0046;36,44
+29/03/2024;340,46;VES;Pago Móvil;Débito;cta-0033;36,44
+29/03/2024;53,89;VES;Punto de venta;Crédito;cta-0070;36,44
+29/03/2024;7.042,05;VES;Transferencia;Débito;cta-0077;36,44
+29/03/2024;148,28;VES;Transferencia;Crédito;cta-0013;36,44
+29/03/2024;354,30;VES;Pago Móvil;Crédito;cta-0048;36,44
+29/03/2024;151,22;VES;Punto de venta;Crédito;cta-0103;36,44
+29/03/2024;70,54;VES;Pago Móvil;Débito;cta-0029;36,44
+29/03/2024;15,87;VES;Pago Móvil;Crédito;cta-0056;36,44
+29/03/2024;7.644,10;VES;Pago Móvil;Crédito;cta-0914;36,44
+29/03/2024;50.000,00;VES;Transferencia;Débito;cta-0818;36,44
+29/03/2024;3.799,57;VES;Transferencia;Débito;cta-0056;36,44
+29/03/2024;11,53;VES;Pago Móvil;Débito;cta-0052;36,44
+29/03/2024;2.174,93;VES;Transferencia;Débito;cta-0053;36,44
+29/03/2024;11,68;VES;Pago Móvil;Crédito;cta-0030;36,44
+30/03/2024;338,77;VES;Pago Móvil;Crédito;cta-0031;36,45
+30/03/2024;207,45;USD;Divisas;Débito;cta-0087;36,45
+30/03/2024;2.588,02;VES;Punto de venta;Crédito;cta-0099;36,45
+30/03/2024;9.719,05;VES;Pago Móvil;Débito;cta-0910;36,45
+30/03/2024;1.848,81;USD;Divisas;Débito;cta-0094;36,45
+30/03/2024;8.568,67;VES;Pago Móvil;Débito;cta-0915;36,45
+30/03/2024;669,22;VES;Pago Móvil;Crédito;cta-0075;36,45
+30/03/2024;5.000,00;VES;Transferencia;Débito;cta-0817;36,45
+30/03/2024;331.521,12;VES;Transferencia;Débito;cta-0777;36,45
+30/03/2024;6.698,28;VES;Pago Móvil;Débito;cta-0915;36,45
+30/03/2024;8.054,93;VES;Pago Móvil;Crédito;cta-0915;36,45
+30/03/2024;4.456,33;VES;Punto de venta;Débito;cta-0045;36,45
+30/03/2024;16,23;VES;Pago Móvil;Débito;cta-0071;36,45
+30/03/2024;1.143,38;VES;Punto de venta;Crédito;cta-0065;36,45
+30/03/2024;14.821,57;VES;Transferencia;Débito;cta-0083;36,45
+30/03/2024;106.056,04;VES;Transferencia;Débito;cta-0014;36,45
+30/03/2024;8.397,41;VES;Pago Móvil;Débito;cta-0910;36,45
+30/03/2024;200,72;VES;Punto de venta;Débito;cta-0007;36,45
+30/03/2024;355,31;VES;Pago Móvil;Débito;cta-0086;36,45
+30/03/2024;10,34;VES;Pago Móvil;Débito;cta-0004;36,45
+30/03/2024;632,50;USD;Divisas;Débito;cta-0002;36,45
+30/03/2024;8.763,57;VES;Pago Móvil;Crédito;cta-0915;36,45
+30/03/2024;227.877,56;VES;Transferencia;Débito;cta-0047;36,45
+30/03/2024;2.334,08;VES;Transferencia;Crédito;cta-0036;36,45
+30/03/2024;5.906,60;VES;Punto de venta;Débito;cta-0073;36,45
+30/03/2024;19,61;USD;Divisas;Crédito;cta-0026;36,45
+30/03/2024;1.888,19;VES;Pago Móvil;Débito;cta-0004;36,45
+30/03/2024;1.303,79;VES;Punto de venta;Débito;cta-0065;36,45
+30/03/2024;446,77;VES;Punto de venta;Débito;cta-0082;36,45
+30/03/2024;7.735,72;VES;Pago Móvil;Débito;cta-0912;36,45
+30/03/2024;242.662,17;VES;Transferencia;Crédito;cta-0116;36,45
+30/03/2024;26,00;VES;Punto de venta;Débito;cta-0120;36,45
+30/03/2024;2.677,78;VES;Transferencia;Débito;cta-0077;36,45
+30/03/2024;350,51;VES;Transferencia;Crédito;cta-0094;36,45
+30/03/2024;14,18;VES;Punto de venta;Crédito;cta-0034;36,45
+30/03/2024;3.110,45;VES;Punto de venta;Débito;cta-0077;36,45
+30/03/2024;66,22;VES;Punto de venta;Crédito;cta-0008;36,45
+30/03/2024;706,04;VES;Pago Móvil;Débito;cta-0003;36,45
+30/03/2024;817,84;VES;Punto de venta;Débito;cta-0118;36,45
+30/03/2024;1.263,05;VES;Punto de venta;Débito;cta-0110;36,45
+30/03/2024;240,37;VES;Pago Móvil;Débito;cta-0067;36,45
+30/03/2024;7.186,49;VES;Pago Móvil;Débito;cta-0912;36,45
+30/03/2024;322,97;VES;Punto de venta;Débito;cta-0109;36,45
+30/03/2024;127.904,36;VES;Transferencia;Débito;cta-0056;36,45
+30/03/2024;326,12;VES;Transferencia;Débito;cta-0063;36,45
+30/03/2024;4.199,34;VES;Pago Móvil;Crédito;cta-0912;36,45
+30/03/2024;11,62;USD;Divisas;Débito;cta-0026;36,45
+30/03/2024;4.328,95;VES;Pago Móvil;Crédito;cta-0915;36,45
+30/03/2024;431,20;VES;Transferencia;Débito;cta-0043;36,45
+30/03/2024;5.482,44;VES;Pago Móvil;Débito;cta-0042;36,45
+30/03/2024;507,12;VES;Pago Móvil;Débito;cta-0091;36,45
+30/03/2024;9.449,61;VES;Pago Móvil;Débito;cta-0912;36,45
+30/03/2024;1.460,26;VES;Punto de venta;Débito;cta-0005;36,45
+30/03/2024;188,23;VES;Transferencia;Débito;cta-0009;36,45
+30/03/2024;1.392,12;VES;Punto de venta;Débito;cta-0095;36,45
+30/03/2024;4.289,08;VES;Pago Móvil;Crédito;cta-0915;36,45
+30/03/2024;25.395,72;VES;Transferencia;Débito;cta-0011;36,45
+30/03/2024;24,33;VES;Punto de venta;Débito;cta-0102;36,45
+30/03/2024;9.742,15;VES;Pago Móvil;Débito;cta-0914;36,45
+30/03/2024;187,73;VES;Transferencia;Débito;cta-0026;36,45
+30/03/2024;321.291,40;VES;Transferencia;Crédito;cta-0059;36,45
+30/03/2024;6.161,24;VES;Pago Móvil;Crédito;cta-0070;36,45
+30/03/2024;3.482,98;VES;Transferencia;Débito;cta-0067;36,45
+30/03/2024;6.574,93;VES;Pago Móvil;Crédito;cta-0910;36,45
+30/03/2024;5.551,23;VES;Pago Móvil;Débito;cta-0061;36,45
+30/03/2024;1.148,44;USD;Divisas;Débito;cta-0106;36,45
+30/03/2024;4.085,93;VES;Pago Móvil;Débito;cta-0911;36,45
+30/03/2024;311,55;VES;Pago Móvil;Crédito;cta-0003;36,45
+30/03/2024;29,20;VES;Punto de venta;Crédito;cta-0048;36,45
+30/03/2024;14.012,89;VES;Transferencia;Débito;cta-0110;36,45
+30/03/2024;92.666,98;VES;Transferencia;Débito;cta-0062;36,45
+30/03/2024;4.597,00;USD;Divisas;Crédito;cta-0049;36,45
+30/03/2024;803,50;VES;Pago Móvil;Débito;cta-0039;36,45
+30/03/2024;348.564,98;VES;Transferencia;Débito;cta-0777;36,45
+30/03/2024;91,40;VES;Punto de venta;Crédito;cta-0098;36,45
+30/03/2024;50.000,00;VES;Transferencia;Crédito;cta-0812;36,45
+30/03/2024;285,92;VES;Pago Móvil;Débito;cta-0030;36,45
+30/03/2024;7.961,45;VES;Pago Móvil;Crédito;cta-0911;36,45
+30/03/2024;22,67;VES;Pago Móvil;Débito;cta-0025;36,45
+30/03/2024;307.181,24;VES;Transferencia;Crédito;cta-0100;36,45
+30/03/2024;198,77;USD;Divisas;Crédito;cta-0036;36,45
+30/03/2024;9.313,69;VES;Pago Móvil;Débito;cta-0915;36,45
+30/03/2024;1.569,03;VES;Punto de venta;Débito;cta-0010;36,45
+30/03/2024;39.737,87;VES;Transferencia;Débito;cta-0051;36,45
+30/03/2024;1.778,61;VES;Punto de venta;Débito;cta-0117;36,45
+30/03/2024;483,16;VES;Pago Móvil;Crédito;cta-0050;36,45
+30/03/2024;7.435,42;VES;Pago Móvil;Débito;cta-0912;36,45
+30/03/2024;27,88;VES;Pago Móvil;Débito;cta-0058;36,45
+30/03/2024;762,96;VES;Pago Móvil;Débito;cta-0061;36,45
+30/03/2024;331.218,52;VES;Transferencia;Débito;cta-0777;36,45
+30/03/2024;369,26;VES;Punto de venta;Débito;cta-0031;36,45
+30/03/2024;15.044,69;VES;Transferencia;Débito;cta-0067;36,45
+30/03/2024;66,96;VES;Punto de venta;Débito;cta-0003;36,45
+30/03/2024;6.689,70;VES;Pago Móvil;Débito;cta-0912;36,45
+30/03/2024;78.158,74;VES;Transferencia;Débito;cta-0118;36,45
+30/03/2024;4.033,66;USD;Divisas;Débito;cta-0023;36,45
+30/03/2024;416,74;VES;Pago Móvil;Débito;cta-0053;36,45
+30/03/2024;1.341,80;VES;Transferencia;Débito;cta-0114;36,45
+30/03/2024;108,62;VES;Punto de venta;Crédito;cta-0032;36,45
+30/03/2024;231,95;VES;Transferencia;Débito;cta-0035;36,45
+30/03/2024;9.400,10;VES;Pago Móvil;Débito;cta-0914;36,45
+30/03/2024;569,33;VES;Pago Móvil;Crédito;cta-0090;36,45
+30/03/2024;347.235,89;VES;Transferencia;Débito;cta-0777;36,45
+30/03/2024;146,54;VES;Punto de venta;Débito;cta-0072;36,45
+31/03/2024;4.895,12;VES;Pago Móvil;Débito;cta-0913;36,46
+31/03/2024;906,43;VES;Pago Móvil;Crédito;cta-0028;36,46
+31/03/2024;4.565,43;VES;Pago Móvil;Débito;cta-0914;36,46
+31/03/2024;815,06;VES;Punto de venta;Crédito;cta-0043;36,46
+31/03/2024;2.401,56;VES;Punto de venta;Débito;cta-0106;36,46
+31/03/2024;17,08;USD;Divisas;Crédito;cta-0052;36,46
+31/03/2024;4.674,41;VES;Pago Móvil;Débito;cta-0911;36,46
+31/03/2024;1.169,94;VES;Pago Móvil;Débito;cta-0085;36,46
+31/03/2024;2.394,12;VES;Punto de venta;Débito;cta-0025;36,46
+31/03/2024;45,01;USD;Divisas;Débito;cta-0055;36,46
+31/03/2024;46,96;VES;Punto de venta;Crédito;cta-0012;36,46
+31/03/2024;2.005,93;VES;Punto de venta;Débito;cta-0037;36,46
+31/03/2024;54,11;VES;Punto de venta;Débito;cta-0090;36,46
+31/03/2024;6.590,84;VES;Transferencia;Crédito;cta-0034;36,46
+31/03/2024;633,73;VES;Pago Móvil;Débito;cta-0038;36,46
+31/03/2024;6.831,12;VES;Pago Móvil;Crédito;cta-0910;36,46
+31/03/2024;29,94;VES;Pago Móvil;Débito;cta-0103;36,46
+31/03/2024;12,42;VES;Pago Móvil;Débito;cta-0090;36,46
+31/03/2024;41,79;VES;Pago Móvil;Débito;cta-0096;36,46
+31/03/2024;50,79;VES;Pago Móvil;Crédito;cta-0082;36,46
+31/03/2024;132,13;VES;Transferencia;Crédito;cta-0106;36,46
+31/03/2024;51,33;VES;Pago Móvil;Débito;cta-0081;36,46
+31/03/2024;5.396,06;VES;Pago Móvil;Crédito;cta-0016;36,46
+31/03/2024;10,50;VES;Pago Móvil;Crédito;cta-0074;36,46
+31/03/2024;26,11;VES;Pago Móvil;Débito;cta-0040;36,46
+31/03/2024;4.565,35;VES;Pago Móvil;Débito;cta-0912;36,46
+31/03/2024;236,74;VES;Pago Móvil;Débito;cta-0097;36,46
+31/03/2024;2.033,42;VES;Punto de venta;Débito;cta-0065;36,46
+31/03/2024;127.629,19;VES;Transferencia;Débito;cta-0035;36,46
+31/03/2024;1.122,73;USD;Divisas;Débito;cta-0007;36,46
+31/03/2024;283.053,46;VES;Transferencia;Crédito;cta-0041;36,46
+31/03/2024;134,60;VES;Transferencia;Débito;cta-0070;36,46
+31/03/2024;37,21;VES;Pago Móvil;Débito;cta-0025;36,46
+31/03/2024;9.156,88;VES;Transferencia;Débito;cta-0041;36,46
+31/03/2024;179,19;VES;Pago Móvil;Débito;cta-0082;36,46
+31/03/2024;48,83;VES;Pago Móvil;Débito;cta-0083;36,46
+31/03/2024;5.610,22;VES;Pago Móvil;Débito;cta-0912;36,46
+31/03/2024;5.396,07;VES;Pago Móvil;Crédito;cta-0915;36,46
+31/03/2024;67,27;VES;Pago Móvil;Débito;cta-0016;36,46
+31/03/2024;22,60;VES;Punto de venta;Débito;cta-0114;36,46
+31/03/2024;4.595,34;VES;Punto de venta;Débito;cta-0059;36,46
+31/03/2024;5.118,88;VES;Pago Móvil;Débito;cta-0097;36,46
+31/03/2024;45,83;VES;Pago Móvil;Débito;cta-0086;36,46
+31/03/2024;102,13;VES;Pago Móvil;Débito;cta-0039;36,46
+31/03/2024;33,10;VES;Pago Móvil;Débito;cta-0001;36,46
+31/03/2024;135,42;VES;Pago Móvil;Débito;cta-0084;36,46
+31/03/2024;28,15;VES;Pago Móvil;Débito;cta-0074;36,46
+31/03/2024;41.706,64;VES;Transferencia;Débito;cta-0045;36,46
+31/03/2024;28,02;VES;Pago Móvil;Débito;cta-0071;36,46
+31/03/2024;938,54;VES;Transferencia;Crédito;cta-0113;36,46
+31/03/2024;249,65;VES;Punto de venta;Débito;cta-0013;36,46
+31/03/2024;5.519,65;VES;Pago Móvil;Débito;cta-0914;36,46
+31/03/2024;591,38;USD;Divisas;Crédito;cta-0067;36,46
+31/03/2024;1.066,70;VES;Pago Móvil;Crédito;cta-0020;36,46
+31/03/2024;139,16;VES;Transferencia;Crédito;cta-0027;36,46
+31/03/2024;62,31;VES;Pago Móvil;Débito;cta-0071;36,46
+31/03/2024;24.321,47;VES;Transferencia;Crédito;cta-0063;36,46
+31/03/2024;195,94;USD;Divisas;Crédito;cta-0118;36,46
+31/03/2024;2.855,45;VES;Punto de venta;Crédito;cta-0101;36,46
+31/03/2024;80,31;VES;Pago Móvil;Débito;cta-0090;36,46
+31/03/2024;1.406,53;VES;Pago Móvil;Crédito;cta-0056;36,46
+31/03/2024;11.090,69;VES;Transferencia;Débito;cta-0026;36,46
+31/03/2024;7.985,43;VES;Pago Móvil;Crédito;cta-0034;36,46
+31/03/2024;24,11;VES;Pago Móvil;Débito;cta-0076;36,46
+31/03/2024;35.181,89;VES;Transferencia;Débito;cta-0043;36,46
+31/03/2024;374,16;USD;Divisas;Débito;cta-0092;36,46
+31/03/2024;5.990,12;VES;Pago Móvil;Crédito;cta-0912;36,46
+31/03/2024;35.000,73;VES;Transferencia;Débito;cta-0068;36,46
+31/03/2024;5.474,24;VES;Transferencia;Débito;cta-0061;36,46
+31/03/2024;27,02;VES;Pago Móvil;Débito;cta-0002;36,46
+31/03/2024;11,23;VES;Punto de venta;Crédito;cta-0067;36,46
+31/03/2024;237,58;VES;Punto de venta;Crédito;cta-0058;36,46
+31/03/2024;330.124,87;VES;Transferencia;Débito;cta-0777;36,46
+31/03/2024;244,30;VES;Punto de venta;Débito;cta-0039;36,46
+31/03/2024;18,46;VES;Pago Móvil;Débito;cta-0109;36,46
+31/03/2024;598,83;VES;Pago Móvil;Crédito;cta-0117;36,46
+31/03/2024;4.707,38;VES;Pago Móvil;Crédito;cta-0914;36,46
+31/03/2024;14,43;VES;Punto de venta;Débito;cta-0113;36,46
+31/03/2024;1.206,26;VES;Pago Móvil;Crédito;cta-0109;36,46
+31/03/2024;10,28;USD;Divisas;Crédito;cta-0061;36,46
+31/03/2024;1.257,52;USD;Divisas;Débito;cta-0006;36,46
+31/03/2024;8.243,85;VES;Pago Móvil;Débito;cta-0915;36,46
+31/03/2024;69,52;VES;Punto de venta;Débito;cta-0055;36,46
+31/03/2024;48,66;VES;Pago Móvil;Débito;cta-0006;36,46
+31/03/2024;40,75;VES;Punto de venta;Crédito;cta-0054;36,46
+31/03/2024;2.202,62;USD;Divisas;Débito;cta-0012;36,46
+31/03/2024;5.800,23;VES;Pago Móvil;Débito;cta-0914;36,46
+31/03/2024;176,76;VES;Pago Móvil;Crédito;cta-0082;36,46
+31/03/2024;187,82;VES;Pago Móvil;Débito;cta-0031;36,46
+31/03/2024;6.019,22;VES;Pago Móvil;Crédito;cta-0914;36,46
+31/03/2024;10,31;VES;Pago Móvil;Débito;cta-0106;36,46
+31/03/2024;944,14;VES;Transferencia;Crédito;cta-0040;36,46
+31/03/2024;439,00;VES;Pago Móvil;Débito;cta-0048;36,46
+31/03/2024;865,48;VES;Pago Móvil;Débito;cta-0065;36,46
+31/03/2024;10.000,00;VES;Transferencia;Crédito;cta-0817;36,46
+31/03/2024;5.953,40;VES;Pago Móvil;Débito;cta-0911;36,46
+31/03/2024;117,38;VES;Transferencia;Crédito;cta-0114;36,46
+31/03/2024;3.805,62;VES;Pago Móvil;Débito;cta-0078;36,46
+31/03/2024;79.515,17;VES;Transferencia;Crédito;cta-0098;36,46
+31/03/2024;75,16;VES;Punto de venta;Crédito;cta-0006;36,46
+31/03/2024;5.033,79;VES;Transferencia;Débito;cta-0082;36,46
+31/03/2024;373,33;VES;Pago Móvil;Débito;cta-0048;36,46
+31/03/2024;6.033,93;VES;Pago Móvil;Débito;cta-0911;36,46
+31/03/2024;20.000,00;VES;Transferencia;Crédito;cta-0819;36,46
+31/03/2024;4.619,11;VES;Pago Móvil;Débito;cta-0911;36,46
+31/03/2024;6.288,54;VES;Pago Móvil;Débito;cta-0913;36,46
+31/03/2024;249,84;VES;Pago Móvil;Débito;cta-0098;36,46
+31/03/2024;28,87;VES;Punto de venta;Débito;cta-0029;36,46
