@@ -1,8 +1,8 @@
 from fastapi.testclient import TestClient
 
-from api_fraude_detection.api.dependencias import detector_fraude
-from api_fraude_detection.dominio.parametros import NivelRiesgo
-from api_fraude_detection.dominio.resultados import ResultadoAnalisis
+from api_fraude_detection.contenedor import detector_fraude
+from api_fraude_detection.modelos.dominio.parametros import NivelRiesgo
+from api_fraude_detection.modelos.dominio.resultados import ResultadoAnalisis
 
 from .conftest import ADMIN_CLAVE, iniciar_sesion, montos_benford, montos_inventados
 

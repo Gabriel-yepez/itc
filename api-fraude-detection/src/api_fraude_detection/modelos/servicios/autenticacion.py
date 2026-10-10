@@ -2,9 +2,9 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 
-from ..core import seguridad
-from ..core.config import Settings
-from ..core.errores import Conflicto, CredencialesInvalidas, NoAutenticado, NoEncontrado, UsuarioBloqueado
+from ...core import seguridad
+from ...core.config import Settings
+from ...core.errores import Conflicto, CredencialesInvalidas, NoAutenticado, NoEncontrado, UsuarioBloqueado
 from ..dominio.entidades import Rol, Sesion, Usuario, ahora
 from ..repositorios.interfaces import RepositorioSesiones, RepositorioUsuarios, UnidadDeTrabajo
 

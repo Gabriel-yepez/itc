@@ -5,9 +5,9 @@ from datetime import datetime
 from sqlalchemy import delete, func, select, update
 from sqlalchemy.orm import Session
 
-from ..db.modelos import AnalisisORM, PerfilDeteccionORM, SesionORM, UsuarioORM
 from ..dominio.entidades import PerfilDeteccion, RegistroAnalisis, Rol, Sesion, Usuario
 from ..dominio.parametros import NivelRiesgo, ParametrosDeteccion
+from ..persistencia.tablas import AnalisisORM, PerfilDeteccionORM, SesionORM, UsuarioORM
 from .interfaces import (
     RepositorioAnalisis,
     RepositorioPerfiles,

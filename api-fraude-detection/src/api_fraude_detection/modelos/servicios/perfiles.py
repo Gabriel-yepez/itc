@@ -2,7 +2,7 @@ from collections.abc import Callable
 from datetime import datetime
 from decimal import Decimal
 
-from ..core.errores import Conflicto, NoEncontrado
+from ...core.errores import Conflicto, NoEncontrado
 from ..dominio.entidades import PerfilDeteccion, ahora
 from ..dominio.parametros import (
     Canal,

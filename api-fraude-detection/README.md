@@ -18,22 +18,37 @@ uv run pytest
 Al iniciar se crean las tablas, el usuario administrador (si la BD está vacía) y el perfil
 predeterminado **"Banca venezolana - referencia"**.
 
-## Arquitectura
-
-Repositorios + inyección de dependencias. Los servicios solo conocen interfaces; el
-cableado ocurre en un único lugar ([api/dependencias.py](src/api_fraude_detection/api/dependencias.py)).
+## Arquitectura: MVC + repositorios + inyección de dependencias
 
 ```
-api/rutas/        HTTP: valida entrada, llama servicios, pone cookies
-api/dependencias  Contenedor DI (Depends): sesión BD -> repositorios -> servicios -> usuario actual
-servicios/        Casos de uso: autenticación, perfiles, análisis, importación CSV
-repositorios/     interfaces.py (ABC) + sql.py (SQLAlchemy)
-dominio/          Puro, sin framework: parámetros, detector, pruebas de Benford, estadística
-db/               Modelos ORM, motor y unidad de trabajo por petición
+src/api_fraude_detection/
+├── modelos/                 M — datos y reglas de negocio (no conoce HTTP)
+│   ├── dominio/             entidades, parámetros, detector y pruebas de Benford (puro)
+│   ├── persistencia/        tablas ORM, motor, unidad de trabajo por petición
+│   ├── repositorios/        interfaces.py (contratos ABC) + sql.py (SQLAlchemy)
+│   └── servicios/           casos de uso: autenticación, perfiles, análisis, CSV
+├── vistas/                  V — formato de salida: DTOs de respuesta y cookies de sesión
+├── controladores/           C — recibe la entrada (DTOs de solicitud), invoca al Modelo,
+│                                elige la Vista
+├── rutas/                   tabla URL → acción del controlador (+ guardas de rol)
+├── contenedor.py            DI: BD → repositorios → servicios → vistas → controladores
+└── core/                    configuración, errores, hashing, CSRF, cabeceras
 ```
 
-Cambiar una implementación no toca servicios ni rutas, p. ej. en pruebas:
-`app.dependency_overrides[detector_fraude] = MiDetector` (ver `tests/test_api.py`).
+Flujo de una petición:
+
+```
+HTTP ─► ruta ─► Controlador ─► Servicio (Modelo) ─► Repositorio (interfaz) ─► BD
+                    │                                   ▲
+                    └──► Vista ─► JSON / cookies        └─ implementación inyectada
+```
+
+- **Modelo** no importa nada de `vistas`, `controladores` ni FastAPI.
+- **Vista** decide qué se expone (p. ej. nunca el hash de contraseña) y gestiona las cookies.
+- **Controlador** no contiene reglas de negocio ni acceso a datos: orquesta.
+- **Contenedor** es el único sitio que elige implementaciones concretas. Cualquier eslabón
+  se sustituye sin tocar el resto: `app.dependency_overrides[detector_fraude] = MiDetector`
+  (`tests/test_api.py`) o un controlador sobre un repositorio en memoria (`tests/test_mvc.py`).
 
 ## Sesión con cookies
 

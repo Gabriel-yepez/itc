@@ -1,7 +1,7 @@
 from collections.abc import Callable, Sequence
 from datetime import datetime
 
-from ..core.errores import DatosInsuficientes, NoEncontrado, PermisoDenegado
+from ...core.errores import DatosInsuficientes, NoEncontrado, PermisoDenegado
 from ..dominio.detector import DetectorFraude
 from ..dominio.entidades import RegistroAnalisis, ahora
 from ..dominio.transacciones import Transaccion

@@ -13,7 +13,7 @@ from typing import Literal
 
 from pydantic import BaseModel, Field, ValidationError
 
-from ..core.errores import DatosInsuficientes
+from ...core.errores import DatosInsuficientes
 from ..dominio.transacciones import Transaccion
 
 

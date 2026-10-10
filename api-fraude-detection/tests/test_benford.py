@@ -4,10 +4,10 @@ from decimal import Decimal
 
 import pytest
 
-from api_fraude_detection.dominio.benford.distribuciones import distribucion_esperada, extraer_digito
-from api_fraude_detection.dominio.benford.estadistica import chi_cuadrado_valor_p
-from api_fraude_detection.dominio.detector import DetectorBenford, factor_reconversion
-from api_fraude_detection.dominio.parametros import (
+from api_fraude_detection.modelos.dominio.benford.distribuciones import distribucion_esperada, extraer_digito
+from api_fraude_detection.modelos.dominio.benford.estadistica import chi_cuadrado_valor_p
+from api_fraude_detection.modelos.dominio.detector import DetectorBenford, factor_reconversion
+from api_fraude_detection.modelos.dominio.parametros import (
     Canal,
     Conformidad,
     CriterioAgrupacion,
@@ -17,7 +17,7 @@ from api_fraude_detection.dominio.parametros import (
     PruebaBenford,
     UmbralVigilado,
 )
-from api_fraude_detection.dominio.transacciones import Transaccion
+from api_fraude_detection.modelos.dominio.transacciones import Transaccion
 
 from .conftest import montos_benford, montos_inventados
 

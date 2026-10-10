@@ -7,20 +7,20 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import ValidationError
 
-from .api.rutas import analisis, auth, perfiles, usuarios
-from .api.seguridad_http import CABECERAS_SEGURIDAD
 from .core.config import Settings, obtener_settings
 from .core.errores import ErrorDominio
-from .db import modelos  # noqa: F401  (registra las tablas en Base.metadata)
-from .db.base import Base, crear_fabrica_sesiones, crear_motor
-from .repositorios.sql import (
+from .core.seguridad_http import CABECERAS_SEGURIDAD
+from .modelos.persistencia import tablas  # noqa: F401  (registra las tablas en Base.metadata)
+from .modelos.persistencia.base import Base, crear_fabrica_sesiones, crear_motor
+from .modelos.repositorios.sql import (
     RepositorioPerfilesSQL,
     RepositorioSesionesSQL,
     RepositorioUsuariosSQL,
     UnidadDeTrabajoSQL,
 )
-from .servicios.autenticacion import ServicioAutenticacion
-from .servicios.perfiles import ServicioPerfiles
+from .modelos.servicios.autenticacion import ServicioAutenticacion
+from .modelos.servicios.perfiles import ServicioPerfiles
+from .rutas import analisis, auth, perfiles, usuarios
 
 log = logging.getLogger(__name__)
 
