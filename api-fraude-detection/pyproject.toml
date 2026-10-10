@@ -1,14 +1,17 @@
 [project]
 name = "api-fraude-detection"
 version = "0.1.0"
-description = "Add your description here"
+description = "API de detección de fraude bancario (Venezuela) con la Ley de Benford"
 readme = "README.md"
 authors = [
     { name = "Gabriel Yepez", email = "gabrielyepez04@gmail.com" }
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "argon2-cffi>=25.1.0",
     "fastapi[standard]>=0.143.0",
+    "pydantic-settings>=2.15.0",
+    "sqlalchemy>=2.0",
 ]
 
 [project.scripts]
@@ -17,3 +20,18 @@ api-fraude-detection = "api_fraude_detection:main"
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient`"]
