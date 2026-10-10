@@ -125,7 +125,11 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
 
       {/* ------------------------------------------------------------ pruebas de Benford */}
       {prueba && (
-        <Bloque titulo="Pruebas de Benford">
+        <Bloque titulo="Pruebas de dígitos">
+          <p className="mb-6 max-w-2xl text-sm leading-relaxed text-tinta-suave">
+            Cada prueba compara la frecuencia de los dígitos de los montos con la que predice la Ley de Benford.
+            Las barras en rojo se desvían más de lo que explicaría el azar.
+          </p>
           <div role="tablist" aria-label="Prueba" className="mb-6 flex flex-wrap gap-x-1 border-b border-linea">
             {r.pruebas.map((p) => {
               const activa = p.prueba === prueba.prueba

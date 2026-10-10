@@ -2,7 +2,7 @@ interface Props {
   claro?: boolean
 }
 
-/** Isotipo: barras que decrecen como la distribución de Benford; la del 1 en rojo sello. */
+/** Isotipo: barras que decrecen como la distribución del primer dígito; la del 1 en rojo sello. */
 export function Marca({ claro = false }: Props) {
   return (
     <div className={`inline-flex items-baseline gap-2.5 ${claro ? 'text-papel' : 'text-tinta'}`}>
@@ -12,9 +12,9 @@ export function Marca({ claro = false }: Props) {
         <rect x="12" y="10" width="4" height="8" />
         <rect x="18" y="12" width="4" height="6" />
       </svg>
-      <span className="font-serif text-[1.7rem] leading-none tracking-tight italic">Benford</span>
+      <span className="font-serif text-[1.7rem] leading-none tracking-tight italic">Auditoría</span>
       <span className="hidden font-mono text-[0.66rem] tracking-[0.16em] uppercase opacity-70 sm:inline">
-        Auditoría de transacciones
+        Detección de fraude
       </span>
     </div>
   )
