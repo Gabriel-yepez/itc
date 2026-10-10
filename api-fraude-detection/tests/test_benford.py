@@ -164,3 +164,12 @@ def test_sobrescritura_parcial_de_parametros():
     assert nuevo.z_critico == 2.57
     with pytest.raises(ValueError):
         base.con_cambios({"umbrales_mad": {"primer_digito": {"cercana": 0.02}}})
+
+
+def test_formato_venezolano_en_textos():
+    from api_fraude_detection.modelos.dominio.detector import numero_ve, porcentaje_ve
+
+    assert numero_ve(1234567.891, 2) == "1.234.567,89"
+    assert numero_ve(0.1210, 4) == "0,1210"
+    assert numero_ve(1200) == "1.200"
+    assert porcentaje_ve(0.076) == "7,6 %"

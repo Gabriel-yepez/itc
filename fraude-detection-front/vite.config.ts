@@ -1,5 +1,6 @@
 import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig, loadEnv } from 'vite'
 
 // https://vite.dev/config/
@@ -8,7 +9,7 @@ export default defineConfig(({ mode }) => {
   const { API_PROXY_TARGET = 'http://127.0.0.1:8000' } = loadEnv(mode, process.cwd(), '')
 
   return {
-    plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
+    plugins: [tailwindcss(), react(), babel({ presets: [reactCompilerPreset()] })],
     server: {
       proxy: {
         // El front llama a /api/... en su mismo origen y Vite lo reenvía a FastAPI sin el prefijo.

@@ -10,6 +10,28 @@ pnpm dev            # http://localhost:5173 — /api se reenvía a FastAPI (127.
 La API debe estar corriendo (ver `../api-fraude-detection`). En desarrollo local sin HTTPS,
 el backend necesita `FRAUDE_COOKIE_SEGURA=false`.
 
+### Interfaz
+
+```
+src/
+├── index.css                 Tailwind 4: tokens del diseño en @theme (colores, fuentes, animaciones)
+├── App.tsx                   decide la pantalla según la sesión
+├── sesion/useSesion.ts       verifica la cookie al cargar y escucha el aviso de sesión expirada
+├── pantallas/
+│   ├── PantallaLogin.tsx     acceso + curva de Benford
+│   └── analisis/             formulario (CSV o montos pegados), expediente de resultados, historial
+├── componentes/              Marca, Sello (dictamen), GraficoDigitos (SVG), Aviso
+└── utilidades/               formato es-VE, etiquetas, lectura de montos "1.234,56"
+```
+
+Todo el CSS lo maneja **Tailwind 4** (plugin `@tailwindcss/vite`, sin archivo de configuración):
+los tokens de `@theme` generan clases como `bg-papel`, `text-sello`, `font-serif` o `animate-estampar`.
+Utilidades propias: `cifra` (números tabulares), `rotulo` (rótulos de sección) y `grano` (textura).
+
+Las fuentes (Instrument Serif, Archivo, IBM Plex Mono) se sirven desde el propio sitio vía
+`@fontsource`: la CSP de producción (`font-src 'self'`) bloquearía Google Fonts. El gráfico es SVG
+propio, sin librerías. Verificado con la CSP de producción: cero violaciones.
+
 ### Capa `src/api`
 
 ```

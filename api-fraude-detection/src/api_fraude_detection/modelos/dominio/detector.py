@@ -57,6 +57,16 @@ class _Operacion:
     cuenta: str | None
 
 
+def numero_ve(valor: float | Decimal, decimales: int = 0) -> str:
+    """Formato venezolano para los textos de hallazgos: 1234567.891 -> "1.234.567,89"."""
+    texto = f"{valor:,.{decimales}f}"
+    return texto.replace(",", "\x00").replace(".", ",").replace("\x00", ".")
+
+
+def porcentaje_ve(proporcion: float, decimales: int = 1) -> str:
+    return f"{numero_ve(proporcion * 100, decimales)} %"
+
+
 def factor_reconversion(fecha: date | None) -> Decimal:
     """Divisor que lleva bolívares de `fecha` a bolívares digitales (sin fecha se asume actual)."""
     if fecha is None:
@@ -154,8 +164,8 @@ class DetectorBenford:
         advertencias: list[str] = []
         if len(muestra) < parametros.tamano_muestra_minimo:
             advertencias.append(
-                f"Solo {len(muestra)} operaciones válidas (mínimo configurado: "
-                f"{parametros.tamano_muestra_minimo}). Las pruebas de Benford se reportan "
+                f"Solo {numero_ve(len(muestra))} operaciones válidas (mínimo configurado: "
+                f"{numero_ve(parametros.tamano_muestra_minimo)}). Las pruebas de Benford se reportan "
                 "como orientativas y no suman al puntaje."
             )
 
@@ -164,7 +174,7 @@ class DetectorBenford:
         ordenes = math.log10(maximo / minimo) if minimo and maximo else None
         if ordenes is not None and ordenes < 2:
             advertencias.append(
-                f"Los montos abarcan solo {ordenes:.1f} órdenes de magnitud. Benford es poco "
+                f"Los montos abarcan solo {numero_ve(ordenes, 1)} órdenes de magnitud. Benford es poco "
                 "fiable en rangos estrechos (p. ej., operaciones con tope como Pago Móvil)."
             )
 
@@ -221,7 +231,8 @@ class DetectorBenford:
                 encima += 1
         if sin_tasa:
             advertencias.append(
-                f"{sin_tasa} operaciones no se evaluaron contra '{umbral.nombre}' por falta de tasa BCV."
+                f"{numero_ve(sin_tasa)} operaciones no se evaluaron contra '{umbral.nombre}' "
+                "por falta de tasa BCV."
             )
 
         # Con densidad Benford (∝ 1/x) la banda inferior contiene naturalmente algo más
@@ -318,8 +329,8 @@ class DetectorBenford:
             )
         if resultado.grupos_omitidos_por_tamano:
             resultado.advertencias.append(
-                f"{resultado.grupos_omitidos_por_tamano} grupo(s) no se evaluaron por no alcanzar "
-                f"{parametros.tamano_muestra_minimo} operaciones."
+                f"{numero_ve(resultado.grupos_omitidos_por_tamano)} grupo(s) no se evaluaron por no alcanzar "
+                f"{numero_ve(parametros.tamano_muestra_minimo)} operaciones."
             )
 
     # ------------------------------------------------------------------ redacción
@@ -339,11 +350,13 @@ class DetectorBenford:
                 texto = "conformidad marginal" if p.conformidad is Conformidad.MARGINAL else "no conformidad"
                 hallazgos.append(
                     f"Prueba de {nombre}: {texto} con la Ley de Benford "
-                    f"(MAD = {p.mad:.4f}; esperada por azar ≈ {p.mad_esperada_por_azar:.4f})."
+                    f"(MAD = {numero_ve(p.mad, 4)}; "
+                    f"esperada por azar ≈ {numero_ve(p.mad_esperada_por_azar, 4)})."
                 )
             elif p.conformidad is Conformidad.NO_APLICA and p.chi_cuadrado_significativo:
                 hallazgos.append(
-                    f"Prueba de {nombre}: distribución distinta de la esperada (p = {p.valor_p:.4f})."
+                    f"Prueba de {nombre}: distribución distinta de la esperada "
+                    f"(p = {numero_ve(p.valor_p, 4)})."
                 )
             excesos = [f.digito for f in p.frecuencias if f.atipico and f.proporcion > f.esperada]
             if excesos:
@@ -356,14 +369,16 @@ class DetectorBenford:
         for u in umbrales:
             if u.alerta:
                 hallazgos.append(
-                    f"Posible fraccionamiento bajo '{u.nombre}': {u.en_banda_inferior} operaciones entre "
-                    f"{u.banda_inferior_desde:,.2f} y {u.monto:,.2f} {u.moneda} frente a "
-                    f"{u.en_banda_superior} justo por encima (razón esperada ≈ {u.razon_esperada:.2f})."
+                    f"Posible fraccionamiento bajo '{u.nombre}': "
+                    f"{numero_ve(u.en_banda_inferior)} operaciones entre "
+                    f"{numero_ve(u.banda_inferior_desde, 2)} y {numero_ve(u.monto, 2)} {u.moneda} frente a "
+                    f"{numero_ve(u.en_banda_superior)} justo por encima "
+                    f"(razón esperada ≈ {numero_ve(u.razon_esperada, 2)})."
                 )
         if redondeo and redondeo.alerta:
             hallazgos.append(
-                f"Exceso de montos redondos: {redondeo.proporcion:.1%} son múltiplos de "
-                f"{redondeo.multiplo} (esperado ≈ {redondeo.esperada:.1%})."
+                f"Exceso de montos redondos: {porcentaje_ve(redondeo.proporcion)} son múltiplos de "
+                f"{numero_ve(redondeo.multiplo)} (esperado ≈ {porcentaje_ve(redondeo.esperada)})."
             )
         if not hallazgos:
             hallazgos.append("No se detectaron desviaciones relevantes respecto a la Ley de Benford.")

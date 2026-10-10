@@ -1,111 +1,137 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@import 'tailwindcss';
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+/* ==========================================================================
+   Expediente forense — sistema de diseño en Tailwind
+   Papel de libro contable, tinta y un único acento: el rojo del sello de auditoría.
+   Cada token genera sus clases: bg-papel, text-sello, border-linea, font-serif, animate-estampar...
+   ========================================================================== */
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-papel: #f2ede3;
+  --color-papel-hondo: #e8e0cf;
+  --color-papel-claro: #f8f5ee;
+  --color-tinta: #17140f;
+  --color-tinta-media: #3b362d;
+  --color-tinta-suave: #6b6457;
+  --color-linea: #d3c9b5;
+  --color-linea-fuerte: #a99f8a;
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
+  --color-sello: #b5321b;
+  --color-sello-hondo: #8a2312;
+  --color-ocre: #a8701a;
+  --color-conforme: #2e6a4c;
+
+  --color-riesgo-bajo: #2e6a4c;
+  --color-riesgo-medio: #a8701a;
+  --color-riesgo-alto: #c4501f;
+  --color-riesgo-critico: #8a2312;
+
+  /* Titulares editoriales, interfaz y cifras tabulares de libro contable. */
+  --font-serif: 'Instrument Serif', 'Times New Roman', serif;
+  --font-sans: 'Archivo Variable', 'Helvetica Neue', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --ease-papel: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --shadow-papel: 0 1px 0 rgb(23 20 15 / 4%), 0 12px 32px -18px rgb(23 20 15 / 35%);
+
+  --animate-aparecer: aparecer 420ms var(--ease-papel) both;
+  --animate-estampar: estampar 520ms var(--ease-papel) both;
+  --animate-crecer: crecer 900ms var(--ease-papel) both;
+  --animate-barrido: barrido 1.4s ease-in-out infinite;
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes estampar {
+    0% {
+      opacity: 0;
+      transform: rotate(-14deg) scale(1.6);
+    }
+    60% {
+      opacity: 1;
+      transform: rotate(-3deg) scale(0.96);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(-4deg) scale(1);
+    }
+  }
+
+  @keyframes crecer {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  @keyframes barrido {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    /* Grano del papel (SVG en data URI: permitido por la CSP img-src 'self' data:). */
+    --grano: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.09 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+  body {
+    @apply min-h-screen bg-papel font-sans text-[15px] leading-normal text-tinta;
+    background-image: var(--grano);
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-sello;
+  }
+
+  ::selection {
+    @apply bg-sello text-papel-claro;
   }
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+/* Utilidades propias del sistema (se usan como cualquier clase de Tailwind). */
+
+/* Cifras tabulares: las columnas de números se alinean como en un libro contable. */
+@utility cifra {
+  @apply font-mono tracking-tight tabular-nums;
 }
 
-body {
-  margin: 0;
+/* Rótulo de sección de expediente: monoespaciado, versalitas espaciadas. */
+@utility rotulo {
+  @apply font-mono text-[0.7rem] font-medium tracking-[0.14em] text-tinta-suave uppercase;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+/* Fondo de grano reutilizable (paneles, sello). */
+@utility grano {
+  background-image: var(--grano);
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
   }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }
