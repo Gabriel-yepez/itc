@@ -1,0 +1,8 @@
+# Solo entra a la imagen lo necesario para construir: nada de secretos, cachés ni entornos locales.
+*
+!pyproject.toml
+!uv.lock
+!README.md
+!alembic.ini
+!src/
+src/**/__pycache__

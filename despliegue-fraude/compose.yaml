@@ -1,0 +1,91 @@
+# Despliegue de producción: Caddy (HTTPS + frontend + proxy /api) -> FastAPI -> PostgreSQL.
+#
+#   cp .env.example .env    # complete DOMINIO, ACME_EMAIL y las contraseñas
+#   docker compose up -d --build
+#
+# Solo Caddy publica puertos. La API y la base de datos están en una red interna sin salida
+# a Internet y no son accesibles desde fuera del servidor.
+
+name: fraude-detection
+
+services:
+  web:
+    build: ../fraude-detection-front
+    restart: unless-stopped
+    environment:
+      DOMINIO: ${DOMINIO:?Defina DOMINIO en .env}
+      ACME_EMAIL: ${ACME_EMAIL:?Defina ACME_EMAIL en .env}
+    ports:
+      - "${PUERTO_HTTP:-80}:80"
+      - "${PUERTO_HTTPS:-443}:443"
+      - "${PUERTO_HTTPS:-443}:443/udp" # HTTP/3
+    volumes:
+      - caddy_datos:/data # certificados: si se pierden, Let's Encrypt limita las reemisiones
+      - caddy_config:/config
+    networks:
+      publica: {}
+      interna:
+        # IP fija: es la única desde la que la API acepta cabeceras X-Forwarded-*.
+        ipv4_address: ${IP_PROXY:-172.31.250.10}
+    depends_on:
+      api:
+        condition: service_healthy
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: ["no-new-privileges:true"]
+
+  api:
+    build: ../api-fraude-detection
+    restart: unless-stopped
+    environment:
+      FRAUDE_ENTORNO: produccion
+      FRAUDE_URL_BASE_DATOS: postgresql+psycopg://${POSTGRES_USER:-fraude}:${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD en .env}@postgres:5432/${POSTGRES_DB:-fraude}
+      FRAUDE_COOKIE_SEGURA: "true"
+      FRAUDE_COOKIE_SAMESITE: strict
+      # Mismo origen que el frontend (detrás de Caddy): no hace falta CORS.
+      FRAUDE_ORIGENES_CORS: "[]"
+      FRAUDE_ADMIN_USUARIO: ${ADMIN_USUARIO:-admin}
+      # Solo se usa si la base no tiene usuarios (primer arranque).
+      FRAUDE_ADMIN_CONTRASENA: ${ADMIN_CONTRASENA:?Defina ADMIN_CONTRASENA en .env}
+      FORWARDED_ALLOW_IPS: ${IP_PROXY:-172.31.250.10}
+      WEB_CONCURRENCY: ${API_PROCESOS:-2}
+    networks: [interna]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /tmp:size=128m # las subidas de CSV se guardan aquí temporalmente
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+
+  postgres:
+    image: postgres:18-alpine@sha256:77f585114c32fbca283dc835b0596f4e52b51b4c6662d7810b2f4084f60a1873
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-fraude}
+      POSTGRES_USER: ${POSTGRES_USER:-fraude}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD en .env}
+      TZ: UTC
+    volumes:
+      - datos_postgres:/var/lib/postgresql
+    networks: [interna]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    security_opt: ["no-new-privileges:true"]
+
+networks:
+  publica: {}
+  interna:
+    internal: true # sin salida a Internet
+    ipam:
+      config:
+        - subnet: ${SUBRED_INTERNA:-172.31.250.0/24}
+
+volumes:
+  datos_postgres:
+  caddy_datos:
+  caddy_config:

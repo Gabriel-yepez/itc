@@ -54,8 +54,8 @@ export class ReportesApi extends ApiBase {
 - **`allowAbsoluteUrls: false`**: ninguna ruta puede sacar la petición (ni las cookies) fuera de la API.
 - **Rutas con parámetros codificados** (`encodeURIComponent`) y rechazo de segmentos `.`/`..`.
 - **Errores normalizados**: la UI no recibe objetos de axios con cabeceras o configuración interna.
-- **Mismo origen vía proxy** (`/api`): sin CORS en desarrollo; en producción, el servidor web
-  debe reenviar `/api` a FastAPI.
+- **Mismo origen vía proxy** (`/api`): en desarrollo lo hace Vite; en producción, Caddy
+  (ver [`Caddyfile`](Caddyfile) y [`../despliegue-fraude`](../despliegue-fraude/README.md)).
 
 ### Cadena de suministro
 

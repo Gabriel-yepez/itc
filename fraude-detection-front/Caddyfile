@@ -1,0 +1,51 @@
+# Servidor web de producción: sirve el build de React y reenvía /api/* a FastAPI.
+# Variables: DOMINIO (p. ej. fraude.midominio.com) y ACME_EMAIL (avisos de Let's Encrypt).
+# Con un dominio real Caddy obtiene y renueva el certificado HTTPS solo, y redirige HTTP -> HTTPS.
+
+{
+	email {$ACME_EMAIL}
+	# Sin API de administración (puerto 2019): la configuración es inmutable dentro de la imagen.
+	admin off
+}
+
+{$DOMINIO} {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "no-referrer"
+		Permissions-Policy "geolocation=(), camera=(), microphone=()"
+		# El build de Vite no tiene scripts en línea: solo se ejecuta JS servido por este dominio.
+		Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+		-Server
+	}
+
+	# API: /api/analisis -> http://api:8000/analisis (handle_path quita el prefijo /api).
+	handle_path /api/* {
+		request_body {
+			# Debe superar FRAUDE_MAX_TAMANO_CSV_MB (50) para que el error lo dé la API, con mensaje claro.
+			max_size 51MB
+		}
+		reverse_proxy api:8000 {
+			# Caddy envía X-Forwarded-For/Proto con la IP real del cliente.
+			transport http {
+				dial_timeout 5s
+				response_header_timeout 130s
+			}
+		}
+	}
+
+	# Frontend (SPA): archivos del build; cualquier otra ruta devuelve index.html.
+	handle {
+		root * /srv
+		# Los archivos de /assets llevan hash en el nombre: se pueden cachear para siempre.
+		@inmutables path /assets/*
+		header @inmutables Cache-Control "public, max-age=31536000, immutable"
+		@resto not path /assets/*
+		header @resto Cache-Control "no-cache"
+		try_files {path} /index.html
+		file_server
+	}
+}

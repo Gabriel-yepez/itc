@@ -21,6 +21,9 @@ uv run pytest                 # corre contra la base fraude_pruebas
 Al iniciar, la API aplica las migraciones de Alembic pendientes y crea el usuario
 administrador (si la BD está vacía) y el perfil predeterminado **"Banca venezolana - referencia"**.
 
+En producción se despliega con Docker detrás de Caddy (HTTPS automático): ver
+[`../despliegue-fraude`](../despliegue-fraude/README.md).
+
 ## Base de datos: PostgreSQL
 
 - Driver **psycopg 3**; pool configurable (`FRAUDE_BD_POOL_*`), sesión en UTC y
