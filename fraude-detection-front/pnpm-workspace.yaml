@@ -1,0 +1,14 @@
+# Endurecimiento de la cadena de suministro (pnpm >= 10.21).
+# Contexto: en marzo de 2026 se publicaron axios@1.14.1 y 0.30.4 con malware (dependencia
+# plain-crypto-js con postinstall), sin la procedencia firmada de las versiones legítimas.
+
+# No instalar versiones publicadas hace menos de 24 h (en minutos). Los paquetes comprometidos
+# suelen detectarse y retirarse en horas (axios 1.14.1 duró ~3 h en el registro).
+minimumReleaseAge: 1440
+
+# Rechaza una versión con menos evidencia de confianza (provenance / trusted publishing)
+# que las versiones previas del mismo paquete.
+trustPolicy: no-downgrade
+
+# Ninguna dependencia ejecuta scripts de instalación (postinstall...) sin aprobación explícita.
+strictDepBuilds: true

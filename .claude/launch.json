@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "front-dev",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--dir", "fraude-detection-front", "dev", "--port", "5173", "--strictPort"],
+      "port": 5173
+    }
+  ]
+}
