@@ -26,6 +26,8 @@ export interface ContactInquiryOption extends Struct.ComponentSchema {
   attributes: {
     isDefault: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     label: Schema.Attribute.String & Schema.Attribute.Required;
+    notifyTag: Schema.Attribute.String;
+    recipients: Schema.Attribute.Text;
     value: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

@@ -322,27 +322,37 @@
       {
         "label": "Desarrollo de Software a Medida",
         "value": "Desarrollo de Software a Medida",
-        "isDefault": true
+        "isDefault": true,
+        "recipients": "desarrollo@itcservices.com",
+        "notifyTag": "SOFTWARE"
       },
       {
         "label": "Auditoría de Seguridad & Zero-Trust",
         "value": "Auditoría de Seguridad & Zero-Trust",
-        "isDefault": false
+        "isDefault": false,
+        "recipients": "seguridad@itcservices.com",
+        "notifyTag": "SEGURIDAD"
       },
       {
         "label": "Arquitectura Cloud & DevOps",
         "value": "Arquitectura Cloud & DevOps",
-        "isDefault": false
+        "isDefault": false,
+        "recipients": "cloud@itcservices.com",
+        "notifyTag": "CLOUD"
       },
       {
         "label": "Aplicaciones Móviles & Web",
         "value": "Aplicaciones Móviles & Web",
-        "isDefault": false
+        "isDefault": false,
+        "recipients": "desarrollo@itcservices.com",
+        "notifyTag": "MÓVIL & WEB"
       },
       {
         "label": "Consulta General",
         "value": "Consulta General",
-        "isDefault": false
+        "isDefault": false,
+        "recipients": "contacto@itcservices.com",
+        "notifyTag": "GENERAL"
       }
     ],
     "submitLabel": "Enviar Mensaje",

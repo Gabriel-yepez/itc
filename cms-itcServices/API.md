@@ -73,6 +73,45 @@ El controlador reconstruye el registro campo a campo, así que `status`, `notes`
 y `handledAt` no pueden fijarse desde el navegador. Los mensajes **no se pueden
 leer por la API**: solo `create` está enrutado; la bandeja se revisa en `/admin`.
 
+### Aviso por correo, enrutado por tipo de consulta
+
+Cada solicitud dispara un correo al buzón que corresponde al tipo de consulta
+elegido. El `subject` que envía el formulario es el `value` de la opción, y con
+él se busca la fila en **Contact Page → Inquiry Options**:
+
+| Campo de la opción | Para qué sirve |
+| --- | --- |
+| `recipients` | Correos que reciben el aviso, **separados por comas**. Se validan, se normalizan a minúsculas y se eliminan duplicados; las entradas malformadas se descartan |
+| `notifyTag` | Etiqueta corta del asunto: `[ITC · SEGURIDAD] Nueva solicitud de …`. Si está vacío se usa el `label` |
+
+Se edita desde el panel, sin desplegar. Enrutamiento sembrado por defecto
+(**son marcadores: cámbialos por los buzones reales**):
+
+| Tipo de consulta | Etiqueta | Destinatario |
+| --- | --- | --- |
+| Desarrollo de Software a Medida | `SOFTWARE` | desarrollo@itcservices.com |
+| Auditoría de Seguridad & Zero-Trust | `SEGURIDAD` | seguridad@itcservices.com |
+| Arquitectura Cloud & DevOps | `CLOUD` | cloud@itcservices.com |
+| Aplicaciones Móviles & Web | `MÓVIL & WEB` | desarrollo@itcservices.com |
+| Consulta General | `GENERAL` | contacto@itcservices.com |
+
+Si una opción no tiene `recipients`, o si llega un `subject` que no casa con
+ninguna opción, se usa `CONTACT_FALLBACK_RECIPIENTS` del `.env` y queda un aviso
+en el log. Si tampoco hay reserva, se registra un **error**: ninguna solicitud se
+pierde en silencio.
+
+El correo lleva versión HTML y texto plano, y el **`Reply-To` es el correo de
+quien escribió**, así que responder al aviso contesta directamente al cliente.
+Todo el contenido del visitante se escapa antes de insertarse en el HTML.
+
+**Un fallo de SMTP nunca rompe el formulario**: la solicitud ya está guardada, se
+responde `201` igual y el error queda en el log. Los timeouts de conexión están
+acotados a 10-15 s para que un servidor colgado no deje esperando al visitante.
+
+Configuración en `.env` (ver `.env.example`): `SMTP_HOST`, `SMTP_PORT`,
+`SMTP_SECURE`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `EMAIL_FROM`, `EMAIL_REPLY_TO`,
+`CONTACT_FALLBACK_RECIPIENTS`, `STRAPI_ADMIN_URL`.
+
 ## Consultas
 
 `populate` y `sort` ya vienen por defecto en cada controlador, así que

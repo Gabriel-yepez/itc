@@ -19,6 +19,14 @@
     "isDefault": {
       "type": "boolean",
       "default": false
+    },
+    "recipients": {
+      "type": "text",
+      "description": "Correos que reciben el aviso de esta consulta, separados por comas. Si se deja vacío se usa CONTACT_FALLBACK_RECIPIENTS del .env"
+    },
+    "notifyTag": {
+      "type": "string",
+      "description": "Etiqueta corta para el asunto del aviso (ej. SOFTWARE, SEGURIDAD). Si se deja vacío se usa el label"
     }
   }
 }

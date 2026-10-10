@@ -159,6 +159,14 @@ export default factories.createCoreController(
 
       strapi.log.info(`[contact] Nuevo mensaje recibido de ${data.email} (${data.subject})`);
 
+      // El aviso por correo se despacha después de guardar y se espera aquí para
+      // que los fallos queden en el log de esta petición. `notify` nunca lanza:
+      // si el SMTP falla, la solicitud ya está persistida y quien rellenó el
+      // formulario igualmente recibe su confirmación.
+      await strapi
+        .service('api::contact-submission.contact-submission')
+        .notify({ ...data, documentId: entry.documentId });
+
       // La respuesta confirma la recepción sin devolver el registro completo.
       ctx.status = 201;
       return { data: { ok: true, documentId: entry.documentId } };

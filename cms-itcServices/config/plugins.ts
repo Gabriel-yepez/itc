@@ -39,6 +39,32 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
       },
     },
   },
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: env('SMTP_HOST', 'localhost'),
+        port: env.int('SMTP_PORT', 587),
+        // `secure: true` solo para el puerto 465 (SMTPS). En 587 el cifrado se
+        // negocia con STARTTLS y este flag debe ir en false.
+        secure: env.bool('SMTP_SECURE', false),
+        auth: {
+          user: env('SMTP_USERNAME'),
+          pass: env('SMTP_PASSWORD'),
+        },
+        // El envío ocurre dentro de la petición del formulario. Sin estos
+        // límites, un SMTP que acepta la conexión pero no responde dejaría al
+        // visitante esperando; así el caso peor está acotado.
+        connectionTimeout: 10_000,
+        greetingTimeout: 10_000,
+        socketTimeout: 15_000,
+      },
+      settings: {
+        defaultFrom: env('EMAIL_FROM', 'no-reply@itcservices.com'),
+        defaultReplyTo: env('EMAIL_REPLY_TO', 'contacto@itcservices.com'),
+      },
+    },
+  },
 });
 
 export default config;
