@@ -8,15 +8,47 @@ Todas las entradas de la detección son **parametrizables** mediante perfiles.
 
 ## Arranque
 
+Requisitos: Docker y [uv](https://docs.astral.sh/uv/).
+
 ```bash
+docker compose up -d          # PostgreSQL 18 en localhost:5434 (bases fraude y fraude_pruebas)
 cp .env.example .env          # defina FRAUDE_ADMIN_CONTRASENA
 uv sync
 uv run api-fraude-detection   # http://127.0.0.1:8000/docs
-uv run pytest
+uv run pytest                 # corre contra la base fraude_pruebas
 ```
 
-Al iniciar se crean las tablas, el usuario administrador (si la BD está vacía) y el perfil
-predeterminado **"Banca venezolana - referencia"**.
+Al iniciar, la API aplica las migraciones de Alembic pendientes y crea el usuario
+administrador (si la BD está vacía) y el perfil predeterminado **"Banca venezolana - referencia"**.
+
+## Base de datos: PostgreSQL
+
+- Driver **psycopg 3**; pool configurable (`FRAUDE_BD_POOL_*`), sesión en UTC y
+  `statement_timeout` para que ninguna consulta bloquee la BD indefinidamente.
+- **Migraciones con Alembic** en `modelos/persistencia/migraciones/`. Se aplican al arrancar
+  bajo un `pg_advisory_lock` (seguro con varias réplicas) o manualmente:
+
+  ```bash
+  uv run alembic upgrade head                                 # aplicar
+  uv run alembic revision --autogenerate -m "agrega columna"  # tras cambiar tablas.py
+  uv run alembic upgrade head --sql                           # SQL para revisión de un DBA
+  ```
+
+  Un test falla si `tablas.py` cambia sin su migración.
+- Integridad garantizada por la propia BD: `CHECK` de roles, niveles de riesgo y puntaje;
+  **índice único parcial** que impide dos perfiles predeterminados; claves foráneas con
+  `CASCADE` / `SET NULL` / `RESTRICT` según el caso.
+- Parámetros y resultados en **JSONB**, consultables con SQL, p. ej.:
+  `SELECT id FROM analisis WHERE resultado->'hallazgos' @> '["..."]'` o
+  `SELECT parametros->>'z_critico' FROM perfiles_deteccion`.
+- Fechas en `TIMESTAMPTZ` (UTC).
+
+| Tabla | Contenido |
+|---|---|
+| `usuarios` | credenciales (hash Argon2), rol, bloqueo por intentos |
+| `sesiones` | hash del token de sesión y del CSRF, expiración, IP, revocación |
+| `perfiles_deteccion` | parámetros de detección (JSONB), predeterminado |
+| `analisis` | parámetros usados + resultado (JSONB), puntaje y nivel de riesgo |
 
 ## Arquitectura: MVC + repositorios + inyección de dependencias
 
@@ -24,7 +56,7 @@ predeterminado **"Banca venezolana - referencia"**.
 src/api_fraude_detection/
 ├── modelos/                 M — datos y reglas de negocio (no conoce HTTP)
 │   ├── dominio/             entidades, parámetros, detector y pruebas de Benford (puro)
-│   ├── persistencia/        tablas ORM, motor, unidad de trabajo por petición
+│   ├── persistencia/        tablas PostgreSQL, motor/pool, migraciones Alembic
 │   ├── repositorios/        interfaces.py (contratos ABC) + sql.py (SQLAlchemy)
 │   └── servicios/           casos de uso: autenticación, perfiles, análisis, CSV
 ├── vistas/                  V — formato de salida: DTOs de respuesta y cookies de sesión
@@ -142,4 +174,5 @@ CSV: `formato` admite `delimitador`, `separador_decimal`, `formato_fecha`, `codi
 - Benford es una herramienta de **cribado**, no prueba de fraude: señala poblaciones para auditar.
 - No aplica a montos con tope o rango estrecho (tarifas fijas, Pago Móvil con límite bajo,
   nóminas); la API lo advierte cuando los montos abarcan menos de 2 órdenes de magnitud.
-- El esquema se crea con `create_all`; para producción conviene añadir migraciones (Alembic).
+- Las credenciales de `docker-compose.yml` son de desarrollo: en producción use un usuario
+  propio con contraseña fuerte, TLS (`?sslmode=require`) y copias de seguridad.

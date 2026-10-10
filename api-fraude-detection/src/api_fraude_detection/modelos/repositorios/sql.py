@@ -1,4 +1,4 @@
-"""Implementaciones de los repositorios sobre SQLAlchemy (SQLite por defecto, PostgreSQL en producción)."""
+"""Implementaciones de los repositorios sobre SQLAlchemy + PostgreSQL."""
 
 from datetime import datetime
 

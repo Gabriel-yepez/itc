@@ -1,18 +1,28 @@
 from collections.abc import Iterator
 from datetime import UTC, datetime
 
-from sqlalchemy import DateTime, Engine, create_engine
+from sqlalchemy import DateTime, Engine, MetaData, create_engine
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
-from sqlalchemy.pool import StaticPool
 from sqlalchemy.types import TypeDecorator
+
+from ...core.config import Settings
+
+# Nombres de restricciones deterministas: necesarios para que Alembic genere migraciones estables.
+CONVENCION_NOMBRES = {
+    "ix": "ix_%(column_0_label)s",
+    "uq": "uq_%(table_name)s_%(column_0_name)s",
+    "ck": "ck_%(table_name)s_%(constraint_name)s",
+    "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
+    "pk": "pk_%(table_name)s",
+}
 
 
 class Base(DeclarativeBase):
-    pass
+    metadata = MetaData(naming_convention=CONVENCION_NOMBRES)
 
 
 class FechaUTC(TypeDecorator[datetime]):
-    """Guarda y devuelve siempre datetimes con zona UTC (SQLite pierde la zona horaria)."""
+    """TIMESTAMPTZ que rechaza datetimes sin zona y devuelve siempre UTC."""
 
     impl = DateTime(timezone=True)
     cache_ok = True
@@ -30,13 +40,19 @@ class FechaUTC(TypeDecorator[datetime]):
         return value.replace(tzinfo=UTC) if value.tzinfo is None else value.astimezone(UTC)
 
 
-def crear_motor(url: str) -> Engine:
-    if url.startswith("sqlite"):
-        opciones: dict = {"connect_args": {"check_same_thread": False}}
-        if ":memory:" in url or url in ("sqlite://", "sqlite+pysqlite://"):
-            opciones["poolclass"] = StaticPool
-        return create_engine(url, **opciones)
-    return create_engine(url, pool_pre_ping=True)
+def crear_motor(settings: Settings) -> Engine:
+    return create_engine(
+        settings.url_base_datos.get_secret_value(),
+        pool_size=settings.bd_pool_tamano,
+        max_overflow=settings.bd_pool_extra,
+        pool_recycle=settings.bd_pool_reciclar_segundos,
+        pool_pre_ping=True,
+        connect_args={
+            "application_name": "api-fraude-detection",
+            # Sesión en UTC y tope por consulta para que una petición no bloquee la BD.
+            "options": f"-c timezone=UTC -c statement_timeout={settings.bd_timeout_sentencia_ms}",
+        },
+    )
 
 
 def crear_fabrica_sesiones(motor: Engine) -> sessionmaker[Session]:

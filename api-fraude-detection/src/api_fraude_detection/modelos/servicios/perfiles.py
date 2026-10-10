@@ -71,7 +71,10 @@ class ServicioPerfiles:
         if self._perfiles.obtener_por_nombre(nombre):
             raise Conflicto(f"Ya existe un perfil llamado '{nombre}'")
         momento = self._reloj()
-        perfil = self._perfiles.guardar(
+        # Primero se libera el predeterminado actual: la BD admite solo uno a la vez.
+        if predeterminado:
+            self._perfiles.quitar_predeterminado()
+        return self._perfiles.guardar(
             PerfilDeteccion(
                 nombre=nombre,
                 parametros=parametros,
@@ -82,9 +85,6 @@ class ServicioPerfiles:
                 actualizado_en=momento,
             )
         )
-        if predeterminado:
-            self._perfiles.quitar_predeterminado(excepto_id=perfil.id)
-        return perfil
 
     def actualizar(
         self,
@@ -106,10 +106,9 @@ class ServicioPerfiles:
         if predeterminado is not None:
             perfil.predeterminado = predeterminado
         perfil.actualizado_en = self._reloj()
-        self._perfiles.guardar(perfil)
         if perfil.predeterminado:
             self._perfiles.quitar_predeterminado(excepto_id=perfil.id)
-        return perfil
+        return self._perfiles.guardar(perfil)
 
     def eliminar(self, perfil_id: int) -> None:
         perfil = self.obtener(perfil_id)

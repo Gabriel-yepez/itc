@@ -6,12 +6,13 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import ValidationError
+from sqlalchemy import text
 
 from .core.config import Settings, obtener_settings
 from .core.errores import ErrorDominio
 from .core.seguridad_http import CABECERAS_SEGURIDAD
-from .modelos.persistencia import tablas  # noqa: F401  (registra las tablas en Base.metadata)
-from .modelos.persistencia.base import Base, crear_fabrica_sesiones, crear_motor
+from .modelos.persistencia.base import crear_fabrica_sesiones, crear_motor
+from .modelos.persistencia.esquema import aplicar_migraciones
 from .modelos.repositorios.sql import (
     RepositorioPerfilesSQL,
     RepositorioSesionesSQL,
@@ -24,12 +25,17 @@ from .rutas import analisis, auth, perfiles, usuarios
 
 log = logging.getLogger(__name__)
 
+# Serializa la carga de datos iniciales cuando arrancan varias réplicas a la vez.
+_CLAVE_BLOQUEO_DATOS_INICIALES = 0x0FA0DF
+
 
 def _inicializar_datos(app: FastAPI) -> None:
-    """Crea tablas, el administrador inicial (si se configuró) y el perfil de referencia."""
+    """Migra el esquema y crea el administrador inicial (si se configuró) y el perfil de referencia."""
     settings: Settings = app.state.settings
-    Base.metadata.create_all(app.state.motor)
+    if settings.migrar_al_iniciar:
+        aplicar_migraciones(app.state.motor)
     with app.state.fabrica_sesiones.begin() as db:
+        db.execute(text("SELECT pg_advisory_xact_lock(:clave)"), {"clave": _CLAVE_BLOQUEO_DATOS_INICIALES})
         auth = ServicioAutenticacion(
             RepositorioUsuariosSQL(db), RepositorioSesionesSQL(db), UnidadDeTrabajoSQL(db), settings
         )
@@ -62,7 +68,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         redoc_url=None,
     )
     app.state.settings = settings
-    app.state.motor = crear_motor(settings.url_base_datos)
+    app.state.motor = crear_motor(settings)
     app.state.fabrica_sesiones = crear_fabrica_sesiones(app.state.motor)
 
     app.add_middleware(

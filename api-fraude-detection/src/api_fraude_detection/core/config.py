@@ -13,7 +13,15 @@ class Settings(BaseSettings):
     nombre_app: str = "API Detección de Fraude - Ley de Benford"
     entorno: Literal["desarrollo", "produccion", "pruebas"] = "desarrollo"
 
-    url_base_datos: str = "sqlite:///./fraude.db"
+    # --- PostgreSQL ---
+    # SecretStr: la URL incluye la contraseña y así no aparece en logs ni en repr().
+    url_base_datos: SecretStr = SecretStr("postgresql+psycopg://fraude:fraude_dev@localhost:5434/fraude")
+    bd_pool_tamano: int = Field(default=10, ge=1)
+    bd_pool_extra: int = Field(default=20, ge=0, description="Conexiones adicionales en picos")
+    bd_pool_reciclar_segundos: int = Field(default=1800, ge=60)
+    bd_timeout_sentencia_ms: int = Field(default=30_000, ge=1000, description="statement_timeout")
+    # Aplica las migraciones de Alembic pendientes al arrancar (con bloqueo para varias réplicas).
+    migrar_al_iniciar: bool = True
 
     # --- Sesión por cookies ---
     cookie_sesion_nombre: str = "sid"
@@ -42,7 +50,9 @@ class Settings(BaseSettings):
     origenes_cors: list[str] = ["http://localhost:5173"]
 
     @model_validator(mode="after")
-    def _cookies_coherentes(self) -> Self:
+    def _coherencia(self) -> Self:
+        if not self.url_base_datos.get_secret_value().startswith("postgresql"):
+            raise ValueError("url_base_datos debe ser una URL de PostgreSQL (postgresql+psycopg://...)")
         if self.cookie_samesite == "none" and not self.cookie_segura:
             raise ValueError("SameSite=None exige cookie_segura=True")
         if self.entorno == "produccion" and not self.cookie_segura:
