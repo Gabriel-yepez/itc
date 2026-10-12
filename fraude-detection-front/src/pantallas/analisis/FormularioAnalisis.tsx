@@ -47,7 +47,7 @@ const aDecimal = (texto: string): string | null => {
 }
 
 const estiloControl =
-  'w-full border-0 border-b border-linea-fuerte bg-transparent py-1.5 text-[0.95rem] focus:border-tinta focus:outline-none'
+  'w-full min-w-0 border-0 border-b border-linea-fuerte bg-transparent py-2 text-base focus:border-tinta focus:outline-none lg:py-1.5 lg:text-[0.95rem]'
 
 interface Props {
   perfiles: PerfilDeteccion[]
@@ -208,7 +208,7 @@ export function FormularioAnalisis({ perfiles, ejecutando, onEnviar, onCancelar 
   }
 
   return (
-    <form onSubmit={enviar} noValidate className="flex min-h-full flex-col gap-8 px-5 py-8 lg:px-7">
+    <form onSubmit={enviar} noValidate className="mx-auto flex min-h-full w-full max-w-xl flex-col gap-8 px-5 py-7 sm:px-8 lg:max-w-none lg:px-7 lg:py-8">
       <div>
         <p className="rotulo">Nuevo análisis</p>
         <h2 className="mt-1 font-serif text-[2.1rem] leading-none tracking-tight">Abrir expediente</h2>
@@ -226,7 +226,7 @@ export function FormularioAnalisis({ perfiles, ejecutando, onEnviar, onCancelar 
           ).map(([valor, texto]) => (
             <label
               key={valor}
-              className="cursor-pointer py-2 text-center text-sm transition-colors has-checked:bg-tinta has-checked:text-papel has-focus-visible:outline-2 has-focus-visible:outline-sello"
+              className="cursor-pointer py-2.5 text-center text-sm transition-colors has-checked:bg-tinta has-checked:text-papel has-focus-visible:outline-2 has-focus-visible:outline-sello"
             >
               <input
                 type="radio"
@@ -270,14 +270,19 @@ export function FormularioAnalisis({ perfiles, ejecutando, onEnviar, onCancelar 
                 </>
               ) : (
                 <>
-                  <span className="font-serif text-xl">Arrastre el extracto aquí</span>
-                  <span className="text-xs text-tinta-suave">o haga clic para buscarlo · CSV hasta {MAX_MB} MB</span>
+                  <span className="font-serif text-xl">
+                    <span className="hidden lg:inline">Arrastre el extracto aquí</span>
+                    <span className="lg:hidden">Toque para elegir el extracto</span>
+                  </span>
+                  <span className="text-xs text-tinta-suave">
+                    <span className="hidden lg:inline">o haga clic para buscarlo · </span>CSV hasta {MAX_MB} MB
+                  </span>
                 </>
               )}
             </label>
 
-            <div className="grid grid-cols-[1.25fr_1fr_1fr] gap-3">
-              <Campo etiqueta="Separador">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-4 sm:grid-cols-[1.25fr_1fr_1fr] sm:gap-3 lg:grid-cols-2">
+              <Campo etiqueta="Separador" className="col-span-2 sm:col-span-1 lg:col-span-2">
                 <select
                   value={formato.delimitador}
                   onChange={(e) => setFormato({ ...formato, delimitador: e.target.value as typeof formato.delimitador })}
@@ -412,18 +417,22 @@ export function FormularioAnalisis({ perfiles, ejecutando, onEnviar, onCancelar 
               {perfiles.map((p) => (
                 <option key={p.id} value={p.id}>
                   {p.nombre}
-                  {p.predeterminado ? ' (predeterminado)' : ''}
                 </option>
               ))}
             </select>
-            {perfil.descripcion && <p className="text-xs leading-relaxed text-tinta-suave">{perfil.descripcion}</p>}
+            {(perfil.predeterminado || perfil.descripcion) && (
+              <p className="text-xs leading-relaxed text-tinta-suave">
+                {perfil.predeterminado && <span className="rotulo mr-1.5 text-[0.6rem] text-conforme">Predeterminado</span>}
+                {perfil.descripcion}
+              </p>
+            )}
           </>
         ) : (
           <p className="text-sm text-tinta-suave">Cargando perfiles…</p>
         )}
 
         <details className="group border-t border-linea pt-3">
-          <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium [&::-webkit-details-marker]:hidden">
+          <summary className="flex min-h-10 cursor-pointer list-none items-center justify-between text-sm font-medium [&::-webkit-details-marker]:hidden">
             Ajustes para este análisis
             <span className="font-mono text-tinta-suave transition-transform group-open:rotate-45" aria-hidden="true">
               +
@@ -537,9 +546,9 @@ function Seccion({ numero, titulo, children }: { numero: string; titulo: string;
   )
 }
 
-function Campo({ etiqueta, children }: { etiqueta: string; children: ReactNode }) {
+function Campo({ etiqueta, className = '', children }: { etiqueta: string; className?: string; children: ReactNode }) {
   return (
-    <label className="block min-w-0">
+    <label className={`block min-w-0 ${className}`}>
       <span className="rotulo text-[0.62rem]">{etiqueta}</span>
       {children}
     </label>
@@ -556,7 +565,7 @@ function Casilla({
   children: ReactNode
 }) {
   return (
-    <label className="flex cursor-pointer items-start gap-2.5 text-sm text-tinta-media">
+    <label className="flex cursor-pointer items-start gap-2.5 py-0.5 text-sm text-tinta-media">
       <input
         type="checkbox"
         checked={marcada}

@@ -9,6 +9,7 @@ from pydantic import SecretStr
 from sqlalchemy import Engine, text
 from sqlalchemy.exc import OperationalError
 
+from api_fraude_detection.core.cifrado import generar_clave
 from api_fraude_detection.core.config import Settings
 from api_fraude_detection.main import create_app
 from api_fraude_detection.modelos.persistencia.base import crear_motor
@@ -19,10 +20,22 @@ URL_PRUEBAS = (
     or dotenv_values(".env").get("FRAUDE_PRUEBAS_URL_BASE_DATOS")
     or "postgresql+psycopg://fraude:fraude_dev@localhost:5434/fraude_pruebas"
 )
-TABLAS = "usuarios, sesiones, perfiles_deteccion, analisis"
+TABLAS = ", ".join(
+    [
+        "usuarios",
+        "sesiones",
+        "perfiles_deteccion",
+        "analisis",
+        "intentos_acceso",
+        "desafios_segundo_factor",
+        "eventos_auditoria",  # TRUNCATE no dispara el bloqueo de UPDATE/DELETE de la auditoría
+    ]
+)
 
 ADMIN_USUARIO = "admin"
 ADMIN_CLAVE = "clave-admin-segura-123"
+# Clave de cifrado solo para la base de pruebas (se genera en cada ejecución).
+CLAVE_CIFRADO_PRUEBAS = generar_clave()
 
 
 def montos_benford(n: int, semilla: int = 7) -> list[Decimal]:
@@ -47,6 +60,9 @@ def _settings_pruebas() -> Settings:
         admin_usuario=ADMIN_USUARIO,
         admin_contrasena=SecretStr(ADMIN_CLAVE),
         max_intentos_fallidos=3,
+        claves_cifrado=SecretStr(CLAVE_CIFRADO_PRUEBAS),
+        # Las pruebas generales entran sin doble factor; el flujo con doble factor se prueba aparte.
+        exigir_segundo_factor_admin=False,
     )
 
 
@@ -85,8 +101,12 @@ def settings(bd_limpia: Engine) -> Settings:
 
 
 @pytest.fixture
-def cliente(settings: Settings):
+def cliente(settings: Settings, bd_limpia: Engine):
     with TestClient(create_app(settings)) as c:
+        # Las pruebas generales parten de un administrador que ya reemplazó su contraseña
+        # inicial; el cambio obligatorio se prueba aparte (test_seguridad.py).
+        with bd_limpia.begin() as conexion:
+            conexion.execute(text("UPDATE usuarios SET debe_cambiar_contrasena = false"))
         yield c
 
 
@@ -94,6 +114,24 @@ def iniciar_sesion(cliente: TestClient, usuario: str = ADMIN_USUARIO, clave: str
     respuesta = cliente.post("/auth/login", json={"usuario": usuario, "contrasena": clave})
     assert respuesta.status_code == 200, respuesta.text
     return respuesta.json()["csrf_token"]
+
+
+def crear_usuario_listo(
+    cliente: TestClient, admin: dict[str, str], nombre: str, clave: str, rol: str = "analista"
+) -> tuple[TestClient, dict[str, str]]:
+    """Alta por el administrador y primer ingreso del usuario (cambia la contraseña asignada).
+    Devuelve un cliente propio, con su sesión iniciada, y su cabecera CSRF."""
+    temporal = f"{clave}-asignada"
+    r = cliente.post(
+        "/usuarios", json={"nombre_usuario": nombre, "contrasena": temporal, "rol": rol}, headers=admin
+    )
+    assert r.status_code == 201, r.text
+    propio = TestClient(cliente.app)
+    csrf = iniciar_sesion(propio, nombre, temporal)
+    cambio = {"contrasena_actual": temporal, "contrasena_nueva": clave}
+    r = propio.post("/auth/cambiar-contrasena", json=cambio, headers={"X-CSRF-Token": csrf})
+    assert r.status_code == 204, r.text
+    return propio, {"X-CSRF-Token": iniciar_sesion(propio, nombre, clave)}
 
 
 @pytest.fixture

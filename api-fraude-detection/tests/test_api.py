@@ -4,7 +4,7 @@ from api_fraude_detection.contenedor import detector_fraude
 from api_fraude_detection.modelos.dominio.parametros import NivelRiesgo
 from api_fraude_detection.modelos.dominio.resultados import ResultadoAnalisis
 
-from .conftest import ADMIN_CLAVE, iniciar_sesion, montos_benford, montos_inventados
+from .conftest import ADMIN_CLAVE, crear_usuario_listo, montos_benford, montos_inventados
 
 
 def _payload(montos, **extra) -> dict:
@@ -35,7 +35,7 @@ def test_credenciales_invalidas_y_bloqueo(cliente: TestClient):
         r = cliente.post("/auth/login", json={"usuario": "admin", "contrasena": "incorrecta"})
         assert r.status_code == 401
     r = cliente.post("/auth/login", json={"usuario": "admin", "contrasena": ADMIN_CLAVE})
-    assert r.status_code == 423
+    assert r.status_code == 429
 
 
 def test_csrf_obligatorio_en_metodos_que_modifican(cliente: TestClient, admin):
@@ -54,16 +54,9 @@ def test_logout_revoca_la_sesion(cliente: TestClient, admin):
 
 
 def test_roles_analista_no_gestiona_perfiles(cliente: TestClient, admin):
-    r = cliente.post(
-        "/usuarios",
-        json={"nombre_usuario": "analista1", "contrasena": "clave-analista-123", "rol": "analista"},
-        headers=admin,
-    )
-    assert r.status_code == 201
-    cliente.cookies.clear()
-    csrf = iniciar_sesion(cliente, "analista1", "clave-analista-123")
-    assert cliente.get("/perfiles").status_code == 200
-    r = cliente.post("/perfiles", json={"nombre": "x"}, headers={"X-CSRF-Token": csrf})
+    analista, csrf = crear_usuario_listo(cliente, admin, "analista1", "clave-analista-123")
+    assert analista.get("/perfiles").status_code == 200
+    r = analista.post("/perfiles", json={"nombre": "x"}, headers=csrf)
     assert r.status_code == 403
 
 

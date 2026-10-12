@@ -1,4 +1,5 @@
 import { AnalisisApi } from './servicios/AnalisisApi'
+import { AuditoriaApi } from './servicios/AuditoriaApi'
 import { AuthApi } from './servicios/AuthApi'
 import { PerfilesApi } from './servicios/PerfilesApi'
 import { UsuariosApi } from './servicios/UsuariosApi'
@@ -15,6 +16,7 @@ export const api = Object.freeze({
   usuarios: new UsuariosApi(),
   perfiles: new PerfilesApi(),
   analisis: new AnalisisApi(),
+  auditoria: new AuditoriaApi(),
 })
 
 export { ApiBase, construirRuta } from './ApiBase'
@@ -24,5 +26,5 @@ export { CONFIG_API } from './config'
 export { ErrorApi, normalizarError } from './errores'
 export type { ErrorValidacion, TipoErrorApi } from './errores'
 export { alExpirarSesion } from './sesion'
-export { AnalisisApi, AuthApi, PerfilesApi, UsuariosApi }
+export { AnalisisApi, AuditoriaApi, AuthApi, PerfilesApi, UsuariosApi }
 export type * from './tipos'

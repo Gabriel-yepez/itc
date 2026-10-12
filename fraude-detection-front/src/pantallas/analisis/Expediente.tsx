@@ -34,22 +34,25 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
     parametros.agrupar_por === 'canal' && clave in CANAL ? CANAL[clave as keyof typeof CANAL] : clave
 
   return (
-    <article className="grid animate-aparecer gap-12">
+    <article className="grid animate-aparecer grid-cols-1 gap-10 sm:gap-12">
       {/* ------------------------------------------------------------ encabezado */}
-      <header className="grid gap-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
+      <header className="grid grid-cols-1 gap-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
         <div className="min-w-0">
           <button
             type="button"
             onClick={onVolver}
-            className="mb-5 font-mono text-[0.7rem] tracking-wider text-tinta-suave uppercase hover:text-sello"
+            className="-my-2 mb-3 py-2 font-mono text-[0.7rem] tracking-wider text-tinta-suave uppercase hover:text-sello"
           >
             ← Análisis recientes
           </button>
-          <p className="rotulo">
-            {analisis.id !== null ? `Expediente N.º ${numeroExpediente(analisis.id)}` : 'Análisis sin guardar'} ·{' '}
-            {fechaHora(analisis.creado_en)}
+          <p className="rotulo flex flex-col gap-x-2 sm:flex-row sm:flex-wrap">
+            <span>{analisis.id !== null ? `Expediente N.º ${numeroExpediente(analisis.id)}` : 'Análisis sin guardar'}</span>
+            <span className="whitespace-nowrap">
+              <span className="hidden sm:inline">· </span>
+              {fechaHora(analisis.creado_en)}
+            </span>
           </p>
-          <h1 className="mt-2 font-serif text-4xl leading-[1.05] tracking-tight break-words sm:text-5xl">
+          <h1 className="mt-2 font-serif text-[2rem] leading-[1.05] tracking-tight break-words sm:text-5xl">
             {analisis.descripcion || <span className="text-tinta-suave italic">Análisis sin título</span>}
           </h1>
           <p className="mt-3 text-sm text-tinta-suave">
@@ -64,7 +67,7 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
       </header>
 
       {/* ------------------------------------------------------------ cifras */}
-      <dl className="grid grid-cols-2 border-y border-tinta md:grid-cols-5">
+      <dl className="grid grid-cols-6 border-y border-tinta md:grid-cols-5">
         <Cifra etiqueta="Recibidas" valor={entero(r.total_recibidas)} />
         <Cifra etiqueta="Analizadas" valor={entero(r.total_analizadas)} />
         <Cifra etiqueta="Excluidas" valor={entero(totalExcluidas)} />
@@ -74,7 +77,7 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
             r.monto_minimo_observado === null ? (
               '—'
             ) : (
-              <span className="block text-base leading-snug">
+              <span className="block text-sm leading-snug sm:text-base">
                 <span className="block">{monto(r.monto_minimo_observado, moneda)}</span>
                 <span className="block text-tinta-suave">a {monto(r.monto_maximo_observado, moneda)}</span>
               </span>
@@ -104,11 +107,11 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
           {r.hallazgos.map((hallazgo, i) => (
             <li
               key={hallazgo}
-              className="grid animate-aparecer grid-cols-[2.5rem_minmax(0,1fr)] gap-2 [animation-delay:calc(var(--i)*80ms)]"
+              className="grid animate-aparecer grid-cols-[2rem_minmax(0,1fr)] gap-2 [animation-delay:calc(var(--i)*80ms)] sm:grid-cols-[2.5rem_minmax(0,1fr)]"
               style={{ '--i': i } as CSSProperties}
             >
               <span className="cifra pt-1 text-sm text-sello">{String(i + 1).padStart(2, '0')}</span>
-              <p className="text-[1.05rem] leading-relaxed text-tinta-media">{hallazgo}</p>
+              <p className="text-base leading-relaxed text-tinta-media sm:text-[1.05rem]">{hallazgo}</p>
             </li>
           ))}
         </ol>
@@ -130,7 +133,11 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
             Cada prueba compara la frecuencia de los dígitos de los montos con la que predice la Ley de Benford.
             Las barras en rojo se desvían más de lo que explicaría el azar.
           </p>
-          <div role="tablist" aria-label="Prueba" className="mb-6 flex flex-wrap gap-x-1 border-b border-linea">
+          <div
+            role="tablist"
+            aria-label="Prueba"
+            className="-mx-4 mb-6 flex gap-x-1 overflow-x-auto border-b border-linea px-4 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0"
+          >
             {r.pruebas.map((p) => {
               const activa = p.prueba === prueba.prueba
               return (
@@ -140,7 +147,7 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
                   role="tab"
                   aria-selected={activa}
                   onClick={() => setPruebaActiva(p.prueba)}
-                  className={`-mb-px flex items-center gap-2 border-b-2 px-3 py-2 text-sm transition-colors ${
+                  className={`-mb-px flex min-h-10 shrink-0 items-center gap-2 border-b-2 px-3 py-2 text-sm whitespace-nowrap transition-colors ${
                     activa ? 'border-sello text-tinta' : 'border-transparent text-tinta-suave hover:text-tinta'
                   }`}
                 >
@@ -151,12 +158,13 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
             })}
           </div>
 
-          <div role="tabpanel" className="grid gap-8 xl:grid-cols-[minmax(0,1fr)_260px]">
+          <div role="tabpanel" className="grid grid-cols-1 gap-8 xl:grid-cols-[minmax(0,1fr)_260px]">
             <GraficoDigitos key={prueba.prueba} prueba={prueba} />
             <MetricasPrueba prueba={prueba} />
           </div>
 
-          <div className="mt-10 overflow-x-auto">
+          <ResumenMovil pruebas={r.pruebas} />
+          <div className="mt-10 hidden overflow-x-auto sm:block">
             <table className="w-full min-w-[640px] text-sm">
               <caption className="rotulo mb-2 text-left">Resumen de las pruebas</caption>
               <thead>
@@ -230,9 +238,9 @@ export function Expediente({ analisis, perfiles, onVolver }: Props) {
             {r.grupos.map((g) => (
               <li
                 key={g.clave}
-                className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-6 gap-y-2 bg-papel py-3 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_auto_auto]"
+                className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-2 bg-papel py-3 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_auto_auto] sm:gap-x-6"
               >
-                <span className="cifra truncate text-sm" title={g.clave}>
+                <span className="cifra row-start-1 truncate text-sm sm:row-auto" title={g.clave}>
                   {nombreSegmento(g.clave)}
                 </span>
                 <span className="col-span-2 flex items-center gap-3 sm:col-span-1">
@@ -290,26 +298,30 @@ function razonUmbral(razon: number | null, debajo: number): string {
 
 function Bloque({ titulo, children }: { titulo: string; children: ReactNode }) {
   return (
-    <section className="grid gap-5">
-      <h2 className="font-serif text-3xl leading-none tracking-tight">{titulo}</h2>
-      <div>{children}</div>
+    <section className="grid grid-cols-1 gap-4 sm:gap-5">
+      <h2 className="font-serif text-[1.75rem] leading-none tracking-tight sm:text-3xl">{titulo}</h2>
+      <div className="min-w-0">{children}</div>
     </section>
   )
 }
 
 function Cifra({ etiqueta, valor, ancho = false }: { etiqueta: string; valor: ReactNode; ancho?: boolean }) {
   return (
-    <div className={`border-linea px-1 py-4 md:border-l md:px-4 md:first:border-l-0 md:first:pl-0 ${ancho ? 'col-span-2 md:col-span-1' : ''}`}>
-      <dt className="rotulo text-[0.6rem]">{etiqueta}</dt>
-      <dd className="cifra mt-1 text-2xl">{valor}</dd>
+    <div
+      className={`min-w-0 border-linea px-1 py-3 md:col-span-1 md:border-l md:px-4 md:py-4 md:first:border-l-0 md:first:pl-0 ${
+        ancho ? 'col-span-4' : 'col-span-2'
+      }`}
+    >
+      <dt className="rotulo text-[0.6rem] leading-snug">{etiqueta}</dt>
+      <dd className="cifra mt-1 text-xl sm:text-2xl">{valor}</dd>
     </div>
   )
 }
 
 function MetricasPrueba({ prueba }: { prueba: ResultadoPrueba }) {
   return (
-    <dl className="grid content-start gap-4 border-l-2 border-tinta pl-5 text-sm">
-      <div>
+    <dl className="grid grid-cols-2 content-start gap-x-4 gap-y-4 border-t-2 border-tinta pt-4 text-sm sm:grid-cols-3 xl:grid-cols-1 xl:border-t-0 xl:border-l-2 xl:pt-0 xl:pl-5">
+      <div className="col-span-2 sm:col-span-3 xl:col-span-1">
         <dt className="rotulo text-[0.6rem]">Conformidad</dt>
         <dd className="mt-1.5">
           <EtiquetaConformidad conformidad={prueba.conformidad} />
@@ -329,11 +341,39 @@ function MetricasPrueba({ prueba }: { prueba: ResultadoPrueba }) {
       />
       <Parametro nombre="Montos evaluados" valor={entero(prueba.n)} />
       {!prueba.muestra_suficiente && (
-        <p className="text-xs leading-relaxed text-ocre">
+        <p className="col-span-2 text-xs leading-relaxed text-ocre sm:col-span-3 xl:col-span-1">
           Muestra menor al mínimo configurado: el resultado es orientativo y no suma al puntaje.
         </p>
       )}
     </dl>
+  )
+}
+
+/** En móvil la tabla de 7 columnas no cabe: cada prueba se resume en una fila legible. */
+function ResumenMovil({ pruebas }: { pruebas: ResultadoPrueba[] }) {
+  return (
+    <div className="mt-8 sm:hidden">
+      <p className="rotulo mb-2">Resumen de las pruebas</p>
+      <ul className="border-t border-tinta">
+        {pruebas.map((p) => (
+          <li key={p.prueba} className="grid gap-1.5 border-b border-linea py-3">
+            <div className="flex items-center justify-between gap-3">
+              <span className="text-sm font-medium">{PRUEBA[p.prueba]}</span>
+              <EtiquetaConformidad conformidad={p.conformidad} />
+            </div>
+            <p className="cifra flex flex-wrap gap-x-3 text-xs text-tinta-suave">
+              <span>n {entero(p.n)}</span>
+              <span>MAD {decimal(p.mad, 4)}</span>
+              <span className={p.chi_cuadrado_significativo ? 'text-sello' : ''}>p {valorP(p.valor_p)}</span>
+              <span>
+                {entero(p.digitos_atipicos.length)} {p.digitos_atipicos.length === 1 ? 'atípico' : 'atípicos'}
+              </span>
+            </p>
+            {!p.muestra_suficiente && <span className="text-xs text-ocre">Muestra insuficiente</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
@@ -368,7 +408,7 @@ function Tarjeta({
   children: ReactNode
 }) {
   return (
-    <div className={`border p-5 ${alerta ? 'border-sello bg-sello/[0.04]' : 'border-linea bg-papel-claro/60'}`}>
+    <div className={`border p-4 sm:p-5 ${alerta ? 'border-sello bg-sello/[0.04]' : 'border-linea bg-papel-claro/60'}`}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="rotulo text-[0.6rem]">{rotulo}</p>

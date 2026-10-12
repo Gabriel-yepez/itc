@@ -10,10 +10,16 @@ requires-python = ">=3.14"
 dependencies = [
     "alembic>=1.20.0",
     "argon2-cffi>=25.1.0",
-    "fastapi[standard]>=0.143.0",
+    "cryptography>=46",
+    "fastapi>=0.143.0",
+    "httptools>=0.6",
     "psycopg[binary]>=3.2",
     "pydantic-settings>=2.15.0",
+    "python-multipart>=0.0.32",
+    "segno>=1.6",
     "sqlalchemy>=2.0",
+    "uvicorn>=0.54.0",
+    "uvloop>=0.21 ; sys_platform != 'win32'",
 ]
 
 [project.scripts]
@@ -25,9 +31,16 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "httpx>=0.28",
     "pytest>=9.1.1",
+    "pyyaml>=6.0.3",
     "ruff>=0.17.0",
 ]
+
+[tool.uv]
+# Freno de la cadena de suministro (como minimumReleaseAge de pnpm): no se instalan versiones
+# publicadas hace menos de 24 h. Los paquetes comprometidos suelen detectarse y retirarse en horas.
+exclude-newer = "1 day"
 
 [tool.ruff]
 line-length = 110

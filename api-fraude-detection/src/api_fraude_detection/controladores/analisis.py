@@ -6,6 +6,7 @@ from fastapi import Form, UploadFile
 from pydantic import Field
 
 from ..core.errores import DatosInsuficientes
+from ..core.limites import LimitadorConcurrencia
 from ..modelos.dominio.transacciones import Transaccion
 from ..modelos.servicios.analisis import ServicioAnalisis
 from ..modelos.servicios.autenticacion import UsuarioAutenticado
@@ -68,40 +69,47 @@ class ControladorAnalisis:
         self,
         servicio: ServicioAnalisis,
         vista: VistaAnalisis,
+        limitador: LimitadorConcurrencia,
         max_tamano_csv_mb: int,
         max_transacciones: int,
     ):
         self._servicio = servicio
         self._vista = vista
+        self._limitador = limitador
         self._max_bytes_csv = max_tamano_csv_mb * 1024 * 1024
         self._max_transacciones = max_transacciones
 
     def analizar(self, solicitud: SolicitudAnalisis, actual: UsuarioAutenticado) -> RespuestaAnalisis:
-        registro = self._servicio.analizar(
-            solicitud.transacciones,
-            actual,
-            perfil_id=solicitud.perfil_id,
-            sobrescrituras=solicitud.parametros,
-            descripcion=solicitud.descripcion,
-            guardar=solicitud.guardar,
-        )
+        with self._limitador.reservar(actual.usuario.id):
+            registro = self._servicio.analizar(
+                solicitud.transacciones,
+                actual,
+                perfil_id=solicitud.perfil_id,
+                sobrescrituras=solicitud.parametros,
+                descripcion=solicitud.descripcion,
+                guardar=solicitud.guardar,
+            )
         return self._vista.detalle(registro)
 
     def analizar_csv(
         self, archivo: UploadFile, formulario: FormularioCSV, actual: UsuarioAutenticado
     ) -> RespuestaAnalisis:
-        contenido = self._leer_archivo(archivo)
-        formato = FormatoCSV.model_validate(_json_opcional(formulario.formato, "formato") or {})
-        transacciones, omitidas = leer_transacciones_csv(contenido, formato, self._max_transacciones)
-        registro = self._servicio.analizar(
-            transacciones,
-            actual,
-            perfil_id=formulario.perfil_id,
-            sobrescrituras=_json_opcional(formulario.parametros, "parametros"),
-            descripcion=formulario.descripcion or (archivo.filename or "")[:255],
-            guardar=formulario.guardar,
-            advertencias_extra=[f"Se omitieron {omitidas} filas inválidas del CSV."] if omitidas else None,
-        )
+        # Leer y convertir el CSV también es trabajo pesado: entra en el cupo.
+        with self._limitador.reservar(actual.usuario.id):
+            contenido = self._leer_archivo(archivo)
+            formato = FormatoCSV.model_validate(_json_opcional(formulario.formato, "formato") or {})
+            transacciones, omitidas = leer_transacciones_csv(contenido, formato, self._max_transacciones)
+            del contenido
+            advertencias = [f"Se omitieron {omitidas} filas inválidas del CSV."] if omitidas else None
+            registro = self._servicio.analizar(
+                transacciones,
+                actual,
+                perfil_id=formulario.perfil_id,
+                sobrescrituras=_json_opcional(formulario.parametros, "parametros"),
+                descripcion=formulario.descripcion or (archivo.filename or "")[:255],
+                guardar=formulario.guardar,
+                advertencias_extra=advertencias,
+            )
         return self._vista.detalle(registro)
 
     def listar(self, actual: UsuarioAutenticado, limite: int, desplazamiento: int) -> list[ResumenAnalisis]:

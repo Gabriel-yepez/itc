@@ -1,4 +1,4 @@
-import type { Canal, Conformidad, CriterioAgrupacion, NivelRiesgo, PruebaBenford } from '../api'
+import type { Canal, Conformidad, CriterioAgrupacion, NivelRiesgo, PruebaBenford, Severidad } from '../api'
 
 export const NIVEL: Record<NivelRiesgo, string> = {
   bajo: 'Riesgo bajo',
@@ -54,3 +54,36 @@ const MOTIVOS_EXCLUSION: Record<string, string> = {
 }
 
 export const motivoExclusion = (clave: string): string => MOTIVOS_EXCLUSION[clave] ?? clave.replaceAll('_', ' ')
+
+export const SEVERIDAD: Record<Severidad, string> = {
+  info: 'Info',
+  advertencia: 'Advertencia',
+  critica: 'Crítica',
+}
+
+const TIPOS_EVENTO: Record<string, string> = {
+  inicio_sesion: 'Inicio de sesión',
+  inicio_sesion_fallido: 'Inicio de sesión fallido',
+  cierre_sesion: 'Cierre de sesión',
+  acceso_bloqueado: 'Acceso bloqueado por intentos fallidos',
+  ataque_distribuido_a_cuenta: 'Ataque distribuido contra una cuenta',
+  rociado_de_contrasenas: 'Rociado de contraseñas desde una IP',
+  segundo_factor_fallido: 'Código de verificación incorrecto',
+  codigo_recuperacion_usado: 'Código de recuperación usado',
+  segundo_factor_configuracion_iniciada: 'Configuración de verificación iniciada',
+  segundo_factor_activado: 'Verificación en dos pasos activada',
+  segundo_factor_desactivado: 'Verificación en dos pasos desactivada',
+  segundo_factor_restablecido: 'Verificación en dos pasos restablecida',
+  usuario_creado: 'Usuario creado',
+  usuario_actualizado: 'Usuario modificado',
+  contrasena_cambiada: 'Contraseña cambiada',
+  cambio_contrasena_fallido: 'Cambio de contraseña fallido',
+  perfil_creado: 'Perfil de detección creado',
+  perfil_actualizado: 'Perfil de detección modificado',
+  perfil_eliminado: 'Perfil de detección eliminado',
+  analisis_ejecutado: 'Análisis ejecutado',
+  csrf_invalido: 'Petición sin token CSRF válido',
+  acceso_denegado: 'Acceso denegado',
+}
+
+export const tipoEvento = (tipo: string): string => TIPOS_EVENTO[tipo] ?? tipo.replaceAll('_', ' ')

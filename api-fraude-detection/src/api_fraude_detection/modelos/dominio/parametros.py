@@ -7,9 +7,21 @@ análisis puede sobrescribir parcialmente.
 from datetime import date
 from decimal import Decimal
 from enum import StrEnum
-from typing import Self
+from typing import Annotated, Self
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
+
+# Un Decimal admite exponentes de hasta ±999.999.999: sin tope, un monto como "1e999999"
+# obliga a construir enteros de un millón de cifras (decenas de segundos de CPU por monto).
+# 10¹⁸ cubre los bolívares anteriores a 2008 (reconversión acumulada de 10¹⁴) con margen.
+IMPORTE_MAXIMO = Decimal("1e18")
+IMPORTE_MINIMO = Decimal("0.000001")
+CIFRAS_MAXIMAS_IMPORTE = 30
+
+Importe = Annotated[Decimal, Field(ge=IMPORTE_MINIMO, le=IMPORTE_MAXIMO, max_digits=CIFRAS_MAXIMAS_IMPORTE)]
+"""Monto o tasa positivo con magnitud acotada; todo importe que llega del cliente usa este tipo."""
+
+MAX_UMBRALES_VIGILADOS = 20
 
 
 class Moneda(StrEnum):
@@ -106,7 +118,7 @@ class UmbralVigilado(_Modelo):
     """
 
     nombre: str = Field(min_length=1, max_length=120)
-    monto: Decimal = Field(gt=0)
+    monto: Importe
     moneda: Moneda = Moneda.VES
     tolerancia_pct: float = Field(
         default=10, gt=0, le=50, description="Ancho de la banda bajo el umbral, en % del umbral"
@@ -146,9 +158,8 @@ class ParametrosDeteccion(_Modelo):
     moneda_base: Moneda = Field(
         default=Moneda.VES, description="Moneda a la que se convierten los montos antes del análisis"
     )
-    tasa_bcv_predeterminada: Decimal | None = Field(
+    tasa_bcv_predeterminada: Importe | None = Field(
         default=None,
-        gt=0,
         description="Bs por USD (tasa oficial BCV) usada cuando la transacción no trae su propia tasa",
     )
     aplicar_reconversion: bool = Field(
@@ -160,14 +171,20 @@ class ParametrosDeteccion(_Modelo):
     monto_minimo: Decimal = Field(
         default=Decimal(10),
         ge=0,
+        le=IMPORTE_MAXIMO,
+        max_digits=CIFRAS_MAXIMAS_IMPORTE,
         description="En moneda base. Montos muy pequeños distorsionan los dígitos (Nigrini sugiere ≥ 10)",
     )
-    monto_maximo: Decimal | None = Field(default=None, gt=0)
-    canales: list[Canal] | None = Field(default=None, description="None = todos los canales")
-    tipos_operacion: list[TipoOperacion] | None = None
+    monto_maximo: Importe | None = None
+    canales: list[Canal] | None = Field(
+        default=None, max_length=len(Canal), description="None = todos los canales"
+    )
+    tipos_operacion: list[TipoOperacion] | None = Field(default=None, max_length=len(TipoOperacion))
 
     # --- Pruebas de Benford ---
-    pruebas: list[PruebaBenford] = Field(default_factory=lambda: list(PruebaBenford), min_length=1)
+    pruebas: list[PruebaBenford] = Field(
+        default_factory=lambda: list(PruebaBenford), min_length=1, max_length=len(PruebaBenford)
+    )
     tamano_muestra_minimo: int = Field(default=300, ge=30)
     umbrales_mad: dict[PruebaBenford, UmbralesMAD] = Field(default_factory=lambda: dict(UMBRALES_MAD_NIGRINI))
     z_critico: float = Field(default=1.96, gt=0, description="1,96 ≈ 5 %; 2,57 ≈ 1 %")
@@ -194,7 +211,9 @@ class ParametrosDeteccion(_Modelo):
     max_grupos_reportados: int = Field(default=20, ge=1, le=500)
 
     # --- Fraccionamiento y redondeo ---
-    umbrales_vigilados: list[UmbralVigilado] = Field(default_factory=list)
+    # Cada umbral recorre toda la población: sin tope, una sobrescritura con miles de umbrales
+    # multiplicaba el costo del análisis.
+    umbrales_vigilados: list[UmbralVigilado] = Field(default_factory=list, max_length=MAX_UMBRALES_VIGILADOS)
     factor_concentracion_umbral: float = Field(
         default=2.0,
         gt=1,
@@ -205,13 +224,17 @@ class ParametrosDeteccion(_Modelo):
     )
     minimo_transacciones_banda: int = Field(default=5, ge=1)
     multiplo_redondo: int = Field(
-        default=100, ge=10, description="Un monto 'redondo' es múltiplo de este valor (moneda original)"
+        default=100,
+        ge=10,
+        le=1_000_000_000,
+        description="Un monto 'redondo' es múltiplo de este valor (moneda original)",
     )
     factor_exceso_redondos: float = Field(
         default=3.0, gt=1, description="Alerta si los montos redondos superan N veces lo esperado"
     )
     canales_excluidos_redondeo: list[Canal] = Field(
         default_factory=lambda: [Canal.EFECTIVO, Canal.DIVISAS],
+        max_length=len(Canal),
         description="Canales donde los montos redondos son normales (billetes en efectivo/divisas)",
     )
 

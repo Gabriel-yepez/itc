@@ -15,7 +15,7 @@ export function Recientes({ recientes, abriendoId, onAbrir }: Props) {
   return (
     <section className="animate-aparecer">
       <p className="rotulo">Archivo</p>
-      <h1 className="mt-1 font-serif text-5xl leading-none tracking-tight">Análisis recientes</h1>
+      <h1 className="mt-1 font-serif text-4xl leading-none tracking-tight sm:text-5xl">Análisis recientes</h1>
 
       {recientes === null ? (
         <ul className="mt-10 grid gap-3" aria-busy="true" aria-label="Cargando análisis">
@@ -26,7 +26,7 @@ export function Recientes({ recientes, abriendoId, onAbrir }: Props) {
       ) : recientes.length === 0 ? (
         <SinAnalisis />
       ) : (
-        <ul className="mt-10 border-t border-tinta">
+        <ul className="mt-8 border-t border-tinta sm:mt-10">
           {recientes.map((a) => (
             <li key={a.id} className="border-b border-linea">
               <button
@@ -34,16 +34,17 @@ export function Recientes({ recientes, abriendoId, onAbrir }: Props) {
                 onClick={() => onAbrir(a.id)}
                 disabled={abriendoId !== null}
                 aria-busy={abriendoId === a.id}
-                className="group grid w-full grid-cols-[4.5rem_minmax(0,1fr)_auto] items-center gap-x-5 gap-y-1 py-4 text-left transition-colors hover:bg-papel-claro/70 disabled:cursor-wait sm:grid-cols-[4.5rem_minmax(0,1fr)_7rem_9rem_6rem]"
+                className="group grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-1 py-3.5 sm:gap-x-5 sm:py-4 text-left transition-colors hover:bg-papel-claro/70 disabled:cursor-wait sm:grid-cols-[4.5rem_minmax(0,1fr)_7rem_9rem_6rem]"
               >
-                <span className="cifra pl-1 text-sm text-tinta-suave group-hover:text-sello">
+                <span className="cifra hidden pl-1 text-sm text-tinta-suave group-hover:text-sello sm:block">
                   {numeroExpediente(a.id)}
                 </span>
                 <span className="min-w-0">
-                  <span className="block truncate font-serif text-xl leading-tight">
+                  <span className="block truncate font-serif text-lg leading-tight sm:text-xl">
                     {a.descripcion || <span className="text-tinta-suave italic">Sin título</span>}
                   </span>
                   <span className="block text-xs text-tinta-suave">
+                    <span className="cifra sm:hidden">N.º {numeroExpediente(a.id)} · </span>
                     {abriendoId === a.id ? 'Abriendo…' : fechaHora(a.creado_en)}
                   </span>
                 </span>
@@ -80,7 +81,7 @@ function SinAnalisis() {
   return (
     <div className="mt-10 grid gap-10 border-t border-tinta pt-8">
       <p className="max-w-xl text-lg leading-relaxed text-tinta-media">
-        Todavía no hay análisis en el archivo. Abra el primer expediente desde el panel de la izquierda.
+        Todavía no hay análisis en el archivo. Abra el primer expediente desde «Nuevo análisis».
       </p>
       <ol className="grid gap-8 md:grid-cols-3">
         {pasos.map(([titulo, texto], i) => (

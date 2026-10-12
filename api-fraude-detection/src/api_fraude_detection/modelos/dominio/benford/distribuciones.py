@@ -29,17 +29,40 @@ def distribucion_esperada(prueba: PruebaBenford) -> dict[int, float]:
 
 
 def digitos_significativos(monto: Decimal) -> tuple[int, ...]:
-    """Dígitos significativos de |monto| sin ceros a la izquierda (0,0352 -> (3, 5, 2))."""
-    digitos = monto.copy_abs().normalize().as_tuple().digits
+    """Dígitos significativos de |monto| sin ceros a la izquierda (0,0352 -> (3, 5, 2)).
+
+    El coeficiente de un Decimal nunca lleva ceros a la izquierda; los ceros finales que pueda
+    tener no alteran el primer ni el segundo dígito. Sin normalize(), que desborda el contexto
+    con exponentes extremos.
+    """
+    digitos = monto.as_tuple().digits
     return tuple(digitos) if digitos and digitos[0] != 0 else ()
+
+
+def _ultimos_dos_enteros(monto: Decimal) -> int | None:
+    """Últimas dos cifras de la parte entera, leídas de la representación (dígitos, exponente).
+
+    No usa int(monto): construir el entero cuesta tiempo proporcional al exponente (1e999999
+    son un millón de cifras), mientras que esto es O(cifras significativas).
+    """
+    _, digitos, exponente = monto.copy_abs().as_tuple()
+    cifras_enteras = len(digitos) + exponente
+    # Con menos de 3 cifras enteras los "últimos dos" se solapan con los primeros.
+    if digitos == (0,) or cifras_enteras < 3:
+        return None
+    if exponente >= 2:  # ...00
+        return 0
+    if exponente == 1:  # ...d0
+        return digitos[-1] * 10
+    return digitos[cifras_enteras - 2] * 10 + digitos[cifras_enteras - 1]
 
 
 def extraer_digito(monto: Decimal, prueba: PruebaBenford) -> int | None:
     """Valor que la prueba analiza para `monto`, o None si el monto no aplica."""
+    if not monto.is_finite():
+        return None
     if prueba is PruebaBenford.ULTIMOS_DOS_DIGITOS:
-        entero = int(monto.copy_abs())
-        # Con menos de 3 cifras enteras los "últimos dos" se solapan con los primeros.
-        return entero % 100 if entero >= 100 else None
+        return _ultimos_dos_enteros(monto)
 
     digitos = digitos_significativos(monto)
     if not digitos:

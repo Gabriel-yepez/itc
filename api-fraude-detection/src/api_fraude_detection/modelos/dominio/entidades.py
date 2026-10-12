@@ -21,9 +21,57 @@ class Usuario:
     hash_contrasena: str
     rol: Rol = Rol.ANALISTA
     activo: bool = True
-    intentos_fallidos: int = 0
-    bloqueado_hasta: datetime | None = None
+    # Contraseña asignada por otra persona (admin inicial, alta por un administrador): hasta
+    # cambiarla solo puede consultar su sesión, cambiarla o salir.
+    debe_cambiar_contrasena: bool = False
+    # Doble factor (TOTP). `totp_secreto` en claro solo en memoria: en la base va cifrado.
+    totp_secreto: str | None = None
+    totp_activo: bool = False
+    totp_ultimo_paso: int | None = None  # último código aceptado: impide reutilizarlo
+    codigos_recuperacion: list[str] = field(default_factory=list)  # hashes SHA-256, de un solo uso
     creado_en: datetime = field(default_factory=ahora)
+    id: int | None = None
+
+    def debe_configurar_segundo_factor(self, exigido_a_admins: bool) -> bool:
+        return exigido_a_admins and self.rol is Rol.ADMIN and not self.totp_activo
+
+
+@dataclass(frozen=True, slots=True)
+class ConteoFallos:
+    """Inicios de sesión fallidos dentro de la ventana de bloqueo."""
+
+    por_usuario_e_ip: int
+    por_usuario: int
+    por_ip: int
+
+
+@dataclass(slots=True)
+class DesafioSegundoFactor:
+    """Contraseña ya validada, a la espera del código de doble factor."""
+
+    usuario_id: int
+    hash_token: str
+    expira_en: datetime
+    ip: str | None = None
+    creado_en: datetime = field(default_factory=ahora)
+    id: int | None = None
+
+
+class Severidad(StrEnum):
+    INFO = "info"
+    ADVERTENCIA = "advertencia"  # genera alerta
+    CRITICA = "critica"  # genera alerta
+
+
+@dataclass(slots=True)
+class EventoAuditoria:
+    tipo: str
+    severidad: Severidad
+    momento: datetime = field(default_factory=ahora)
+    usuario_id: int | None = None
+    nombre_usuario: str | None = None
+    ip: str | None = None
+    detalle: dict[str, Any] = field(default_factory=dict)
     id: int | None = None
 
 

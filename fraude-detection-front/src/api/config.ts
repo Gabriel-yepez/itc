@@ -15,15 +15,26 @@ if (import.meta.env.PROD && origenApi.protocol !== 'https:' && origenApi.hostnam
   throw new Error('VITE_API_URL debe usar HTTPS en producción: las cookies de sesión son Secure.')
 }
 
+const apiEnOtroOrigen = origenApi.origin !== window.location.origin
+
+/**
+ * Nombre de la cookie CSRF: debe coincidir con el que elige el backend. Con HTTPS en el mismo
+ * origen lleva el prefijo "__Host-" (el backend no usa dominio compartido); en desarrollo
+ * (http://localhost) o con la API en otro origen (dominio compartido) va sin prefijo.
+ */
+const cookieCsrf =
+  (import.meta.env.VITE_COOKIE_CSRF ?? '').trim() ||
+  (origenApi.protocol === 'https:' && !apiEnOtroOrigen ? '__Host-csrf_token' : 'csrf_token')
+
 export const CONFIG_API = Object.freeze({
   urlBase,
   /** true si la API vive en otro origen (requiere CORS y cookie_dominio compartido en el backend). */
-  apiEnOtroOrigen: origenApi.origin !== window.location.origin,
+  apiEnOtroOrigen,
   tiempoEsperaMs: 30_000,
   /** Las subidas de CSV grandes necesitan más margen. */
   tiempoEsperaArchivosMs: 120_000,
   // Deben coincidir con FRAUDE_COOKIE_CSRF_NOMBRE / FRAUDE_CABECERA_CSRF del backend.
-  cookieCsrf: 'csrf_token',
+  cookieCsrf,
   cabeceraCsrf: 'X-CSRF-Token',
 })
 

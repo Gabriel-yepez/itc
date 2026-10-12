@@ -43,7 +43,6 @@ const MENSAJES_POR_ESTADO: Record<number, string> = {
   409: 'La operación entra en conflicto con datos existentes.',
   413: 'El archivo enviado es demasiado grande.',
   422: 'Hay datos inválidos en la solicitud.',
-  423: 'La cuenta está bloqueada temporalmente.',
   429: 'Demasiadas solicitudes. Intente más tarde.',
 }
 

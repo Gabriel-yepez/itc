@@ -1,14 +1,30 @@
-import type { CSSProperties } from 'react'
+import { useEffect, useRef, useState, type CSSProperties, type RefObject } from 'react'
 
 import type { ResultadoPrueba } from '../api'
 import { PRUEBA } from '../utilidades/etiquetas'
 import { decimal, entero, porcentaje } from '../utilidades/formato'
 
-const ANCHO = 760
-const ALTO = 300
-const M = { arriba: 18, derecha: 12, abajo: 34, izquierda: 48 }
-const INTERIOR_X = ANCHO - M.izquierda - M.derecha
-const INTERIOR_Y = ALTO - M.arriba - M.abajo
+const ANCHO_INICIAL = 760
+const ANCHO_MINIMO = 280
+const M = { arriba: 18, derecha: 8, abajo: 34, izquierda: 44 }
+
+/**
+ * Ancho real del contenedor. El SVG se dibuja a escala 1:1 en vez de reducir un lienzo fijo:
+ * así los rótulos conservan su tamaño en el móvil en lugar de encogerse hasta ser ilegibles.
+ */
+function useAncho(ref: RefObject<HTMLElement | null>): number {
+  const [ancho, setAncho] = useState(ANCHO_INICIAL)
+  useEffect(() => {
+    const elemento = ref.current
+    if (!elemento) return
+    const observador = new ResizeObserver(([entrada]) => {
+      if (entrada) setAncho(Math.max(ANCHO_MINIMO, Math.round(entrada.contentRect.width)))
+    })
+    observador.observe(elemento)
+    return () => observador.disconnect()
+  }, [ref])
+  return ancho
+}
 
 interface Props {
   prueba: ResultadoPrueba
@@ -17,6 +33,12 @@ interface Props {
 /** Frecuencia observada de cada dígito (barras) frente a la que predice Benford (línea). */
 export function GraficoDigitos({ prueba }: Props) {
   const { frecuencias } = prueba
+  const contenedor = useRef<HTMLElement>(null)
+  const ANCHO = useAncho(contenedor)
+  const angosto = ANCHO < 560
+  const ALTO = angosto ? 230 : 300
+  const INTERIOR_X = ANCHO - M.izquierda - M.derecha
+  const INTERIOR_Y = ALTO - M.arriba - M.abajo
   const n = frecuencias.length
   const pocos = n <= 10
   const paso = INTERIOR_X / n
@@ -29,7 +51,7 @@ export function GraficoDigitos({ prueba }: Props) {
   const mostrarEtiqueta = (d: number) => pocos || d % 10 === 0
 
   return (
-    <figure className="grid gap-3">
+    <figure ref={contenedor} className="grid min-w-0 gap-3">
       <svg
         viewBox={`0 0 ${ANCHO} ${ALTO}`}
         className="h-auto w-full overflow-visible"
@@ -109,7 +131,7 @@ export function GraficoDigitos({ prueba }: Props) {
                 x={centro(i)}
                 y={ALTO - M.abajo + 20}
                 textAnchor="middle"
-                className={`font-serif ${pocos ? 'text-[19px]' : 'text-[14px]'} ${
+                className={`font-serif ${pocos ? (angosto ? 'text-[16px]' : 'text-[19px]') : angosto ? 'text-[12px]' : 'text-[14px]'} ${
                   f.atipico ? 'fill-sello' : 'fill-tinta'
                 }`}
               >

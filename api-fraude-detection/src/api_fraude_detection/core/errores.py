@@ -20,8 +20,8 @@ class CredencialesInvalidas(ErrorDominio):
     codigo_http = 401
 
 
-class UsuarioBloqueado(ErrorDominio):
-    codigo_http = 423
+class DemasiadasSolicitudes(ErrorDominio):
+    codigo_http = 429
 
 
 class NoAutenticado(ErrorDominio):

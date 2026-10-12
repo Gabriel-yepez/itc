@@ -9,12 +9,14 @@ import io
 import unicodedata
 from datetime import date, datetime
 from decimal import Decimal, InvalidOperation
-from typing import Literal
+from typing import Annotated, Literal
 
 from pydantic import BaseModel, Field, ValidationError
 
 from ...core.errores import DatosInsuficientes
 from ..dominio.transacciones import Transaccion
+
+CampoTransaccion = Literal["id", "monto", "moneda", "fecha", "canal", "tipo", "cuenta", "tasa_bcv"]
 
 
 class FormatoCSV(BaseModel):
@@ -23,8 +25,8 @@ class FormatoCSV(BaseModel):
     formato_fecha: str = Field(default="%d/%m/%Y", max_length=20)
     codificacion: Literal["utf-8", "utf-8-sig", "latin-1"] = "utf-8-sig"
     omitir_filas_invalidas: bool = False
-    # campo de Transaccion -> nombre de la columna en el archivo
-    columnas: dict[str, str] = Field(
+    # campo de Transaccion -> nombre de la columna en el archivo (solo campos conocidos)
+    columnas: dict[CampoTransaccion, Annotated[str, Field(min_length=1, max_length=100)]] = Field(
         default_factory=lambda: {
             "id": "id",
             "monto": "monto",

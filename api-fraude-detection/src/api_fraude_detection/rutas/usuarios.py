@@ -23,3 +23,10 @@ def actualizar_usuario(
 ):
     """Cambiar rol o desactivar un usuario revoca sus sesiones abiertas."""
     return ctrl.actualizar(usuario_id, datos)
+
+
+@router.post("/{usuario_id}/restablecer-segundo-factor", response_model=UsuarioPublico)
+def restablecer_segundo_factor(usuario_id: int, admin: AdminActual, ctrl: CtrlUsuarios):
+    """Para quien perdió el teléfono y sus códigos. Debe hacerlo otro administrador; genera una
+    alerta crítica y el usuario tendrá que volver a configurarlo (obligatorio si es admin)."""
+    return ctrl.restablecer_segundo_factor(usuario_id, admin)

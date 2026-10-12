@@ -3,6 +3,7 @@ import { useId, useState, type CSSProperties, type FormEvent } from 'react'
 import { ErrorApi, type Credenciales, type ErrorValidacion } from '../api'
 import { Aviso } from '../componentes/Aviso'
 import { Marca } from '../componentes/Marca'
+import type { AvisoSesion } from '../sesion/useSesion'
 import { decimal, porcentaje } from '../utilidades/formato'
 
 const BENFORD = Array.from({ length: 9 }, (_, i) => {
@@ -12,7 +13,7 @@ const BENFORD = Array.from({ length: 9 }, (_, i) => {
 const MAXIMO = BENFORD[0].probabilidad
 
 interface Props {
-  aviso?: string
+  aviso?: AvisoSesion
   onIniciarSesion: (credenciales: Credenciales) => Promise<void>
 }
 
@@ -200,8 +201,8 @@ function FormularioAcceso({ aviso, onIniciarSesion }: Props) {
 
       <div className="mt-8 grid gap-4" aria-live="polite">
         {aviso && !error && (
-          <Aviso tipo="advertencia" titulo="Sesión finalizada">
-            {aviso}
+          <Aviso tipo={aviso.tipo} titulo={aviso.titulo}>
+            {aviso.mensaje}
           </Aviso>
         )}
         {error && (

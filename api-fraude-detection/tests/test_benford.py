@@ -48,6 +48,13 @@ def test_primer_digito_benford_clasico():
         ("98765", PruebaBenford.PRIMEROS_DOS_DIGITOS, 98),
         ("12345.99", PruebaBenford.ULTIMOS_DOS_DIGITOS, 45),
         ("45", PruebaBenford.ULTIMOS_DOS_DIGITOS, None),
+        ("100", PruebaBenford.ULTIMOS_DOS_DIGITOS, 0),
+        ("1E+2", PruebaBenford.ULTIMOS_DOS_DIGITOS, 0),
+        ("1.23E+3", PruebaBenford.ULTIMOS_DOS_DIGITOS, 30),
+        ("0.75", PruebaBenford.ULTIMOS_DOS_DIGITOS, None),
+        # Sin construir el entero completo: antes este caso no terminaba (mil millones de cifras).
+        ("1E+999999999", PruebaBenford.ULTIMOS_DOS_DIGITOS, 0),
+        ("1E+999999999", PruebaBenford.PRIMER_DIGITO, 1),
     ],
 )
 def test_extraer_digito(monto, prueba, esperado):

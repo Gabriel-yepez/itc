@@ -3,7 +3,7 @@ from datetime import datetime
 from decimal import Decimal
 
 from ...core.errores import Conflicto, NoEncontrado
-from ..dominio.entidades import PerfilDeteccion, ahora
+from ..dominio.entidades import PerfilDeteccion, Severidad, ahora
 from ..dominio.parametros import (
     Canal,
     CriterioAgrupacion,
@@ -12,6 +12,7 @@ from ..dominio.parametros import (
     UmbralVigilado,
 )
 from ..repositorios.interfaces import RepositorioPerfiles
+from .auditoria import ServicioAuditoria
 
 NOMBRE_PERFIL_INICIAL = "Banca venezolana - referencia"
 
@@ -38,9 +39,22 @@ def parametros_referencia_venezuela() -> ParametrosDeteccion:
 
 
 class ServicioPerfiles:
-    def __init__(self, perfiles: RepositorioPerfiles, reloj: Callable[[], datetime] = ahora):
+    def __init__(
+        self,
+        perfiles: RepositorioPerfiles,
+        auditoria: ServicioAuditoria | None = None,
+        reloj: Callable[[], datetime] = ahora,
+    ):
         self._perfiles = perfiles
+        self._auditoria = auditoria
         self._reloj = reloj
+
+    def _auditar(self, tipo: str, perfil: PerfilDeteccion, **detalle) -> None:
+        # Cambiar umbrales o ponderaciones puede ocultar fraude: cada cambio genera alerta.
+        if self._auditoria is not None:
+            self._auditoria.registrar(
+                tipo, Severidad.ADVERTENCIA, perfil_id=perfil.id, perfil=perfil.nombre, **detalle
+            )
 
     def listar(self) -> list[PerfilDeteccion]:
         return self._perfiles.listar()
@@ -74,7 +88,7 @@ class ServicioPerfiles:
         # Primero se libera el predeterminado actual: la BD admite solo uno a la vez.
         if predeterminado:
             self._perfiles.quitar_predeterminado()
-        return self._perfiles.guardar(
+        perfil = self._perfiles.guardar(
             PerfilDeteccion(
                 nombre=nombre,
                 parametros=parametros,
@@ -85,6 +99,8 @@ class ServicioPerfiles:
                 actualizado_en=momento,
             )
         )
+        self._auditar("perfil_creado", perfil, predeterminado=predeterminado)
+        return perfil
 
     def actualizar(
         self,
@@ -108,13 +124,21 @@ class ServicioPerfiles:
         perfil.actualizado_en = self._reloj()
         if perfil.predeterminado:
             self._perfiles.quitar_predeterminado(excepto_id=perfil.id)
-        return self._perfiles.guardar(perfil)
+        perfil = self._perfiles.guardar(perfil)
+        self._auditar(
+            "perfil_actualizado",
+            perfil,
+            cambios_parametros=cambios_parametros or {},
+            predeterminado=perfil.predeterminado,
+        )
+        return perfil
 
     def eliminar(self, perfil_id: int) -> None:
         perfil = self.obtener(perfil_id)
         if perfil.predeterminado:
             raise Conflicto("No se puede eliminar el perfil predeterminado; marque otro primero")
         self._perfiles.eliminar(perfil_id)
+        self._auditar("perfil_eliminado", perfil)
 
     def asegurar_perfil_inicial(self) -> None:
         if not self._perfiles.listar():

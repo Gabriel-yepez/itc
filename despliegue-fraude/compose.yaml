@@ -16,9 +16,10 @@ services:
       DOMINIO: ${DOMINIO:?Defina DOMINIO en .env}
       ACME_EMAIL: ${ACME_EMAIL:?Defina ACME_EMAIL en .env}
     ports:
-      - "${PUERTO_HTTP:-80}:80"
-      - "${PUERTO_HTTPS:-443}:443"
-      - "${PUERTO_HTTPS:-443}:443/udp" # HTTP/3
+      # Caddy corre sin root y escucha en puertos altos dentro del contenedor.
+      - "${PUERTO_HTTP:-80}:8080"
+      - "${PUERTO_HTTPS:-443}:8443"
+      - "${PUERTO_HTTPS:-443}:8443/udp" # HTTP/3
     volumes:
       - caddy_datos:/data # certificados: si se pierden, Let's Encrypt limita las reemisiones
       - caddy_config:/config
@@ -30,9 +31,13 @@ services:
     depends_on:
       api:
         condition: service_healthy
-    cap_drop: [ALL]
-    cap_add: [NET_BIND_SERVICE]
+    user: "10001:10001"
+    cap_drop: [ALL] # sin root ni puertos privilegiados no necesita ninguna capacidad
     security_opt: ["no-new-privileges:true"]
+    # Topes de recursos: un abuso agota el contenedor, no el servidor entero.
+    mem_limit: ${WEB_MEMORIA:-256m}
+    cpus: ${WEB_CPUS:-1}
+    pids_limit: 200
 
   api:
     build: ../api-fraude-detection
@@ -45,8 +50,15 @@ services:
       # Mismo origen que el frontend (detrás de Caddy): no hace falta CORS.
       FRAUDE_ORIGENES_CORS: "[]"
       FRAUDE_ADMIN_USUARIO: ${ADMIN_USUARIO:-admin}
-      # Solo se usa si la base no tiene usuarios (primer arranque).
-      FRAUDE_ADMIN_CONTRASENA: ${ADMIN_CONTRASENA:?Defina ADMIN_CONTRASENA en .env}
+      # Solo se usa en el primer arranque (base sin usuarios). El administrador debe cambiarla al
+      # ingresar; después ya no sirve para entrar: retírela del .env (queda visible en docker inspect).
+      FRAUDE_ADMIN_CONTRASENA: ${ADMIN_CONTRASENA:-}
+      # Cifra en la base la descripción y el resultado de los análisis y los secretos de doble
+      # factor. Sin estas claves esos datos NO se recuperan: guárdelas también fuera del servidor.
+      FRAUDE_CLAVES_CIFRADO: ${CLAVES_CIFRADO:?Defina CLAVES_CIFRADO en .env}
+      # Opcional. La API está en una red sin salida a Internet: para usar un webhook externo
+      # agréguele una red con salida o apunte a un relé dentro de la red interna.
+      FRAUDE_ALERTAS_WEBHOOK_URL: ${ALERTAS_WEBHOOK_URL:-}
       FORWARDED_ALLOW_IPS: ${IP_PROXY:-172.31.250.10}
       WEB_CONCURRENCY: ${API_PROCESOS:-2}
     networks: [interna]
@@ -55,9 +67,16 @@ services:
         condition: service_healthy
     read_only: true
     tmpfs:
-      - /tmp:size=128m # las subidas de CSV se guardan aquí temporalmente
+      # Las subidas de CSV (hasta 51 MB) se vuelcan aquí mientras llegan; cuenta como memoria.
+      # Cada proceso recibe como mucho FRAUDE_MAX_SUBIDAS_SIMULTANEAS (2) a la vez: 2 x 2 x 51 MB.
+      - /tmp:size=256m
     cap_drop: [ALL]
     security_opt: ["no-new-privileges:true"]
+    # Cada proceso admite FRAUDE_MAX_ANALISIS_SIMULTANEOS análisis (2 por defecto) de hasta
+    # 500.000 operaciones: dimensione la memoria según API_PROCESOS.
+    mem_limit: ${API_MEMORIA:-3g}
+    cpus: ${API_CPUS:-2}
+    pids_limit: 256
 
   postgres:
     image: postgres:18-alpine@sha256:77f585114c32fbca283dc835b0596f4e52b51b4c6662d7810b2f4084f60a1873
@@ -76,6 +95,46 @@ services:
       timeout: 3s
       retries: 10
     security_opt: ["no-new-privileges:true"]
+    mem_limit: ${POSTGRES_MEMORIA:-1g}
+    pids_limit: 300
+
+  respaldos:
+    # pg_dump cifrado con la clave PÚBLICA de age: el servidor puede crear respaldos pero no leerlos.
+    # Restaurar (con la clave privada, que se guarda fuera del servidor): ver README.
+    build: ./respaldos
+    restart: unless-stopped
+    environment:
+      PGHOST: postgres
+      PGUSER: ${POSTGRES_USER:-fraude}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD en .env}
+      PGDATABASE: ${POSTGRES_DB:-fraude}
+      RESPALDO_CLAVE_PUBLICA: ${RESPALDO_CLAVE_PUBLICA:?Defina RESPALDO_CLAVE_PUBLICA en .env (age1...)}
+      RESPALDO_INTERVALO_SEGUNDOS: ${RESPALDO_INTERVALO_SEGUNDOS:-86400}
+      RESPALDO_RETENCION_DIAS: ${RESPALDO_RETENCION_DIAS:-14}
+    volumes:
+      # Copie este directorio fuera del servidor (otro equipo, almacenamiento de objetos...):
+      # un respaldo que vive en el mismo disco que la base no protege de perder el servidor.
+      - ${RESPALDOS_DIRECTORIO:-respaldos}:/respaldos
+    networks: [interna]
+    depends_on:
+      # Tras la API: el primer respaldo ya incluye el esquema migrado.
+      api:
+        condition: service_healthy
+    healthcheck:
+      # No saludable si el último respaldo tiene más de dos intervalos.
+      test:
+        - CMD-SHELL
+        - test $$(( $$(date -u +%s) - $$(cat /respaldos/.ultimo-respaldo 2>/dev/null || echo 0) )) -lt $$(( $${RESPALDO_INTERVALO_SEGUNDOS} * 2 ))
+      interval: 5m
+      timeout: 5s
+      start_period: 2m
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: ${RESPALDOS_MEMORIA:-512m}
+    pids_limit: 64
 
 networks:
   publica: {}
@@ -87,5 +146,6 @@ networks:
 
 volumes:
   datos_postgres:
+  respaldos:
   caddy_datos:
   caddy_config:

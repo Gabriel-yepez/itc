@@ -8,20 +8,26 @@ from fastapi.responses import JSONResponse
 from pydantic import ValidationError
 from sqlalchemy import text
 
+from .core.cifrado import Cifrador
 from .core.config import Settings, obtener_settings
 from .core.errores import ErrorDominio
+from .core.limites import MB, LimitadorConcurrencia, LimiteCuerpo
 from .core.seguridad_http import CABECERAS_SEGURIDAD
 from .modelos.persistencia.base import crear_fabrica_sesiones, crear_motor
 from .modelos.persistencia.esquema import aplicar_migraciones
 from .modelos.repositorios.sql import (
+    RepositorioAuditoriaSQL,
+    RepositorioDesafiosSQL,
+    RepositorioIntentosAccesoSQL,
     RepositorioPerfilesSQL,
     RepositorioSesionesSQL,
     RepositorioUsuariosSQL,
     UnidadDeTrabajoSQL,
 )
+from .modelos.servicios.auditoria import NotificadorAlertas, ServicioAuditoria
 from .modelos.servicios.autenticacion import ServicioAutenticacion
 from .modelos.servicios.perfiles import ServicioPerfiles
-from .rutas import analisis, auth, perfiles, usuarios
+from .rutas import analisis, auditoria, auth, perfiles, usuarios
 
 log = logging.getLogger(__name__)
 
@@ -33,18 +39,28 @@ def _inicializar_datos(app: FastAPI) -> None:
     """Migra el esquema y crea el administrador inicial (si se configuró) y el perfil de referencia."""
     settings: Settings = app.state.settings
     if settings.migrar_al_iniciar:
-        aplicar_migraciones(app.state.motor)
+        aplicar_migraciones(app.state.motor, settings.claves_cifrado)
     with app.state.fabrica_sesiones.begin() as db:
         db.execute(text("SELECT pg_advisory_xact_lock(:clave)"), {"clave": _CLAVE_BLOQUEO_DATOS_INICIALES})
+        usuarios = RepositorioUsuariosSQL(db, app.state.cifrador)
+        auditoria = ServicioAuditoria(
+            RepositorioAuditoriaSQL(app.state.fabrica_sesiones), app.state.notificador_alertas
+        )
         auth = ServicioAutenticacion(
-            RepositorioUsuariosSQL(db), RepositorioSesionesSQL(db), UnidadDeTrabajoSQL(db), settings
+            usuarios,
+            RepositorioSesionesSQL(db),
+            RepositorioIntentosAccesoSQL(db),
+            RepositorioDesafiosSQL(db),
+            UnidadDeTrabajoSQL(db),
+            auditoria,
+            settings,
         )
         if auth.asegurar_admin_inicial():
             log.info("Usuario administrador '%s' creado", settings.admin_usuario)
-        elif RepositorioUsuariosSQL(db).contar() == 0:
+        elif usuarios.contar() == 0:
             log.warning("No hay usuarios: defina FRAUDE_ADMIN_CONTRASENA para crear el administrador")
         auth.purgar_sesiones()
-        ServicioPerfiles(RepositorioPerfilesSQL(db)).asegurar_perfil_inicial()
+        ServicioPerfiles(RepositorioPerfilesSQL(db), auditoria).asegurar_perfil_inicial()
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -67,10 +83,30 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         docs_url=None if settings.entorno == "produccion" else "/docs",
         redoc_url=None,
     )
+    if settings.claves_cifrado is None:
+        raise RuntimeError(
+            "Defina FRAUDE_CLAVES_CIFRADO "
+            "(genere una con: uv run python -m api_fraude_detection.core.cifrado)"
+        )
     app.state.settings = settings
+    app.state.cifrador = Cifrador.desde_texto(settings.claves_cifrado.get_secret_value())
+    app.state.notificador_alertas = NotificadorAlertas(
+        settings.alertas_webhook_url, settings.alertas_webhook_segundos
+    )
     app.state.motor = crear_motor(settings)
     app.state.fabrica_sesiones = crear_fabrica_sesiones(app.state.motor)
+    app.state.limitador_analisis = LimitadorConcurrencia(
+        settings.max_analisis_simultaneos, settings.max_analisis_por_usuario
+    )
 
+    # Primer middleware añadido = el más interno: sus 413 pasan por CORS y las cabeceras de seguridad.
+    app.add_middleware(
+        LimiteCuerpo,
+        # Margen de 1 MB sobre el CSV para el resto del formulario multipart.
+        maximo_bytes=(settings.max_tamano_csv_mb + 1) * MB,
+        maximo_json_bytes=settings.max_tamano_json_mb * MB,
+        max_cuerpos_grandes_simultaneos=settings.max_subidas_simultaneas,
+    )
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.origenes_cors,
@@ -104,6 +140,6 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     def salud() -> dict[str, str]:
         return {"estado": "ok"}
 
-    for modulo in (auth, usuarios, perfiles, analisis):
+    for modulo in (auth, usuarios, perfiles, analisis, auditoria):
         app.include_router(modulo.router)
     return app

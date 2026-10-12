@@ -63,7 +63,7 @@ def test_controlador_con_repositorio_en_memoria():
 
 
 def test_vista_no_expone_datos_sensibles():
-    usuario = Usuario(nombre_usuario="ana", hash_contrasena="$argon2id$secreto", intentos_fallidos=2, id=5)
+    usuario = Usuario(nombre_usuario="ana", hash_contrasena="$argon2id$secreto", id=5)
     publico = VistaUsuarios().detalle(usuario).model_dump()
-    assert "hash_contrasena" not in publico and "intentos_fallidos" not in publico
+    assert "hash_contrasena" not in publico
     assert publico["nombre_usuario"] == "ana"

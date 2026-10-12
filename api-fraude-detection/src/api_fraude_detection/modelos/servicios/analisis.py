@@ -1,11 +1,12 @@
 from collections.abc import Callable, Sequence
 from datetime import datetime
 
-from ...core.errores import DatosInsuficientes, NoEncontrado, PermisoDenegado
+from ...core.errores import DatosInsuficientes, NoEncontrado
 from ..dominio.detector import DetectorFraude
 from ..dominio.entidades import RegistroAnalisis, ahora
 from ..dominio.transacciones import Transaccion
 from ..repositorios.interfaces import RepositorioAnalisis
+from .auditoria import ServicioAuditoria
 from .autenticacion import UsuarioAutenticado
 from .perfiles import ServicioPerfiles
 
@@ -17,12 +18,14 @@ class ServicioAnalisis:
         perfiles: ServicioPerfiles,
         analisis: RepositorioAnalisis,
         max_transacciones: int,
+        auditoria: ServicioAuditoria | None = None,
         reloj: Callable[[], datetime] = ahora,
     ):
         self._detector = detector
         self._perfiles = perfiles
         self._analisis = analisis
         self._max_transacciones = max_transacciones
+        self._auditoria = auditoria
         self._reloj = reloj
 
     def analizar(
@@ -60,14 +63,23 @@ class ServicioAnalisis:
         )
         if guardar:
             self._analisis.guardar(registro)
+        if self._auditoria is not None:
+            # Quién analizó qué volumen y con qué resultado (sin montos ni cuentas).
+            self._auditoria.registrar(
+                "analisis_ejecutado",
+                analisis_id=registro.id,
+                transacciones=registro.total_transacciones,
+                nivel_riesgo=registro.nivel_riesgo.value,
+                perfil_id=registro.perfil_id,
+            )
         return registro
 
     def obtener(self, analisis_id: int, actual: UsuarioAutenticado) -> RegistroAnalisis:
         registro = self._analisis.obtener_por_id(analisis_id)
-        if registro is None:
+        # El análisis de otro usuario responde igual que uno inexistente: un 403 confirmaría que
+        # ese número de expediente existe.
+        if registro is None or (not actual.es_admin and registro.usuario_id != actual.usuario.id):
             raise NoEncontrado("Análisis no encontrado")
-        if not actual.es_admin and registro.usuario_id != actual.usuario.id:
-            raise PermisoDenegado("No tiene acceso a este análisis")
         return registro
 
     def listar(self, actual: UsuarioAutenticado, limite: int, desplazamiento: int) -> list[RegistroAnalisis]:

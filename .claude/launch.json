@@ -4,8 +4,51 @@
     {
       "name": "front-dev",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["--dir", "fraude-detection-front", "dev", "--port", "5173", "--strictPort"],
+      "runtimeArgs": [
+        "--dir",
+        "fraude-detection-front",
+        "dev",
+        "--port",
+        "5173",
+        "--strictPort"
+      ],
       "port": 5173
+    },
+    {
+      "name": "api-verificacion",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "FRAUDE_URL_BASE_DATOS=postgresql+psycopg://fraude:fraude_dev@localhost:5434/fraude_pruebas",
+        "FRAUDE_CLAVES_CIFRADO=4bVjEheR-c9bIEe7udkbcVOamjo74TWgnGLsAikryrU=",
+        "FRAUDE_ADMIN_USUARIO=admin",
+        "FRAUDE_ADMIN_CONTRASENA=verificacion-clave-123",
+        "FRAUDE_COOKIE_SEGURA=false",
+        "uv",
+        "run",
+        "--directory",
+        "api-fraude-detection",
+        "uvicorn",
+        "api_fraude_detection.main:create_app",
+        "--factory",
+        "--port",
+        "8001"
+      ],
+      "port": 8001
+    },
+    {
+      "name": "front-verificacion",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "API_PROXY_TARGET=http://127.0.0.1:8001",
+        "pnpm",
+        "--dir",
+        "fraude-detection-front",
+        "dev",
+        "--port",
+        "5174",
+        "--strictPort"
+      ],
+      "port": 5174
     }
   ]
 }

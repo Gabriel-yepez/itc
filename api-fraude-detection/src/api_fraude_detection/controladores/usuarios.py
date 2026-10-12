@@ -1,7 +1,7 @@
 from pydantic import Field
 
 from ..modelos.dominio.entidades import Rol
-from ..modelos.servicios.autenticacion import ServicioAutenticacion
+from ..modelos.servicios.autenticacion import ServicioAutenticacion, UsuarioAutenticado
 from ..vistas.usuarios import UsuarioPublico, VistaUsuarios
 from .base import Solicitud
 
@@ -32,6 +32,9 @@ class ControladorUsuarios:
     def crear(self, solicitud: SolicitudCrearUsuario) -> UsuarioPublico:
         usuario = self._servicio.crear_usuario(solicitud.nombre_usuario, solicitud.contrasena, solicitud.rol)
         return self._vista.detalle(usuario)
+
+    def restablecer_segundo_factor(self, usuario_id: int, admin: UsuarioAutenticado) -> UsuarioPublico:
+        return self._vista.detalle(self._servicio.restablecer_segundo_factor(usuario_id, admin.usuario))
 
     def actualizar(self, usuario_id: int, solicitud: SolicitudActualizarUsuario) -> UsuarioPublico:
         usuario = self._servicio.actualizar_usuario(usuario_id, solicitud.rol, solicitud.activo)

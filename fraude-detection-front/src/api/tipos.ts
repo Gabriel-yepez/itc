@@ -47,7 +47,44 @@ export interface UsuarioPublico {
   nombre_usuario: string
   rol: Rol
   activo: boolean
+  /** Contraseña asignada por otra persona: hasta cambiarla, la API solo permite cambiarla o salir. */
+  debe_cambiar_contrasena: boolean
+  segundo_factor_activo: boolean
+  /** Administrador sin doble factor: hasta configurarlo, la API solo permite hacerlo o salir. */
+  debe_configurar_segundo_factor: boolean
   creado_en: FechaHora
+}
+
+/** Respuesta del login: la sesión, o el aviso de que falta el código de doble factor. */
+export interface RespuestaInicio {
+  segundo_factor_requerido: boolean
+  usuario: UsuarioPublico | null
+  expira_en: FechaHora | null
+  csrf_token?: string | null
+}
+
+export interface ConfiguracionSegundoFactor {
+  /** Para escribirlo a mano en la app si no se puede leer el QR. */
+  secreto: string
+  uri: string
+  /** Imagen SVG del QR como data URI (la CSP permite img-src data:). */
+  qr: string
+}
+
+export interface CodigosRecuperacion {
+  codigos_recuperacion: string[]
+}
+
+export type Severidad = 'info' | 'advertencia' | 'critica'
+
+export interface EventoAuditoria {
+  id: number
+  momento: FechaHora
+  tipo: string
+  severidad: Severidad
+  nombre_usuario: string | null
+  ip: string | null
+  detalle: Record<string, unknown>
 }
 
 export interface RespuestaSesion {

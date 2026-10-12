@@ -1,11 +1,22 @@
 # Servidor web de producción: sirve el build de React y reenvía /api/* a FastAPI.
 # Variables: DOMINIO (p. ej. fraude.midominio.com) y ACME_EMAIL (avisos de Let's Encrypt).
 # Con un dominio real Caddy obtiene y renueva el certificado HTTPS solo, y redirige HTTP -> HTTPS.
-
 {
 	email {$ACME_EMAIL}
 	# Sin API de administración (puerto 2019): la configuración es inmutable dentro de la imagen.
 	admin off
+	# Caddy corre sin root, así que escucha en puertos altos; Docker publica 80 -> 8080 y 443 -> 8443.
+	http_port 8080
+	https_port 8443
+	# La redirección automática apuntaría a https://dominio:8443; se define abajo hacia el 443 público.
+	auto_https disable_redirects
+	# Con DOMINIO=localhost Caddy crea una CA local; instalarla en el contenedor no sirve (y sin root falla).
+	skip_install_trust
+}
+
+# HTTP -> HTTPS (puerto público 443). Los desafíos ACME por HTTP siguen funcionando aquí.
+http://{$DOMINIO} {
+	redir https://{host}{uri} permanent
 }
 
 {$DOMINIO} {
