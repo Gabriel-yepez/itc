@@ -19,6 +19,7 @@
       "runtimeExecutable": "env",
       "runtimeArgs": [
         "FRAUDE_URL_BASE_DATOS=postgresql+psycopg://fraude:fraude_dev@localhost:5434/fraude_pruebas",
+        "FRAUDE_EXIGIR_SEGUNDO_FACTOR_ADMIN=false",
         "FRAUDE_CLAVES_CIFRADO=4bVjEheR-c9bIEe7udkbcVOamjo74TWgnGLsAikryrU=",
         "FRAUDE_ADMIN_USUARIO=admin",
         "FRAUDE_ADMIN_CONTRASENA=verificacion-clave-123",

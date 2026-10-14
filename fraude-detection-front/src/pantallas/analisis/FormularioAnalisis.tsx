@@ -21,6 +21,7 @@ import {
   PLANTILLA_CSV,
   type SeparadorDecimal,
 } from '../../utilidades/montos'
+import { GuiaArchivo } from './GuiaArchivo'
 
 export type Pedido =
   | { tipo: 'json'; solicitud: SolicitudAnalisis; etiqueta: string }
@@ -328,15 +329,14 @@ export function FormularioAnalisis({ perfiles, ejecutando, onEnviar, onCancelar 
 
             <p className="text-xs leading-relaxed text-tinta-suave">
               Columna obligatoria: <code className="cifra text-tinta">monto</code>. Opcionales: fecha, moneda, canal,
-              tipo, cuenta, tasa_bcv.{' '}
-              <button
-                type="button"
-                onClick={() => descargarTexto('plantilla_transacciones.csv', PLANTILLA_CSV)}
-                className="font-medium text-tinta underline underline-offset-4 hover:text-sello"
-              >
-                Descargar plantilla
-              </button>
+              tipo, cuenta, tasa_bcv.
             </p>
+            <GuiaArchivo
+              maxMb={MAX_MB}
+              maxFilas={MAX_TRANSACCIONES}
+              muestraMinima={perfil?.parametros.tamano_muestra_minimo ?? 300}
+              onDescargarPlantilla={() => descargarTexto('plantilla_transacciones.csv', PLANTILLA_CSV)}
+            />
           </div>
         ) : (
           <div className="grid gap-3">
@@ -351,7 +351,7 @@ export function FormularioAnalisis({ perfiles, ejecutando, onEnviar, onCancelar 
               />
             </Campo>
             <p className="cifra text-xs text-tinta-suave" aria-live="polite">
-              {entero(lectura.montos.length)} montos válidos
+              {entero(lectura.montos.length)} montos válidos · máx. {entero(MAX_TRANSACCIONES)}
               {lectura.lineasInvalidas > 0 && (
                 <span className="text-sello"> · {entero(lectura.lineasInvalidas)} líneas ignoradas</span>
               )}
